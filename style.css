@@ -1,0 +1,40 @@
+:root {
+    --purple: #8c38ff;
+    --darkwaterBlue: #0f292f;
+    --poppingPink: #cb2d6f;
+    --accentBlack: #2d283e;
+    --promisingPurple: #281941;
+  }
+  
+  body {
+    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @media (max-width: 991px) {
+    .sidebar {
+      background-color: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+    }
+  }
+  
+  .navbar {
+    background-image: linear-gradient(
+      to right,
+      var(--darkwaterBlue),
+      var(--purple)
+    );
+  }
+  
+  .c-item {
+    height: 400px;
+  }
+  
+  .c-img {
+    height: 100%;
+  
+    margin: auto;
+  }
