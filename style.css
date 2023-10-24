@@ -6,10 +6,19 @@
     --promisingPurple: #281941;
   }
   
-  body {
+ 
+  
+  #index-page{ 
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+  }
+
+  #login-page{
+    background: url(assets/loginBg.png) rgba(0, 0,0, 0.2);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -36,5 +45,70 @@
   .c-img {
     height: 100%;
   
-    margin: auto;
   }
+
+  .loginForm {
+    width: 500px;
+    padding: 30px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .loginForm h1 {
+    color: black;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .loginForm input[type="text"],
+  .loginForm input[type="password"] {
+   
+    background: none;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border-color: slateblue;
+    padding: 14px 10px;
+    width: 220px;
+    outline: none;
+    color: var(--accentBlack);
+    border-radius: 20px;
+    transition: 0.25px;
+  }
+  
+  .loginForm input[type="text"]:focus,
+  .loginForm input[type="password"]:focus {
+    width: 270px;
+    border-color: slateblue;
+  }
+  
+  .loginForm input[type="submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 3px solid;
+    padding: 14px 10px;
+    outline: none;
+    color: slateblue;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+  }
+  
+  .loginForm input[type="submit"]:hover {
+    background-color: var(--poppingPink);
+  }
+  .logText {
+    text-align: center;
+    margin-top: 580px;
+    font-size: 20px;
+  }
+  
