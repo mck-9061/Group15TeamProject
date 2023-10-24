@@ -69,26 +69,26 @@
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Products
+                  Cd's
                 </a>
                 <ul
                   class="dropdown-menu bg-transparent shadow-none border-0 text-white"
                 >
                   <li>
                     <a href="#cdProduct" class="dropdown-item text-white"
-                      >Cd's</a
+                      >Rock</a
                     >
                   </li>
 
                   <li>
                     <a href="#vinylProduct" class="dropdown-item text-white"
-                      >Vinyl</a
+                      >Metal</a
                     >
                   </li>
 
                   <li>
                     <a href="#merchProduct" class="dropdown-item text-white"
-                      >Merch</a
+                      >Rap</a
                     >
                   </li>
                 </ul>
