@@ -1,48 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Cadence | Login Page</title>
-        <link rel="stylesheet" href="css/bootstrap.css" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="style.css" />
-      </head>
-<body class="" id="login-page">
-   
-        <div class="loginForm">
-          <form class="loginForm" action="login.html" method="post">
-            <h1>Login</h1>
-    
-            <input
-              type="text"
-              name=""
-              placeholder=" Enter Username"
-              id="username"
-            />
-    
-            <input
-              type="password"
-              name=""
-              placeholder=" Enter Password"
-              id="password"
-            />
-            <input type="submit" name="" value="Login" />
-          </form>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadence | Login Page</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="" id="login-page">
+    <div class="log-box">
+      <span class="LoginBorderLine"></span>
+      <form>
+        <h2>Sign in</h2>
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <span>Username</span>
+          <i></i>
         </div>
-        <div class="logText">
-          <p>
-            Don't have an Account? <a href="signUp.html" class="text-white">Sign Up Here!</a>
-            <br />
-            Otherwise you can return <a href="index.html" class="text-white"> Home</a>
-          </p>
+        <div class="inputBox">
+          <input type="text" required="required" />
+          <span>Password</span>
+          <i></i>
         </div>
-      
-</body>
+        <div class="extraLogInfo">
+          <a href="#">Forgot your password</a>
+          <a href="#">Sign Up</a>
+        </div>
+        <input type="submit" value="Login" />
+      </form>
+    </div>
+  </body>
 </html>
