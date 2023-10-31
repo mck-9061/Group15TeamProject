@@ -13,6 +13,7 @@
   --pinkypeach: #f9d4e6;
   --mint: #99edc3;
   --seafoam: #3ded97;
+  --navbarPurple:#54005d;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 
@@ -26,19 +27,20 @@
 
 @media (max-width: 991px) {
   .sidebar {
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+    background-color: var(--promisingPurple);
+    backdrop-filter: blur(5px);
   }
 }
 
+/*
 .navbar {
   background-image: linear-gradient(
     to right,
-    var(--darkwaterBlue),
-    var(--purple)
+    var(--navbarPurple),
+    var(--tiktokPink)
   );
 }
-
+*/
 .c-item {
   height: 400px;
 }
@@ -316,7 +318,7 @@
   );
   z-index: 1;
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
+  animation: animate 7s linear infinite;
 }
 
 .signUpBox::after {
@@ -335,7 +337,7 @@
   );
   z-index: 1;
   transform-origin: bottom right;
-  animation: animate 6s linear infinite;
+  animation: animate 7s linear infinite;
   animation-delay: -3s;
 }
 
@@ -456,7 +458,7 @@
 }
 .signUpBox form .extraSignUp a {
   margin: 10px 0;
-  font-size: 0.75em;
+  font-size: 0.95em;
   color: white;
   text-decoration: none;
 }
@@ -483,3 +485,9 @@
 }
 
 /* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
+
+/* New nav bar / header code */
+
+.contact-info {
+  font-size: 15px;
+}
