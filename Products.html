@@ -95,7 +95,7 @@
               </li>
 
               <li class="nav-item mx-2">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="about.html">About</a>
               </li>
             </ul>
             <!-- Login / Sign Up Code -->
