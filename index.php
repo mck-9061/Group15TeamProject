@@ -59,7 +59,7 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-3">
-                <a class="nav-link" href="navbar.html">Navbar</a>
+                <a class="nav-link" href="navbar.php">Navbar</a>
               </li>
               <li class="nav-item dropdown mx-2">
                 <a
@@ -103,12 +103,12 @@
               class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
             >
               <a
-                href="login.html"
+                href="login.php"
                 class="text-white text-decoration-none px-3 py-1 bg-success rounded-4"
                 >Login</a
               >
               <a
-                href="signup.html"
+                href="signup.php"
                 class="text-white text-decoration-none px-3 py-1 rounded-4"
                 style="background-color: var(--accentBlack)"
                 >Sign Up</a

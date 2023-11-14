@@ -16,31 +16,29 @@
   <body id="signup-page">
     <div class="signUpBox">
       <div class="signUpBorderLine">
-        <form>
+        <form action="php/register.php">
           <h2>Sign Up</h2>
           <div class="inputBox">
-            <input type="text" required="required" />
+            <input type="email" required="required" name="email" />
             <span>Email</span>
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="text" required="required" />
+            <input type="text" required="required" name="username" />
             <span>Username</span>
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="text" required="required" />
+            <input type="password" required="required" name="password" />
             <span>Password</span>
             <i></i>
           </div>
-          <div class="inputBox">
-            <input type="text" required="required" />
-            <span>Confirm Password</span>
+          <div>
+            <input type="submit" value="Register" />
             <i></i>
           </div>
           <div class="extraSignUp">
-            <a href="login.html">Log In</a>
-            <a href="index.html">Go back</a>
+            <a href="index.php">Go back</a>
           </div>
         </form>
       </div>

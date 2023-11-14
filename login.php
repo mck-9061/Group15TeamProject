@@ -31,8 +31,8 @@
         </div>
         <div class="extraLogInfo">
           <a href="#">Forgot your password</a>
-          <a href="signup.html">Sign Up</a>
-          <a href="index.html">Go back</a>
+          <a href="signup.php">Sign Up</a>
+          <a href="index.php">Go back</a>
         </div>
         <input type="submit" value="Login" />
       </form>

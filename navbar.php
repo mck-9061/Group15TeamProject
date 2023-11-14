@@ -25,7 +25,7 @@
       <!-- Nav Header  (technically drop down code?)-->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container d-flex">
-          <a class="navbar-brand  fs-1" id="main-word" href="index.html">CADENCE</a>
+          <a class="navbar-brand  fs-1" id="main-word" href="index.php">CADENCE</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -98,18 +98,20 @@
                   >MERCH </a
                 >
               </li>
-              <div
-              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
-            >
+                <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
+
+                <?php
+                    session_start()
+                ?>
               <a
-                href="login.html"
+                href="login.php"
                 class=" px-3 py-1 rounded-4"
                 
                 id="login-pill"
                 >LOGIN</a
               >
               <a
-                href="signup.html"
+                href="signup.php"
                 class=" px-3 py-1 rounded-4"
                 
                 id="sign-pill"
@@ -137,6 +139,10 @@
       </nav>
     </div>
     <!-- nav end   -->
+
+    <?php
+    include("php/message.php")
+    ?>
 
     <!-- Javascript -->
 
