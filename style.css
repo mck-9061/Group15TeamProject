@@ -6,7 +6,7 @@
     --promisingPurple: #281941;
   }
   
-  body {
+  #products-page {
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-position: center;
