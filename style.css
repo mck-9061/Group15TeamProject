@@ -30,6 +30,15 @@
   background-repeat: no-repeat;
 }
 
+#about-page {
+  background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 .navbar-content-container {
 }
 
