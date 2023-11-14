@@ -1,114 +1,560 @@
 :root {
-    --purple: #8c38ff;
-    --darkwaterBlue: #0f292f;
-    --poppingPink: #cb2d6f;
-    --accentBlack: #2d283e;
-    --promisingPurple: #281941;
+  --purple: #8c38ff;
+  --darkwaterBlue: #0f292f;
+  --poppingPink: #cb2d6f;
+  --accentBlack: #2d283e;
+  --promisingPurple: #281941;
+  --tiktokBlue: #74f0ed;
+  --tiktokPink: #ea445a;
+  --tiktokPinkwarm: #ea445ad3;
+  --shiningYellow: #fdd935;
+  --grapeGreen: #a6aa35;
+  --peach: #faa88b;
+  --warmPeach: #eb716a;
+  --warmPeachcold: #eb706ab9;
+  --pinkypeach: #f9d4e6;
+  --mint: #99edc3;
+  --seafoam: #3ded97;
+  --navbarPurple: #54005d;
+  --GAorange: #ff9f59;
+  --GAcream: #e7d6d0;
+  --darkOrange: #d43f10;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+#index-page {
+  background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar-content-container {
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    background-color: var(--promisingPurple);
+    backdrop-filter: blur(5px);
   }
   
- 
-  
-  #index-page{ 
+#products-page {
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
-  }
-
-  #login-page{
-    background: url(assets/loginBg.png) rgba(0, 0,0, 0.2);
+}
+  
+body {
+    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
-  @media (max-width: 991px) {
-    .sidebar {
-      background-color: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(10px);
-    }
-  }
-  
-  .navbar {
-    background-image: linear-gradient(
-      to right,
-      var(--darkwaterBlue),
-      var(--purple)
-    );
-  }
-  
-  .c-item {
-    height: 400px;
-  }
-  
-  .c-img {
-    height: 100%;
-  
-  }
 
-  .loginForm {
-    width: 500px;
-    padding: 30px;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 20px;
-    background-color: white;
-    text-align: center;
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    var(--navbarPurple),
+    var(--warmPeachcold)
+  );
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+#search-bar {
+  background-color: var(--accentBlack);
+}
+
+#navbar-search-btn {
+  outline-color: var(--mint);
+}
+#main-word {
+  color: whitesmoke;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: var(--darkOrange);
+}
+
+#navbar-test {
+  background: url(assets/bg.png);
+}
+
+#navbar-search-btn {
+  background-color: var(--peach);
+}
+
+#login-pill {
+  background-color: var(--tiktokBlue);
+  text-decoration: none;
+  color: var(--navbarPurple);
+}
+#sign-pill {
+  background-color: var(--GAorange);
+  text-decoration: none;
+  color: var(--navbarPurple);
+}
+
+.c-item {
+}
+.c-img {
+  object-fit: cover;
+}
+/* Index page css ends here for the moment */
+
+/*  Login Page css till line 264 */
+#login-page {
+  background: url(assets/loginBg.png) rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.log-box {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #281941;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.log-box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--poppingPink),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+}
+
+.log-box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--poppingPink),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.LoginBorderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.LoginBorderLine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--purple),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+
+.LoginBorderLine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--purple),
+    var(--poppingPink),
+    var(--poppingPink)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
   }
-  
-  .loginForm h1 {
-    color: black;
-    font-weight: 700;
-    font-family: Arial, Helvetica, sans-serif;
+  100% {
+    transform: rotate(360deg);
   }
-  
-  .loginForm input[type="text"],
-  .loginForm input[type="password"] {
-   
-    background: none;
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    border-color: slateblue;
-    padding: 14px 10px;
-    width: 220px;
-    outline: none;
-    color: var(--accentBlack);
-    border-radius: 20px;
-    transition: 0.25px;
-  }
-  
-  .loginForm input[type="text"]:focus,
-  .loginForm input[type="password"]:focus {
-    width: 270px;
-    border-color: slateblue;
-  }
-  
-  .loginForm input[type="submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 3px solid;
-    padding: 14px 10px;
-    outline: none;
-    color: slateblue;
-    border-radius: 24px;
-    transition: 0.25px;
-    cursor: pointer;
-  }
-  
-  .loginForm input[type="submit"]:hover {
-    background-color: var(--poppingPink);
-  }
-  .logText {
-    text-align: center;
-    margin-top: 580px;
-    font-size: 20px;
-  }
-  
+}
+.log-box form {
+  position: absolute;
+  inset: 6px;
+  background: var(--accentBlack);
+  padding: 50px 40px;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.log-box form h2 {
+  color: var(--poppingPink);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.log-box form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 30px;
+}
+
+.log-box form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--accentBlack);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.log-box form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.log-box form .inputBox input:valid ~ span,
+.log-box form .inputBox input:focus ~ span {
+  color: white;
+  font-size: 0.75em;
+  transform: translateY(-32px);
+}
+
+.log-box form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.log-box form .inputBox input:valid ~ i,
+.log-box form .inputBox input:focus ~ i {
+  height: 44px;
+}
+
+.log-box form .extraLogInfo {
+  display: flex;
+  justify-content: space-between;
+}
+.log-box form .extraLogInfo a {
+  margin: 10px 0;
+  font-size: 0.75em;
+  color: white;
+  text-decoration: none;
+}
+.log-box form .extraLogInfo a:hover,
+.log-box form .extraLogInfo a:nth-child(2) {
+  color: white;
+}
+
+.log-box form input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
+}
+
+.log-box form input[type="submit"]:active {
+  color: var(--tiktokPink);
+  border-color: #281941;
+  opacity: 0.8;
+}
+
+/* End of Login Page CSS */
+
+/* Sign Up page Begin */
+
+#signup-page {
+  background: url(assets/signBg.png) rgba(0, 0, 0, 0.2);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signUpBox {
+  position: relative;
+  width: 380px;
+  height: 520px;
+  background: #281941;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.signUpBox::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--seafoam),
+    var(--tiktokBlue),
+    var(--tiktokBlue)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+}
+
+.signUpBox::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--seafoam),
+    var(--tiktokBlue),
+    var(--tiktokBlue)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 7s linear infinite;
+  animation-delay: -3s;
+}
+
+.signUpBorderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+
+.signUpBorderLine::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--pinkypeach),
+    var(--warmPeach),
+    var(--peach)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.signUpBorderLine::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    var(--pinkypeach),
+    var(--warmPeach),
+    var(--peach)
+  );
+  z-index: 1;
+  transform-origin: bottom right;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+.signUpBox form {
+  position: absolute;
+  inset: 6px;
+  background: var(--accentBlack);
+  padding: 50px 40px;
+  border-radius: 10px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+}
+.signUpBox form h2 {
+  color: var(--peach);
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.signUpBox form .inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 30px;
+}
+.signUpBox form .inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: var(--accentBlack);
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.signUpBox form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  pointer-events: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.signUpBox form .inputBox input:valid ~ span,
+.signUpBox form .inputBox input:focus ~ span {
+  color: white;
+  font-size: 0.75em;
+  transform: translateY(-32px);
+}
+.signUpBox form .inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  transition: 0.5s;
+  pointer-events: none;
+}
+.signUpBox form .inputBox input:valid ~ i,
+.signUpBox form .inputBox input:focus ~ i {
+  height: 44px;
+}
+.signUpBox form .extraSignUp {
+  display: flex;
+  justify-content: space-between;
+}
+.signUpBox form .extraSignUp a {
+  margin: 10px 0;
+  font-size: 0.95em;
+  color: white;
+  text-decoration: none;
+}
+.signUpBox form .extraSignUp a:hover,
+.signUpBox form .extraSignUp a:nth-child(2) {
+  color: white;
+}
+.signUpBox form input[type="submit"] {
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100px;
+  margin-top: 10px;
+}
+.signUpBox form input[type="submit"]:active {
+  color: var(--tiktokPink);
+  border-color: #281941;
+  opacity: 0.8;
+}
+
+/* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
+
+/* New nav bar / header code */
+
+.contact-info {
+  font-size: 15px;
+}
+
+/* Shopping cart Css */
+#shopping-cart-body{
+background-image: url(assets/cartBG.png);
+}
