@@ -38,7 +38,22 @@
     background-color: var(--promisingPurple);
     backdrop-filter: blur(5px);
   }
+  
+#products-page {
+    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+  
+body {
+    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 
 .navbar {
   background-image: linear-gradient(
