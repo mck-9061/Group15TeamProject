@@ -538,3 +538,8 @@
 .contact-info {
   font-size: 15px;
 }
+
+/* Shopping cart Css */
+#shopping-cart-body{
+background-image: url(assets/cartBG.png);
+}
