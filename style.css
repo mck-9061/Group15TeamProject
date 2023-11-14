@@ -6,14 +6,19 @@
   --promisingPurple: #281941;
   --tiktokBlue: #74f0ed;
   --tiktokPink: #ea445a;
+  --tiktokPinkwarm: #ea445ad3;
   --shiningYellow: #fdd935;
   --grapeGreen: #a6aa35;
   --peach: #faa88b;
   --warmPeach: #eb716a;
+  --warmPeachcold: #eb706ab9;
   --pinkypeach: #f9d4e6;
   --mint: #99edc3;
   --seafoam: #3ded97;
   --navbarPurple: #54005d;
+  --GAorange: #ff9f59;
+  --GAcream: #e7d6d0;
+  --darkOrange: #d43f10;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 
@@ -23,6 +28,9 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.navbar-content-container {
 }
 
 @media (max-width: 991px) {
@@ -36,14 +44,54 @@
   background-image: linear-gradient(
     to right,
     var(--navbarPurple),
-    var(--tiktokPink)
+    var(--warmPeachcold)
   );
 }
 
-.c-item {
-  height: 400px;
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+#search-bar {
+  background-color: var(--accentBlack);
 }
 
+#navbar-search-btn {
+  outline-color: var(--mint);
+}
+#main-word {
+  color: whitesmoke;
+}
+
+::selection {
+  color: #ffffff;
+  background-color: var(--darkOrange);
+}
+
+#navbar-test {
+  background: url(assets/bg.png);
+}
+
+#navbar-search-btn {
+  background-color: var(--peach);
+}
+
+#login-pill {
+  background-color: var(--tiktokBlue);
+  text-decoration: none;
+  color: var(--navbarPurple);
+}
+#sign-pill {
+  background-color: var(--GAorange);
+  text-decoration: none;
+  color: var(--navbarPurple);
+}
+
+.c-item {
+}
+.c-img {
+  object-fit: cover;
+}
 /* Index page css ends here for the moment */
 
 /*  Login Page css till line 264 */
