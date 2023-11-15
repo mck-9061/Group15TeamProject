@@ -21,7 +21,7 @@ if (isset($_POST['username']) and isset($_POST['email'])) {
 
     if (!empty($statement->fetchAll())) {
         $_SESSION['message'] = "Username already in use.";
-        header("Location: ../register.php");
+        header("Location: ../signup.php");
         exit;
     }
 
