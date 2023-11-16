@@ -19,8 +19,14 @@
   --GAorange: #ff9f59;
   --GAcream: #e7d6d0;
   --darkOrange: #d43f10;
+  --searchgreen: #76cebf;
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+
+/*       Individual Pages css i.e. background selection     -start-      */
+
+
 
 #index-page {
   background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
@@ -29,6 +35,12 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.c-item {
+}
+.c-img {
+  object-fit: cover;
+}
+
 
 #about-page {
   background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
@@ -38,17 +50,6 @@
   background-repeat: no-repeat;
 }
 
-
-.navbar-content-container {
-}
-
-@media (max-width: 991px) {
-  .sidebar {
-    background-color: var(--promisingPurple);
-    backdrop-filter: blur(5px);
-  }
-}
-  
 #products-page {
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -65,6 +66,8 @@ body {
     background-repeat: no-repeat;
 }
 
+
+/* Navbar Code */
 .navbar {
   background-image: linear-gradient(
     to right,
@@ -73,17 +76,29 @@ body {
   );
 }
 
-::placeholder {
-  color: white;
-  opacity: 1;
+.accountNavBar p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto 0;
 }
+/* Navbar Code */
 #search-bar {
-  background-color: var(--accentBlack);
+  background-color: var(--GAcream);
+ border-width: medium;
+  border-color: var(--accentBlack);
+
+}
+
+#navbar-test {
+  background: url(assets/bg.png);
 }
 
 #navbar-search-btn {
-  outline-color: var(--mint);
+  background-color: var(--GAcream);
+  border-color: var(--accentBlack);
 }
+
 #main-word {
   color: whitesmoke;
 }
@@ -93,31 +108,26 @@ body {
   background-color: var(--darkOrange);
 }
 
-#navbar-test {
-  background: url(assets/bg.png);
-}
-
-#navbar-search-btn {
-  background-color: var(--peach);
-}
-
 #login-pill {
-  background-color: var(--tiktokBlue);
+  background-color: var(--mint);
   text-decoration: none;
   color: var(--navbarPurple);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #sign-pill {
   background-color: var(--GAorange);
   text-decoration: none;
   color: var(--navbarPurple);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.c-item {
-}
-.c-img {
-  object-fit: cover;
-}
-/* Index page css ends here for the moment */
+/* Navbar Css end */
 
 /*  Login Page css till line 264 */
 #login-page {
@@ -558,13 +568,41 @@ body {
 
 /* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
 
-/* New nav bar / header code */
 
-.contact-info {
-  font-size: 15px;
-}
+/*    Media Stuff DO NOT MOVE  IT WILL MESS UP THE CODE           */
 
-/* Shopping cart Css */
-#shopping-cart-body{
-background-image: url(assets/cartBG.png);
+
+@media screen and (max-width: 991px) {
+  .accountNavBar{
+    flex-direction: column;
+
+  }
+  .accountNavBar p{
+    width: 100%;
+  }
+  .NavBarSearchDiv{
+    width: 100%;
+    justify-items: center;
+    padding-bottom: 10px;
+    gap: 3px;
+  }
+  #login-pill{
+    color: orange;
+    background-color: var(--poppingPink);
+  }
+  #sign-pill{
+    color: var(--accentBlack);
+    background-color: var(--mint);
+    border-width: 1px;
+    border-color: var(--accentBlack);
+  }
+
+  .navbar {
+    background-image: linear-gradient(
+            to right,
+            var(--darkwaterBlue),
+            var(--warmPeachcold)
+    );
+  }
+
 }

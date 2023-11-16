@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadence | Home page</title>
+    <title>Cadence</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body class="vh-100" id="index-page">
-
+  <body class="">
   <!-- nav start -->
   <div>
 
@@ -179,116 +178,270 @@
   </nav>
   </div>
   <!-- nav end   -->
-    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="4"
-          aria-label="Slide 5"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#hero-carousel"
-          data-bs-slide-to="5"
-          aria-label="Slide 6"
-        ></button>
-      </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="assets/New-RadioHead-BundleArt.png"
-            class="d-block w-100 c-item c-img"
-            alt="Slide 1"
-          />
+    <div class="container d-flex justify-content-center mt-50 mb-50">
+
+      <div class="row">
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <br>
+                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+
+              <div class="text-muted mb-3"> # number of reviews</div>
+
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+
+            </div>
+          </div>
+
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/Приворот-carousel.png"
-            class="d-block w-100 c-item c-img"
-            alt="Slide 2"
-          />
+
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <br>
+                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+
+              <div class="text-muted mb-3"># number of reviews</div>
+
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+
+            </div>
+          </div>
+
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/20thanniversaryEvanescence-carousel.png"
-            class="d-block w-100 c-item c-img"
-            alt="Slide 3"
-          />
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <br>
+                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+
+              <div class="text-muted mb-3"># number of reviews</div>
+
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+
+            </div>
+          </div>
+
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/perfect-picture-sale-carousel.png"
-            class="d-block w-100 c-item c-img"
-            alt="Slide 4"
-          />
+
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <br>
+                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+
+              <div class="text-muted mb-3"># number of reviews</div>
+
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+
+            </div>
+          </div>
+
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/this-is-happening-art-carousel.png"
-            class="d-block w-100 c-item c-img img-fluid"
-            alt="Slide 5"
-          />
+
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <br>
+                  <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+
+              <div class="text-muted mb-3"># number of reviews</div>
+
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+
+            </div>
+          </div>
+
         </div>
-        <div class="carousel-item">
-          <img
-            src="assets/lowRoar-carousel.png"
-            class="d-block w-100 c-item c-img"
-            alt="Slide 6"
-          />
+
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+            <div class="card-body bg-light text-center">
+              <div class="mb-2">
+                <h6 class="font-weight-semibold mb-2">
+                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product name</a>
+                  <br>
+                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <br>
+                <br>
+                <br>
+                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              </div>
+
+              <h7 class="mb-0 font-weight-semibold">Price £</h7>
+
+              <div>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+                <i class="fa fa-star star"></i>
+              </div>
+              <div class="text-muted mb-3"># number of reviews</div>
+              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+
+            </div>
+          </div>
+
         </div>
+
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#hero-carousel"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#hero-carousel"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
+  <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+          crossorigin="anonymous"
+  ></script>
   </body>
 </html>
