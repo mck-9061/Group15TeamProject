@@ -245,7 +245,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="assets/perfect-picture-sale-carousel.png"
+            src="assets/perfect-picture-carousel.png"
             class="d-block w-100 c-item c-img"
             alt="Slide 4"
           />
