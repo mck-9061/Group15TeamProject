@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>Cadence | Sign Up</title>
   </head>
+  <?php include 'php/message.php'; ?>
   <body id="signup-page">
     <div class="signUpBox">
       <div class="signUpBorderLine">
-        <form action="php/register.php">
+        <form action="php/register.php" method="post">
           <h2>Sign Up</h2>
           <div class="inputBox">
-            <input type="email" required="required" name="email" />
+            <input type="text" required="required" name="email" />
             <span>Email</span>
             <i></i>
           </div>
