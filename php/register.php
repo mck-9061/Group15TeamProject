@@ -33,13 +33,13 @@ if (isset($_POST['username']) and isset($_POST['email'])) {
 
     if (!empty($statement->fetchAll())) {
         $_SESSION['message'] = "Email already in use.";
-        header("Location: ../register.php");
+        header("Location: ../signup.php");
         exit;
     }
 
 } else {
     $_SESSION['message'] = "Username/email not given";
-    header("Location: ../register.php");
+    header("Location: ../signup.php");
     exit;
 }
 
@@ -47,14 +47,14 @@ if (!empty(trim($_POST['password']))) {
     $password = password_hash($_POST['password'], null);
 } else {
     $_SESSION['message'] = "Password not given";
-    header("Location: ../register.php");
+    header("Location: ../signup.php");
     exit;
 }
 
 
 // Insert into database
 try {
-    $statement = $db->prepare("INSERT INTO users VALUES(null, :username, :password, :email)");
+    $statement = $db->prepare("INSERT INTO users VALUES(:username, :email, 2, 7, :password, 'sdsld')");
     $statement->bindParam(':username', $username, PDO::PARAM_STR, 10);
     $statement->bindParam(':password', $password, PDO::PARAM_STR, 64);
     $statement->bindParam(':email', $email, PDO::PARAM_STR, 100);
