@@ -81,6 +81,7 @@ body {
     justify-content: center;
     align-content: center;
     margin: auto 0;
+    font-size: 14px;
 }
 /* Navbar Code */
 #search-bar {
@@ -126,6 +127,20 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+#basketPill{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--accentBlack);
+  border-width: 3px;
+  border-color: var(--darkOrange);
+}
+
+#basket-icon{
+  color: var(--mint);
+}
+
 
 /* Navbar Css end */
 
@@ -569,6 +584,141 @@ body {
 /* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
 
 
+/*      Shopping cart CSS            */
+
+#shopping-cart-body{
+  background: url("assets/cartBG.png");
+  font-family: 'Montserrat' ,sans-serif;
+}
+
+.cart-text{
+  width: 1000px;
+  margin: auto;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.cart-text h1{
+  color: var(--poppingPink);
+}
+
+.cart-text header{
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  margin-top: 50px;
+}
+
+.cart-text header .shopping{
+  position: relative;
+  text-align: right;
+}
+
+.shopping i{
+  font-size: 3rem;
+  color: var(--poppingPink);
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+}
+
+.shopping i:hover{
+  color: var(--mint);
+}
+
+.shopping span{
+  background: var(--accentBlack);
+  border-radius: 70%;
+  -webkit-border-radius: 70%;
+  -moz-border-radius: 70%;
+  -ms-border-radius: 70%;
+  -o-border-radius: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--darkOrange);
+  position: absolute;
+  top: -5px;
+  left: 80%;
+  padding: 3px 10px;
+
+}
+
+.cart-text .list{
+  display: grid;
+  grid-template-columns: repeat(3,1fr) ;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card-basket{
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 500px;
+  background-color: var(--accentBlack);
+  border-left: 1px solid var(--mint);
+  height: 100vh;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.active .card-basket{
+  left: calc(100% - 500px);
+}
+
+.active .cart-text {
+  transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+  -moz-transform: translateX(-200px);
+  -ms-transform: translateX(-200px);
+  -o-transform: translateX(-200px);
+}
+
+.card-basket h1{
+  color: var(--poppingPink);
+  font-weight: 300;
+  margin: 0;
+  padding: 0 20px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.card-basket .checkOut{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-basket .checkOut div{
+  background-color: var(--mint);
+  color: var(--warmPeach);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.card-basket .checkOut div:nth-child(2){
+  background-color: var(--darkOrange);
+  color: var(--mint);
+}
+
+
+
+
 /*    Media Stuff DO NOT MOVE  IT WILL MESS UP THE CODE           */
 
 
@@ -595,7 +745,28 @@ body {
     background-color: var(--mint);
     border-width: 1px;
     border-color: var(--accentBlack);
+    padding-bottom: 10px;
   }
+
+  .basketBar{
+    flex-direction: column;
+    padding-top: 10px;
+  }
+
+  #basketPill{
+    background-color: var(--promisingPurple);
+    justify-content: center;
+    border-color: var(--darkOrange);
+    border-width: 3px;
+  }
+  #basket-icon{
+    color: var(--tiktokBlue);
+  }
+
+
+
+
+
 
   .navbar {
     background-image: linear-gradient(
