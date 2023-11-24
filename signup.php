@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      <?php session_start() ?>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,34 +14,34 @@
     <link rel="stylesheet" href="style.css" />
     <title>Cadence | Sign Up</title>
   </head>
-  <?php include 'php/message.php'; ?>
   <body id="signup-page">
     <div class="signUpBox">
       <div class="signUpBorderLine">
         <form action="php/register.php" method="post">
           <h2>Sign Up</h2>
+            <?php include 'php/message.php'; ?>
           <div class="inputBox">
-            <input type="text" required="required" name="email" />
+            <input type="text" required="required" name="email" maxlength="30" />
             <span>Email</span>
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="text" required="required" name="username" />
+            <input type="text" required="required" name="username" maxlength="20" />
             <span>Username</span>
             <i></i>
           </div>
           <div class="inputBox">
-            <input type="password" required="required" name="password" />
+            <input type="password" required="required" name="password" maxlength="30" />
             <span>Password</span>
             <i></i>
           </div>
             <div class="inputBox">
-                <input type="password" required="required" name="confirmPassword" />
-                <span>Password</span>
+                <input type="password" required="required" name="confirmPassword" maxlength="30" />
+                <span>Confirm Password</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" required="required" name="phoneNumber" />
+                <input type="text" required="required" name="phoneNumber" maxlength="11" />
                 <span>Phone Number</span>
                 <i></i>
             </div>

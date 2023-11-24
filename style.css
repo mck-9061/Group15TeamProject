@@ -737,6 +737,12 @@ body {
   color: var(--mint);
 }
 
+/*   Message displayed on the register page if there's a problem   */
+
+.message {
+  color: #FFFFFF;
+}
+
 
 
 
@@ -798,3 +804,5 @@ body {
   }
 
 }
+
+
