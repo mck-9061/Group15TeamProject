@@ -21,8 +21,8 @@
   --darkOrange: #d43f10;
   --searchgreen: #76cebf;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
 
 /*       Individual Pages css i.e. background selection     -start-      */
 
@@ -497,12 +497,28 @@ body {
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+
 }
 .signUpBox form .inputBox {
+  display: flex;
   position: relative;
   width: 300px;
-  margin-top: 30px;
+  margin-top: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
 }
+
+#signUpRegisterBtn{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  background-color: var(--tiktokPinkwarm);
+  border: 1px solid;
+  border-color: var(--mint);
+}
+
 .signUpBox form .inputBox input {
   position: relative;
   width: 100%;
@@ -517,6 +533,11 @@ body {
   transition: 0.5s;
   z-index: 10;
 }
+
+
+
+
+
 .signUpBox form .inputBox span {
   position: absolute;
   left: 0;
@@ -573,7 +594,7 @@ body {
   border-radius: 4px;
   font-weight: 600;
   width: 100px;
-  margin-top: 10px;
+  margin-top: 1px;
 }
 .signUpBox form input[type="submit"]:active {
   color: var(--tiktokPink);

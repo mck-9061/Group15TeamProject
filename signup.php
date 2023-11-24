@@ -34,13 +34,24 @@
             <span>Password</span>
             <i></i>
           </div>
-          <div>
-            <input type="submit" value="Register" />
-            <i></i>
-          </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="confirmPassword" />
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="phoneNumber" />
+                <span>Phone Number</span>
+                <i></i>
+            </div>
+
           <div class="extraSignUp">
             <a href="index.php">Go back</a>
           </div>
+            <div class="signupReg flex-row">
+                <input type="submit" value="Register" id="signUpRegisterBtn"/>
+
+            </div>
         </form>
       </div>
     </div>
