@@ -13,6 +13,13 @@ if (isset($_POST['username']) and isset($_POST['email'])) {
         exit;
     }
 
+    // Check that passwords match
+    if (!($_POST['password'] == $_POST['confirmPassword'])) {
+        $_SESSION['message'] = "Passwords do not match!";
+        header("Location: ../signup.php");
+        exit;
+    }
+
     // Check that the username isn't already in use
     $statement = $db->prepare("SELECT * FROM users WHERE username=:username");
     $statement->bindParam(':username', $username, PDO::PARAM_STR, 10);
@@ -54,10 +61,11 @@ if (!empty(trim($_POST['password']))) {
 
 // Insert into database
 try {
-    $statement = $db->prepare("INSERT INTO users VALUES(:username, :email, 2, 7, :password, 'sdsld')");
+    $statement = $db->prepare("INSERT INTO users VALUES(:username, :email, :phone, 0, :password)");
     $statement->bindParam(':username', $username, PDO::PARAM_STR, 10);
-    $statement->bindParam(':password', $password, PDO::PARAM_STR, 64);
+    $statement->bindParam(':password', $password, PDO::PARAM_STR, 1024);
     $statement->bindParam(':email', $email, PDO::PARAM_STR, 100);
+    $statement->bindParam(':phone', $_POST['phoneNumber'], PDO::PARAM_STR, 11);
 
     $statement->execute();
 

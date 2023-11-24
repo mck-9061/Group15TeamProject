@@ -1,4 +1,4 @@
-<div id="message" class="content">
+<div id="message" class="message">
     <?php
         //testing
         // $_SESSION['message'] = "Test message";
