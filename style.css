@@ -51,7 +51,7 @@
 }
 
 #products-page {
-    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+    background: url("assets/productsBG.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -110,18 +110,22 @@ body {
 }
 
 #login-pill {
-  background-color: var(--mint);
+  background-color: var(--tiktokPinkwarm);
   text-decoration: none;
-  color: var(--navbarPurple);
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #sign-pill {
-  background-color: var(--GAorange);
+  background-color: var(--warmPeachcold);
   text-decoration: none;
-  color: var(--navbarPurple);
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
   width: 100%;
   display: flex;
   justify-content: center;
