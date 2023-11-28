@@ -218,6 +218,17 @@
         </div>
       </div>
     </div>
+    <!-- Contact Information -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-white">
+          <h2 class="mb-4">Contact Information</h2>
+          <p>Email: <a href="mailto:info@cadence.com">info@cadence.com</a></p>
+          <p>Phone: +44 5362 561899</p>
+        </div>
+      </div>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
