@@ -180,7 +180,7 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-top: 50px;
+        margin-top: 20px; /* Reduced margin-top to 20px */
         color: white; /* Set text color to white */
     }
 
@@ -199,7 +199,7 @@
 </style>
 <div class="product-container">
     <h1 class="main-heading mt-0">Product Name</h1>
-    <img src="https://placehold.jp/400x400.png" alt="placeholder" width="400" height="400">
+    <img src="https://placehold.jp/300x300.png" alt="placeholder" width="300" height="300">
     <div class="product-description"></div>
     <div class="mb-2">
         <p style="color: white;">Type of Product: Album, Merch, Vinyl</p>
