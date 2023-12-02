@@ -199,6 +199,26 @@
   </nav>
   </div>
   <!-- nav end   -->
+  <!--bar underneath nav bar specifying type of product -->
+  <div class="container mt-3">
+      <div class="alert alert-primary py-2 px-3 d-flex justify-content-between align-items-center" role="alert" style="width: 200px;">
+          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+              <div class="menu-icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </div>
+          </button>
+          <span>
+      <div class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      Category Of Product
+    </span>
+      </div>
+  </div>
 
     <div class="container d-flex justify-content-center mt-50 mb-50">
 
@@ -440,7 +460,7 @@
                 <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
               </div>
 
-              <h7 class="mb-0 font-weight-semibold">Price £30</h7>
+              <h3 class="mb-0 font-weight-semibold">Price £30</h3>
 
               <div>
                 <i class="fa fa-star star"></i>
