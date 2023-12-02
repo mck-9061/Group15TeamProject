@@ -150,3 +150,41 @@
     </nav>
 </div>
 <!-- nav end   -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+<title>Product Page</title>
+<style>
+    .product-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 50px;
+        color: white; /* Set text color to white */
+    }
+
+    .product-image {
+        width: 300px;
+    }
+
+    .product-description {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .add-to-basket {
+        margin-top: 20px;
+    }
+</style>
+<div class="product-container">
+    <h1 class="main-heading mt-0">Product Name</h1>
+    <img src="https://placehold.jp/400x400.png" alt="placeholder" width="400" height="400">
+    <div class="product-description"></div>
+    <div class="mb-2">
+        <p style="color: white;">Type of Product: Album, Merch, Vinyl</p>
+        <p style="color: white;">Price: £</p>
+    </div>
+    <button class="btn btn-danger">Add to basket</button>
+</div>
+</body>
+</html>

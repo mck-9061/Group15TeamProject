@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="added nav bar to new individual products page">
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="added individual products card to new individual products page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual_products_page2.php" beforeDir="false" afterPath="$PROJECT_DIR$/individual_products_page2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +120,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701527402095</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added nav bar to new individual products page">
+      <option name="closed" value="true" />
+      <created>1701528384591</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701528384591</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +162,7 @@
     <MESSAGE value="Just for laptop work" />
     <MESSAGE value="Made a products branch" />
     <MESSAGE value="added nav bar to new individual products page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added nav bar to new individual products page" />
+    <MESSAGE value="added individual products card to new individual products page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added individual products card to new individual products page" />
   </component>
 </project>
