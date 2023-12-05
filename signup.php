@@ -16,7 +16,7 @@
   <body id="signup-page">
     <div class="signUpBox">
       <div class="signUpBorderLine">
-        <form action="php/register.php">
+        <form method="post" action="php/register.php">
           <h2>Sign Up</h2>
           <div class="inputBox">
             <input type="email" required="required" name="email" />
