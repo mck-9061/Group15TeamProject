@@ -157,23 +157,36 @@
                       </form>
                   </div>
                   <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
-                      <p>
-                          <a
-                                  href="login.php"
-                                  class=" px-2 py-2 rounded-4"
-                                  id="login-pill"
-                          >Login</a>
-                      </p>
-                      <p>
-                          <a
-                                  href="signup.php"
-                                  class="px-3 py-2 rounded-4"
-                                  id="sign-pill"
-                          >SignUp</a>
+                      <?php
+                      if (isset($_SESSION['username'])) {
+                          ?>
+                          <p>
+                              <a
+                                      href="index.php"
+                              ><?php echo $_SESSION['username'] ?></a>
+                          </p>
+                          <?php
+                      } else {
+                          ?>
+                          <p>
+                              <a
+                                      href="login.php"
+                                      class=" px-2 py-2 rounded-4"
+                                      id="login-pill"
+                              >Login</a>
+                          </p>
+                          <p>
+                              <a
+                                      href="signup.php"
+                                      class="px-3 py-2 rounded-4"
+                                      id="sign-pill"
+                              >Sign Up</a>
 
 
-                      </p>
-
+                          </p>
+                          <?php
+                      }
+                      ?>
 
                   </div>
 
