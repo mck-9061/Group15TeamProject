@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="added bar under nav bar and fixed card sizing issue on products page">
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Just for laptop work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual_products_page.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/individual_products_page2.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,28 +25,10 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "DiyanBhudiya"
-  }
-}]]></component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="042271b3-cabc-4d5c-9cc5-c8db3857c96c" />
-        <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
-      </UrlAndAccount>
-    </option>
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.12\php.exe">
-    <include_path>
-      <path value="" />
-    </include_path>
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.12\php.exe" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -66,7 +47,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "products",
+    "git-widget-placeholder": "cart-cont",
     "last_opened_file_path": "C:/Users/Taugh/Documents/GitHub/Group15TeamProject/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -106,63 +87,7 @@
       <option name="project" value="LOCAL" />
       <updated>1700559226092</updated>
     </task>
-    <task id="LOCAL-00002" summary="Made a products branch">
-      <option name="closed" value="true" />
-      <created>1701183733063</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701183733063</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added nav bar to new individual products page">
-      <option name="closed" value="true" />
-      <created>1701527402095</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1701527402095</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added nav bar to new individual products page">
-      <option name="closed" value="true" />
-      <created>1701528384591</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1701528384591</updated>
-    </task>
-    <task id="LOCAL-00005" summary="added individual products card to new individual products page">
-      <option name="closed" value="true" />
-      <created>1701528934648</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1701528934648</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added bar under nav bar for type of product on new individual products page">
-      <option name="closed" value="true" />
-      <created>1701529503922</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1701529503922</updated>
-    </task>
-    <task id="LOCAL-00007" summary="reduced margin and changed size of placeholder image">
-      <option name="closed" value="true" />
-      <created>1701529766446</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1701529766446</updated>
-    </task>
-    <task id="LOCAL-00008" summary="added bar under nav bar and fixed card sizing issue on products page">
-      <option name="closed" value="true" />
-      <created>1701530108351</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1701530108351</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,12 +119,6 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
     <MESSAGE value="Just for laptop work" />
-    <MESSAGE value="Made a products branch" />
-    <MESSAGE value="added nav bar to new individual products page" />
-    <MESSAGE value="added individual products card to new individual products page" />
-    <MESSAGE value="added bar under nav bar for type of product on new individual products page" />
-    <MESSAGE value="reduced margin and changed size of placeholder image" />
-    <MESSAGE value="added bar under nav bar and fixed card sizing issue on products page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added bar under nav bar and fixed card sizing issue on products page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just for laptop work" />
   </component>
 </project>

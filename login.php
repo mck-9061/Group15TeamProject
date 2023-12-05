@@ -17,15 +17,15 @@
   <body id="login-page">
     <div class="log-box">
       <span class="LoginBorderLine"></span>
-      <form>
+      <form method="post" action="php/signin.php">
         <h2>Sign in</h2>
         <div class="inputBox">
-          <input type="text" required="required" />
+          <input type="text" required="required" name="username" />
           <span>Username</span>
           <i></i>
         </div>
         <div class="inputBox">
-          <input type="text" required="required" />
+          <input type="password" required="required" name="password"/>
           <span>Password</span>
           <i></i>
         </div>
