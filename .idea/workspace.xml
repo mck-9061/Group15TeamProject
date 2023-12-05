@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9756608a-a029-4ddf-a374-921a1ffa51c3" name="Changes" comment="Signin backend added and changes to the login form specifically">
-      <change afterPath="$PROJECT_DIR$/php/signin.php" afterDir="false" />
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Just for laptop work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/register.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,44 +28,66 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.12\php.exe" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 5
+  &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2YAbTxElNLDSn3Z3Det443rUskj" />
+  <component name="ProjectId" id="2YFhSSzisPp1nOdBmjuUC9TZIsY" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Login-Page",
-    "last_opened_file_path": "C:/xampp/php/php.exe",
+    "git-widget-placeholder": "cart-cont",
+    "last_opened_file_path": "C:/Users/Taugh/Documents/GitHub/Group15TeamProject/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9756608a-a029-4ddf-a374-921a1ffa51c3" name="Changes" comment="" />
-      <created>1699971344001</created>
+      <changelist id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="New navbar Fully Functional, Added a load of product pictures for database." />
+      <created>1700442146665</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1699971344001</updated>
-      <workItem from="1699971346799" duration="2561000" />
-      <workItem from="1700529404746" duration="2841000" />
-      <workItem from="1700576500773" duration="6792000" />
-      <workItem from="1701099780298" duration="1122000" />
-      <workItem from="1701101323317" duration="7277000" />
+      <updated>1700442146665</updated>
+      <workItem from="1700442147979" duration="2064000" />
+      <workItem from="1700449691782" duration="11627000" />
+      <workItem from="1700519841898" duration="4520000" />
+      <workItem from="1700564499566" duration="118000" />
+      <workItem from="1700574651994" duration="2119000" />
     </task>
+    <task id="LOCAL-00001" summary="Just for laptop work">
+      <option name="closed" value="true" />
+      <created>1700559226091</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700559226092</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -84,7 +104,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Login-Page" />
+                        <option value="Cart-front-end" />
                       </list>
                     </value>
                   </entry>
@@ -97,7 +117,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Signin backend added and changes to the login form specifically" />
-    <option name="LAST_COMMIT_MESSAGE" value="Signin backend added and changes to the login form specifically" />
+    <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
+    <MESSAGE value="Just for laptop work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Just for laptop work" />
   </component>
 </project>

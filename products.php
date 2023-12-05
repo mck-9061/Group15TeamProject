@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
 
   <body class="">
@@ -44,7 +45,7 @@
                           <a
                                   class="nav-link active text-white fs-5"
                                   aria-current="page"
-                                  href="#"
+                                  href="about.php"
                           >ABOUT US</a
                           >
 
@@ -166,11 +167,31 @@
                       <p>
                           <a
                                   href="signup.php"
-                                  class="px-2 py-2 rounded-4"
+                                  class="px-3 py-2 rounded-4"
                                   id="sign-pill"
-                          >Sign Up</a>
+                          >SignUp</a>
+
+
                       </p>
+
+
                   </div>
+
+                  <div class="basketBar d-flex gap-3 mx-auto ">
+
+                      <button id="basketPill" class="py-1 px-2 rounded-4" >
+                          <a href="cart.php"
+
+                          <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
+                            shopping_basket
+                          </span>
+
+                          </a>
+                      </button>
+
+                  </div>
+
+
               </div>
           </div>
   </div>
@@ -216,7 +237,7 @@
 
               <div class="text-muted mb-3"> # number of reviews</div>
 
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart"onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
 
 
             </div>
@@ -259,7 +280,7 @@
 
               <div class="text-muted mb-3"># number of reviews</div>
 
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" onclick="alert('Added to cart')"></i> Add To Basket</button>
 
 
             </div>
@@ -301,7 +322,7 @@
 
               <div class="text-muted mb-3"># number of reviews</div>
 
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
 
 
             </div>
@@ -344,7 +365,7 @@
 
               <div class="text-muted mb-3"># number of reviews</div>
 
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
 
 
             </div>
@@ -377,7 +398,7 @@
                 <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
               </div>
 
-              <h3 class="mb-0 font-weight-semibold">Price £</h3>
+              <h3 class="mb-0 font-weight-semibold">Price £20</h3>
 
               <div>
                 <i class="fa fa-star star"></i>
@@ -388,7 +409,7 @@
 
               <div class="text-muted mb-3"># number of reviews</div>
 
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
 
 
             </div>
@@ -419,7 +440,7 @@
                 <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
               </div>
 
-              <h7 class="mb-0 font-weight-semibold">Price £</h7>
+              <h7 class="mb-0 font-weight-semibold">Price £30</h7>
 
               <div>
                 <i class="fa fa-star star"></i>
@@ -428,7 +449,7 @@
                 <i class="fa fa-star star"></i>
               </div>
               <div class="text-muted mb-3"># number of reviews</div>
-              <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
 
             </div>
           </div>
@@ -443,5 +464,6 @@
           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
           crossorigin="anonymous"
   ></script>
+  <script src="main.js"> </script>
   </body>
 </html>

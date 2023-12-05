@@ -13,111 +13,184 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body class="vh-100" id="about-page">
-    <!-- Navbar code -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand fs-2" href="index.php">Cadence </a>
-        <!-- Toggle Button -->
-        <button
-          class="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Sidebar Code   (change start to end to make opposite) -->
-        <div
-          class="sidebar offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          <!-- Sidebar Header Code -->
-          <div class="offcanvas-header text-white border-bottom">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Cadence</h5>
-            <button
-              type="button"
-              class="btn-close btn-close-white shadow-none"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-
-          <!-- Sidebar Body Code -->
-          <div class="offcanvas-body d-flex flex-column flex-lg-row p-2 p-lg-0">
-            <ul
-              class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="index.php">Home</a>
-              </li>
-              <li class="nav-item mx-3">
-                <a class="nav-link" href="Legacy Code/navbar.php">Navbar</a>
-              </li>
-              <li class="nav-item dropdown mx-2">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container d-flex">
+          <a class="navbar-brand  fs-1" id="main-word" href="index.php">CADENCE</a>
+          <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
                   aria-expanded="false"
-                >
-                  Cd's
-                </a>
-                <ul
-                  class="dropdown-menu bg-transparent shadow-none border-0 text-white"
-                >
-                  <li>
-                    <a href="#cdProduct" class="dropdown-item text-white"
-                      >Rock</a
-                    >
+                  aria-label="Toggle navigation"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Nav body -->
+          <div class=" navbar-collapse collapse " id="navbarSupportedContent">
+
+              <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
+                  <li class="nav-item">
+                      <a
+                              class="nav-link active text-white fs-5"
+                              aria-current="page"
+                              href="about.php"
+                      >ABOUT US</a
+                      >
+
+                  <li class="nav-item dropdown">
+                      <a
+                              class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                      >
+                          CD'S
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">METAL</a></li>
+                          <li><a class="dropdown-item" href="#">RAP</a></li>
+                          <li><a class="dropdown-item" href="#">PUNK</a></li>
+                          <li><a class="dropdown-item" href="#">DANCE</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                              <a class="dropdown-item" href="products.php">Our CD Catalogue</a>
+                          </li>
+                      </ul>
                   </li>
 
-                  <li>
-                    <a href="#vinylProduct" class="dropdown-item text-white"
-                      >Metal</a
-                    >
-                  </li>
+                  <li class="nav-item dropdown">
+                      <a
+                              class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                      >
+                          VINYL
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Rock</a></li>
+                          <li><a class="dropdown-item" href="#">Indie</a></li>
+                          <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Pop</a></li>
 
-                  <li>
-                    <a href="#merchProduct" class="dropdown-item text-white"
-                      >Rap</a
-                    >
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                              <a class="dropdown-item" href="products.php">Our Vinyl Catalogue</a>
+                          </li>
+                      </ul>
                   </li>
-                </ul>
-              </li>
+                  <li class="nav-item dropdown">
+                      <a
+                              class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                      >
+                          Ep's
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">JPop</a></li>
+                          <li><a class="dropdown-item" href="#">Kpop</a></li>
+                          <li><a class="dropdown-item" href="#">Global</a></li>
+                          <li><a class="dropdown-item" href="#">Indie</a></li>
+                          <li><a class="dropdown-item" href="#">Our Favs</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                              <a class="dropdown-item" href="products.php">Our Ep Catalogue</a>
+                          </li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a
+                              class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                              href="#"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                      >
+                          Merch
+                      </a>
+                      <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                          <li><a class="dropdown-item" href="#">Posters</a></li>
+                          <li><a class="dropdown-item" href="#">Books</a></li>
+                          <li><a class="dropdown-item" href="#">Funko's</a></li>
+                          <li><a class="dropdown-item" href="#">Figures</a></li>
+                          <li><hr class="dropdown-divider" /></li>
+                          <li>
+                              <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
+                          </li>
 
-              <li class="nav-item mx-2 active">
-                <a class="nav-link" href="about.php">About</a>
-              </li>
-            </ul>
-            <!-- Login / Sign Up Code -->
-            <div
-              class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3"
-            >
-              <a
-                href="login.php"
-                class="text-white text-decoration-none px-3 py-1 bg-success rounded-4"
-                >Login</a
-              >
-              <a
-                href="signup.php"
-                class="text-white text-decoration-none px-3 py-1 rounded-4"
-                style="background-color: var(--accentBlack)"
-                >Sign Up</a
-              >
-            </div>
+
+
+
+                      </ul>
+              </ul>
+              <div class="NavBarSearchDiv">
+                  <form class="d-flex text-align-center justify-content-end" role="search" >
+                      <input
+                              class="form-control me-3 "
+                              type="search"
+                              placeholder="search..."
+                              aria-label="Search"
+                              id="search-bar"
+                      />
+                      <div class="btn " id="navbar-search-btn" type="submit">
+                          <div style="transform: rotate(-45deg)">
+                              ⚲
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
+                  <p>
+                      <a
+                              href="login.php"
+                              class=" px-2 py-2 rounded-4"
+                              id="login-pill"
+                      >Login</a>
+                  </p>
+                  <p>
+                      <a
+                              href="signup.php"
+                              class="px-3 py-2 rounded-4"
+                              id="sign-pill"
+                      >SignUp</a>
+
+
+                  </p>
+
+
+              </div>
+
+              <div class="basketBar d-flex gap-3 mx-auto ">
+
+                  <button id="basketPill" class="py-1 px-2 rounded-4" >
+                      <a href="cart.php"
+
+                      <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
+                            shopping_basket
+                          </span>
+
+                      </a>
+                  </button>
+
+              </div>
+
+
           </div>
-        </div>
       </div>
-    </nav>
+      </div>
+      </div>
+  </nav>
 
     <!-- About page content -->
     <div class="container mt-4">
@@ -145,6 +218,17 @@
         </div>
       </div>
     </div>
+    <!-- Contact Information -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 text-white">
+          <h2 class="mb-4">Contact Information</h2>
+          <p>Email: <a href="mailto:info@cadence.com">info@cadence.com</a></p>
+          <p>Phone: +44 5362 561899</p>
+        </div>
+      </div>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body class="vh-100" id="individual-product-body">
   <!-- nav start -->
@@ -43,7 +44,7 @@
                           <a
                                   class="nav-link active text-white fs-5"
                                   aria-current="page"
-                                  href="#"
+                                  href="about.php"
                           >ABOUT US</a
                           >
 
@@ -164,12 +165,32 @@
                       </p>
                       <p>
                           <a
-                                  href="signUp.php"
-                                  class="px-2 py-2 rounded-4"
+                                  href="signup.php"
+                                  class="px-3 py-2 rounded-4"
                                   id="sign-pill"
-                          >Sign Up</a>
+                          >SignUp</a>
+
+
                       </p>
+
+
                   </div>
+
+                  <div class="basketBar d-flex gap-3 mx-auto ">
+
+                      <button id="basketPill" class="py-1 px-2 rounded-4" >
+                          <a href="cart.php"
+
+                          <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
+                            shopping_basket
+                          </span>
+
+                          </a>
+                      </button>
+
+                  </div>
+
+
               </div>
           </div>
   </div>
