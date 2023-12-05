@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="reduced margin and changed size of placeholder image">
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="added bar under nav bar and fixed card sizing issue on products page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual_products_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/individual_products_page2.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701529766446</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="added bar under nav bar and fixed card sizing issue on products page">
+      <option name="closed" value="true" />
+      <created>1701530108351</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1701530108351</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +199,7 @@
     <MESSAGE value="added individual products card to new individual products page" />
     <MESSAGE value="added bar under nav bar for type of product on new individual products page" />
     <MESSAGE value="reduced margin and changed size of placeholder image" />
-    <option name="LAST_COMMIT_MESSAGE" value="reduced margin and changed size of placeholder image" />
+    <MESSAGE value="added bar under nav bar and fixed card sizing issue on products page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added bar under nav bar and fixed card sizing issue on products page" />
   </component>
 </project>

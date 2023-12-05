@@ -199,7 +199,7 @@
 </style>
 <div class="product-container">
     <h1 class="main-heading mt-0">Product Name</h1>
-    <img src="https://placehold.jp/300x300.png" alt="placeholder" width="300" height="300">
+    <img src="https://placehold.jp/350x350.png" alt="placeholder" width="300" height="300">
     <div class="product-description"></div>
     <div class="mb-2">
         <p style="color: white;">Type of Product: Album, Merch, Vinyl</p>

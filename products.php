@@ -236,7 +236,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
                 <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
@@ -279,7 +279,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
                 <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
@@ -321,7 +321,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
                 <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
@@ -364,7 +364,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
                 <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
@@ -408,7 +408,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
                   <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
@@ -451,7 +451,7 @@
             <div class="card-body bg-light text-center">
               <div class="mb-2">
                 <h6 class="font-weight-semibold mb-2">
-                  <a href="individual_products_page.php" class="text-default mb-2" data-abc="true">Product name</a>
+                  <a href="product.php" class="text-default mb-2" data-abc="true">Product name</a>
                   <br>
                 <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
                 <br>
