@@ -84,7 +84,7 @@
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Rock</a></li>
                               <li><a class="dropdown-item" href="#">Indie</a></li>
-                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Pop</a></li>
+                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
 
                               <li><hr class="dropdown-divider" /></li>
                               <li>
@@ -233,36 +233,32 @@
               </div>
             </div>
 
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
-                  <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
 
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
               </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-
-              <div class="text-muted mb-3"> # number of reviews</div>
-
-              <button type="button" class="btn bg-cart"onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
-
-
-            </div>
           </div>
-
         </div>
 
 
@@ -276,36 +272,32 @@
               </div>
             </div>
 
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
-                  <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
 
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
               </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-
-              <div class="text-muted mb-3"># number of reviews</div>
-
-              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" onclick="alert('Added to cart')"></i> Add To Basket</button>
-
-
-            </div>
           </div>
-
         </div>
 
         <div class="col-md-4 mt-2">
@@ -318,123 +310,32 @@
               </div>
             </div>
 
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
-                  <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
 
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
               </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-
-              <div class="text-muted mb-3"># number of reviews</div>
-
-              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
-
-
-            </div>
           </div>
-
-        </div>
-
-
-        <div class="col-md-4 mt-2">
-
-
-          <div class="card">
-            <div class="card-body">
-              <div class="card-img-actions">
-
-              </div>
-            </div>
-
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
-                  <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
-
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
-              </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-
-              <div class="text-muted mb-3"># number of reviews</div>
-
-              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
-
-
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="col-md-4 mt-2">
-
-
-          <div class="card">
-            <div class="card-body">
-              <div class="card-img-actions">
-
-
-              </div>
-            </div>
-
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
-                  <br>
-                  <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
-
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
-              </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £20</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-
-              <div class="text-muted mb-3"># number of reviews</div>
-
-              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2" ></i> Add To Basket</button>
-
-
-            </div>
-          </div>
-
         </div>
 
 
@@ -448,37 +349,111 @@
               </div>
             </div>
 
-            <div class="card-body bg-light text-center">
-              <div class="mb-2">
-                <h6 class="font-weight-semibold mb-2">
-                  <a href="product.php" class="text-default mb-2" data-abc="true">Product name</a>
-                  <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
-                <br>
-                <br>
-                <br>
-                <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
+
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
               </div>
-
-              <h3 class="mb-0 font-weight-semibold">Price £30</h3>
-
-              <div>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-                <i class="fa fa-star star"></i>
-              </div>
-              <div class="text-muted mb-3"># number of reviews</div>
-              <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
-
-            </div>
           </div>
-
         </div>
 
-      </div>
-    </div>
+        <div class="col-md-4 mt-2">
 
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+
+              </div>
+            </div>
+
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
+
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4 mt-2">
+
+
+          <div class="card">
+            <div class="card-body">
+              <div class="card-img-actions">
+
+              </div>
+            </div>
+
+              <div class="card-body bg-light text-center">
+                  <div class="mb-2">
+                      <h6 class="font-weight-semibold mb-2">
+                          <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
+                      </h6>
+                      <br>
+                      <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200" style="margin-top: 20px;">
+                      <br>
+                      <br>
+                      <a href="#" class="text-muted" data-abc="true">Product Type: Album/Merch/Vinyl</a>
+                  </div>
+
+                  <h3 class="mb-0 font-weight-semibold">Price £</h3>
+
+                  <div>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                      <i class="fa fa-star star"></i>
+                  </div>
+
+                  <div class="text-muted mb-3"> # number of reviews</div>
+
+                  <button type="button" class="btn bg-cart" onclick="alert('Added to cart')"><i class="fa fa-cart-plus mr-2"></i> Add To Basket</button>
+              </div>
+          </div>
+        </div>
   <script
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

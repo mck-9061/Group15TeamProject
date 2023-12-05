@@ -61,7 +61,7 @@
                                 <a class="dropdown-item" href="#">Pop</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Pop</a>
+                                <a class="dropdown-item" href="#">Kpop</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider" />
@@ -150,7 +150,6 @@
     </nav>
 </div>
 <!-- nav end   -->
-
 <!--bar underneath nav bar specifying type of product -->
 <div class="container mt-3">
     <div class="alert alert-primary py-2 px-3 d-flex justify-content-between align-items-center" role="alert" style="width: 200px;">
@@ -162,50 +161,72 @@
             </div>
         </button>
         <span>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      Category Of Product
-    </span>
+          <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div> Category Of Product
+        </span>
     </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
-<title>Product Page</title>
-<style>
-    .product-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 20px; /* Reduced margin-top to 20px */
-        color: white; /* Set text color to white */
-    }
+<head>
+    <title>Product Page</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            margin: 0;
+        }
 
-    .product-image {
-        width: 300px;
-    }
+        .card {
+            background-color: #f8f9fa;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+            width: 480px;
+            height: 600px;
+            padding: 20px;
+            margin-left: 520px;
+            /* Adjust the margin-left value to move the card slightly to the right */
+            color: black;
+            /* Set the text color of the card to black */
+        }
 
-    .product-description {
-        text-align: center;
-        margin-top: 20px;
-    }
+        .product-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
 
-    .add-to-basket {
-        margin-top: 20px;
-    }
-</style>
-<div class="product-container">
-    <h1 class="main-heading mt-0">Product Name</h1>
-    <img src="https://placehold.jp/350x350.png" alt="placeholder" width="300" height="300">
-    <div class="product-description"></div>
-    <div class="mb-2">
-        <p style="color: white;">Type of Product: Album, Merch, Vinyl</p>
-        <p style="color: white;">Price: £</p>
+        .product-image {
+            width: 350px;
+        }
+
+        .product-description {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .add-to-basket {
+            margin-top: 20px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <div class="product-container">
+        <h1 class="main-heading mt-0" style="color:black;">Product Name</h1>
+        <img src="https://placehold.jp/300x300.png" alt="placeholder" width="300" height="300">
+        <div class="product-description">
+            <p id="product-genre">Type of Product: Album, Merch, Vinyl</p>
+            <p id="product-price">Price: £</p>
+            <p id="product-description">Product Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <button class="btn btn-danger add-to-basket">Add to basket</button>
     </div>
-    <button class="btn btn-danger">Add to basket</button>
 </div>
 </body>
-</html>
