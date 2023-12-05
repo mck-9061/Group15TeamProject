@@ -13,15 +13,14 @@ session_start();
                 $row = $stat->fetch();
                 //compare the password given to the password in the database
                 if (password_verify($_POST['password'], $row['password'])) {
-                    session_start();
                     $_SESSION['username'] = $_POST['username'];
                     header("Location:../index.php");
                     exit();
                 } else {
-                    echo "Incorrect login details.";
+                    echo "Incorrect password";
                 }
             } else {
-                echo "Incorrect login details";
+                echo "Incorrect username";
             }
         } catch (PDOexception $ex) {
             echo "Failed to connect to database.<br>";
