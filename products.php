@@ -278,7 +278,7 @@ include 'php/fetch_products.php';
                           </div>
 
                           <!-- Number of Reviews -->
-                          <div class="text-muted mb-3"><?php echo $product['reviews']; ?> </div>
+                          <div class="text-muted mb-3">Ratings: <?php echo $product['reviews']; ?> </div>
 
                           <!-- Add to Cart Button -->
                           <button type="button" class="btn bg-cart" onclick="alert('Added to cart')">
