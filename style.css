@@ -50,6 +50,8 @@
   background-repeat: no-repeat;
 }
 
+/*     Product page css           */
+
 #products-page {
     background: url("assets/productsBG.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -57,7 +59,41 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-  
+
+#product-card{
+  border: 1px solid;
+  border-color: var(--warmPeach);
+  background-color: var(--darkwaterBlue);
+
+}
+
+#product-img{
+  border: 3px solid;
+  border-color: black;
+}
+
+#card-body{
+  border-top: 1px solid;
+  border-color: var(--warmPeach);
+  background-color: var(--accentBlack);
+}
+#product-genre{
+  color: antiquewhite;
+}
+#product-price{
+  color: var(--mint);
+}
+#product-reviews{
+  color: var(--pinkypeach);
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
+  border-color: var(--poppingPink);
+}
+#add-basket-btn{
+  color: pink;
+}
+
 body {
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -101,7 +137,11 @@ body {
 }
 
 #main-word {
-  color: whitesmoke;
+ color: antiquewhite;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 ::selection {
@@ -119,6 +159,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #sign-pill {
   background-color: var(--warmPeachcold);
@@ -130,8 +173,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
-
 #basketPill{
   display: flex;
   justify-content: center;
@@ -140,10 +185,23 @@ body {
   border-width: 3px;
   border-color: var(--darkOrange);
 }
-
 #basket-icon{
   color: var(--mint);
 }
+
+#about-nav{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#nav-words{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
 
 
 /* Navbar Css end */
@@ -277,16 +335,23 @@ body {
 }
 
 .log-box form h2 {
-  color: var(--poppingPink);
+  color: antiquewhite;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 .log-box form .inputBox {
   position: relative;
   width: 300px;
   margin-top: 30px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .log-box form .inputBox input {
@@ -349,6 +414,9 @@ body {
   font-size: 0.75em;
   color: white;
   text-decoration: none;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .log-box form .extraLogInfo a:hover,
 .log-box form .extraLogInfo a:nth-child(2) {
@@ -366,6 +434,9 @@ body {
   font-weight: 600;
   width: 100px;
   margin-top: 10px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 .log-box form input[type="submit"]:active {
@@ -497,10 +568,13 @@ body {
   flex-direction: column;
 }
 .signUpBox form h2 {
-  color: var(--peach);
+  color: antiquewhite;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 
 }
 .signUpBox form .inputBox {
@@ -511,6 +585,9 @@ body {
   justify-content: center;
   justify-items: center;
   align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 #signUpRegisterBtn{
@@ -518,7 +595,7 @@ body {
   justify-content: center;
   justify-items: center;
   align-items: center;
-  background-color: var(--tiktokPinkwarm);
+  background-color: var(--warmPeachcold);
   border: 1px solid;
   border-color: var(--mint);
 }
@@ -536,6 +613,7 @@ body {
   letter-spacing: 0.05em;
   transition: 0.5s;
   z-index: 10;
+
 }
 
 
@@ -577,6 +655,9 @@ body {
 .signUpBox form .extraSignUp {
   display: flex;
   justify-content: space-between;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .signUpBox form .extraSignUp a {
   margin: 10px 0;
@@ -597,8 +678,12 @@ body {
   font-size: 0.9em;
   border-radius: 4px;
   font-weight: 600;
+  text-align: center;
   width: 100px;
   margin-top: 1px;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 .signUpBox form input[type="submit"]:active {
   color: var(--tiktokPink);
@@ -609,136 +694,155 @@ body {
 /* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
 
 
+
 /*      Shopping cart CSS            */
 
 #shopping-cart-body{
   background: url("assets/cartBG.png");
-  font-family: 'Montserrat' ,sans-serif;
-}
-
-.cart-text{
-  width: 1000px;
-  margin: auto;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-}
-.cart-text h1{
-  color: var(--poppingPink);
-}
-
-.cart-text header{
-  display: grid;
-  grid-template-columns: 1fr 50px;
-  margin-top: 50px;
-}
-
-.cart-text header .shopping{
-  position: relative;
-  text-align: right;
-}
-
-.shopping i{
-  font-size: 3rem;
-  color: var(--poppingPink);
-  transition: all 0.25s ease;
-  -webkit-transition: all 0.25s ease;
-  -moz-transition: all 0.25s ease;
-  -ms-transition: all 0.25s ease;
-  -o-transition: all 0.25s ease;
-}
-
-.shopping i:hover{
-  color: var(--mint);
-}
-
-.shopping span{
-  background: var(--accentBlack);
-  border-radius: 70%;
-  -webkit-border-radius: 70%;
-  -moz-border-radius: 70%;
-  -ms-border-radius: 70%;
-  -o-border-radius: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: var(--darkOrange);
-  position: absolute;
-  top: -5px;
-  left: 80%;
-  padding: 3px 10px;
+  font-family: "fields", sans-serif;
 
 }
-
-.cart-text .list{
-  display: grid;
-  grid-template-columns: repeat(3,1fr) ;
-  gap: 20px;
-  margin-top: 50px;
+.shopping-title{
+  margin-bottom: 5vh;
 }
 
-.card-basket{
-  position: fixed;
-  top: 0;
-  left: 100%;
-  width: 500px;
-  background-color: var(--accentBlack);
-  border-left: 1px solid var(--mint);
-  height: 100vh;
-  transition: 0.5s;
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+
+#shopping-card{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 950px;
+  width: 90%;
+  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 1rem;
+  border: transparent;
 }
 
-.active .card-basket{
-  left: calc(100% - 500px);
-}
-
-.active .cart-text {
-  transform: translateX(-200px);
-  -webkit-transform: translateX(-200px);
-  -moz-transform: translateX(-200px);
-  -ms-transform: translateX(-200px);
-  -o-transform: translateX(-200px);
-}
-
-.card-basket h1{
-  color: var(--poppingPink);
-  font-weight: 300;
-  margin: 0;
-  padding: 0 20px;
-  height: 80px;
-  display: flex;
-  align-items: center;
-}
-
-.card-basket .checkOut{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.card-basket .checkOut div{
-  background-color: var(--mint);
+#shopping-words{
+  text-align: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   color: var(--warmPeach);
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: bold;
-  cursor: pointer;
 }
 
-.card-basket .checkOut div:nth-child(2){
-  background-color: var(--darkOrange);
-  color: var(--mint);
+.cart{
+  background-color: aliceblue;
+  padding: 4vh 5vh;
+  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 1rem;
+}
+.summary{
+  background-color: var(--promisingPurple);
+
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 4vh;
+  color: rgb(65, 65, 65);
+}
+.summary .col-2{
+  padding: 0;
+}
+.summary .col-10
+{
+  padding: 0;
+}.row{
+   margin: 0;
+ }
+
+.shopping-title b{
+  font-size: 1.5rem;
+}
+.main{
+  margin: 0;
+  padding: 2vh 0;
+  width: 100%;
+}
+.col-2, .col{
+  padding: 0 1vh;
+}
+ #cart-continue-shopping a{
+  padding: 0 1vh;
+}
+.close{
+  margin-left: auto;
+  font-size: 0.7rem;
+}
+#cart-img{
+    width: 3.5rem;
+  border: 1px solid;
+  border-color: black;
+
+}
+#cart-continue-shopping{
+  margin-top: 4.5rem;
+
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+#shopping-words h5{
+    margin-top: 4vh;
+}
+#shopping-words hr{
+  margin-top: 1.25rem;
+}
+#shopping-cart-form form{
+  padding: 2vh 0;
+}
+#shopping-cart-form select{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1.5vh 1vh;
+  margin-bottom: 4vh;
+  font-size: 0.76em
+;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+#cart-discount-input{
+  border: 1px solid rgba(0, 0, 0, 0.137);
+  padding: 1vh;
+  margin-bottom: 4vh;
+  outline: none;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+}
+#cart-discount-input input:focus::-webkit-input-placeholder
+{
+  color:transparent;
+}
+
+#shopping-words .checkoutBtn {
+  background-color: #000;
+  border-color: #000;
+  color: white;
+  width: 100%;
+  font-size: 0.7rem;
+  margin-top: 4vh;
+  padding: 1vh;
+  border-radius: 0;
+
+}
+
+
+
+#cart-continue-shopping a{
+  color: black;
+  text-decoration: none;
+}
+#cart-continue-shopping a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+#cart-discount-input{
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.253) , rgba(255, 255, 255, 0.185)), url("https://img.icons8.com/small/16/000000/long-arrow-right.png");
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: center;
 }
 
 /*   Message displayed on the register page if there's a problem   */
@@ -757,7 +861,9 @@ body {
   .accountNavBar{
     flex-direction: column;
 
+
   }
+
   .accountNavBar p{
     width: 100%;
   }
@@ -770,6 +876,7 @@ body {
   #login-pill{
     color: orange;
     background-color: var(--poppingPink);
+
   }
   #sign-pill{
     color: var(--accentBlack);
@@ -794,11 +901,6 @@ body {
     color: var(--tiktokBlue);
   }
 
-
-
-
-
-
   .navbar {
     background-image: linear-gradient(
             to right,
@@ -806,7 +908,40 @@ body {
             var(--warmPeachcold)
     );
   }
-
+  #shopping-card{
+    margin: 3vh auto;
+  }
+  .cart{
+    padding: 4vh;
+    border-bottom-left-radius: unset;
+    border-top-right-radius: 1rem;
+  }
+  .summary{
+    border-top-right-radius: unset;
+    border-bottom-left-radius: 1rem;
+  }
 }
 
+/* Footer css  Unfinished
 
+#footer{
+  background-color: var(--accentBlack);
+}
+
+#footer-useful{
+  color: var(--poppingPink);
+
+  border-bottom: 1px solid;
+  border-color: var(--tiktokBlue);
+}
+#footer-contact-us{
+  color: var(--poppingPink);
+
+  border-bottom: 1px solid;
+  border-color: var(--tiktokBlue);
+}
+#footer-copyright{
+  background-color: var(--accentBlack);
+}
+
+*/

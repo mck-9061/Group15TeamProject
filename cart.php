@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
 </head>
 <body class="vh-100" id="shopping-cart-body">
 
@@ -39,7 +40,7 @@
         <div class=" navbar-collapse collapse " id="navbarSupportedContent">
 
             <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
-                <li class="nav-item">
+                <li class="nav-item" id="nav-words">
                     <a
                             class="nav-link active text-white fs-5"
                             aria-current="page"
@@ -47,7 +48,7 @@
                     >ABOUT US</a
                     >
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="nav-words">
                     <a
                             class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
                             href="#"
@@ -57,7 +58,7 @@
                     >
                         CD'S
                     </a>
-                    <ul class="dropdown-menu">
+                    <ul class="dropdown-menu" >
                         <li><a class="dropdown-item" href="#">METAL</a></li>
                         <li><a class="dropdown-item" href="#">RAP</a></li>
                         <li><a class="dropdown-item" href="#">PUNK</a></li>
@@ -69,7 +70,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="nav-words">
                     <a
                             class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                             href="#"
@@ -90,7 +91,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="nav-words">
                     <a
                             class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                             href="#"
@@ -112,7 +113,7 @@
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" id="nav-words">
                     <a
                             class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                             href="#"
@@ -124,9 +125,13 @@
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                        <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#">Posters</a></li>
+                        <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#">Books</a></li>
+                        <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#">Funko's</a></li>
+                        <li><hr class="dropdown-divider" /></li>
                         <li><a class="dropdown-item" href="#">Figures</a></li>
                         <li><hr class="dropdown-divider" /></li>
                         <li>
@@ -210,41 +215,71 @@
 </nav>
 
 
-                    <div class="cart-text">
-                        <header>
-                            <h1>
-                                Shopping
-                            </h1>
-                            <div class="shopping">
-
-                                <i class="material-symbols-outlined">
-                                    shopping_bag
-                                </i>
-                                <span class="shopping-quantity">0</span>
-
-                            </div>
 
 
-                        </header>
 
-                        <div class="list">
 
-                        </div>
+<div class="card" id="shopping-card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="shopping-title">
+                <div class="row">
+                    <div class="col" id="shopping-words"><h4><b>Shopping Cart</b></h4></div>
+                    <div class="col align-self-center text-right text-muted" id="shopping-words"><!-- Add number of products here --> items</div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg" id="cart-img">  <!-- Add php for database image change here    -->
 
                     </div>
-
-                    <div class="card-basket">
-                    <h1>Card</h1>
-                    <ul class="listCard">        </ul>
-                    <div class="checkOut">
-                        <div class="total">0</div>
-                        <div class="closeShopping">Close</div>
+                    <div class="col">
+                        <div class="row text-muted"> Example (Product name) <!-- Product name    --> </div>
+                        <div class="row"> Example (Product Type) <!-- Product item type (cd/vinyl/ep/merch) -->      </div>
                     </div>
-
+                    <div class="col">
+                        <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
                     </div>
+                    <div class="col">&pound; <!-- Add price tag php -->  <span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
+                </div>
+            </div>
+         <br>
 
 
+            <div id="cart-continue-shopping"><a href="products.php">&leftarrow;</a><span class="">Continue Shopping</span></div>
+        </div>
+        <div class="col-md-4 summary" id="shopping-words">
+            <div>
+                <h5>
+                    <b>Summary</b>
+                </h5>
+                </div>
+            <hr>
+            <div class="row">
 
+                <div class="col text-right">&pound;   <!--  Actual total price of all items present  --></div>
+            </div>
+            <form id="shopping-cart-form">
+                <p>SHIPPING</p>
+                <select class="rounded-4">
+                    <option class="text-muted">Standard Delivery (3-5 working days) <hr> &pound;5.00</option>
+                    <option class="text-muted">Next day Delivery- &pound;10.00</option>
+                </select>
+
+                <p>GIVE CODE</p>
+                <input  class="rounded-4" id="cart-discount-input" placeholder="Enter your code">
+            </form>
+            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <div class="col">TOTAL PRICE</div>
+                <div class="col text-right"> &pound; <!--  Add php here for total price + an extra for shipping depending on option picked  --></div>
+            </div>
+
+            <!--    Link to payment page        -->
+            <button class="checkoutBtn rounded-3"  >CHECKOUT</button>
+        </div>
+    </div>
+
+</div>
 
 
 
