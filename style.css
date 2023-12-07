@@ -50,6 +50,8 @@
   background-repeat: no-repeat;
 }
 
+/*     Product page css           */
+
 #products-page {
     background: url("assets/productsBG.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -57,7 +59,36 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
-  
+
+#product-card{
+  border: 1px solid;
+  border-color: var(--warmPeach);
+  background-color: var(--darkwaterBlue);
+
+}
+
+#product-img{
+  border: 3px solid;
+  border-color: black;
+}
+
+#card-body{
+  background-color: var(--accentBlack);
+}
+#product-genre{
+  color: pink;
+}
+#product-price{
+  color: pink;
+}
+#product-reviews{
+  color: pink;
+  margin-top: 10px;
+}
+#add-basket-btn{
+  color: pink;
+}
+
 body {
     background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -101,7 +132,11 @@ body {
 }
 
 #main-word {
-  color: whitesmoke;
+ color: antiquewhite;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 ::selection {
@@ -119,6 +154,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #sign-pill {
   background-color: var(--warmPeachcold);
@@ -130,8 +168,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
-
 #basketPill{
   display: flex;
   justify-content: center;
@@ -140,10 +180,23 @@ body {
   border-width: 3px;
   border-color: var(--darkOrange);
 }
-
 #basket-icon{
   color: var(--mint);
 }
+
+#about-nav{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+#nav-words{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+
+
 
 
 /* Navbar Css end */
@@ -277,10 +330,14 @@ body {
 }
 
 .log-box form h2 {
-  color: var(--poppingPink);
+  color: antiquewhite;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
 }
 
 .log-box form .inputBox {
@@ -497,10 +554,13 @@ body {
   flex-direction: column;
 }
 .signUpBox form h2 {
-  color: var(--peach);
+  color: antiquewhite;
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.1em;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 
 }
 .signUpBox form .inputBox {
@@ -607,6 +667,12 @@ body {
 }
 
 /* Sign Up page Ending (the reason this exists is because editing one will edit the other if i simply made the login page have a comma after each "function") */
+
+
+
+
+
+
 
 
 /*      Shopping cart CSS            */
@@ -757,6 +823,7 @@ body {
   .accountNavBar{
     flex-direction: column;
 
+
   }
   .accountNavBar p{
     width: 100%;
@@ -770,6 +837,7 @@ body {
   #login-pill{
     color: orange;
     background-color: var(--poppingPink);
+
   }
   #sign-pill{
     color: var(--accentBlack);
@@ -793,11 +861,6 @@ body {
   #basket-icon{
     color: var(--tiktokBlue);
   }
-
-
-
-
-
 
   .navbar {
     background-image: linear-gradient(

@@ -15,6 +15,9 @@
     />
     <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+
   </head>
 
   <body class="vh-100" id="index-page">
@@ -43,7 +46,7 @@
               <div class=" navbar-collapse collapse " id="navbarSupportedContent">
 
                   <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
-                      <li class="nav-item">
+                      <li class="nav-item" id="nav-words">
                           <a
                                   class="nav-link active text-white fs-5"
                                   aria-current="page"
@@ -51,7 +54,7 @@
                           >ABOUT US</a
                           >
 
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
                                   href="#"
@@ -73,7 +76,7 @@
                           </ul>
                       </li>
 
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -94,7 +97,7 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -116,7 +119,7 @@
                               </li>
                           </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -128,9 +131,13 @@
                           </a>
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Posters</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Books</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Funko's</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Figures</a></li>
                               <li><hr class="dropdown-divider" /></li>
                               <li>

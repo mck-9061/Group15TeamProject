@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>Cadence | Sign Up</title>
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+
   </head>
   <body id="signup-page">
     <div class="signUpBox">

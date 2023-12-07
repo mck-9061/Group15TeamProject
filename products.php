@@ -21,6 +21,7 @@ include 'php/fetch_products.php';
     />
     <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
   </head>
 
   <body id="products-page">
@@ -48,7 +49,7 @@ include 'php/fetch_products.php';
               <div class=" navbar-collapse collapse " id="navbarSupportedContent">
 
                   <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
-                      <li class="nav-item">
+                      <li class="nav-item" id="nav-words">
                           <a
                                   class="nav-link active text-white fs-5"
                                   aria-current="page"
@@ -56,7 +57,7 @@ include 'php/fetch_products.php';
                           >ABOUT US</a
                           >
 
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
                                   href="#"
@@ -78,7 +79,7 @@ include 'php/fetch_products.php';
                           </ul>
                       </li>
 
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -99,7 +100,7 @@ include 'php/fetch_products.php';
                               </li>
                           </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -121,7 +122,7 @@ include 'php/fetch_products.php';
                               </li>
                           </ul>
                       </li>
-                      <li class="nav-item dropdown">
+                      <li class="nav-item dropdown" id="nav-words">
                           <a
                                   class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                                   href="#"
@@ -133,9 +134,13 @@ include 'php/fetch_products.php';
                           </a>
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Posters</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Books</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Funko's</a></li>
+                              <li><hr class="dropdown-divider" /></li>
                               <li><a class="dropdown-item" href="#">Figures</a></li>
                               <li><hr class="dropdown-divider" /></li>
                               <li>
@@ -248,28 +253,28 @@ include 'php/fetch_products.php';
           foreach ($products as $product) {
               ?>
               <div class="col-md-3 mt-2">
-                  <div class="card">
+                  <div class="card" id="product-card">
                       <!-- Centering the Image -->
                       <div class="card-body d-flex justify-content-center align-items-center">
                           <!-- Fixed Image Size -->
-                          <img src="<?php echo $product['image-link']; ?>" class="card-img-top" alt="Product Image" style="width: 200px; height: 200px;">
+                          <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 200px; height: 200px;">
                       </div>
 
-                      <div class="card-body bg-light text-center">
+                      <div class="card-body text-center" id="card-body">
                           <div class="mb-2">
                               <!-- Product Name -->
                               <h6 class="font-weight-semibold mb-2">
-                                  <a href="product.php" class="text-default mb-2" data-abc="true"><?php echo $product['name']; ?></a>
+                                  <a href="product.php" class="text-default mb-2 text-decoration-none" data-abc="true"><?php echo $product['name']; ?></a>
                               </h6>
 
                               <!-- Product Genre -->
-                              <p class="text-muted" data-abc="true">Product Type: <?php echo $product['genre']; ?></p>
+                              <p id="product-genre" data-abc="true"><?php echo $product['genre']; ?> </p>
                           </div>
 
                           <!-- Product Price -->
-                          <h4 class="mb-0 font-weight-semibold">Price £<?php echo $product['price']; ?></h4>
+                          <h4 class="mb-0 font-weight-semibold " id="product-price"> £<?php echo $product['price']; ?></h4>
 
-                          <!-- Ratings and Reviews -->
+                          <!-- Ratings and Reviews -->    <!--  Alex comment-why is this here?   -->
                           <div>
                               <i class="fa fa-star star"></i>
                               <i class="fa fa-star star"></i>
@@ -278,10 +283,10 @@ include 'php/fetch_products.php';
                           </div>
 
                           <!-- Number of Reviews -->
-                          <div class="text-muted mb-3">Ratings: <?php echo $product['reviews']; ?> </div>
+                          <div class=" mb-3" id="product-reviews">Reviews: <?php echo $product['reviews']; ?> </div>
 
                           <!-- Add to Cart Button -->
-                          <button type="button" class="btn bg-cart" onclick="alert('Added to cart')">
+                          <button type="button" class="btn bg-cart" id="add-basket-btn" onclick="alert('Added to cart')">
                               <i class="fa fa-cart-plus mr-2"></i> Add To Basket
                           </button>
                       </div>

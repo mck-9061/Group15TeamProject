@@ -13,6 +13,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
   </head>
   <body id="login-page">
     <div class="log-box">

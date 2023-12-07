@@ -17,6 +17,7 @@ session_start()
     />
     <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
   </head>
   <body class="vh-100" id="about-page">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -38,7 +39,7 @@ session_start()
           <div class=" navbar-collapse collapse " id="navbarSupportedContent">
 
               <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
-                  <li class="nav-item">
+                  <li class="nav-item" id="nav-words">
                       <a
                               class="nav-link active text-white fs-5"
                               aria-current="page"
@@ -46,7 +47,7 @@ session_start()
                       >ABOUT US</a
                       >
 
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" id="nav-words">
                       <a
                               class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
                               href="#"
@@ -56,7 +57,7 @@ session_start()
                       >
                           CD'S
                       </a>
-                      <ul class="dropdown-menu">
+                      <ul class="dropdown-menu" >
                           <li><a class="dropdown-item" href="#">METAL</a></li>
                           <li><a class="dropdown-item" href="#">RAP</a></li>
                           <li><a class="dropdown-item" href="#">PUNK</a></li>
@@ -68,7 +69,7 @@ session_start()
                       </ul>
                   </li>
 
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" id="nav-words">
                       <a
                               class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                               href="#"
@@ -89,7 +90,7 @@ session_start()
                           </li>
                       </ul>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" id="nav-words">
                       <a
                               class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                               href="#"
@@ -111,7 +112,7 @@ session_start()
                           </li>
                       </ul>
                   </li>
-                  <li class="nav-item dropdown">
+                  <li class="nav-item dropdown" id="nav-words">
                       <a
                               class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
                               href="#"
@@ -123,9 +124,13 @@ session_start()
                       </a>
                       <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                          <li><hr class="dropdown-divider" /></li>
                           <li><a class="dropdown-item" href="#">Posters</a></li>
+                          <li><hr class="dropdown-divider" /></li>
                           <li><a class="dropdown-item" href="#">Books</a></li>
+                          <li><hr class="dropdown-divider" /></li>
                           <li><a class="dropdown-item" href="#">Funko's</a></li>
+                          <li><hr class="dropdown-divider" /></li>
                           <li><a class="dropdown-item" href="#">Figures</a></li>
                           <li><hr class="dropdown-divider" /></li>
                           <li>
