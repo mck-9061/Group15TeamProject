@@ -63,7 +63,7 @@
                                 <a class="dropdown-item" href="#">Pop</a>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="#">Pop</a>
+                                <a class="dropdown-item" href="#">Kpop</a>
                             </li>
                             <li>
                                 <hr class="dropdown-divider" />

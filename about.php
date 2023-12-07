@@ -82,7 +82,7 @@ session_start()
                       <ul class="dropdown-menu">
                           <li><a class="dropdown-item" href="#">Rock</a></li>
                           <li><a class="dropdown-item" href="#">Indie</a></li>
-                          <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Pop</a></li>
+                          <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
 
                           <li><hr class="dropdown-divider" /></li>
                           <li>
