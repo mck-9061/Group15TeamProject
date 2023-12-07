@@ -257,7 +257,9 @@ include 'php/fetch_products.php';
                       <!-- Centering the Image -->
                       <div class="card-body d-flex justify-content-center align-items-center">
                           <!-- Fixed Image Size -->
+                          <a href="product.php">
                           <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 200px; height: 200px;">
+                          </a>
                       </div>
 
                       <div class="card-body text-center" id="card-body">

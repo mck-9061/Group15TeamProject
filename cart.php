@@ -215,41 +215,71 @@
 </nav>
 
 
-                    <div class="cart-text">
-                        <header>
-                            <h1>
-                                Shopping
-                            </h1>
-                            <div class="shopping">
-
-                                <i class="material-symbols-outlined">
-                                    shopping_bag
-                                </i>
-                                <span class="shopping-quantity">0</span>
-
-                            </div>
 
 
-                        </header>
 
-                        <div class="list">
 
-                        </div>
+<div class="card" id="shopping-card">
+    <div class="row">
+        <div class="col-md-8 cart">
+            <div class="shopping-title">
+                <div class="row">
+                    <div class="col" id="shopping-words"><h4><b>Shopping Cart</b></h4></div>
+                    <div class="col align-self-center text-right text-muted" id="shopping-words"><!-- Add number of products here --> items</div>
+                </div>
+            </div>
+            <div class="row border-top border-bottom">
+                <div class="row main align-items-center">
+                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg" id="cart-img">  <!-- Add php for database image change here    -->
 
                     </div>
-
-                    <div class="card-basket">
-                    <h1>Card</h1>
-                    <ul class="listCard">        </ul>
-                    <div class="checkOut">
-                        <div class="total">0</div>
-                        <div class="closeShopping">Close</div>
+                    <div class="col">
+                        <div class="row text-muted"> Example (Product name) <!-- Product name    --> </div>
+                        <div class="row"> Example (Product Type) <!-- Product item type (cd/vinyl/ep/merch) -->      </div>
                     </div>
-
+                    <div class="col">
+                        <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
                     </div>
+                    <div class="col">&pound; <!-- Add price tag php -->  <span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
+                </div>
+            </div>
+         <br>
 
 
+            <div id="cart-continue-shopping"><a href="products.php">&leftarrow;</a><span class="">Continue Shopping</span></div>
+        </div>
+        <div class="col-md-4 summary" id="shopping-words">
+            <div>
+                <h5>
+                    <b>Summary</b>
+                </h5>
+                </div>
+            <hr>
+            <div class="row">
 
+                <div class="col text-right">&pound;   <!--  Actual total price of all items present  --></div>
+            </div>
+            <form id="shopping-cart-form">
+                <p>SHIPPING</p>
+                <select class="rounded-4">
+                    <option class="text-muted">Standard Delivery (3-5 working days) <hr> &pound;5.00</option>
+                    <option class="text-muted">Next day Delivery- &pound;10.00</option>
+                </select>
+
+                <p>GIVE CODE</p>
+                <input  class="rounded-4" id="cart-discount-input" placeholder="Enter your code">
+            </form>
+            <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
+                <div class="col">TOTAL PRICE</div>
+                <div class="col text-right"> &pound; <!--  Add php here for total price + an extra for shipping depending on option picked  --></div>
+            </div>
+
+            <!--    Link to payment page        -->
+            <button class="checkoutBtn rounded-3"  >CHECKOUT</button>
+        </div>
+    </div>
+
+</div>
 
 
 
