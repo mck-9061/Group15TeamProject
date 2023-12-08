@@ -215,10 +215,6 @@
 </nav>
 
 
-
-
-
-
 <div class="card" id="shopping-card">
     <div class="row">
         <div class="col-md-8 cart">
@@ -228,21 +224,41 @@
                     <div class="col align-self-center text-right text-muted" id="shopping-words"><!-- Add number of products here --> items</div>
                 </div>
             </div>
-            <div class="row border-top border-bottom">
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg" id="cart-img">  <!-- Add php for database image change here    -->
 
+            <?php
+            if (!isset($_SESSION['username'])) {
+                ?>
+                    <!-- Can someone on frontend make this not look ass lmao -->
+                    <div>Please log in to access your cart.</div>
+                <?php
+            } else {
+                require 'php/fetch_cart.php';
+                $items = fetchCart();
+                foreach ($items as $item) {
+                    ?>
+
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src="<?php echo $item['image-link']; ?>" id="cart-img">
+
+                            </div>
+                            <div class="col">
+                                <div class="row text-muted"><?php echo $item['name']; ?></div>
+                                <div class="row"><?php echo $item['genre']; ?></div>
+                            </div>
+                            <div class="col">
+                                <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
+                            </div>
+                            <div class="col">&pound;<?php echo $item['price']; ?><span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="row text-muted"> Example (Product name) <!-- Product name    --> </div>
-                        <div class="row"> Example (Product Type) <!-- Product item type (cd/vinyl/ep/merch) -->      </div>
-                    </div>
-                    <div class="col">
-                        <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
-                    </div>
-                    <div class="col">&pound; <!-- Add price tag php -->  <span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
-                </div>
-            </div>
+
+                    <?php
+                }
+            }
+            ?>
+
+
          <br>
 
 
