@@ -26,7 +26,7 @@ include 'php/fetch_products.php';
 
   <body id="products-page">
   <!-- nav start -->
-  <div>
+  <div id="nav-bottom-border">
 
 
       <!-- Nav Header  (technically drop down code?)-->

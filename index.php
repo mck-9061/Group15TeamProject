@@ -23,7 +23,7 @@
   <body class="vh-100 overflow-x-auto" id="index-page">
 
   <!-- nav start -->
-  <div>
+  <div id="nav-bottom-border">
 
 
       <!-- Nav Header  (technically drop down code?)-->
@@ -315,7 +315,9 @@
         data-bs-target="#hero-carousel"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon " aria-hidden="true" >
+
+        </span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button

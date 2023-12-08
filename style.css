@@ -26,7 +26,7 @@
 
 /*       Individual Pages css i.e. background selection     -start-      */
 
-
+/*   Index / carousel     */
 
 #index-page {
   background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
@@ -39,17 +39,88 @@
 }
 .c-img {
   object-fit: cover;
+  border-bottom: 3px solid;
+  border-color: var(--accentBlack);
 }
 
+.carousel-control-prev-icon{
+
+  width: 200px;
+  height: 200px;
+
+}
+.carousel-control-next-icon{
+
+  width: 200px;
+  height: 200px;
+
+}
+
+.carousel-indicators .active{
+  background-color: var(--warmPeach);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+  /*  About us css        */
 
 #about-page {
-  background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
+  background: url("assets/aboutpageBG.png") rgba(0, 0, 0, 0.2);
   background-blend-mode: multiply;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+.about-us-text{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
+.about-us-text h2{
+  color: antiquewhite;
+}
+
+
+.cadence-color{
+  text-decoration: none;
+  color: antiquewhite;
+}
+.rhythm-color{
+  text-decoration: none;
+  color: var(--warmPeachcold);
+}
+.melody-color{
+  text-decoration: none;
+  color: var(--poppingPink);
+}
+
+.about-us-img img{
+  width: 20rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+
+}
+#about-us-contact-info{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+}
+
+#contact-info-colors{
+  color: var(--poppingPink);
+
+}
 /*     Product page css           */
 
 #products-page {
@@ -133,15 +204,15 @@ body {
 
 #navbar-search-btn {
   background-color: var(--GAcream);
+  border-width: 3px solid;
   border-color: var(--accentBlack);
 }
 
 #main-word {
- color: antiquewhite;
+  color: antiquewhite;
   font-family: "fields", sans-serif;
   font-weight: 900;
   font-style: normal;
-
 }
 
 ::selection {
@@ -194,15 +265,17 @@ body {
   font-weight: 900;
   font-style: normal;
 }
+
 #nav-words{
   font-family: "fields", sans-serif;
   font-weight: 900;
   font-style: normal;
 }
 
-
-
-
+#nav-bottom-border{
+  border-bottom: 3px solid;
+  border-color: var(--accentBlack) ;
+}
 
 /* Navbar Css end */
 
@@ -616,10 +689,6 @@ body {
 
 }
 
-
-
-
-
 .signUpBox form .inputBox span {
   position: absolute;
   left: 0;
@@ -701,6 +770,7 @@ body {
   background: url("assets/cartBG.png");
   font-family: "fields", sans-serif;
 
+
 }
 .shopping-title{
   margin-bottom: 5vh;
@@ -714,8 +784,10 @@ body {
   max-width: 950px;
   width: 90%;
   box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 1rem;
+  border-radius: 3rem;
   border: transparent;
+
+  border-color: pink;
 }
 
 #shopping-words{
@@ -726,12 +798,19 @@ body {
   color: var(--warmPeach);
 }
 
+#shopping-words b{
+  border-bottom: 1px solid;
+  border-color: var(--warmPeach);
+}
+
+
 .cart{
   background-color: aliceblue;
   padding: 4vh 5vh;
   border-bottom-left-radius: 1rem;
   border-top-left-radius: 1rem;
 }
+
 .summary{
   background-color: var(--promisingPurple);
 
@@ -764,6 +843,14 @@ body {
  #cart-continue-shopping a{
   padding: 0 1vh;
 }
+
+ #cart-continue-shopping span{
+   margin-left: 10px;
+   text-align: center;
+   border-bottom: 1px solid;
+   border-color: var(--accentBlack);
+ }
+
 .close{
   margin-left: auto;
   font-size: 0.7rem;
@@ -802,7 +889,7 @@ body {
   background-color: rgb(247, 247, 247);
 }
 #cart-discount-input{
-  border: 1px solid rgba(0, 0, 0, 0.137);
+  border: 2px solid var(--accentBlack);
   padding: 1vh;
   margin-bottom: 4vh;
   outline: none;
@@ -874,13 +961,13 @@ body {
     gap: 3px;
   }
   #login-pill{
-    color: orange;
-    background-color: var(--poppingPink);
+    color: whitesmoke;
+    background-color: var(--tiktokPinkwarm);
 
   }
   #sign-pill{
-    color: var(--accentBlack);
-    background-color: var(--mint);
+    color: whitesmoke;
+    background-color: var(--warmPeachcold);
     border-width: 1px;
     border-color: var(--accentBlack);
     padding-bottom: 10px;
@@ -902,14 +989,11 @@ body {
   }
 
   .navbar {
-    background-image: linear-gradient(
-            to right,
-            var(--darkwaterBlue),
-            var(--warmPeachcold)
-    );
+
   }
   #shopping-card{
     margin: 3vh auto;
+
   }
   .cart{
     padding: 4vh;

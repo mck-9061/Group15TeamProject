@@ -20,208 +20,212 @@
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
 </head>
 <body class="vh-100" id="shopping-cart-body">
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container d-flex">
-        <a class="navbar-brand  fs-1" id="main-word" href="index.php">CADENCE</a>
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Nav body -->
-        <div class=" navbar-collapse collapse " id="navbarSupportedContent">
-
-            <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
-                <li class="nav-item" id="nav-words">
-                    <a
-                            class="nav-link active text-white fs-5"
-                            aria-current="page"
-                            href="about.php"
-                    >ABOUT US</a
-                    >
-
-                <li class="nav-item dropdown" id="nav-words">
-                    <a
-                            class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        CD'S
-                    </a>
-                    <ul class="dropdown-menu" >
-                        <li><a class="dropdown-item" href="#">METAL</a></li>
-                        <li><a class="dropdown-item" href="#">RAP</a></li>
-                        <li><a class="dropdown-item" href="#">PUNK</a></li>
-                        <li><a class="dropdown-item" href="#">DANCE</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="products.php">Our CD Catalogue</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item dropdown" id="nav-words">
-                    <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        VINYL
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Rock</a></li>
-                        <li><a class="dropdown-item" href="#">Indie</a></li>
-                        <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
-
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="products.php">Our Vinyl Catalogue</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown" id="nav-words">
-                    <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        Ep's
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">JPop</a></li>
-                        <li><a class="dropdown-item" href="#">Kpop</a></li>
-                        <li><a class="dropdown-item" href="#">Global</a></li>
-                        <li><a class="dropdown-item" href="#">Indie</a></li>
-                        <li><a class="dropdown-item" href="#">Our Favs</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="products.php">Our Ep Catalogue</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="nav-item dropdown" id="nav-words">
-                    <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
-                    >
-                        Merch
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Band Apparel</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#">Posters</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#">Books</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#">Funko's</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li><a class="dropdown-item" href="#">Figures</a></li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                            <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
-                        </li>
+<!-- nav start -->
+<div id="nav-bottom-border">
 
 
+    <!-- Nav Header  (technically drop down code?)-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container d-flex">
+            <a class="navbar-brand  fs-1" id="main-word" href="index.php">CADENCE</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav body -->
+            <div class=" navbar-collapse collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
+                    <li class="nav-item" id="nav-words">
+                        <a
+                                class="nav-link active text-white fs-5"
+                                aria-current="page"
+                                href="about.php"
+                        >ABOUT US</a
+                        >
+
+                    <li class="nav-item dropdown" id="nav-words">
+                        <a
+                                class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                        >
+                            CD'S
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">METAL</a></li>
+                            <li><a class="dropdown-item" href="#">RAP</a></li>
+                            <li><a class="dropdown-item" href="#">PUNK</a></li>
+                            <li><a class="dropdown-item" href="#">DANCE</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="products.php">Our CD Catalogue</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown" id="nav-words">
+                        <a
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                        >
+                            VINYL
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Rock</a></li>
+                            <li><a class="dropdown-item" href="#">Indie</a></li>
+                            <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
+
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="products.php">Our Vinyl Catalogue</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="nav-words">
+                        <a
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                        >
+                            Ep's
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">JPop</a></li>
+                            <li><a class="dropdown-item" href="#">Kpop</a></li>
+                            <li><a class="dropdown-item" href="#">Global</a></li>
+                            <li><a class="dropdown-item" href="#">Indie</a></li>
+                            <li><a class="dropdown-item" href="#">Our Favs</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="products.php">Our Ep Catalogue</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" id="nav-words">
+                        <a
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
+                        >
+                            Merch
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Band Apparel</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Posters</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Books</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Funko's</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="#">Figures</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
+                            </li>
 
 
-                    </ul>
-            </ul>
-            <div class="NavBarSearchDiv">
-                <form class="d-flex text-align-center justify-content-end" role="search" >
-                    <input
-                            class="form-control me-3 "
-                            type="search"
-                            placeholder="search..."
-                            aria-label="Search"
-                            id="search-bar"
-                    />
-                    <div class="btn " id="navbar-search-btn" type="submit">
-                        <div style="transform: rotate(-45deg)">
-                            ⚲
+
+
+                        </ul>
+                </ul>
+                <div class="NavBarSearchDiv">
+                    <form class="d-flex text-align-center justify-content-end" role="search" >
+                        <input
+                                class="form-control me-3 "
+                                type="search"
+                                placeholder="search..."
+                                aria-label="Search"
+                                id="search-bar"
+                        />
+                        <div class="btn " id="navbar-search-btn" type="submit">
+                            <div style="transform: rotate(-45deg)">
+                                ⚲
+                            </div>
                         </div>
-                    </div>
-                </form>
-            </div>
-            <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
-                <?php
-                if (isset($_SESSION['username'])) {
-                    ?>
-                    <p>
-                        <a
-                                href="index.php"
-                        ><?php echo $_SESSION['username'] ?></a>
-                    </p>
+                    </form>
+                </div>
+                <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
                     <?php
-                } else {
+                    if (isset($_SESSION['username'])) {
+                        ?>
+                        <p>
+                            <a
+                                    href="index.php"
+                            ><?php echo $_SESSION['username'] ?></a>
+                        </p>
+                        <?php
+                    } else {
+                        ?>
+                        <p>
+                            <a
+                                    href="login.php"
+                                    class=" px-2 py-2 rounded-4"
+                                    id="login-pill"
+                            >Login</a>
+                        </p>
+                        <p>
+                            <a
+                                    href="signup.php"
+                                    class="px-3 py-2 rounded-4"
+                                    id="sign-pill"
+                            >Sign Up</a>
+
+
+                        </p>
+                        <?php
+                    }
                     ?>
-                    <p>
-                        <a
-                                href="login.php"
-                                class=" px-2 py-2 rounded-4"
-                                id="login-pill"
-                        >Login</a>
-                    </p>
-                    <p>
-                        <a
-                                href="signup.php"
-                                class="px-3 py-2 rounded-4"
-                                id="sign-pill"
-                        >Sign Up</a>
 
+                </div>
 
-                    </p>
-                    <?php
-                }
-                ?>
+                <div class="basketBar d-flex gap-3 mx-auto ">
 
-            </div>
+                    <button id="basketPill" class="py-1 px-2 rounded-4" >
+                        <a href="cart.php"
 
-            <div class="basketBar d-flex gap-3 mx-auto ">
-
-                <button id="basketPill" class="py-1 px-2 rounded-4" >
-                    <a href="cart.php"
-
-                    <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
+                        <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
                             shopping_basket
                           </span>
 
-                    </a>
-                </button>
+                        </a>
+                    </button>
+
+                </div>
+
 
             </div>
-
-
         </div>
-    </div>
-    </div>
-    </div>
+</div>
+</div>
 </nav>
-
-
+</div>
+<!-- nav end   -->
 
 
 
 
 <div class="card" id="shopping-card">
     <div class="row">
-        <div class="col-md-8 cart">
+        <div class="col-md-8 cart" id="">
             <div class="shopping-title">
                 <div class="row">
                     <div class="col" id="shopping-words"><h4><b>Shopping Cart</b></h4></div>
@@ -246,7 +250,7 @@
          <br>
 
 
-            <div id="cart-continue-shopping"><a href="products.php">&leftarrow;</a><span class="">Continue Shopping</span></div>
+            <div id="cart-continue-shopping"><a href="products.php">&leftarrow;<span class="">Continue Shopping</span></a></div>
         </div>
         <div class="col-md-4 summary" id="shopping-words">
             <div>
@@ -275,7 +279,7 @@
             </div>
 
             <!--    Link to payment page        -->
-            <button class="checkoutBtn rounded-3"  >CHECKOUT</button>
+            <button class="checkoutBtn rounded-2"  >CHECKOUT</button>
         </div>
     </div>
 
