@@ -4,6 +4,7 @@ session_start();
 
 function add_to_cart($productid) {
     global $db;
+    if (!isset($_SESSION['username'])) return -2;
     try {
         $query = "
             INSERT INTO `cart-items` (`user`, `productid`)
