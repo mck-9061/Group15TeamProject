@@ -148,11 +148,25 @@
   border-color: var(--warmPeach);
   background-color: var(--accentBlack);
 }
+#products-names{
+  color: var(--tiktokPinkwarm);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
 #product-genre{
   color: antiquewhite;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #product-price{
   color: var(--mint);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #product-reviews{
   color: var(--pinkypeach);
@@ -160,9 +174,15 @@
   padding-bottom: 10px;
   border-bottom: 1px solid;
   border-color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #add-basket-btn{
   color: pink;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 
 body {

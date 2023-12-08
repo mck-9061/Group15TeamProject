@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Added css changes,renamed some elements for testing, started the design stage for cart">
-      <change afterPath="$PROJECT_DIR$/assets/aboutpageBG.png" afterDir="false" />
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Gave about us page css, added border under navbar &amp; some carousel changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbar.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
@@ -120,7 +114,7 @@
       <workItem from="1701033848862" duration="298000" />
       <workItem from="1701894932214" duration="11006000" />
       <workItem from="1701910603265" duration="21541000" />
-      <workItem from="1702068148148" duration="5186000" />
+      <workItem from="1702068148148" duration="6079000" />
     </task>
     <task id="LOCAL-00001" summary="Just for laptop work">
       <option name="closed" value="true" />
@@ -146,7 +140,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701971673498</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Gave about us page css, added border under navbar &amp; some carousel changes.">
+      <option name="closed" value="true" />
+      <created>1702073919744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702073919744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +181,7 @@
     <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
     <MESSAGE value="Just for laptop work" />
     <MESSAGE value="Added css changes,renamed some elements for testing, started the design stage for cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added css changes,renamed some elements for testing, started the design stage for cart" />
+    <MESSAGE value="Gave about us page css, added border under navbar &amp; some carousel changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gave about us page css, added border under navbar &amp; some carousel changes." />
   </component>
 </project>

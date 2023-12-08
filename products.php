@@ -265,8 +265,8 @@ include 'php/fetch_products.php';
                       <div class="card-body text-center" id="card-body">
                           <div class="mb-2">
                               <!-- Product Name -->
-                              <h6 class="font-weight-semibold mb-2">
-                                  <a href="product.php" class="text-default mb-2 text-decoration-none" data-abc="true"><?php echo $product['name']; ?></a>
+                              <h6 class="font-weight-semibold mb-2" >
+                                  <a href="product.php" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product['name']; ?></a>
                               </h6>
 
                               <!-- Product Genre -->
