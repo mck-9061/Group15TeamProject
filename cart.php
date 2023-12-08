@@ -234,6 +234,13 @@
             } else {
                 require 'php/fetch_cart.php';
                 $items = fetchCart();
+
+                if (sizeof($items) == 0) {
+                    ?>
+                        <div>There are no items in your cart.</div>
+                    <?php
+                }
+
                 foreach ($items as $item) {
                     ?>
 
@@ -249,7 +256,7 @@
                             <div class="col">
                                 <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
                             </div>
-                            <div class="col">&pound;<?php echo $item['price']; ?><span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
+                            <div class="col">&pound;<?php echo $item['price']; ?><span class="close"><a href=<?php echo '"php/cart/remove.php?productid=' . $item['productid'] . '"' ?> >  &#10005;</a> </span></div>
                         </div>
                     </div>
 

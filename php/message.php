@@ -4,7 +4,14 @@
         // $_SESSION['message'] = "Test message";
 
         if (isset($_SESSION['message'])) {
-            echo "{$_SESSION['message']}";
+
+            ?>
+                <!-- Add styling here -->
+                <div><?php echo "{$_SESSION['message']}"; ?></div>
+
+            <?php
+
+
             unset($_SESSION['message']);
         }
     ?>
