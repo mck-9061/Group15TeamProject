@@ -224,6 +224,7 @@ include 'php/fetch_products.php';
   </nav>
   </div>
   <!-- nav end   -->
+  <?php include 'php/message.php' ?>
   <!--bar underneath nav bar specifying type of product -->
   <div class="container mt-3">
       <div class="alert alert-primary py-2 px-3 d-flex justify-content-between align-items-center" role="alert" style="width: 200px;">
@@ -288,9 +289,9 @@ include 'php/fetch_products.php';
                           <div class=" mb-3" id="product-reviews">Reviews: <?php echo $product['reviews']; ?> </div>
 
                           <!-- Add to Cart Button -->
-                          <button type="button" class="btn bg-cart" id="add-basket-btn" onclick="alert('Added to cart')">
+                          <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn">
                               <i class="fa fa-cart-plus mr-2"></i> Add To Basket
-                          </button>
+                          </a>
                       </div>
                   </div>
               </div>

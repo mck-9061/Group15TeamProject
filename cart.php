@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+
+    <script type="text/javascript" src="js/cart_price_update.js"></script>
 </head>
 <body class="vh-100" id="shopping-cart-body">
 <!-- nav start -->
@@ -220,9 +222,6 @@
 </div>
 <!-- nav end   -->
 
-
-
-
 <div class="card" id="shopping-card">
     <div class="row">
         <div class="col-md-8 cart" id="">
@@ -232,21 +231,48 @@
                     <div class="col align-self-center text-right text-muted" id="shopping-words"><!-- Add number of products here --> items</div>
                 </div>
             </div>
-            <div class="row border-top border-bottom">
-                <div class="row main align-items-center">
-                    <div class="col-2"><img class="img-fluid" src="https://i.imgur.com/1GrakTl.jpg" id="cart-img">  <!-- Add php for database image change here    -->
 
+            <?php
+            if (!isset($_SESSION['username'])) {
+                ?>
+                    <!-- Can someone on frontend make this not look ass lmao -->
+                    <div>Please log in to access your cart.</div>
+                <?php
+            } else {
+                require 'php/fetch_cart.php';
+                $items = fetchCart();
+
+                if (sizeof($items) == 0) {
+                    ?>
+                        <div>There are no items in your cart.</div>
+                    <?php
+                }
+
+                foreach ($items as $item) {
+                    ?>
+
+                    <div class="row border-top border-bottom">
+                        <div class="row main align-items-center">
+                            <div class="col-2"><img class="img-fluid" src="<?php echo $item['image-link']; ?>" id="cart-img">
+
+                            </div>
+                            <div class="col">
+                                <div class="row text-muted"><?php echo $item['name']; ?></div>
+                                <div class="row"><?php echo $item['genre']; ?></div>
+                            </div>
+                            <div class="col">
+                                <!-- <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a> -->
+                            </div>
+                            <div class="col">&pound;<?php echo $item['price']; ?><span class="close"><a href=<?php echo '"php/cart/remove.php?productid=' . $item['productid'] . '"' ?> >  &#10005;</a> </span></div>
+                        </div>
                     </div>
-                    <div class="col">
-                        <div class="row text-muted"> Example (Product name) <!-- Product name    --> </div>
-                        <div class="row"> Example (Product Type) <!-- Product item type (cd/vinyl/ep/merch) -->      </div>
-                    </div>
-                    <div class="col">
-                        <a href="#">- </a><a href="#" class="border">Quantity</a><a href="#"> +</a>
-                    </div>
-                    <div class="col">&pound; <!-- Add price tag php -->  <span class="close">&#10005; <!-- make on click event (javascipt or php?) --></span></div>
-                </div>
-            </div>
+
+                    <?php
+                }
+            }
+            ?>
+
+
          <br>
 
 
@@ -261,21 +287,21 @@
             <hr>
             <div class="row">
 
-                <div class="col text-right">&pound;   <!--  Actual total price of all items present  --></div>
+                <div class="col text-right" id="subtotal">&pound;   <?php echo get_total_price() ?></div>
             </div>
             <form id="shopping-cart-form">
                 <p>SHIPPING</p>
-                <select class="rounded-4">
-                    <option class="text-muted">Standard Delivery (3-5 working days) <hr> &pound;5.00</option>
-                    <option class="text-muted">Next day Delivery- &pound;10.00</option>
+                <select id="shipping_select" class="rounded-4" onchange="update_cart_price()">
+                    <option class="text-muted">Standard Delivery (3-5 working days) - <hr> &pound;5.00</option>
+                    <option class="text-muted">Next Day Delivery - &pound;10.00</option>
                 </select>
 
-                <p>GIVE CODE</p>
+                <p>ENTER CODE</p>
                 <input  class="rounded-4" id="cart-discount-input" placeholder="Enter your code">
             </form>
             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                 <div class="col">TOTAL PRICE</div>
-                <div class="col text-right"> &pound; <!--  Add php here for total price + an extra for shipping depending on option picked  --></div>
+                <div class="col text-right" id="total"></div>
             </div>
 
             <!--    Link to payment page        -->
@@ -285,7 +311,7 @@
 
 </div>
 
-
+<script>update_cart_price()</script>
 
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
