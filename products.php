@@ -172,7 +172,7 @@ include 'php/fetch_products.php';
                       <?php
                       if (isset($_SESSION['username'])) {
                           ?>
-                          <p>
+                          <p class="account-username" >
                               <a
                                       href="index.php"
                               ><?php echo $_SESSION['username'] ?></a>
@@ -289,7 +289,7 @@ include 'php/fetch_products.php';
                           <div class=" mb-3" id="product-reviews">Reviews: <?php echo $product['reviews']; ?> </div>
 
                           <!-- Add to Cart Button -->
-                          <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn">
+                          <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
                               <i class="fa fa-cart-plus mr-2"></i> Add To Basket
                           </a>
                       </div>

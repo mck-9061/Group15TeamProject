@@ -7,7 +7,7 @@
 
             ?>
                 <!-- Add styling here -->
-                <div><?php echo "{$_SESSION['message']}"; ?></div>
+                <script> alert( "<?php echo "{$_SESSION['message']}"; ?>")  </script>
 
             <?php
 

@@ -387,6 +387,19 @@ color: var(--poppingPink);
   border-color: var(--accentBlack) ;
 }
 
+.account-username{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.account-username a{
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+
 /* Navbar Css end */
 
 /*  Login Page css till line 264 */
