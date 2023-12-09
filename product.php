@@ -1,18 +1,21 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <?php session_start() ?>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadence</title>
+    <title>Cadence | Product Page</title>    <!--   Change this title with Php to be Cadence | "product name"  -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+
 </head>
-<body class="vh-100" id="individual-product-body">
+<body class="vh-100" id="product-page-body">
 <!-- nav start -->
 <div>
     <!-- Nav Header  (technically drop down code?)-->
@@ -182,61 +185,38 @@
 </div>
 <!-- nav end   -->
 
-<!--bar underneath nav bar specifying type of product -->
-<div class="container mt-3">
-    <div class="alert alert-primary py-2 px-3 d-flex justify-content-between align-items-center" role="alert" style="width: 200px;">
-        <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <div class="menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </button>
-        <span>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      Category Of Product
-    </span>
-    </div>
+
+
+
+<div class="card mx-auto text-center " id="product-page-card">
+ <div class="product-container" >
+        <h2 id="product-page-product-name">      Product Name      </h2>  <!-- Change Name to HERE -->
+            <img src="assets/HatsuneMiku-WorldIsMine-Product-EP.png" id="product-page-img" alt="Product Name" width="300" height="300" >  <!-- Change the placeholder "alt" into whatever the actual product is  -->
+     <div class="card-body">
+     <div class="product-page-info">
+            <p  id="product-type"> Product Type</p>     <!-- Add product Type Here   -->
+            <p  id="product-genre"> Product Genre</p>   <!-- Add product Genre Here  -->
+            <p  id="product-price"> Product Price</p>   <!-- Add product Price Here  -->
+            <p  id="product-description" > Product Description - KEEP THIS BRIEF ~ 150 CHARACTERS AT MOST </p> <!-- Add product description Here -->
+        </div>
+
+     <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
+ </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
-<title>Product Page</title>
-<style>
-    .product-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        margin-top: 20px; /* Reduced margin-top to 20px */
-        color: white; /* Set text color to white */
-    }
 
-    .product-image {
-        width: 300px;
-    }
-
-    .product-description {
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    .add-to-basket {
-        margin-top: 20px;
-    }
-</style>
-<div class="product-container">
-    <h1 class="main-heading mt-0">Product Name</h1>
-    <img src="https://placehold.jp/350x350.png" alt="placeholder" width="300" height="300">
-    <div class="product-description"></div>
-    <div class="mb-2">
-        <p style="color: white;">Type of Product: Album, Merch, Vinyl</p>
-        <p style="color: white;">Price: £</p>
-    </div>
-    <button class="btn btn-danger">Add to basket</button>
 </div>
+
+    <div  class="text-center mx-auto rounded-4 " id="continue-shopping-product">
+         <a href="products.php" class="text-decoration-none">&leftarrow; Continue Shopping</a></button>
+
+
+    </div>
+
+<script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"
+></script>
+<script src="main.js"> </script>
 </body>
 </html>
