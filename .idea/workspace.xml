@@ -7,10 +7,6 @@
     <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Fixed fonts &amp; products page colours.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/message.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products.php" beforeDir="false" afterPath="$PROJECT_DIR$/products.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -85,7 +81,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "username-fix",
+    "git-widget-placeholder": "css-fixes",
     "last_opened_file_path": "C:/Users/Taugh/Documents/GitHub/Group15TeamProject/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -121,7 +117,6 @@
       <workItem from="1701894932214" duration="11006000" />
       <workItem from="1701910603265" duration="15923000" />
       <workItem from="1702084657626" duration="5571000" />
-      <workItem from="1702132565129" duration="2465000" />
     </task>
     <task id="LOCAL-00001" summary="Just for laptop work">
       <option name="closed" value="true" />

@@ -226,25 +226,7 @@ include 'php/fetch_products.php';
   <!-- nav end   -->
   <?php include 'php/message.php' ?>
   <!--bar underneath nav bar specifying type of product -->
-  <div class="container mt-3">
-      <div class="alert alert-primary py-2 px-3 d-flex justify-content-between align-items-center" role="alert" style="width: 200px;">
-          <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <div class="menu-icon">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-              </div>
-          </button>
-          <span>
-      <div class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      Category Of Product
-    </span>
-      </div>
-  </div>
+
 
   <div class="container d-flex justify-content-center mt-50 mb-50">
       <div class="row">

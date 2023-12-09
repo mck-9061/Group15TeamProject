@@ -228,7 +228,7 @@
             <p  id="product-type"> Product Type</p>     <!-- Add product Type Here   -->
             <p  id="product-genre"> Product Genre</p>   <!-- Add product Genre Here  -->
             <p  id="product-price"> Product Price</p>   <!-- Add product Price Here  -->
-            <p  id="product-description" > Product Description - KEEP THIS BRIEF ~ 150 CHARACTERS AT MOST </p> <!-- Add product description Here -->
+            <p  id="product-description" > Product Description - KEEP THIS BRIEF ~ 250 CHARACTERS AT MOST / MIN 220 CHARACTERS  </p> <!-- Add product description Here -->
         </div>
 
      <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
