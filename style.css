@@ -391,7 +391,7 @@ color: var(--poppingPink);
 
 /*  Login Page css till line 264 */
 #login-page {
-  background: url(assets/loginBg.png) rgba(0, 0, 0, 0.2);
+  background: url(assets/loginBG.png) rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -633,7 +633,7 @@ color: var(--poppingPink);
 /* Sign Up page Begin */
 
 #signup-page {
-  background: url(assets/signBg.png) rgba(0, 0, 0, 0.2);
+  background: url(assets/signBG.png) rgba(0, 0, 0, 0.2);
   background-size: cover;
   background-repeat: no-repeat;
 
