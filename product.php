@@ -1,12 +1,52 @@
 
+<?php
+session_start();
+
+include 'php/fetch_products.php';
+
+// Check if the product ID is set in the URL
+if (isset($_GET['productid'])) {
+    $selectedProductID = $_GET['productid'];
+
+    // Fetch all products
+    $products = fetchProducts();
+
+    // Find the selected product by its ID
+    $selectedProduct = null;
+    foreach ($products as $product) {
+        if ($product['productid'] == $selectedProductID) {
+            $selectedProduct = $product;
+            break;
+        }
+    }
+
+    if ($selectedProduct) {
+
+        $productName = $selectedProduct['name'];
+//        $productType = $selectedProduct['genre'];
+        $productGenre = $selectedProduct['genre'];
+        $productPrice = $selectedProduct['price'];
+        $productDescription = $selectedProduct['description'];
+        $productImage = $selectedProduct['image-link'];
+    } else {
+
+        $productName = 'Product Not Found';
+        $productGenre = "Inavlid genre";
+        $productPrice = "Invalid price";
+        $productDescription = "";
+        $productImage = "Inavlid Image";
+
+    }
+}
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start() ?>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cadence | Product Page</title>    <!--   Change this title with Php to be Cadence | "product name"  -->
+    <title>Cadence | <?php echo $productName; ?></title>    <!--   Change this title with Php to be Cadence | "product name"  -->
     <link rel="stylesheet" href="css/bootstrap.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -220,28 +260,27 @@
 
 
 <div class="card mx-auto text-center " id="product-page-card">
- <div class="product-container" >
-        <h2 id="product-page-product-name">      Product Name      </h2>  <!-- Change Name to HERE -->
-            <img src="assets/HatsuneMiku-WorldIsMine-Product-EP.png" id="product-page-img" alt="Product Name" width="300" height="300" >  <!-- Change the placeholder "alt" into whatever the actual product is  -->
-     <div class="card-body">
-     <div class="product-page-info">
-            <p  id="product-type"> Product Type</p>     <!-- Add product Type Here   -->
-            <p  id="product-genre"> Product Genre</p>   <!-- Add product Genre Here  -->
-            <p  id="product-price"> Product Price</p>   <!-- Add product Price Here  -->
-            <p  id="product-description" > Product Description - KEEP THIS BRIEF ~ 250 CHARACTERS AT MOST / MIN 220 CHARACTERS  </p> <!-- Add product description Here -->
+    <div class="product-container" >
+        <h2 id="product-page-product-name"><?php echo $productName; ?></h2>
+        <img src="<?php echo $productImage; ?>" id="product-page-img" alt="<?php echo $productName; ?>" width="300" height="300" >
+        <div class="card-body">
+            <div class="product-page-info">
+                <p id="product-type"> CD</p>
+                <p id="product-genre"><?php echo $productGenre; ?></p>
+                <p id="product-price"><?php echo $productPrice; ?></p>
+                <p id="product-description"><?php echo $productDescription; ?></p>
+            </div>
+
+            <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
         </div>
-
-     <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
- </div>
-</div>
-
-</div>
-
-    <div  class="text-center mx-auto rounded-4 " id="continue-shopping-product">
-         <a href="products.php" class="text-decoration-none">&leftarrow; Continue Shopping</a></button>
-
-
     </div>
+</div>
+
+<div  class="text-center mx-auto rounded-4 " id="continue-shopping-product">
+    <a href="products.php" class="text-decoration-none">&leftarrow; Continue Shopping</a></button>
+
+
+</div>
 
 <script
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"

@@ -240,33 +240,26 @@ include 'php/fetch_products.php';
                       <!-- Centering the Image -->
                       <div class="card-body d-flex justify-content-center align-items-center">
                           <!-- Fixed Image Size -->
-                          <a href="product.php">
-                          <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 200px; height: 200px;">
+                          <a href="product.php?productid=<?php echo $product['productid']; ?>">
+                              <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 200px; height: 200px;">
                           </a>
                       </div>
 
                       <div class="card-body text-center" id="card-body">
                           <div class="mb-2">
                               <!-- Product Name -->
-                              <h6 class="font-weight-semibold mb-2" >
-                                  <a href="product.php" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product['name']; ?></a>
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=<?php echo $product['productid']; ?>" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product['name']; ?></a>
                               </h6>
 
                               <!-- Product Genre -->
-                              <p id="product-genre" data-abc="true"><?php echo $product['genre']; ?> </p>
+                              <p id="product-genre" data-abc="true"><?php echo $product['genre']; ?></p>
                           </div>
 
                           <!-- Product Price -->
-                          <h4 class="mb-0 font-weight-semibold " id="product-price"> £<?php echo $product['price']; ?></h4>
+                          <h4 class="mb-0 font-weight-semibold" id="product-price"> £<?php echo $product['price']; ?></h4>
 
-                          <!-- Ratings and Reviews -->    <!--  Alex comment-why is this here?   -->
-                          <div>
-                              <i class="fa fa-star star"></i>
-                              <i class="fa fa-star star"></i>
-                              <i class="fa fa-star star"></i>
-                              <i class="fa fa-star star"></i>
-                          </div>
-
+                          <!-- Ratings and Reviews -->
                           <!-- Number of Reviews -->
                           <div class=" mb-3" id="product-reviews">Reviews: <?php echo $product['reviews']; ?> </div>
 
