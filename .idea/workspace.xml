@@ -33,6 +33,26 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ByrneHub&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="mck-9061" />
+        <option name="repository" value="Group15TeamProject" />
+      </RepoCoordinatesHolder>
+    </option>
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
+        <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -113,7 +133,23 @@
       <option name="project" value="LOCAL" />
       <updated>1701908471822</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added css changes,renamed some elements for testing, started the design stage for cart">
+      <option name="closed" value="true" />
+      <created>1701971673498</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701971673498</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Gave about us page css, added border under navbar &amp; some carousel changes.">
+      <option name="closed" value="true" />
+      <created>1702073919744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1702073919744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +182,7 @@
     <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
     <MESSAGE value="Just for laptop work" />
     <MESSAGE value="Added css changes,renamed some elements for testing, started the design stage for cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added css changes,renamed some elements for testing, started the design stage for cart" />
+    <MESSAGE value="Gave about us page css, added border under navbar &amp; some carousel changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Gave about us page css, added border under navbar &amp; some carousel changes." />
   </component>
 </project>
