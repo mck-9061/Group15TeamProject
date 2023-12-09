@@ -20,6 +20,7 @@
       <span class="LoginBorderLine"></span>
       <form method="post" action="php/signin.php">
         <h2>Sign in</h2>
+          <?php include 'php/message.php'; ?>
         <div class="inputBox">
           <input type="text" required="required" name="username" />
           <span>Username</span>
