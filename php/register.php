@@ -70,7 +70,7 @@ try {
     $statement->execute();
 
     $_SESSION['message'] = "You have registered successfully. Please log in.";
-    header("Location: ../signin.php");
+    header("Location: ../login.php");
 } catch (PDOException $ex) {
     ?>
     <p>(Error details: <?= $ex->getMessage() ?>)</p>
