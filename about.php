@@ -276,7 +276,7 @@ session_start()
                   <br>
                   <br>
                   <a  href="about.php" class="align-items-center" >
-                      <img src="assets/logo.png" width="100px" >
+                      <img src="assets/logo.png" width="100px"  id="about-img">
                   </a>
                   <br>
                   <br>

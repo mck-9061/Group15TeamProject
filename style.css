@@ -35,8 +35,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.c-item {
-}
+
 .c-img {
   object-fit: cover;
   border-bottom: 3px solid;
@@ -107,13 +106,16 @@
 
 .about-us-img img{
   width: 20rem;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
-
 }
+#about-img{
+  border-width: 3px solid;
+  border-color: green;
+}
+
 #about-us-contact-info{
   font-family: "fields", sans-serif;
   font-weight: 900;
@@ -1214,5 +1216,3 @@
   font-weight: 70;
   font-style: normal;
 }
-
-
