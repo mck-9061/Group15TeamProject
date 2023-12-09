@@ -26,7 +26,7 @@ include 'php/fetch_products.php';
 
   <body id="products-page">
   <!-- nav start -->
-  <div>
+  <div id="nav-bottom-border">
 
 
       <!-- Nav Header  (technically drop down code?)-->
@@ -92,7 +92,7 @@ include 'php/fetch_products.php';
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Rock</a></li>
                               <li><a class="dropdown-item" href="#">Indie</a></li>
-                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Pop</a></li>
+                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
 
                               <li><hr class="dropdown-divider" /></li>
                               <li>
@@ -266,8 +266,8 @@ include 'php/fetch_products.php';
                       <div class="card-body text-center" id="card-body">
                           <div class="mb-2">
                               <!-- Product Name -->
-                              <h6 class="font-weight-semibold mb-2">
-                                  <a href="product.php" class="text-default mb-2 text-decoration-none" data-abc="true"><?php echo $product['name']; ?></a>
+                              <h6 class="font-weight-semibold mb-2" >
+                                  <a href="product.php" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product['name']; ?></a>
                               </h6>
 
                               <!-- Product Genre -->

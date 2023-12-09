@@ -23,7 +23,7 @@
   <body class="vh-100 overflow-x-auto" id="index-page">
 
   <!-- nav start -->
-  <div>
+  <div id="nav-bottom-border">
 
 
       <!-- Nav Header  (technically drop down code?)-->
@@ -89,7 +89,7 @@
                           <ul class="dropdown-menu">
                               <li><a class="dropdown-item" href="#">Rock</a></li>
                               <li><a class="dropdown-item" href="#">Indie</a></li>
-                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Pop</a></li>
+                              <li><a class="dropdown-item" href="#">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
 
                               <li><hr class="dropdown-divider" /></li>
                               <li>
@@ -288,7 +288,7 @@
         </div>
         <div class="carousel-item">
           <img
-            src="assets/perfect-picture-carousel.png"
+            src="assets/InternetYamero-carousel.png"
             class="d-block w-100 c-item c-img"
             alt="Slide 4"
           />
@@ -315,7 +315,9 @@
         data-bs-target="#hero-carousel"
         data-bs-slide="prev"
       >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="carousel-control-prev-icon " aria-hidden="true" >
+
+        </span>
         <span class="visually-hidden">Previous</span>
       </button>
       <button
