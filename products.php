@@ -22,6 +22,7 @@ include 'php/fetch_products.php';
     <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
       <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+      <link rel="icon" type="image" href="assets/favicon.ico">
   </head>
 
   <body id="products-page">

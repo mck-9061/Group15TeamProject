@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>Cadence | Sign Up</title>
       <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+      <link rel="icon" type="image" href="assets/favicon.ico">
 
   </head>
   <body id="signup-page">
