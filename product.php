@@ -163,7 +163,7 @@
                     <?php
                     if (isset($_SESSION['username'])) {
                         ?>
-                        <p>
+                        <p class="account-username" >
                             <a
                                     href="index.php"
                             ><?php echo $_SESSION['username'] ?></a>
