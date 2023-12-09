@@ -121,8 +121,8 @@
   color: var(--poppingPink);
 
 }
-/*     Product page css           */
 
+/*     Products page css           */
 #products-page {
     background: url("assets/productsBG.png") rgba(0, 0, 0, 0.2);
     background-blend-mode: multiply;
@@ -141,6 +141,7 @@
 #product-img{
   border: 3px solid;
   border-color: black;
+  width: 500px;
 }
 
 #card-body{
@@ -185,12 +186,101 @@
   font-style: normal;
 }
 
-body {
-    background: url("assets/bg.png") rgba(0, 0, 0, 0.2);
-    background-blend-mode: multiply;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+/*  Individual Product page code      */
+
+#product-page-body{
+  background: url("assets/productPageBG.png") rgba(0, 0, 0, 0.2);
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#product-page-card{
+  margin-top: 70px;
+  background-color: var(--tiktokPinkwarm);
+  border: 3px solid;
+  border-color: var(--accentBlack);
+
+  width: 580px;
+  height: 650px;
+  color: white;
+
+}
+
+#product-page-product-name{
+  border-bottom: var(--tiktokPinkwarm) 1px solid;
+  color: var(--poppingPink);
+  text-align: center;
+  margin-top: 10px;
+}
+
+#product-type{
+  color: var(--warmPeach);
+  border-top: 3px solid;
+  border-color: var(--warmPeach);
+}
+#product-description{
+  color: var(--tiktokBlue);
+}
+
+.product-container{
+  margin-top: 25px;
+margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--accentBlack);
+
+}
+
+
+.product-container img{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 5px solid;
+  border-color: black;
+}
+
+
+
+
+.product-page-info{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#product-page-button{
+ justify-content: center;
+}
+
+#product-add-basket-btn{
+color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+#continue-shopping-product{
+  margin-top: 10px;
+  width: 300px;
+  text-align: center;
+  height: 25px;
+
+  background-color: var(--tiktokPinkwarm);
+  border-color: var(--tiktokPinkwarm);
+  align-content: center;
+  text-align: center;
+}
+
+#continue-shopping-product a{
+  color: whitesmoke;
 }
 
 
