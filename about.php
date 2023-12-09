@@ -242,7 +242,7 @@ session_start()
           <p>
             Feel the <a class="rhythm-color">rhythm</a>, embrace the <a class="melody-color">melody</a>, and join us in celebrating the
             diverse world of music. <a class="cadence-color">Cadence</a> is not just a platform; it's a
-            community that shares the love for music in all its forms.
+            community that shares the love for <a class="music-form-color"> music in all its forms</a>.
           </p>
 
         </div>
