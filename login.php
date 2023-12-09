@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
       <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
+      <link rel="icon" type="image" href="assets/favicon.ico">
   </head>
   <body id="login-page">
     <div class="log-box">
