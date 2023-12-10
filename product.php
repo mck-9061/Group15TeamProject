@@ -271,7 +271,7 @@ if (isset($_GET['productid'])) {
                 <p id="product-price"><?php echo $productPrice; ?></p>
                 <p id="product-description"><?php echo $productDescription; ?></p>
             </div>
-
+            <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
             <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
         </div>
     </div>
