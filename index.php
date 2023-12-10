@@ -20,7 +20,7 @@
   <link rel="icon" type="image" href="assets/favicon.ico">
   </head>
 
-  <body class="vh-100 overflow-x-auto" id="index-page">
+  <body  id="index-page">
 
   <!-- nav start -->
   <div id="nav-bottom-border">
@@ -158,8 +158,8 @@
                                   aria-label="Search"
                                   id="search-bar"
                           />
-                          <div class="btn " id="navbar-search-btn" type="submit">
-                              <div style="transform: rotate(-45deg)">
+                          <div class="btn text-center " id="navbar-search-btn" type="submit">
+                              <div >
                                   ⚲
                               </div>
                           </div>
@@ -331,53 +331,98 @@
       </button>
     </div>
 
-  <!--  Unfinished code
-<footer id="footer">
+<footer id="index-footer">
     <div class="footer-top">
         <div class="row">
             <div class="col-lg-3 col-md-6  align-items-center text-center">
                 <br>
                 <br>
-                <a  href="about.php" class="align-items-center">
-                    <img src="assets/logo.png" width="100px">
+                <a  href="about.php" class="align-items-center" >
+                    <img src="assets/logo.png" width="100px" >
                 </a>
                     <br>
                     <br>
 
             </div>
-            <div class="col-lg-3 col-md-6 footer-links">
+            <div class="col-lg-2 col-md-6 footer-links">
                 <br>
 
                 <h4 class="text-center" id="footer-useful"> Useful Links</h4>
-                <ul>
+
+                <ul class="footer-list">
+
                     <li>
                         <i class="fa fa"></i>
-                        <a href="index.php"> Home</a>
+                        <a href="index.php" class="footer-items "> Home</a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
-                        <a href="#"> Privacy Policy</a>
+                        <a href="products.php" class="footer-items"> Products page</a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
-                        <a href="#"> Cookie Policy</a>
+                        <a href="about.php" class="footer-items"> Who we are!</a>
                     </li>
                 </ul>
 
 
             </div>
-            <div class="col-lg-3 col-md-6 footer-contact">
+            <div class="col-lg-2 col-md-6 footer-contact">
                 <br>
 
                 <h4 class="text-center" id="footer-contact-us"> Contact Us</h4>
+                <ul class="footer-list">
+
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="mailto:info@cadence.com" class="footer-items "> Email  <span id="footer-email-color">info@cadence.com </span></a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Privacy Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-2 footer-contact">
+                <br>
+
+                <h4 class="text-center" id="footer-contact-us"> Legal</h4>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items "> Modern Slavery Statement</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Privacy Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Cookie Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Terms & Condition</a>
+                    </li>
+                </ul>
+
             </div>
         </div>
 
+        <div id="footer-copyright" >
+                <h5> 2023 @Copyright Cadence </h5>
 
     </div>
 
 </footer>
--->
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

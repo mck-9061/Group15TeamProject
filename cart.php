@@ -21,7 +21,7 @@
     <link rel="icon" type="image" href="assets/favicon.ico">
     <script type="text/javascript" src="js/cart_price_update.js"></script>
 </head>
-<body class="vh-100" id="shopping-cart-body">
+<body id="shopping-cart-body">
 <!-- nav start -->
 <div id="nav-bottom-border">
 
@@ -202,7 +202,7 @@
                 <div class="basketBar d-flex gap-3 mx-auto ">
 
                     <button id="basketPill" class="py-1 px-2 rounded-4" >
-                        <a href="cart.php"
+                        <a href="cart.php">
 
                         <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
                             shopping_basket
@@ -253,7 +253,7 @@
 
                     <div class="row border-top border-bottom">
                         <div class="row main align-items-center">
-                            <div class="col-2"><img class="img-fluid" src="<?php echo $item['image-link']; ?>" id="cart-img">
+                            <div class="col-2"><img class="img-fluid" alt="shopping-img" src="<?php echo $item['image-link']; ?>" id="cart-img"/>
 
                             </div>
                             <div class="col">
@@ -310,6 +310,96 @@
     </div>
 
 </div>
+<footer id="rest-footer">
+    <div class="footer-top">
+        <div class="row g-0">
+            <div class="col-lg-3 col-md-6  align-items-center text-center">
+                <br>
+                <br>
+                <a  href="about.php" class="align-items-center" >
+                    <img src="assets/logo.png" width="100px" >
+                </a>
+                <br>
+                <br>
+
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+                <br>
+
+                <h4 class="text-center" id="footer-useful"> Useful Links</h4>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="index.php" class="footer-items "> Home</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="products.php" class="footer-items"> Products page</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="about.php" class="footer-items"> Who we are!</a>
+                    </li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-2 col-md-6 footer-contact">
+                <br>
+
+                <h4 class="text-center" id="footer-contact-us"> Contact Us</h4>
+                <ul class="footer-list">
+
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="mailto:info@cadence.com" class="footer-items "> Email  <span id="footer-email-color">info@cadence.com </span></a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Privacy Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Cookie Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-2 footer-contact">
+                <br>
+
+                <h4 class="text-center" id="footer-contact-us"> Legal</h4>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items "> Modern Slavery Statement</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Privacy Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Cookie Policy</a>
+                    </li>
+                    <li>
+                        <i class="fa fa"></i>
+                        <a href="#" class="footer-items"> Terms & Condition</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div id="footer-copyright" >
+            <h5> 2023 @Copyright Cadence </h5>
+        </div>
+
+</footer>
 
 <script>update_cart_price()</script>
 

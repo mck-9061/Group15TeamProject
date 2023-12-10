@@ -35,8 +35,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.c-item {
-}
+
 .c-img {
   object-fit: cover;
   border-bottom: 3px solid;
@@ -107,13 +106,16 @@
 
 .about-us-img img{
   width: 20rem;
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-
-
 }
+#about-img{
+  border-width: 3px solid;
+  border-color: green;
+}
+
 #about-us-contact-info{
   font-family: "fields", sans-serif;
   font-weight: 900;
@@ -318,7 +320,6 @@
   background-color: var(--GAcream);
  border-width: medium;
   border-color: var(--accentBlack);
-
 }
 
 #navbar-test {
@@ -327,9 +328,23 @@
 
 #navbar-search-btn {
   background-color: var(--GAcream);
-  border-width: 3px solid;
-  border-color: var(--accentBlack);
+  border-width: 10px solid;
+
 }
+#navbar-search-btn div{
+  transform: rotate(-45deg);
+  margin-top: 3px;
+  margin-right: 3px;
+  margin-left: 3px;
+
+}
+
+.NavBarSearchDiv{
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
 
 #main-word {
   color: antiquewhite;
@@ -1142,26 +1157,62 @@
   }
 }
 
-/* Footer css  Unfinished
 
-#footer{
-  background-color: var(--accentBlack);
+/* Footer CSS start  */
+#index-footer{
+ background: url("assets/footerBG.png");
 }
 
+#rest-footer{
+  margin-top: 130px;
+  background: url("assets/footerBG.png");
+}
 #footer-useful{
   color: var(--poppingPink);
-
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   border-bottom: 1px solid;
   border-color: var(--tiktokBlue);
+}
+
+.footer-list{
+  list-style-type: none;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.footer-items{
+
+  margin-top: 30px;
+  text-decoration: none;
+  color: whitesmoke;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
 }
 #footer-contact-us{
   color: var(--poppingPink);
-
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   border-bottom: 1px solid;
   border-color: var(--tiktokBlue);
 }
-#footer-copyright{
-  background-color: var(--accentBlack);
+
+#footer-email-color{
+  color: var(--poppingPink);
 }
 
-*/
+#footer-copyright{
+  margin-top: 10px;
+  background-color: black;
+  height: 50px;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "fields", sans-serif;
+  font-weight: 70;
+  font-style: normal;
+}
