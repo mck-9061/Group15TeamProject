@@ -11,8 +11,27 @@ function fetchProducts() {
             JOIN `product-pictures` ON products.productid = `product-pictures`.productid
         ";
 
-        $statement = $db->prepare($query);
-        $statement->execute();
+        if (isset($_GET["genre"]) and isset($_GET["type"])) {
+            $query = $query . " WHERE `products`.`genre` = ? AND `products`.`type` = ?";
+            $statement = $db->prepare($query);
+            $statement->execute(array($_GET["genre"], $_GET["type"]));
+
+        } else if (isset($_GET["genre"])) {
+            $query = $query . " WHERE `products`.`genre` = ?";
+            $statement = $db->prepare($query);
+            $statement->execute(array($_GET["genre"]));
+
+        } else if (isset($_GET["type"])) {
+            $query = $query . " WHERE `products`.`type` = ?";
+            $statement = $db->prepare($query);
+            $statement->execute(array($_GET["type"]));
+
+        } else {
+            $statement = $db->prepare($query);
+            $statement->execute();
+        }
+
+
         $products = $statement->fetchAll(PDO::FETCH_ASSOC);
 
         return $products;
