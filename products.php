@@ -238,7 +238,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
@@ -281,7 +281,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
@@ -323,7 +323,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
@@ -366,7 +366,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
@@ -410,7 +410,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product Name</a>
                   <br>
-                  <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                  <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
@@ -453,7 +453,7 @@
                 <h6 class="font-weight-semibold mb-2">
                   <a href="product.php" class="text-default mb-2" data-abc="true">Product name</a>
                   <br>
-                <img src="https://placehold.jp/200x200.png" alt="placeholder" width="200" height="200">
+                <img src="https://placehold.jp/100%x100%.png" alt="placeholder" width="100%" height="100%">
                 <br>
                 <br>
                 <br>
