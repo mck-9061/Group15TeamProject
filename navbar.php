@@ -1,3 +1,4 @@
+<script src="js/search.js"></script>
 <!-- nav start -->
 <div id="nav-bottom-border">
 
@@ -125,19 +126,16 @@
                         </ul>
                 </ul>
                 <div class="NavBarSearchDiv">
-                    <form class="d-flex text-align-center justify-content-end" role="search" >
+                    <form class="d-flex text-align-center justify-content-end" role="search" method="post" action="php/search.php" >
                         <input
                             class="form-control me-3 "
-                            type="search"
+                            type="text"
                             placeholder="search..."
                             aria-label="Search"
                             id="search-bar"
+                            name="term"
                         />
-                        <div class="btn " id="navbar-search-btn" type="submit">
-                            <div style="transform: rotate(-45deg)">
-                                ⚲
-                            </div>
-                        </div>
+                        <input class="btn" type="submit" value="🔍" id="navbar-search-btn">
                     </form>
                 </div>
                 <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
