@@ -153,7 +153,7 @@
                                     href="php/logout.php"
                                     class=" px-2 py-2 rounded-4"
                                     id="logout-pill"
-                            >Logout</a>
+                            >Log out</a>
                         </p>
                         <?php
                     } else {

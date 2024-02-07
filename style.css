@@ -372,6 +372,20 @@
   font-weight: 900;
   font-style: normal;
 }
+#logout-pill {
+  background-color: var(--bs-red);
+  text-decoration: none;
+  color: white;
+  border: 2px solid;
+  border-color: var(--darkwaterBlue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
 #sign-pill {
   background-color: var(--warmPeachcold);
   text-decoration: none;
