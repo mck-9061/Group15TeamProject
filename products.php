@@ -44,7 +44,7 @@ include 'php/fetch_products.php';
                       <div class="card-body d-flex justify-content-center align-items-center">
                           <!-- Fixed Image Size -->
                           <a href="product.php?productid=<?php echo $product['productid']; ?>">
-                              <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 200px; height: 200px;">
+                              <img src="<?php echo $product['image-link']; ?>" class="card-img-top" id="product-img" alt="Product Image" style="width: 100%; height: 100%;">
                           </a>
                       </div>
 
