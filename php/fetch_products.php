@@ -8,6 +8,7 @@ function fetchProducts() {
 
         // First check for a search term
         if (isset($_GET["search"])) {
+
             $query = "
             SELECT products.*, `product-pictures`.`image-link`
             FROM products
@@ -56,5 +57,26 @@ function fetchProducts() {
         return [];
     }
 
+}
+
+function fetchLinks($productid) {
+    global $db;
+
+    try {
+
+        $query = "
+            SELECT * FROM `external-links` WHERE `productid` = ?
+        ";
+
+        $statement = $db->prepare($query);
+        $statement->execute(array($productid));
+
+        $links = $statement->fetchAll(PDO::FETCH_ASSOC);
+
+        return $links;
+    } catch (PDOException $ex) {
+        echo "Error: " . $ex->getMessage();
+        return [];
+    }
 }
 ?>
