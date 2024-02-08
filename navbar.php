@@ -2,42 +2,42 @@
 <!-- nav start -->
 <div id="nav-bottom-border">
 
-
-    <!-- Nav Header  (technically drop down code?)-->
+    <!-- Nav Header  (technically drop-down code?)-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container d-flex">
-            <a class="navbar-brand  fs-1" id="main-word" href="index.php">CADENCE</a>
+            <a class="navbar-brand fs-1" id="main-word" href="index.php">CADENCE</a>
             <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
             >
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Nav body -->
-            <div class=" navbar-collapse collapse " id="navbarSupportedContent">
+            <div class=" navbar-collapse collapse" id="navbarSupportedContent">
 
                 <ul class="navbar-nav align-items-center justify-content-center me-auto mx-auto ">
                     <li class="nav-item" id="nav-words">
                         <a
-                            class="nav-link active text-white fs-5"
-                            aria-current="page"
-                            href="about.php"
+                                class="nav-link active text-white fs-5"
+                                aria-current="page"
+                                href="about.php"
                         >ABOUT US</a
                         >
+                    </li>
 
                     <li class="nav-item dropdown" id="nav-words">
                         <a
-                            class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                                class="nav-link dropdown-toggle text-white text-decoration-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                         >
                             CD'S
                         </a>
@@ -55,11 +55,11 @@
 
                     <li class="nav-item dropdown" id="nav-words">
                         <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                         >
                             VINYL
                         </a>
@@ -74,13 +74,14 @@
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown" id="nav-words">
                         <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                         >
                             EPs
                         </a>
@@ -95,13 +96,14 @@
                             </li>
                         </ul>
                     </li>
+
                     <li class="nav-item dropdown" id="nav-words">
                         <a
-                            class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-expanded="false"
+                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
+                                href="#"
+                                role="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false"
                         >
                             Merch
                         </a>
@@ -119,52 +121,56 @@
                             <li>
                                 <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
                             </li>
-
-
-
-
                         </ul>
+                    </li>
                 </ul>
+
                 <div class="NavBarSearchDiv">
-                    <form class="d-flex text-align-center justify-content-end" role="search" method="post" action="php/search.php" >
+                    <form class="d-flex text-align-center justify-content-end" role="search" method="post" action="php/search.php">
                         <input
-                            class="form-control me-3 "
-                            type="text"
-                            placeholder="search..."
-                            aria-label="Search"
-                            id="search-bar"
-                            name="term"
+                                class="form-control me-3 "
+                                type="text"
+                                placeholder="search..."
+                                aria-label="Search"
+                                id="search-bar"
+                                name="term"
                         />
                         <input class="btn" type="submit" value="🔍" id="navbar-search-btn">
                     </form>
                 </div>
-                <div class="accountNavBar d-flex gap-3  mx-auto justify-content-end">
+
+                <div class="accountNavBar d-flex gap-3 mx-auto justify-content-end">
                     <?php
                     if (isset($_SESSION['username'])) {
                         ?>
                         <p class="account-username" >
                             <a
-                                href="index.php"
+                                    href="index.php"
                             ><?php echo $_SESSION['username'] ?></a>
+                        </p>
+                        <p>
+                            <a
+                                    href="php/logout.php"
+                                    class=" px-2 py-2 rounded-4"
+                                    id="logout-pill"
+                            >Log out</a>
                         </p>
                         <?php
                     } else {
                         ?>
                         <p>
                             <a
-                                href="login.php"
-                                class=" px-2 py-2 rounded-4"
-                                id="login-pill"
+                                    href="login.php"
+                                    class=" px-2 py-2 rounded-4"
+                                    id="login-pill"
                             >Login</a>
                         </p>
                         <p>
                             <a
-                                href="signup.php"
-                                class="px-3 py-2 rounded-4"
-                                id="sign-pill"
+                                    href="signup.php"
+                                    class="px-3 py-2 rounded-4"
+                                    id="sign-pill"
                             >Sign Up</a>
-
-
                         </p>
                         <?php
                     }
@@ -173,23 +179,16 @@
                 </div>
 
                 <div class="basketBar d-flex gap-3 mx-auto ">
-
-                    <button id="basketPill" class="py-1 px-2 rounded-4" >
-                        <a href="cart.php"
-
-                        <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
-                            shopping_basket
-                          </span>
-
+                    <button id="basketPill" class="py-1 px-2 rounded-4">
+                        <a href="cart.php">
+                            <span class="material-symbols-outlined text-decoration-none" id="basket-icon">
+                                shopping_basket
+                            </span>
                         </a>
                     </button>
-
                 </div>
-
-
             </div>
         </div>
-</div>
 </div>
 </nav>
 </div>
