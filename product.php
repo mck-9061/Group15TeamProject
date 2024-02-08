@@ -28,6 +28,10 @@ if (isset($_GET['productid'])) {
         $productPrice = $selectedProduct['price'];
         $productDescription = $selectedProduct['description'];
         $productImage = $selectedProduct['image-link'];
+
+        $links = fetchLinks($selectedProductID);
+
+
     } else {
 
         $productName = 'Product Not Found';
@@ -35,6 +39,8 @@ if (isset($_GET['productid'])) {
         $productPrice = "Invalid price";
         $productDescription = "";
         $productImage = "Inavlid Image";
+
+        $links = array();
 
     }
 }
@@ -74,6 +80,13 @@ if (isset($_GET['productid'])) {
                 <p id="product-genre"><?php echo $productGenre; ?></p>
                 <p id="product-price"><?php echo $productPrice; ?></p>
                 <p id="product-description"><?php echo $productDescription; ?></p>
+                <?php
+                    foreach ($links as $link) {
+                        ?>
+                            <a id="product-link" href="<?php echo $link['link']; ?>"><?php echo $link['description']; ?></a>
+                        <?php
+                    }
+                ?>
             </div>
             <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
             <button class="btn bg-cart " id="product-add-basket-btn"> Add to basket</button>
