@@ -5,7 +5,7 @@
 
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Home</title>
+    <title>Admin Products</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -30,7 +30,7 @@
 
         <li>
             <i class="fa fa"></i>
-            <a href="admin.php" class="sidebar-item is-active"> Admin Home</a>
+            <a href="admin.php" class="sidebar-item"> Admin Home</a>
         </li>
         <li>
             <i class="fa fa"></i>
@@ -38,7 +38,7 @@
         </li>
         <li>
             <i class="fa fa"></i>
-            <a href="adminProducts.php" class="sidebar-item"> Manage Products</a>
+            <a href="adminProducts.php" class="sidebar-item is-active"> Manage Products</a>
         </li>
         <li>
             <i class="fa fa"></i>
@@ -48,21 +48,20 @@
 
 
 </div>
-<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#sidebar" role="button" id="admin-list-btn" aria-controls="offcanvasExample">
+<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="offcanvasExample">
    Admin List
 </a>
 
+
+
+
 <div class="card">
-    <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" alt="Avatar" style="width:100%">
+    <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" alt="Album Art" style="width:100%">
     <div class="container">
-        <h4><b>John Doe</b></h4>
-        <p>Architect & Engineer</p>
+        <h4><b>Artists</b></h4>
+        <p> Album Name</p>
     </div>
 </div>
-
-
-
-
 
 
 

@@ -1,0 +1,62 @@
+:root {
+    --purple: #8c38ff;
+    --darkwaterBlue: #0f292f;
+    --poppingPink: #cb2d6f;
+    --accentBlack: #2d283e;
+    --promisingPurple: #281941;
+    --tiktokBlue: #74f0ed;
+    --tiktokPink: #ea445a;
+    --tiktokPinkwarm: #ea445ad3;
+    --shiningYellow: #fdd935;
+    --grapeGreen: #a6aa35;
+    --peach: #faa88b;
+    --warmPeach: #eb716a;
+    --warmPeachcold: #eb706ab9;
+    --pinkypeach: #f9d4e6;
+    --mint: #99edc3;
+    --seafoam: #3ded97;
+    --navbarPurple: #54005d;
+    --GAorange: #ff9f59;
+    --GAcream: #e7d6d0;
+    --darkOrange: #d43f10;
+    --searchgreen: #76cebf;
+}
+
+#admin-home{
+    background-color: var(--accentBlack);
+}
+#admin-home h5{
+    color: var(--tiktokPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+.sidebar-content{
+    color: var(--accentBlack);
+}
+.sidebar-item{
+    color: green;
+    text-decoration: none;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-align: center;
+}
+.is-active{
+    color: var(--navbarPurple);
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
