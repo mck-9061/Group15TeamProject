@@ -1,4 +1,4 @@
-admin.php<!Doctype HTML>
+<!Doctype HTML>
 <html lang="en">
 
 <head>
@@ -21,7 +21,7 @@ admin.php<!Doctype HTML>
 </head>
 
 <body id="admin-home">
-<div class="offcanvas offcanvas-start show" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
+<div class="offcanvas offcanvas-start " tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Cadence-Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -29,7 +29,7 @@ admin.php<!Doctype HTML>
     <ul class="sidebar-content">
         <li>
             <i class="fa fa"></i>
-            <a href="admin.php" class="sidebar-item"> Admin Home</a>
+            <a href="adminHome.php" class="sidebar-item"> Admin Home</a>
         </li>
         <li>
             <i class="fa fa"></i>

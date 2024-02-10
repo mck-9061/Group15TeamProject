@@ -21,42 +21,81 @@
     --darkOrange: #d43f10;
     --searchgreen: #76cebf;
 }
-
+/*    Following is for main Admin Panel Home page          */
 #admin-home{
-    background-color: var(--accentBlack);
-}
-#admin-home h5{
-    color: var(--tiktokPink);
-    font-family: "fields", sans-serif;
-    font-weight: 900;
-    font-style: normal;
-    text-align: center;
+    background: var(--accentBlack);
 }
 .sidebar-content{
     color: var(--accentBlack);
 }
 .sidebar-item{
     color: green;
+    text-align: center;
     text-decoration: none;
     font-family: "fields", sans-serif;
     font-weight: 900;
     font-style: normal;
-    text-align: center;
 }
 .is-active{
-    color: var(--navbarPurple);
+    color: var(--promisingPurpler);
 }
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card{
+    box-shadow: 0 4px 8px 0 rbga(0,0,0,0.2);
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
 }
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.container {
+.hero-card-home{
     padding: 2px 16px;
+    margin: auto;
+    margin-top: 100px;
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    color: var(--warmPeach);
+    text-transform: uppercase;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    box-shadow: 10px 10px;
+}
+.hero-card-home a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 16px;
+}
+.hero-card-home button{
+    color: var(--accentBlack);
+    background: var(--peach);
+    box-shadow: 4px 4px;
+    border-radius: 12px;
+    border-color: var(--accentBlack);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-top: 20px;
+}
+.hero-card-home hr{
+    border: 3px solid black;
+}
+#invisible-line{
+   border: var(--warmPeach);
+}
+#home-title{
+    text-decoration: underline;
+    text-decoration-color: var(--accentBlack);
+    text-decoration-style: wavy ;
+    text-decoration-thickness: 2px ;
+    font-size: 20px;
+    color: var(--tiktokPink);
+}
+.offcanvas{
+    background: var(--GAcream);
+}
+/*  Following is for Admin Products page */
+
+#admin-options-panel{
+    position: relative;
+    background: black;
+    border: none;
 }

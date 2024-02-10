@@ -37,7 +37,6 @@
 }
 
 .c-img {
-  object-fit: cover;
   border-bottom: 3px solid;
   border-color: var(--accentBlack);
 }
@@ -85,6 +84,7 @@
 .about-us-text h2{
   color: antiquewhite;
 }
+
 
 
 .cadence-color{
@@ -328,7 +328,7 @@
 
 #navbar-search-btn {
   background-color: var(--GAcream);
-  border-width: 10px solid;
+  border-width: 10px;
 
 }
 #navbar-search-btn div{
@@ -419,7 +419,7 @@
   font-family: "fields", sans-serif;
   font-weight: 900;
   font-style: normal;
-  text-transform: uppercase;
+
 }
 
 .account-username a{
@@ -1102,6 +1102,11 @@
 
   }
 
+  .c-img{
+    object-fit: cover;
+    width: 1000px;
+  }
+
   .accountNavBar p{
     width: 100%;
   }
@@ -1216,75 +1221,8 @@
   font-weight: 70;
   font-style: normal;
 }
-#admin-home{
-  background-color: var(--accentBlack);
-}
-.sidebar-navigation {
-  display: inline-block;
-  min-height: 100vh;
-  width: 80px;
-  background-color: $sidebar-background-color;
-  float: left;
 
-  ul {
-    text-align: center;
-    color: white;
+ 
 
-    li {
-      padding: 28px 0;
-      cursor: pointer;
-      transition: all ease-out 120ms;
 
-      i {
-        display: block;
-        font-size: 24px;
-
-        transition: all ease 450ms;
-      }
-
-      .tooltip {
-        display: inline-block;
-        position: absolute;
-        background-color: $tooltip-background-color;
-        padding: 8px 15px;
-        border-radius: 3px;
-        margin-top: -26px;
-        left: 90px;
-        opacity: 0;
-        visibility: hidden;
-        font-size: 13px;
-        letter-spacing: .5px;
-
-        &:before {
-          content: '';
-          display: block;
-          position: absolute;
-          left: -4px;
-          top: 10px;
-          transform: rotate(45deg);
-          width: 10px;
-          height: 10px;
-          background-color: inherit;
-        }
-      }
-
-      &:hover {
-        background-color: $hover-sidebar-link-color;
-
-        .tooltip {
-          visibility: visible;
-          opacity: 1;
-        }
-      }
-
-      &.active {
-        background-color: $active-sidebar-link-color;
-
-        i {
-          color: $active-link-color;
-        }
-      }
-    }
-  }
-}
 
