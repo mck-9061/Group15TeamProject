@@ -74,6 +74,13 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+#policy-page {
+  background: url("assets/tapebackground.webp") ;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .about-us-text{
   font-family: "fields", sans-serif;
