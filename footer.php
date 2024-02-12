@@ -64,7 +64,7 @@
 
                     <li>
                         <i class="fa fa"></i>
-                        <a href="#" class="footer-items "> Modern Slavery Statement</a>
+                        <a href="statement.php" class="footer-items "> Modern Slavery Statement</a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
@@ -76,7 +76,7 @@
                     </li>
                     <li>
                         <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Terms & Condition</a>
+                        <a href="terms-condition.php" class="footer-items"> Terms & Condition</a>
                     </li>
                 </ul>
 

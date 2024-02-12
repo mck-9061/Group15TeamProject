@@ -157,13 +157,17 @@ session_start()
         <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span style="font-size: 15px; color: rgb(89, 89, 89);"><span data-custom-class="body_text">
                         <bdt class="question">Cadence</bdt>
                     </span></span></span></div>
-        <div style="line-height: 1.5;"><span style="font-size: 15px; color: rgb(89, 89, 89);">
-                <bdt class="question"><span data-custom-class="body_text">__________</span></bdt><span data-custom-class="body_text">
+        <div style="line-height: 1.5;"><span style="font-size: 15px; color: #fff;">
+                <bdt class="question">
+                    <p>Email: <a href="mailto:info@cadence.com" class="text-decoration-none" id="contact-info-colors">info@cadence.com</a></p>
+                </bdt><span data-custom-class="body_text">
                     <bdt class="block-component"></bdt>
                 </span>
             </span></div>
         <div style="line-height: 1.5;"><span data-custom-class="body_text"><span style="font-size: 15px; color: rgb(89, 89, 89);">
-                    <bdt class="question">__________</bdt>
+                    <bdt class="question">
+                        <p>Phone: <a id="contact-info-colors">+44 5362 561899</a> </p>
+                    </bdt>
                     <bdt class="block-component"></bdt>
                     <bdt class="block-component"></bdt>
                     <bdt class="block-component">

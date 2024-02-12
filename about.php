@@ -61,9 +61,12 @@ session_start()
     <div class="row">
       <div class="col-lg-8 offset-lg-2 text-white mx-auto align-content-center" id="about-us-contact-info">
 
-        <h2 class="mb-4">Contact Information</h2>
-        <p>Email: <a href="mailto:info@cadence.com" class="text-decoration-none" id="contact-info-colors">info@cadence.com</a></p>
-        <p>Phone: <a id="contact-info-colors">+44 5362 561899</a> </p>
+        <a href="contact-us.php" class="contact-info-colors">
+          <h2 class="mb-4 contact-info-colors">
+            Contact Information
+          </h2>
+        </a>
+
       </div>
     </div>
   </div>
