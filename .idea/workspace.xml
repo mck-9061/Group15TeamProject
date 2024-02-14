@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Made branch for front end admin panel">
-      <change afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Made Admin Accounts, Products and Product more developed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminCustomers.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProducts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +48,7 @@
     </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="ee4e588c-9924-4e0c-81c6-4ac283480855" />
+        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
         <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
       </UrlAndAccount>
     </option>
@@ -206,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707347367082</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made Admin Accounts, Products and Product more developed">
+      <option name="closed" value="true" />
+      <created>1707889221965</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707889221965</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +249,7 @@
     <MESSAGE value="FAVICON" />
     <MESSAGE value="Footer Added" />
     <MESSAGE value="Made branch for front end admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made branch for front end admin panel" />
+    <MESSAGE value="Made Admin Accounts, Products and Product more developed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made Admin Accounts, Products and Product more developed" />
   </component>
 </project>

@@ -54,6 +54,35 @@
     Admin List (Click on)
 </a>
 
+<h1 id="product-type-statement" class="text-center text-uppercase">Products Type</h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
+
+<div class="container-md py-4">
+
+    <!--
+
+    Plan two things needed. First form on maybe left hand side of screen so that any edits can take place to the actual content of the products,
+    then on the right side of the screen it shows how that change will affect the product listing.
+
+    This basically makes the use of a mobile form impossible for the admin panel as that WILL break the screen.
+
+
+
+
+
+    -->
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
 
 <script src="main.js"> </script>
 </body>
