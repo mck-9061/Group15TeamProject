@@ -21,7 +21,7 @@
 </head>
 
 <body id="admin-home">
-<div class="offcanvas offcanvas-start " tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
+<div class="offcanvas offcanvas-end " tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Cadence-Admin</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -47,19 +47,120 @@
 
 
 </div>
-<a class="btn btn-primary" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="offcanvasExample">
-   Admin List
+<a class="btn btn-primary py-2 d-md-grid" data-bs-toggle="offcanvas" href="#sidebar" role="button" id="admin-options-panel" aria-controls="offcanvasExample">
+    Admin List (Click on)
 </a>
+<div class="headers">
+    <h1 id="product-type-statement" class="text-center text-uppercase"> Accounts </h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
+    <div class="dropdown text-center">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Change How listed
+            <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a href="#">A-Z</a></li>
+            <li><a href="#">Z-A</a></li>
+            <li><a href="#">Oldest - Newest</a></li>
+            <li><a href="#">Newest - Oldest</a></li>
+        </ul>
+    </div>
 
 
-    
-<div class="card">
-    <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" alt="Album Art" style="width:100%">
-    <div class="container">
-        <h4><b>Artists</b></h4>
-        <p> Album Name</p>
+</div>
+
+<div class="container py-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" style="width: 100%" height="100%" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem">
+                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
+                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
+                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
+                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                </div>
+                <div class="d-flex justify-content-around">
+                    <h3> Price</h3>
+                    <button class="btn btn-dark" type="button">Edit</button>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 
 
 
