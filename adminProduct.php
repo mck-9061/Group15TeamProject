@@ -106,8 +106,19 @@
         <div class="grid-item"><label for="QTAv">Quantity available:</label>
             <input type="text" id="QTAv" name="QTAv">
         </div>
+        <div class="grid-item"><label for="PRDImg">Product Image</label>
+            <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png"  class="product-img" alt="...">
+        </div>
+      <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
+            <input type="file" id="NewImg" name="NewImg">
+            <input type="submit">
+        </div>
+-->         <!-- Instead make it a hover effect on the image to change it -->
+        <div class="grid-item"><label for="checkSave">Save changes</label>
+            <input type="text" id="checkSave" name="checkSave">
 
-
+            <input type="reset" id="resetChanges">
+        </div>
     </div>
 
 

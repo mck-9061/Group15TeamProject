@@ -139,5 +139,10 @@
     padding: 20px;
     font-size: 30px;
     text-align: center;
-
+}
+.product-img{
+    object-fit: cover;
+}
+#resetChanges{
+    margin-top: 10px;
 }
