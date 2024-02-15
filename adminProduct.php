@@ -66,11 +66,49 @@
     This basically makes the use of a mobile form impossible for the admin panel as that WILL break the screen.
 
 
-
-
-
     -->
 
+    <div class="grid-edit-container">
+
+        <div class="grid-item">
+            <label for="ArtName">Artist name:</label>
+            <input type="text" id="ArtName" name="ArtName">
+        </div>
+        <div class="grid-item">
+            <label for="AlbmName">Album name:</label>
+            <input type="text" id="AlbmName" name="AlbmName">
+        </div>
+        <div class="grid-item">
+            <label for="Genre">Genre:</label>
+            <input type="text" id="Genre" name="Genre">
+        </div>
+        <div class="grid-item">
+            <label for="PrdType">Product Type:</label>
+            <input type="text" id="PrdType" name="PrdType">
+        </div>
+        <div class="grid-item">
+            <label for="PrdDsc">Product Description:</label>
+            <input type="text" id="PrdDsc" name="PrdDsc">
+        </div>
+        <div class="grid-item">
+            <label for="PrdPrice">Product Price:</label>
+            <input type="text" id="PrdPrice" name="PrdPrice">
+        </div>
+        <div class="grid-item"><label class="container">On sale:
+                <br>
+                <input type="checkbox" checked="checked">
+                <span class="checkmark"></span>
+            </label></div>
+        <div class="grid-item">
+            <label for="SaleAMT">Sale amount:</label>
+            <input type="text" id="SaleAMT" name="SaleAMT">
+        </div>    <!-- This needs to only be selectable if the Sale Box is checked -->
+        <div class="grid-item"><label for="QTAv">Quantity available:</label>
+            <input type="text" id="QTAv" name="QTAv">
+        </div>
+
+
+    </div>
 
 
 
