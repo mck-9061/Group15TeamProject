@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Products</title>
+    <title>Account Name</title> <!--Change to customer name via php -->
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -16,7 +16,7 @@
 
 </head>
 
-<body id="admin-product">
+<body id="admin-home">
 <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Cadence-Admin</h5>
@@ -71,74 +71,40 @@
     <div class="grid-edit-container">
 
         <div class="grid-item">
-            <label for="ArtName">Artist name:</label>
-            <br>
-            <input type="text" id="ArtName" placeholder="artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
+            <label for="ACCFName">Account holder name:</label>
+            <input type="text" id="ACCFName" name="ACCFName">
+            <input type="text" id="ACCLName" name="ACCLName">
         </div>
         <div class="grid-item">
-            <label for="AlbmName">Album name:</label>
-            <br>
-            <input type="text" id="AlbmName" placeholder="album name" name="AlbmName"> <!-- change placeholder to album id  -->
+            <label for="ACCEmail">Account Email:</label>
+            <input type="text" id="ACCEmail" name="ACCEmail">
         </div>
         <div class="grid-item">
-            <label for="Genre">Genre:</label>
-            <br>
-            <input type="text" id="Genre" placeholder="genre" name="Genre"> <!-- change placeholder to genre id  -->
+            <label for="ACCADDS">Account Address:</label>
+            <input type="text" id="ACCADDS" name="ACCADDS">
         </div>
         <div class="grid-item">
-            <label for="PrdType">Product Type:</label>
-            <br>
-            <input type="text" id="PrdType" placeholder="product type" name="PrdType"> <!-- change placeholder to product type id  -->
+            <label for="telNum">Telephone Number:</label>
+            <input type="tel" id="telNum" name="telNum">
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
-    <br>
-
-                <textarea id="description-box" name="description-box" rows="4" cols="40">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
-
-
+            <input type="text" id="PrdDsc" name="PrdDsc">
         </div>
         <div class="grid-item">
             <label for="PrdPrice">Product Price:</label>
-            <br>
             <input type="text" id="PrdPrice" name="PrdPrice">
         </div>
-        <div class="grid-item"><label class="container">On sale:
-                <br>
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label></div>
-        <div class="grid-item">
-            <label for="SaleAMT">Sale amount:</label>
-            <br>
-            <input type="text" id="SaleAMT" name="SaleAMT">
-        </div>    <!-- This needs to only be selectable if the Sale Box is checked -->
-        <div class="grid-item"><label for="QTAv">Quantity available:</label>
-            <br>
-            <input type="text" id="QTAv" name="QTAv">
-        </div>
-        <div class="grid-item"><label for="PRDImg">Product Image</label>
-            <br>
-            <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png"  class="product-img" alt="...">
-        </div>
-      <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
-            <input type="file" id="NewImg" name="NewImg">
-            <input type="submit">
-        </div>
--->         <!-- Instead make it a hover effect on the image to change it -->
+
+        <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
+              <input type="file" id="NewImg" name="NewImg">
+              <input type="submit">
+          </div>
+  -->         <!-- Instead make it a hover effect on the image to change it -->
         <div class="grid-item"><label for="checkSave">Save changes</label>
-            <br>
-            <input type="submit" value="Save Changes">
+            <input type="text" id="checkSave" name="checkSave">
 
-            <input type="reset" id="resetChanges" value="Reset to default">
-            <br>
-            <br>
-            <br>
-            <input type="button" value="Remove Product">
-
-            <br>
-            <br>
-            <input type="button" value="Go Back">
+            <input type="reset" id="resetChanges">
         </div>
     </div>
 

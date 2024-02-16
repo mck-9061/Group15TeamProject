@@ -5,7 +5,7 @@
 
    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Accounts</title>
+    <title>Admin Customer Accounts</title>
     <link rel="stylesheet" href="css/bootstrap.css" />
     <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -56,9 +56,9 @@
         <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Change How listed
             <span class="caret"></span></button>
         <ul class="dropdown-menu">
-            <li><a href="#">A-Z</a></li>
+            <li><a href="#">A-Z</a></li> <!-- Rig this via Account Name tag -->
             <li><a href="#">Z-A</a></li>
-            <li><a href="#">Oldest - Newest</a></li>
+            <li><a href="#">Oldest - Newest</a></li>  <!-- Rig this via the Account Age tag  -->
             <li><a href="#">Newest - Oldest</a></li>
         </ul>
     </div>
@@ -67,97 +67,40 @@
 </div>
 
 <div class="container py-5">
-    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 py-5">
         <div class="col">
             <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" style="width: 100%" height="100%" class="card-img-top" alt="...">
+
                 <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                    <h5 class="card-title">Account Name</h5>  <!-- Account Name  -->
+                    <h6 class="card-subtitle">Account Email</h6> <!-- Account Email -->
+                    <h6 class="card-subtitle">Account age: <br> "Age"</h6> <!-- Date Account Made -->
+                    <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
+
                 </div>
                 <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
+                    <button class="btn btn-dark" onclick="window.location='adminCustomerAccountView.php'" type="button">View</button>
                 </div>
             </div>
         </div>
         <div class="col">
             <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
+
                 <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
+                    <h5 class="card-title">Account Name</h5>  <!-- Account Name  -->
+                    <h6 class="card-subtitle">Account Email</h6> <!-- Account Email -->
+                    <h6 class="card-subtitle">Account age: <br> "Age"</h6> <!-- Date Account Made -->
+                    <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
+
                 </div>
                 <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
+                    <button class="btn btn-dark" onclick="window.location='adminCustomerAccountView.php'" type="button">View</button>
                 </div>
             </div>
         </div>
-        <div class="col">
-            <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
-                </div>
-                <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
-                </div>
-                <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
-                </div>
-                <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem">
-                <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" class="card-img-top" alt="...">
-                <div class="card-body text-center">
-                    <h5 class="card-title">Artist Name</h5>  <!-- Artist Name  -->
-                    <h6 class="card-subtitle">Album Name</h6> <!-- Album Name -->
-                    <h6 class="card-subtitle">Genre</h6> <!-- Product Genre -->
-                    <p class="card-text">Lorem Ipsom</p> <!-- Product Description -->
-                </div>
-                <div class="d-flex justify-content-around">
-                    <h3> Price</h3>
-                    <button class="btn btn-dark" type="button">Edit</button>
-                </div>
-            </div>
-        </div>
+
+
+
     </div>
 </div>
 

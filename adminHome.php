@@ -27,9 +27,11 @@
  <p id="home-title">Welcome to Cadence Admin Panel</p>
 <p>Panel access</p>
     <div class="hero-card-links">
+        <a href="adminAccounts.php" > Manage Accounts</a>
    <a href="adminProducts.php" > Manage Products</a>
-    <a href="adminAccounts.php" > Manage Accounts</a>
     <a href="index.php" > Cadence public Home</a>
+        <br>
+        <a href="addProduct.php">Add a Product</a>
     </div>
 
     <hr id="invisible-line">

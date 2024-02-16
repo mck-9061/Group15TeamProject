@@ -127,6 +127,11 @@
 }
 
 /*   Indivdual Product page */
+#admin-product{
+    background-color: var(--accentBlack);
+    font-size: 14px;
+}
+
 .grid-edit-container{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -137,7 +142,7 @@
     background-color: rgba(255, 255, 255, 0.8);
     border: 1px solid var(--accentBlack);
     padding: 20px;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
 }
 .product-img{

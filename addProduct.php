@@ -54,7 +54,7 @@
     Admin List (Click on)
 </a>
 
-<h1 id="product-type-statement" class="text-center text-uppercase">Products Type</h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
+<h1 id="product-type-statement" class="text-center text-uppercase">Add Product</h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
 
 <div class="container-md py-4">
 
@@ -73,35 +73,35 @@
         <div class="grid-item">
             <label for="ArtName">Artist name:</label>
             <br>
-            <input type="text" id="ArtName" placeholder="artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
+            <input type="text" id="ArtName" placeholder="Add Artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
         </div>
         <div class="grid-item">
             <label for="AlbmName">Album name:</label>
             <br>
-            <input type="text" id="AlbmName" placeholder="album name" name="AlbmName"> <!-- change placeholder to album id  -->
+            <input type="text" id="AlbmName" placeholder="Add Album name" name="AlbmName"> <!-- change placeholder to album id  -->
         </div>
         <div class="grid-item">
             <label for="Genre">Genre:</label>
             <br>
-            <input type="text" id="Genre" placeholder="genre" name="Genre"> <!-- change placeholder to genre id  -->
+            <input type="text" id="Genre" placeholder="Add Genre" name="Genre"> <!-- change placeholder to genre id  -->
         </div>
         <div class="grid-item">
             <label for="PrdType">Product Type:</label>
             <br>
-            <input type="text" id="PrdType" placeholder="product type" name="PrdType"> <!-- change placeholder to product type id  -->
+            <input type="text" id="PrdType" placeholder="Add Product type" name="PrdType"> <!-- change placeholder to product type id  -->
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
     <br>
 
-                <textarea id="description-box" name="description-box" rows="4" cols="40">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                <textarea id="description-box" name="description-box" rows="4" cols="40">Add Product Description</textarea>
 
 
         </div>
         <div class="grid-item">
             <label for="PrdPrice">Product Price:</label>
             <br>
-            <input type="text" id="PrdPrice" name="PrdPrice">
+            <input type="text" id="PrdPrice" name="PrdPrice" placeholder="Add Price">
         </div>
         <div class="grid-item"><label class="container">On sale:
                 <br>
@@ -111,11 +111,11 @@
         <div class="grid-item">
             <label for="SaleAMT">Sale amount:</label>
             <br>
-            <input type="text" id="SaleAMT" name="SaleAMT">
+            <input type="text" id="SaleAMT" name="SaleAMT" placeholder="Add sale amount in %">
         </div>    <!-- This needs to only be selectable if the Sale Box is checked -->
         <div class="grid-item"><label for="QTAv">Quantity available:</label>
             <br>
-            <input type="text" id="QTAv" name="QTAv">
+            <input type="text" id="QTAv" name="QTAv" placeholder="Add Quantity Avaliable">
         </div>
         <div class="grid-item"><label for="PRDImg">Product Image</label>
             <br>
@@ -128,14 +128,14 @@
 -->         <!-- Instead make it a hover effect on the image to change it -->
         <div class="grid-item"><label for="checkSave">Save changes</label>
             <br>
-            <input type="submit" value="Save Changes">
+            <input type="submit" value="Add Product">
+
+
+            <br>
+            <br>
+            <br>
 
             <input type="reset" id="resetChanges" value="Reset to default">
-            <br>
-            <br>
-            <br>
-            <input type="button" value="Remove Product">
-
             <br>
             <br>
             <input type="button" value="Go Back">

@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Made branch for front end admin panel">
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Admin Products and Product temps done for moment">
+      <change afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/adminCustomerAccountView.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminHome.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminHome.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProducts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,6 +127,7 @@
       <workItem from="1706795905504" duration="5693000" />
       <workItem from="1707347320069" duration="114000" />
       <workItem from="1707401275967" duration="5483000" />
+      <workItem from="1708035649912" duration="122000" />
     </task>
     <task id="LOCAL-00001" summary="Just for laptop work">
       <option name="closed" value="true" />
@@ -197,7 +201,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707347367082</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Admin Products and Product temps done for moment">
+      <option name="closed" value="true" />
+      <created>1707995701950</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1707995701950</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +247,7 @@
     <MESSAGE value="FAVICON" />
     <MESSAGE value="Footer Added" />
     <MESSAGE value="Made branch for front end admin panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made branch for front end admin panel" />
+    <MESSAGE value="Admin Products and Product temps done for moment" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Products and Product temps done for moment" />
   </component>
 </project>
