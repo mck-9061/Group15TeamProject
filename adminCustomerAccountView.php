@@ -72,37 +72,42 @@
 
         <div class="grid-item">
             <label for="ACCFName">Account holder name:</label>
-            <input type="text" id="ACCFName" name="ACCFName">
-            <input type="text" id="ACCLName" name="ACCLName">
+            <br>
+            <input type="text" id="ACCFName" name="ACCFName" placeholder="First Name">
+            <input type="text" id="ACCLName" name="ACCLName" placeholder="Last Name">
         </div>
         <div class="grid-item">
             <label for="ACCEmail">Account Email:</label>
-            <input type="text" id="ACCEmail" name="ACCEmail">
+            <br>
+            <input type="text" id="ACCEmail" name="ACCEmail" placeholder="Account Email">
         </div>
         <div class="grid-item">
             <label for="ACCADDS">Account Address:</label>
-            <input type="text" id="ACCADDS" name="ACCADDS">
+            <br>
+            <input type="text" id="ACCADDS" name="ACCADDS" placeholder="Address">
         </div>
         <div class="grid-item">
             <label for="telNum">Telephone Number:</label>
-            <input type="tel" id="telNum" name="telNum">
+            <br>
+            <input type="tel" id="telNum" name="telNum" placeholder="number">
         </div>
         <div class="grid-item">
-            <label for="PrdDsc">Product Description:</label>
-            <input type="text" id="PrdDsc" name="PrdDsc">
+            <label for="PrdDsc">Password:</label>
+            <br>
+            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="customer-password">
+            <br>
+            <br>
+            <input type="reset" id="password-reset" value="Reset password">
         </div>
-        <div class="grid-item">
-            <label for="PrdPrice">Product Price:</label>
-            <input type="text" id="PrdPrice" name="PrdPrice">
-        </div>
+
 
         <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
               <input type="file" id="NewImg" name="NewImg">
               <input type="submit">
           </div>
   -->         <!-- Instead make it a hover effect on the image to change it -->
-        <div class="grid-item"><label for="checkSave">Save changes</label>
-            <input type="text" id="checkSave" name="checkSave">
+        <div class="grid-item"><label for="checkSave">Save changes:</label>
+<br>
 
             <input type="reset" id="resetChanges">
         </div>
