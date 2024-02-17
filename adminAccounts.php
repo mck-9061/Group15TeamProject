@@ -43,6 +43,10 @@
             <i class="fa fa"></i>
             <a href="index.php" class="sidebar-item"> Website Home page</a>
         </li>
+        <li>
+            <i class="fa fa"></i>
+            <a href="addProduct.php.php" class="sidebar-item"> Add Product</a>
+        </li>
     </ul>
 
 
@@ -72,9 +76,9 @@
             <div class="card" style="width: 18rem">
 
                 <div class="card-body text-center">
-                    <h5 class="card-title">Account Name</h5>  <!-- Account Name  -->
-                    <h6 class="card-subtitle">Account Email</h6> <!-- Account Email -->
-                    <h6 class="card-subtitle">Account age: <br> "Age"</h6> <!-- Date Account Made -->
+                    <h5 class="card-title" id="account-name-card">Account Name</h5>  <!-- Account Name  -->
+                    <h6 class="card-subtitle" id="account-email-card">Account Email</h6> <!-- Account Email -->
+                    <h6 class="card-subtitle" id="account-age-card">Account age: <br> "Age"</h6> <!-- Date Account Made -->
                     <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
 
                 </div>
@@ -87,9 +91,9 @@
             <div class="card" style="width: 18rem">
 
                 <div class="card-body text-center">
-                    <h5 class="card-title">Account Name</h5>  <!-- Account Name  -->
-                    <h6 class="card-subtitle">Account Email</h6> <!-- Account Email -->
-                    <h6 class="card-subtitle">Account age: <br> "Age"</h6> <!-- Date Account Made -->
+                    <h5 class="card-title" id="account-name-card">Account Name</h5>  <!-- Account Name  -->
+                    <h6 class="card-subtitle" id="account-email-card">Account Email</h6> <!-- Account Email -->
+                    <h6 class="card-subtitle" id="account-age-card">Account age: <br> "Age"</h6> <!-- Date Account Made -->
                     <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
 
                 </div>

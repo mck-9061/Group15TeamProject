@@ -42,6 +42,10 @@
         </li>
         <li>
             <i class="fa fa"></i>
+            <a href="addProduct.php.php" class="sidebar-item"> Add Product</a>
+        </li>
+        <li>
+            <i class="fa fa"></i>
             <a href="adminProduct.php" class="sidebar-item is-active"> Current Product</a> <!-- Change title to Current product Name -->
         </li>
     </ul>
@@ -80,21 +84,66 @@
             <br>
             <input type="text" id="AlbmName" placeholder="album name" name="AlbmName"> <!-- change placeholder to album id  -->
         </div>
-        <div class="grid-item">
-            <label for="Genre">Genre:</label>
+        <div class="grid-item" >
+            <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
             <br>
-            <input type="text" id="Genre" placeholder="genre" name="Genre"> <!-- change placeholder to genre id  -->
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Dance">Dance
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Indie">Indie
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-JPop">JPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-KPop">KPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Metal">Metal
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Pop">Pop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Punk">Punk
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rap">Rap
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rock">Rock
+            </label>
         </div>
         <div class="grid-item">
-            <label for="PrdType">Product Type:</label>
+            <label for="PrdType">Product Type / Types:</label>
             <br>
-            <input type="text" id="PrdType" placeholder="product type" name="PrdType"> <!-- change placeholder to product type id  -->
+
+            <input type="checkbox" id="PrdType-CD" class="product-type-picker" >
+            <label for="PrdType-CD">Cd</label>
+            <br>
+            <input type="checkbox" id="PrdType-VINYL" class="product-type-picker">
+            <label for="PrdType-VINYL" >Vinyl</label>
+            <br>
+            <input type="checkbox" id="PrdType-EP" class="product-type-picker">
+            <label for="PrdType-EP" >EP</label>
+            <br>
+            <input type="checkbox" id="PrdType-MERCH" class="product-type-picker">
+            <label for="PrdType-MERCH">Merch</label>
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
     <br>
 
-                <textarea id="description-box" name="description-box" rows="4" cols="40">At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</textarea>
+                <textarea id="description-box" name="description-box" rows="4" cols="40">Change this text</textarea>
 
 
         </div>
@@ -117,15 +166,30 @@
             <br>
             <input type="text" id="QTAv" name="QTAv">
         </div>
-        <div class="grid-item"><label for="PRDImg">Product Image</label>
-            <br>
-            <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png"  class="product-img" alt="...">
+        <div class="grid-item">
+            <label> Product Image</label>
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+
+                <label for="fileToUpload">
+                    <div class="product-img-change">
+                        <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png" id="product-img-to-be-changed">
+                        <span class="glyphicon glyphicon-camera"></span>
+                        <span>Change Image</span>
+                    </div>
+                </label>
+                <input type="File" name="fileToUpload" id="fileToUpload">
+
+
         </div>
-      <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
-            <input type="file" id="NewImg" name="NewImg">
-            <input type="submit">
-        </div>
--->         <!-- Instead make it a hover effect on the image to change it -->
+        </form>
+
+
+
+
+
+
+
+        <!-- Instead make it a hover effect on the image to change it -->
         <div class="grid-item"><label for="checkSave">Save changes</label>
             <br>
             <input type="submit" value="Save Changes">

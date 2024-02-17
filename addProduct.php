@@ -76,35 +76,64 @@
             <input type="text" id="ArtName" placeholder="Add Artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
         </div>
         <div class="grid-item">
+            <form id="genre-list">
             <label for="AlbmName">Album name:</label>
             <br>
             <input type="text" id="AlbmName" placeholder="Add Album name" name="AlbmName"> <!-- change placeholder to album id  -->
         </div>
-        <div class="grid-item">
-            <label for="Genre">Genre:</label>
+        <div class="grid-item" >
+            <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
             <br>
-            <input type="checkbox">
-            
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
-            <input type="checkbox">
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Dance">Dance
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Indie">Indie
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-JPop">JPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-KPop">KPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Metal">Metal
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Pop">Pop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Punk">Punk
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rap">Rap
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rock">Rock
+            </label>
         </div>
         <div class="grid-item">
             <label for="PrdType">Product Type / Types:</label>
             <br>
 
-      <input type="checkbox" id="PrdType-CD" value="Cd">
+      <input type="checkbox" id="PrdType-CD" class="product-type-picker" >
             <label for="PrdType-CD">Cd</label>
             <br>
-      <input type="checkbox" id="PrdType-VINYL" value="Vinyl">
+      <input type="checkbox" id="PrdType-VINYL" class="product-type-picker">
             <label for="PrdType-VINYL" >Vinyl</label>
             <br>
-            <input type="checkbox" id="PrdType-EP" value="EP">
+            <input type="checkbox" id="PrdType-EP" class="product-type-picker">
             <label for="PrdType-EP" >EP</label>
             <br>
-            <input type="checkbox" id="PrdType-MERCH" value="Merch">
+            <input type="checkbox" id="PrdType-MERCH" class="product-type-picker">
             <label for="PrdType-MERCH">Merch</label>
         </div>
         <div class="grid-item">

@@ -38,8 +38,8 @@
     <hr id="invisible-line">
     <hr>
 
-    <button> View Admin Account</button>
-    <button> Sign Out</button>
+    <button onclick="window.location='adminsAccount.php'"> View Admin Account</button>
+    <button onclick="window.location='login.php'"> Sign Out</button>
 
 </div>
 

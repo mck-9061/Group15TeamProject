@@ -54,7 +54,7 @@
     Admin List (Click on)
 </a>
 
-<h1 id="product-type-statement" class="text-center text-uppercase">Account </h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
+<h1 id="product-type-statement" class="text-center text-uppercase">Hello,  </h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
 
 <div class="container-md py-4">
 
@@ -72,10 +72,10 @@
 
         <div class="grid-item">
             <form>  <!-- Add php "post" Here, its for the whole grid btw -->
-            <label for="ACCFName">Account holder name:</label>
-            <br>
-            <input type="text" id="ACCFName" name="ACCFName" placeholder="First Name">
-            <input type="text" id="ACCLName" name="ACCLName" placeholder="Last Name">
+                <label for="ACCFName">Account holder name:</label>
+                <br>
+                <input type="text" id="ACCFName" name="ACCFName" placeholder="First Name">
+                <input type="text" id="ACCLName" name="ACCLName" placeholder="Last Name">
         </div>
         <div class="grid-item">
             <label for="ACCEmail">Account Email:</label>
@@ -93,12 +93,15 @@
             <input type="tel" id="telNum" name="telNum" placeholder="number">
         </div>
         <div class="grid-item">
-            <label for="PrdDsc">Password:</label>
+            <label for="PrdDsc">Change Password:</label>
             <br>
-            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="customer-password">
+            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="Input old password">
             <br>
             <br>
-            <input type="reset" id="password-reset" value="Reset password">
+            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="Input new password">
+            <br>
+            <br>
+            <input type="reset" id="password-reset" value=" Save Password">
         </div>
 
 
@@ -114,7 +117,7 @@
             <input type="checkbox" id="adminAccess" name="adminAccess">
         </div>
         <div class="grid-item"><label for="saveACCChanges">Save changes:</label>
-<br>
+            <br>
             <input type="button" id="saveACCChanges" value="Save">
             <input type="reset" id="resetACCDef" value="Reset to default">
         </div>

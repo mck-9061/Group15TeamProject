@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Admin Products and Product temps done for moment">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" afterDir="false" />
+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Update for laptop">
+      <change afterPath="$PROJECT_DIR$/adminsAccount.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/adminCustomerAccountView.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminCustomerAccountView.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminHome.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminHome.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/adminProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProducts.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="contact-us" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +55,7 @@
     </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="ee4e588c-9924-4e0c-81c6-4ac283480855" />
+        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
         <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
       </UrlAndAccount>
     </option>
@@ -62,7 +63,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2">
     <include_path>
       <path value="" />
     </include_path>
@@ -93,6 +94,7 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -105,6 +107,13 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -129,8 +138,7 @@
       <workItem from="1706795905504" duration="5693000" />
       <workItem from="1707347320069" duration="114000" />
       <workItem from="1707401275967" duration="5483000" />
-      <workItem from="1708035649912" duration="122000" />
-      <workItem from="1708111216952" duration="6000" />
+      <workItem from="1707987215333" duration="1667000" />
     </task>
     <task id="LOCAL-00001" summary="Just for laptop work">
       <option name="closed" value="true" />
@@ -204,15 +212,23 @@
       <option name="project" value="LOCAL" />
       <updated>1707347367082</updated>
     </task>
-    <task id="LOCAL-00010" summary="Admin Products and Product temps done for moment">
+    <task id="LOCAL-00010" summary="Made Admin Accounts, Products and Product more developed">
       <option name="closed" value="true" />
-      <created>1707995701950</created>
+      <created>1707889221965</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1707995701950</updated>
+      <updated>1707889221965</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update for laptop">
+      <option name="closed" value="true" />
+      <created>1707903251170</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1707903251170</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,7 +266,8 @@
     <MESSAGE value="FAVICON" />
     <MESSAGE value="Footer Added" />
     <MESSAGE value="Made branch for front end admin panel" />
-    <MESSAGE value="Admin Products and Product temps done for moment" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin Products and Product temps done for moment" />
+    <MESSAGE value="Made Admin Accounts, Products and Product more developed" />
+    <MESSAGE value="Update for laptop" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update for laptop" />
   </component>
 </project>
