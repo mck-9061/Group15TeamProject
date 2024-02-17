@@ -83,12 +83,29 @@
         <div class="grid-item">
             <label for="Genre">Genre:</label>
             <br>
-            <input type="text" id="Genre" placeholder="Add Genre" name="Genre"> <!-- change placeholder to genre id  -->
+            <input type="checkbox">
+            
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
         </div>
         <div class="grid-item">
-            <label for="PrdType">Product Type:</label>
+            <label for="PrdType">Product Type / Types:</label>
             <br>
-            <input type="text" id="PrdType" placeholder="Add Product type" name="PrdType"> <!-- change placeholder to product type id  -->
+
+      <input type="checkbox" id="PrdType-CD" value="Cd">
+            <label for="PrdType-CD">Cd</label>
+            <br>
+      <input type="checkbox" id="PrdType-VINYL" value="Vinyl">
+            <label for="PrdType-VINYL" >Vinyl</label>
+            <br>
+            <input type="checkbox" id="PrdType-EP" value="EP">
+            <label for="PrdType-EP" >EP</label>
+            <br>
+            <input type="checkbox" id="PrdType-MERCH" value="Merch">
+            <label for="PrdType-MERCH">Merch</label>
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
@@ -117,9 +134,9 @@
             <br>
             <input type="text" id="QTAv" name="QTAv" placeholder="Add Quantity Avaliable">
         </div>
-        <div class="grid-item"><label for="PRDImg">Product Image</label>
+        <div class="grid-item"><label for="addProductImg">Add Product Image:</label>
             <br>
-            <img src="assets/TaylorSwift-1989TaylorsVersion-Product-pop.png"  class="product-img" alt="...">
+            <input type="file" name="addProductImg" id="addProductImg">
         </div>
       <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
             <input type="file" id="NewImg" name="NewImg">

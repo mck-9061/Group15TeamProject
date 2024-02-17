@@ -42,7 +42,7 @@
         </li>
         <li>
             <i class="fa fa"></i>
-            <a href="adminProduct.php" class="sidebar-item is-active"> Current Product</a> <!-- Change title to Current product Name -->
+            <a href="adminProduct.php" class="sidebar-item is-active"> Account </a> <!-- Change title to Current Account Name -->
         </li>
     </ul>
 
@@ -54,7 +54,7 @@
     Admin List (Click on)
 </a>
 
-<h1 id="product-type-statement" class="text-center text-uppercase">Products Type</h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
+<h1 id="product-type-statement" class="text-center text-uppercase">Account </h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
 
 <div class="container-md py-4">
 
@@ -106,9 +106,15 @@
               <input type="submit">
           </div>
   -->         <!-- Instead make it a hover effect on the image to change it -->
+
+        <div class="grid-item">
+            <label for="adminAccess"> Is Admin Account:</label>
+            <br>
+            <input type="checkbox" id="adminAccess" name="adminAccess">
+        </div>
         <div class="grid-item"><label for="checkSave">Save changes:</label>
 <br>
-
+            <input type="reset" id="resetChanges">
             <input type="reset" id="resetChanges">
         </div>
     </div>
