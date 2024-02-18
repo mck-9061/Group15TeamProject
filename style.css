@@ -135,6 +135,8 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
 }
 
 #product-card{
@@ -142,14 +144,16 @@
   border: 1px solid;
   border-color: var(--warmPeach);
   background-color: var(--darkwaterBlue);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
 }
 
-#product-img{
-  border: 3px solid;
-  border-color: black;
-  width: 500px;
+#product-img {
+  max-width: 100%;
+  height: auto;
+  border: 3px solid black;
 }
+
 
 #card-body{
   border-top: 1px solid;
@@ -201,6 +205,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100%;
 }
 
 #product-page-card{
