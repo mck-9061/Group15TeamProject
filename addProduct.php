@@ -84,38 +84,57 @@
         <div class="grid-item" >
             <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
             <br>
-            <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="ROCK">
-            <label for="GENRE-PICK-ROCK">Rock</label><br>
-            <input type="radio" id="GENRE-PICK-JPOP" name="genres" value="JPOP">
-            <label for="GENRE-PICK-JPOP">Jpop</label><br>
-            <input type="radio" id="GENRE-PICK-KPOP" name="genres" value="KPOP">
-            <label for="GENRE-PICK-KPOP">Kpop</label><br>
-            <input type="radio" id="GENRE-PICK-RAP" name="genres" value="RAP">
-            <label for="GENRE-PICK-RAP">Rap</label><br>
-            <input type="radio" id="GENRE-PICK-INDIE" name="genres" value="INDIE">
-            <label for="GENRE-PICK-INDIE">Indie</label><br>
-            <input type="radio" id="GENRE-PICK-METAL" name="genres" value="METAL">
-            <label for="GENRE-PICK-METAL">Metal</label><br>
-            <input type="radio" id="GENRE-PICK-POP" name="genres" value="POP">
-            <label for="GENRE-PICK-POP">Pop</label><br>
-            <input type="radio" id="GENRE-PICK-PUNK" name="genres" value="PUNK">
-            <label for="GENRE-PICK-PUNK">Punk</label><br>
-            <input type="radio" id="GENRE-PICK-DANCE" name="genres" value="DANCE">
-            <label for="GENRE-PICK-DANCE">Dance</label><br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Dance">Dance
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Indie">Indie
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-JPop">JPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-KPop">KPop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Metal">Metal
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Pop">Pop
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Punk">Punk
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rap">Rap
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" value="" class="genre-picker-addProd" id="genre-Rock">Rock
+            </label>
         </div>
         <div class="grid-item">
             <label for="PrdType">Product Type / Types:</label>
             <br>
-            <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD">
-            <label for="PRD-TYPE-CD">CD</label><br>
-            <input type="radio" id="PRD-TYPE-VINYL" name="product-type" value="VINYL">
-            <label for="PRD-TYPE-VINYL">Vinyl</label><br>
-            <input type="radio" id="PRD-TYPE-EP" name="product-type" value="EP">
-            <label for="PRD-TYPE-EP">EP</label><br>
-            <input type="radio" id="PRD-TYPE-MERCH" name="product-type" value="MERCH">
-            <label for="PRD-TYPE-MERCH">Merch</label><br>
 
-
+      <input type="checkbox" id="PrdType-CD" class="product-type-picker" >
+            <label for="PrdType-CD">Cd</label>
+            <br>
+      <input type="checkbox" id="PrdType-VINYL" class="product-type-picker">
+            <label for="PrdType-VINYL" >Vinyl</label>
+            <br>
+            <input type="checkbox" id="PrdType-EP" class="product-type-picker">
+            <label for="PrdType-EP" >EP</label>
+            <br>
+            <input type="checkbox" id="PrdType-MERCH" class="product-type-picker">
+            <label for="PrdType-MERCH">Merch</label>
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
@@ -129,14 +148,6 @@
             <label for="PrdPrice">Product Price:</label>
             <br>
             <input type="text" id="PrdPrice" name="PrdPrice" placeholder="Add Price">
-        </div>
-
-        <div class="grid-item">
-
-            <label for="PrdYTLink"> Youtube sample link: </label>
-            <br>
-            <input type="text" id="PrdYTLink" name="PrdYTLink" placeholder="put link here">
-
         </div>
         <div class="grid-item"><label class="container">On sale:
                 <br>
