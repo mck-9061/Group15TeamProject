@@ -3,11 +3,26 @@ include("connect.php");
 
 session_start();
 
-if (isset($_POST['username']) and isset($_POST['email'])) {
+if (isset($_POST['username']) and isset($_POST['email']) and isset($_POST['phoneNumber'])) {
     $username = $_POST['username'];
     $email = $_POST['email'];
+    $phoneNumber = $_POST['phoneNumber'];
 
-    if (empty($username) or empty($email)) {
+    //checks it the email is valid
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $_SESSION['message'] = "Invalid email address";
+        header("Location: ../signup.php");
+        exit;
+    }
+
+    // Validate phone number (basic format check)
+    if (!preg_match('/^[0-9]{11}$/', $phoneNumber)) {
+        $_SESSION['message'] = "Invalid phone number format";
+        header("Location: ../signup.php");
+        exit;
+    }
+
+    if (empty($username) or empty($email) or empty($phoneNumber)) {
         $_SESSION['message'] = "Username/email not given";
         header("Location: ../signup.php");
         exit;
@@ -43,9 +58,20 @@ if (isset($_POST['username']) and isset($_POST['email'])) {
         header("Location: ../signup.php");
         exit;
     }
+    // Check that the phone number isn't already in use
+    $statement = $db->prepare("SELECT * FROM users WHERE phone=:phone");
+    $statement->bindParam(':phone', $phoneNumber, PDO::PARAM_STR, 11);
+
+    $statement->execute();
+
+    if (!empty($statement->fetchAll())) {
+        $_SESSION['message'] = "Phone number already in use.";
+        header("Location: ../signup.php");
+        exit;
+    }
 
 } else {
-    $_SESSION['message'] = "Username/email not given";
+    $_SESSION['message'] = "Username/email/phone number not given";
     header("Location: ../signup.php");
     exit;
 }
