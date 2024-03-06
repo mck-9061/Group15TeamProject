@@ -21,16 +21,40 @@ session_start()
 
     <?php require "navbar.php" ?>
     <div class="payment_container">
-        <h2 style="color:#fff">Enter Payment Details</h2>
-        <form action="#" method="post">
-            <div class="input-group">
-                <input type="text" id="cardNumber" name="cardNumber" placeholder="Card Number" required>
+        <h2 class="payment_container-title">Payment Details</h2>
+        <form action="/submit-payment" method="post">
+            <div class="card-details">
+                <label for="card-number" style="color:white;">Card Number:</label>
+                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
             </div>
-            <div class="input-group">
-                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
-                <input type="password" id="cvv" name="cvv" placeholder="CVV" required>
+            <div class="card-details">
+                <label for="cardholder-name" style="color:white;">Cardholder Name:</label>
+                <input class="card-datails-input" type="text" id="cardholder-name" name="cardholder-name" placeholder="Enter cardholder name" required>
             </div>
-            <input type="submit" value="Submit">
+            <div class="card-type">
+                <label for="card-type" style="color:white;">Card Type:</label>
+                <select id="card-type" name="card-type" required>
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="amex">American Express</option>
+                    <option value="discover">Discover</option>
+                </select>
+            </div>
+            <div class="grid">
+                <div class="card-details">
+                    <label for="cvv" style="color:white;">CVV:</label>
+                    <input type="password" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                </div>
+                <div class="card-details">
+                    <label for="expiry-date" style="color:white;">Expiry Date:</label>
+                    <input type="date" id="expiry-date" name="expiry-date" required>
+                </div>
+            </div>
+            <div class="billing-address">
+                <label for="address" style="color:white;">Billing Address:</label>
+                <textarea id="address" name="address" placeholder="Enter your billing address" required></textarea>
+            </div>
+            <input class="card-details-submit" type="submit" value="Submit Payment">
         </form>
     </div>
     <!-- About page content -->

@@ -1430,59 +1430,76 @@
   word-break: break-word !important;
 }
 
+
+
+
 .payment_container {
-  max-width: 400px;
-  margin: 5rem auto;
+  max-width: 500px;
+  margin: 4rem auto;
+  background-color: #1a1a1a;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-details input[type="text"], input[type="password"],input[type="date"] , input[type="number"], input[type="date"], textarea, select {
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #cb2d6f;
   background-color: #333;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-input[type="text"],
-input[type="password"] {
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  box-sizing: border-box;
+
+}
+.card-details input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+  border-bottom: 2px solid #b33569;
+}
+.card-details-submit  {
+  width: 100%;
+  background-color: #cb2d6f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
   border-radius: 4px;
-  background-color: #444;
-  color: #fff;
-}
-input[type="submit"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  box-sizing: border-box;
-  border: none;
-  border-radius: 4px;
-  background-color: #007bff;
-  color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 input[type="submit"]:hover {
-  background-color: #0056b3;
-}
-.input-group {
-  display: flex;
-  justify-content: space-between;
-}
-.input-group input {
-  flex: 1;
-  margin-right: 10px;
-}
-.input-group input:last-child {
-  margin-right: 0;
-}
-label {
-  display: block;
-  margin-bottom: 5px;
+  background-color: #b33569;
 }
 
-#payment-page {
-  background: url("assets/payment.jpg") rgba(0, 0, 0, 0.2);
-  background-blend-mode: multiply;
-  background-position: px;
-  background-size: cover;
-  background-repeat: no-repeat;
+input[type="submit"]:hover {
+  background-color: #cb2d6f;
+}
+.card-details label, .billing-address label, .card-type label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.card-details{
+  width: 100%;
+}
+
+.card-details, .billing-address, .card-type {
+  margin-bottom: 20px;
+}
+.payment_container-title{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.grid{
+  display: flex;
+  gap: 4px;
+  justify-content:stretch;
+  width: 100%;
+}
+
+#payment-page{
+  background: #313030;
 }
