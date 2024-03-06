@@ -16,18 +16,19 @@
     <link rel="stylesheet" href="customer-page.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
-    <link rel="icon" type="image" href="assets/favicon.ico">
+    <link rel="icon" type="image" href="../assets/favicon.ico">
 
 </head>
 
 <body id="customer-home">
 
-<?php require "../navbar.php" ?>
-<div class="card hero-card-home">
+<div class="text-center">
     <p id="home-title">Welcome,  (Add user's name here + email) </p>
 
     <p></p>
-    <div class="hero-card-links">
+
+    <!--
+    <div class="">
         <a href="customer-info.php" > Personal Info</a>
         <a href="#" >Address Book </a>
 
@@ -44,10 +45,46 @@
     <button onclick="window.location='../index.php'"> Go Home</button>
     <button onclick="window.location='../login.php'"> Sign Out</button>
 
-
+-->
 </div>
 
 
+    <div  id="account-dashboard-home-left-side" class="col-lg-6">
+        <div class="row">
+            <div class="column customer-options text-center align-items-center">
+                <div class="card">
+                    <h1 class="title">Your Info</h1>
+                    <p class="subtitle">Check what we have and what you want us to have</p>
+                    <button class="btn" onclick="window.location='customer-info.php'">Read your credits</button>
+                </div>
+            </div>
+            <div class="column customer-options text-center">
+                <div class="card">
+                    <h1 class="title">Order History</h1>
+                    <p class="subtitle">See prior Order History</p>
+                    <button class="btn">Rewind to the past</button>
+                </div>
+            </div>
+        </div>
+    </div>
+<div  id="account-dashboard-home-right-side" class="col-lg-6">
+    <div class="row">
+        <div class="column customer-options text-center align-items-center">
+            <div class="card">
+                <h1 class="title">Your Favourite Genres</h1>
+                <p class="subtitle">Check out what your more likely to listen to & what you already have</p>
+                <button class="btn" onclick="window.location='dashboard-styles-overview.php'">Explore your style</button>
+            </div>
+        </div>
+        <div class="column customer-options text-center">
+            <div class="card">
+                <h1 class="title">Delete Account</h1>
+                <p class="subtitle"> Delete your Account (Dont though we love you to much to lose you!)</p>
+                <button class="btn">Button of Regret</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 

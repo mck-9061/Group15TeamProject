@@ -5,28 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-info.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Customer page code/dashboard-styles-overview.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-page.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +42,7 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\php-8.2.12\php.exe">
     <include_path>
-      <path value="$PROJECT_DIR$/../../../../xampp/php" />
+      <path value="$USER_HOME$/xampp/php" />
       <path value="" />
     </include_path>
   </component>
@@ -69,25 +55,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "customer-front-end",
-    "last_opened_file_path": "C:/Users/Taugh/Documents/GitHub/Group15TeamProject/Customer page code",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;customer-front-end&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject/Customer page code&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,6 +102,8 @@
       <workItem from="1709217010693" duration="19000" />
       <workItem from="1709217038729" duration="2724000" />
       <workItem from="1709297699646" duration="1998000" />
+      <workItem from="1709466905446" duration="669000" />
+      <workItem from="1709526732601" duration="196000" />
     </task>
     <servers />
   </component>
