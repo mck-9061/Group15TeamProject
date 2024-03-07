@@ -6,7 +6,6 @@
         if (isset($_SESSION['message'])) {
 
             ?>
-                <!-- Add styling here -->
                 <script> alert( "<?php echo "{$_SESSION['message']}"; ?>")  </script>
 
             <?php

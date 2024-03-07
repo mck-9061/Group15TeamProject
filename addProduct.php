@@ -1,5 +1,6 @@
 <!Doctype HTML>
 <html lang="en">
+<?php session_start() ?>
 <?php require "php/message.php"; ?>
 
 <head>
@@ -77,17 +78,17 @@
             <div class="grid-item">
                 <label for="ArtName">Artist name:</label>
                 <br>
-                <input type="text" id="ArtName" placeholder="artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
+                <input type="text" id="ArtName" placeholder="artist name" name="ArtName" required> <!-- change placeholder to artistname id  -->
             </div>
             <div class="grid-item">
                 <label for="AlbmName">Album name:</label>
                 <br>
-                <input type="text" id="AlbmName" placeholder="album name" name="AlbmName"> <!-- change placeholder to album id  -->
+                <input type="text" id="AlbmName" placeholder="album name" name="AlbmName" required> <!-- change placeholder to album id  -->
             </div>
             <div class="grid-item" >
                 <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
                 <br>
-                <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="Rock">
+                <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="Rock" required>
                 <label for="GENRE-PICK-ROCK">Rock</label><br>
                 <input type="radio" id="GENRE-PICK-JPOP" name="genres" value="JPop">
                 <label for="GENRE-PICK-JPOP">Jpop</label><br>
@@ -110,7 +111,7 @@
                 <label for="PrdType">Product Type / Types:</label>
                 <br>
 
-                <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD">
+                <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD" required>
                 <label for="PRD-TYPE-CD">CD</label><br>
                 <input type="radio" id="PRD-TYPE-VINYL" name="product-type" value="Vinyl">
                 <label for="PRD-TYPE-VINYL">Vinyl</label><br>
@@ -120,24 +121,24 @@
                 <label for="PRD-TYPE-MERCH">Merch</label><br>
             </div>
             <div class="grid-item">
-                <label for="PrdDsc">Product Description:</label>
+                <label for="description-box">Product Description:</label>
                 <br>
 
-                <textarea id="description-box" name="description-box" rows="4" cols="40">Change this text</textarea>
+                <textarea id="description-box" name="description-box" rows="4" cols="40" required>Change this text</textarea>
 
 
             </div>
             <div class="grid-item">
                 <label for="PrdPrice">Product Price:</label>
                 <br>
-                <input type="text" id="PrdPrice" name="PrdPrice">
+                <input type="text" id="PrdPrice" name="PrdPrice" required>
             </div>
 
             <div class="grid-item">
 
                 <label for="PrdYTLink"> Sample link: </label>
                 <br>
-                <input type="text" id="PrdYTLink" name="PrdYTLink" placeholder="put link here">
+                <input type="text" id="PrdYTLink" name="PrdYTLink" placeholder="put link here" required>
 
             </div>
 
@@ -146,7 +147,7 @@
 
                 <label for="fileToUpload">
                 </label>
-                <input type="File" name="fileToUpload" id="fileToUpload">
+                <input type="File" name="fileToUpload" id="fileToUpload" required>
 
 
             </div>
@@ -156,7 +157,7 @@
             <!-- Instead make it a hover effect on the image to change it -->
             <div class="grid-item"><label for="checkSave">Save</label>
                 <br>
-                <input type="submit" value="Create Product">
+                <button type="submit">Create Product</button>
 
                 <input type="reset" id="resetChanges" value="Reset to default">
 
