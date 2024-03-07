@@ -13,6 +13,8 @@ jobs:
         key: ${{ secrets.ARTIFACT_SSH_KEY }}
         script: |
           cd /usr/share/nginx/html/Group15TeamProject/
-          git stash
+          cp -r assets/ ../assets_backup
+          git reset --hard
           git pull
-          git stash apply
+          cp -r ../assets_backup/. assets/
+          rm -rf ../assets_backup/
