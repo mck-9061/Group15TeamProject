@@ -46,3 +46,14 @@ function addImage($product_id, $image_link) {
 
     $statement->execute();
 }
+
+function addLink($product_id, $link) {
+    global $db;
+    echo $product_id;
+
+    $statement = $db->prepare("INSERT INTO `external-links` (`productid`, `link`, `description`) VALUES (:id, :link, 'YouTube Link');");
+    $statement->bindParam(':id', $product_id, PDO::PARAM_STR, 11);
+    $statement->bindParam(':link', $link, PDO::PARAM_STR, 1000);
+
+    $statement->execute();
+}
