@@ -1,5 +1,6 @@
 <!Doctype HTML>
 <html lang="en">
+<?php require "php/message.php"; ?>
 
 <head>
 
@@ -42,6 +43,10 @@
         </li>
         <li>
             <i class="fa fa"></i>
+            <a href="addProduct.php.php" class="sidebar-item"> Add Product</a>
+        </li>
+        <li>
+            <i class="fa fa"></i>
             <a href="adminProduct.php" class="sidebar-item is-active"> Current Product</a> <!-- Change title to Current product Name -->
         </li>
     </ul>
@@ -67,117 +72,100 @@
 
 
     -->
-
-    <div class="grid-edit-container">
-
-        <div class="grid-item">
-            <label for="ArtName">Artist name:</label>
-            <br>
-            <input type="text" id="ArtName" placeholder="Add Artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
-        </div>
-        <div class="grid-item">
-            <form id="genre-list">
-            <label for="AlbmName">Album name:</label>
-            <br>
-            <input type="text" id="AlbmName" placeholder="Add Album name" name="AlbmName"> <!-- change placeholder to album id  -->
-        </div>
-        <div class="grid-item" >
-            <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
-            <br>
-            <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="ROCK">
-            <label for="GENRE-PICK-ROCK">Rock</label><br>
-            <input type="radio" id="GENRE-PICK-JPOP" name="genres" value="JPOP">
-            <label for="GENRE-PICK-JPOP">Jpop</label><br>
-            <input type="radio" id="GENRE-PICK-KPOP" name="genres" value="KPOP">
-            <label for="GENRE-PICK-KPOP">Kpop</label><br>
-            <input type="radio" id="GENRE-PICK-RAP" name="genres" value="RAP">
-            <label for="GENRE-PICK-RAP">Rap</label><br>
-            <input type="radio" id="GENRE-PICK-INDIE" name="genres" value="INDIE">
-            <label for="GENRE-PICK-INDIE">Indie</label><br>
-            <input type="radio" id="GENRE-PICK-METAL" name="genres" value="METAL">
-            <label for="GENRE-PICK-METAL">Metal</label><br>
-            <input type="radio" id="GENRE-PICK-POP" name="genres" value="POP">
-            <label for="GENRE-PICK-POP">Pop</label><br>
-            <input type="radio" id="GENRE-PICK-PUNK" name="genres" value="PUNK">
-            <label for="GENRE-PICK-PUNK">Punk</label><br>
-            <input type="radio" id="GENRE-PICK-DANCE" name="genres" value="DANCE">
-            <label for="GENRE-PICK-DANCE">Dance</label><br>
-        </div>
-        <div class="grid-item">
-            <label for="PrdType">Product Type / Types:</label>
-            <br>
-            <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD">
-            <label for="PRD-TYPE-CD">CD</label><br>
-            <input type="radio" id="PRD-TYPE-VINYL" name="product-type" value="VINYL">
-            <label for="PRD-TYPE-VINYL">Vinyl</label><br>
-            <input type="radio" id="PRD-TYPE-EP" name="product-type" value="EP">
-            <label for="PRD-TYPE-EP">EP</label><br>
-            <input type="radio" id="PRD-TYPE-MERCH" name="product-type" value="MERCH">
-            <label for="PRD-TYPE-MERCH">Merch</label><br>
-
-
-        </div>
-        <div class="grid-item">
-            <label for="PrdDsc">Product Description:</label>
-    <br>
-
-                <textarea id="description-box" name="description-box" rows="4" cols="40">Add Product Description</textarea>
-
-
-        </div>
-        <div class="grid-item">
-            <label for="PrdPrice">Product Price:</label>
-            <br>
-            <input type="text" id="PrdPrice" name="PrdPrice" placeholder="Add Price">
-        </div>
-
-        <div class="grid-item">
-
-            <label for="PrdYTLink"> Youtube sample link: </label>
-            <br>
-            <input type="text" id="PrdYTLink" name="PrdYTLink" placeholder="put link here">
-
-        </div>
-        <div class="grid-item"><label class="container">On sale:
+    <form action="php/admin/add_product.php" method="POST" enctype="multipart/form-data">
+        <div class="grid-edit-container">
+            <div class="grid-item">
+                <label for="ArtName">Artist name:</label>
                 <br>
-                <input type="checkbox" checked="checked">
-                <span class="checkmark"></span>
-            </label></div>
-        <div class="grid-item">
-            <label for="SaleAMT">Sale amount:</label>
-            <br>
-            <input type="text" id="SaleAMT" name="SaleAMT" placeholder="Add sale amount in %">
-        </div>    <!-- This needs to only be selectable if the Sale Box is checked -->
-        <div class="grid-item"><label for="QTAv">Quantity available:</label>
-            <br>
-            <input type="text" id="QTAv" name="QTAv" placeholder="Add Quantity Avaliable">
+                <input type="text" id="ArtName" placeholder="artist name" name="ArtName"> <!-- change placeholder to artistname id  -->
+            </div>
+            <div class="grid-item">
+                <label for="AlbmName">Album name:</label>
+                <br>
+                <input type="text" id="AlbmName" placeholder="album name" name="AlbmName"> <!-- change placeholder to album id  -->
+            </div>
+            <div class="grid-item" >
+                <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
+                <br>
+                <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="Rock">
+                <label for="GENRE-PICK-ROCK">Rock</label><br>
+                <input type="radio" id="GENRE-PICK-JPOP" name="genres" value="JPop">
+                <label for="GENRE-PICK-JPOP">Jpop</label><br>
+                <input type="radio" id="GENRE-PICK-KPOP" name="genres" value="KPop">
+                <label for="GENRE-PICK-KPOP">Kpop</label><br>
+                <input type="radio" id="GENRE-PICK-RAP" name="genres" value="Rap">
+                <label for="GENRE-PICK-RAP">Rap</label><br>
+                <input type="radio" id="GENRE-PICK-INDIE" name="genres" value="Indie">
+                <label for="GENRE-PICK-INDIE">Indie</label><br>
+                <input type="radio" id="GENRE-PICK-METAL" name="genres" value="Metal">
+                <label for="GENRE-PICK-METAL">Metal</label><br>
+                <input type="radio" id="GENRE-PICK-POP" name="genres" value="Pop">
+                <label for="GENRE-PICK-POP">Pop</label><br>
+                <input type="radio" id="GENRE-PICK-PUNK" name="genres" value="Punk">
+                <label for="GENRE-PICK-PUNK">Punk</label><br>
+                <input type="radio" id="GENRE-PICK-DANCE" name="genres" value="Dance">
+                <label for="GENRE-PICK-DANCE">Dance</label><br>
+            </div>
+            <div class="grid-item">
+                <label for="PrdType">Product Type / Types:</label>
+                <br>
+
+                <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD">
+                <label for="PRD-TYPE-CD">CD</label><br>
+                <input type="radio" id="PRD-TYPE-VINYL" name="product-type" value="Vinyl">
+                <label for="PRD-TYPE-VINYL">Vinyl</label><br>
+                <input type="radio" id="PRD-TYPE-EP" name="product-type" value="EP">
+                <label for="PRD-TYPE-EP">EP</label><br>
+                <input type="radio" id="PRD-TYPE-MERCH" name="product-type" value="Merch">
+                <label for="PRD-TYPE-MERCH">Merch</label><br>
+            </div>
+            <div class="grid-item">
+                <label for="PrdDsc">Product Description:</label>
+                <br>
+
+                <textarea id="description-box" name="description-box" rows="4" cols="40">Change this text</textarea>
+
+
+            </div>
+            <div class="grid-item">
+                <label for="PrdPrice">Product Price:</label>
+                <br>
+                <input type="text" id="PrdPrice" name="PrdPrice">
+            </div>
+
+            <div class="grid-item">
+
+                <label for="PrdYTLink"> Sample link: </label>
+                <br>
+                <input type="text" id="PrdYTLink" name="PrdYTLink" placeholder="put link here">
+
+            </div>
+
+            <div class="grid-item">
+                <label>Product Image (200x200px recommended)</label><br>
+
+                <label for="fileToUpload">
+                </label>
+                <input type="File" name="fileToUpload" id="fileToUpload">
+
+
+            </div>
+
+
+
+            <!-- Instead make it a hover effect on the image to change it -->
+            <div class="grid-item"><label for="checkSave">Save</label>
+                <br>
+                <input type="submit" value="Create Product">
+
+                <input type="reset" id="resetChanges" value="Reset to default">
+
+                <br>
+                <br>
+                <input type="button" value="Go Back">
+            </div>
         </div>
-        <div class="grid-item"><label for="addProductImg">Add Product Image:</label>
-            <br>
-            <input type="file" name="addProductImg" id="addProductImg">
-        </div>
-      <!--  <div class="grid-item"><label for="NewImg">Upload new Image</label>
-            <input type="file" id="NewImg" name="NewImg">
-            <input type="submit">
-        </div>
--->         <!-- Instead make it a hover effect on the image to change it -->
-        <div class="grid-item"><label for="checkSave">Save changes</label>
-            <br>
-            <input type="submit" value="Add Product">
-
-
-            <br>
-            <br>
-            <br>
-
-            <input type="reset" id="resetChanges" value="Reset to default">
-            <br>
-            <br>
-            <input type="button" value="Go Back">
-        </div>
-    </div>
-
-
+    </form>
 
 
 
