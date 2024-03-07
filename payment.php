@@ -15,6 +15,15 @@ session_start()
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
     <link rel="icon" type="image" href="assets/favicon.ico">
+    <script>
+        // Function to validate input and allow only non-numeric characters
+        function validateInput(event) {
+            var inputValue = event.key;
+            if (/^\d+$/.test(inputValue)) {
+                event.preventDefault();
+            }
+        }
+    </script>
 </head>
 
 <body class="vh-100 overflow-x-auto" id="payment-page">
@@ -25,11 +34,11 @@ session_start()
         <form action="/submit-payment" method="post">
             <div class="card-details">
                 <label for="card-number" style="color:white;">Card Number:</label>
-                <input type="text" id="card-number" name="card-number" placeholder="Enter your card number" required>
+                <input type="number" id="card-number" name="card-number" placeholder="Enter your card number" required>
             </div>
             <div class="card-details">
                 <label for="cardholder-name" style="color:white;">Cardholder Name:</label>
-                <input class="card-datails-input" type="text" id="cardholder-name" name="cardholder-name" placeholder="Enter cardholder name" required>
+                <input class="card-datails-input" type="text" id="cardholder-name" name="cardholder-name" placeholder="Enter cardholder name" required onkeypress="validateInput(event)">
             </div>
             <div class="card-type">
                 <label for="card-type" style="color:white;">Card Type:</label>
