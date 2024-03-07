@@ -2,7 +2,9 @@
 
 $ordered=true;
 include 'php/recommended_caro.php'
-*/ ?>
+*/
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 

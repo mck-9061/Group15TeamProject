@@ -27,7 +27,7 @@ function getRandImg($user)
             $pstat->execute();
             $pid_row2 = $pstat->fetch();
             $pid2 = $pid_row2['productid'];
-            $srcstat = $db->prepare("SELECT `image-link` FROM `product-pictures` WHERE productid=?");
+            $srcstat = $db->prepare("SELECT `image_link` FROM `caro-images` WHERE productid=?");
             $srcstat->bindParam(1, $pid2, PDO::PARAM_INT);
             $srcstat->execute();
             $src_row = $srcstat->fetch(PDO::FETCH_ASSOC);
