@@ -1,0 +1,844 @@
+Index: index.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php /*\n\n$ordered=true;\ninclude 'php/recommended_caro.php'\n*/ ?>\n<!DOCTYPE html>\n<html lang=\"en\">\n\n  <head>\n    <meta charset=\"UTF-8\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    <title>Cadence | Home page</title>\n    <link rel=\"stylesheet\" href=\"css/bootstrap.css\" />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />\n    <link\n      href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\"\n      rel=\"stylesheet\"\n      integrity=\"sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN\"\n      crossorigin=\"anonymous\"\n    />\n    <link rel=\"stylesheet\" href=\"style.css\" />\n      <link rel=\"stylesheet\" href=\"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200\" />\n      <link rel=\"stylesheet\" href=\"https://use.typekit.net/maf1fpm.css\">\n      <link rel=\"stylesheet\" href=\"https://use.typekit.net/maf1fpm.css\">\n  <link rel=\"icon\" type=\"image\" href=\"assets/favicon.ico\">\n  </head>\n\n  <body  id=\"index-page\">\n\n  <?php require \"navbar.php\" ?>\n\n    <div id=\"hero-carousel\" class=\"carousel slide\" data-bs-ride=\"carousel\">\n      <div class=\"carousel-indicators\">\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"0\"\n          class=\"active\"\n          aria-current=\"true\"\n          aria-label=\"Slide 1\"\n        ></button>\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"1\"\n          aria-label=\"Slide 2\"\n        ></button>\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"2\"\n          aria-label=\"Slide 3\"\n        ></button>\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"3\"\n          aria-label=\"Slide 4\"\n        ></button>\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"4\"\n          aria-label=\"Slide 5\"\n        ></button>\n        <button\n          type=\"button\"\n          data-bs-target=\"#hero-carousel\"\n          data-bs-slide-to=\"5\"\n          aria-label=\"Slide 6\"\n        ></button>\n\n      </div>\n\n      <div class=\"carousel-inner\">\n          <!--<?php\n           // if(isset($_SESSION[\"username\"]) and $ordered === true){\n              // $img = getRandImg($_SESSION[\"username\"]);\n               ?>\n                  <div class=\"carousel-item active\">\n                      <img\n                              src=\"<?php // echo $img;?>\"\n                              class=\"d-block w-100 c-item c-img\"\n                              alt=\"Slide 1\"\n                      />\n                  </div>\n          <?php // } else { ?> -->\n        <div class=\"carousel-item active\">\n          <img\n            src=\"assets/New-RadioHead-BundleArt.png\"\n            class=\"d-block w-100 c-item c-img\"\n            alt=\"Slide 1\"\n          />\n        </div>\n          <?php // } ?>\n        <div class=\"carousel-item\">\n          <img\n            src=\"assets/Приворот-carousel.png\"\n            class=\"d-block w-100 c-item c-img\"\n            alt=\"Slide 2\"\n          />\n        </div>\n        <div class=\"carousel-item\">\n          <img\n            src=\"assets/20thanniversaryEvanescence-carousel.png\"\n            class=\"d-block w-100 c-item c-img\"\n            alt=\"Slide 3\"\n          />\n        </div>\n        <div class=\"carousel-item\">\n          <img\n            src=\"assets/InternetYamero-carousel.png\"\n            class=\"d-block w-100 c-item c-img\"\n            alt=\"Slide 4\"\n          />\n        </div>\n        <div class=\"carousel-item\">\n          <img\n            src=\"assets/this-is-happening-art-carousel.png\"\n            class=\"d-block w-100 c-item c-img img-fluid\"\n            alt=\"Slide 5\"\n          />\n        </div>\n        <div class=\"carousel-item\">\n          <img\n            src=\"assets/lowRoar-carousel.png\"\n            class=\"d-block w-100 c-item c-img\"\n            alt=\"Slide 6\"\n          />\n        </div>\n\n      </div>\n      <button\n        class=\"carousel-control-prev\"\n        type=\"button\"\n        data-bs-target=\"#hero-carousel\"\n        data-bs-slide=\"prev\"\n      >\n        <span class=\"carousel-control-prev-icon \" aria-hidden=\"true\" >\n\n        </span>\n        <span class=\"visually-hidden\">Previous</span>\n      </button>\n      <button\n        class=\"carousel-control-next\"\n        type=\"button\"\n        data-bs-target=\"#hero-carousel\"\n        data-bs-slide=\"next\"\n      >\n        <span class=\"carousel-control-next-icon\" aria-hidden=\"true\"></span>\n        <span class=\"visually-hidden\">Next</span>\n      </button>\n    </div>\n\n<footer id=\"index-footer\">\n    <div class=\"footer-top\">\n        <div class=\"row\">\n            <div class=\"col-lg-3 col-md-6  align-items-center text-center\">\n                <br>\n                <br>\n                <a  href=\"about.php\" class=\"align-items-center\" >\n                    <img src=\"assets/logo.png\" width=\"100px\" >\n                </a>\n                    <br>\n                    <br>\n\n            </div>\n            <div class=\"col-lg-2 col-md-6 footer-links\">\n                <br>\n\n                <h4 class=\"text-center\" id=\"footer-useful\"> Useful Links</h4>\n\n                <ul class=\"footer-list\">\n\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"index.php\" class=\"footer-items \"> Home</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"products.php\" class=\"footer-items\"> Products page</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"about.php\" class=\"footer-items\"> Who we are!</a>\n                    </li>\n                </ul>\n\n\n            </div>\n            <div class=\"col-lg-2 col-md-6 footer-contact\">\n                <br>\n\n                <h4 class=\"text-center\" id=\"footer-contact-us\"> Contact Us</h4>\n                <ul class=\"footer-list\">\n\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"mailto:info@cadence.com\" class=\"footer-items \"> Email  <span id=\"footer-email-color\">info@cadence.com </span></a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items\"> Privacy Policy</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items\"> Cookie Policy</a>\n                    </li>\n                </ul>\n            </div>\n\n            <div class=\"col-lg-2 col-md-2 footer-contact\">\n                <br>\n\n                <h4 class=\"text-center\" id=\"footer-contact-us\"> Legal</h4>\n\n                <ul class=\"footer-list\">\n\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items \"> Modern Slavery Statement</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items\"> Privacy Policy</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items\"> Cookie Policy</a>\n                    </li>\n                    <li>\n                        <i class=\"fa fa\"></i>\n                        <a href=\"#\" class=\"footer-items\"> Terms & Condition</a>\n                    </li>\n                </ul>\n\n            </div>\n        </div>\n\n        <div id=\"footer-copyright\" >\n                <h5> 2023 @Copyright Cadence </h5>\n\n    </div>\n\n</footer>\n\n    <script\n      src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js\"\n      integrity=\"sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL\"\n      crossorigin=\"anonymous\"\n    ></script>\n  </body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.php b/index.php
+--- a/index.php	(revision 59fd94ca78916d759a4dbbe0f7a2fc923a3add80)
++++ b/index.php	(date 1709731375046)
+@@ -2,7 +2,9 @@
+ 
+ $ordered=true;
+ include 'php/recommended_caro.php'
+-*/ ?>
++*/
++session_start();
++?>
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+Index: php/recommended_caro.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\ninclude(\"connect.php\");\r\n\r\nsession_start();\r\n\r\nif(isset($_SESSION['username'])) {\r\n    $user = $_SESSION['username'];\r\n}\r\n\r\nfunction getRandImg($user)\r\n{\r\n    global $db;\r\n    try {\r\n        $idstat = $db->prepare(\"SELECT productid FROM orders WHERE username=? order by orderid DESC\");\r\n        $idstat->bindParam(1, $user, PDO::PARAM_STR);\r\n        $idstat->execute();\r\n        if ($idstat->rowCount() > 0) {\r\n            $pid_row1 = $idstat->fetch();\r\n            $pid1 = $pid_row1['productid'];\r\n            $stat = $db->prepare(\"SELECT genre FROM products WHERE productid=?\");\r\n            $stat->bindParam(1, $pid1, PDO::PARAM_STR);\r\n            $stat->execute();\r\n            $genre_row = $stat->fetch();\r\n            $genre = $genre_row['genre'];\r\n            $pstat = $db->prepare(\"SELECT productid FROM products WHERE genre=? order by RAND()\");\r\n            $pstat->bindParam(1, $genre, PDO::PARAM_STR);\r\n            $pstat->execute();\r\n            $pid_row2 = $pstat->fetch();\r\n            $pid2 = $pid_row2['productid'];\r\n            $srcstat = $db->prepare(\"SELECT `image-link` FROM `product-pictures` WHERE productid=?\");\r\n            $srcstat->bindParam(1, $pid2, PDO::PARAM_INT);\r\n            $srcstat->execute();\r\n            $src_row = $srcstat->fetch(PDO::FETCH_ASSOC);\r\n            $src = $src_row['image-link'];\r\n            return $src;\r\n        } else {\r\n            $ordered = false;\r\n            return $ordered;\r\n        }\r\n    }\r\n    catch (PDOException $ex) {\r\n        echo \"Error loading images: \" . $ex->getMessage();\r\n        }\r\n    }\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/php/recommended_caro.php b/php/recommended_caro.php
+--- a/php/recommended_caro.php	(revision 59fd94ca78916d759a4dbbe0f7a2fc923a3add80)
++++ b/php/recommended_caro.php	(date 1709733866531)
+@@ -27,7 +27,7 @@
+             $pstat->execute();
+             $pid_row2 = $pstat->fetch();
+             $pid2 = $pid_row2['productid'];
+-            $srcstat = $db->prepare("SELECT `image-link` FROM `product-pictures` WHERE productid=?");
++            $srcstat = $db->prepare("SELECT `image_link` FROM `caro-images` WHERE productid=?");
+             $srcstat->bindParam(1, $pid2, PDO::PARAM_INT);
+             $srcstat->execute();
+             $src_row = $srcstat->fetch(PDO::FETCH_ASSOC);
+Index: .idea/shelf/Uncommitted_changes_before_Update_at_28_02_2024_14_13_[Changes]/shelved.patch
+===================================================================
+diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2024_14_13_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2024_14_13_[Changes]/shelved.patch
+deleted file mode 100644
+--- a/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2024_14_13_[Changes]/shelved.patch	(revision 59fd94ca78916d759a4dbbe0f7a2fc923a3add80)
++++ /dev/null	(revision 59fd94ca78916d759a4dbbe0f7a2fc923a3add80)
+@@ -1,752 +0,0 @@
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,58 +0,0 @@
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Update for laptop\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminProduct.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminProduct.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"contact-us\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"recentNewPullRequestHead\">\r\n      <RepoCoordinatesHolder>\r\n        <option name=\"owner\" value=\"mck-9061\" />\r\n        <option name=\"repository\" value=\"Group15TeamProject\" />\r\n      </RepoCoordinatesHolder>\r\n    </option>\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"a6ecaa97-2ea1-4256-b087-b74e5224e939\" />\r\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP 8.2\">\r\n    <include_path>\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"admin-panel\",\r\n    \"last_opened_file_path\": \"C:/Users/Taugh/Documents/GitHub/Group15TeamProject\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"settings.editor.selected.configurable\": \"reference.webide.settings.project.settings.php\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n      <created>1700442146665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700442146665</updated>\r\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\r\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\r\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\r\n      <workItem from=\"1700564499566\" duration=\"118000\" />\r\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\r\n      <workItem from=\"1701032817830\" duration=\"797000\" />\r\n      <workItem from=\"1701033848862\" duration=\"298000\" />\r\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\r\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\r\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\r\n      <workItem from=\"1706217137968\" duration=\"801000\" />\r\n      <workItem from=\"1706292393330\" duration=\"818000\" />\r\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\r\n      <workItem from=\"1707347320069\" duration=\"114000\" />\r\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\r\n      <workItem from=\"1707987215333\" duration=\"1667000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700559226091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700559226092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701908471822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701908471822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701971673498</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701971673498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702073919744</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702073919744</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137477853</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137477853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137570028</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137570028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144568397</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144568397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144578292</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144578292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707347367082</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707347367082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Made Admin Accounts, Products and Product more developed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707889221965</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707889221965</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Update for laptop\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707903251170</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707903251170</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n    <MESSAGE value=\"Just for laptop work\" />\r\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\r\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\r\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\r\n    <MESSAGE value=\"FAVICON\" />\r\n    <MESSAGE value=\"Footer Added\" />\r\n    <MESSAGE value=\"Made branch for front end admin panel\" />\r\n    <MESSAGE value=\"Made Admin Accounts, Products and Product more developed\" />\r\n    <MESSAGE value=\"Update for laptop\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update for laptop\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision bffb7be94548c2c70dd4dc44a9d9f0bb46983606)
+--+++ b/.idea/workspace.xml	(date 1707991321017)
+--@@ -4,10 +4,8 @@
+--     <option name="autoReloadType" value="SELECTIVE" />
+--   </component>
+--   <component name="ChangeListManager">
+---    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Update for laptop">
+--+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Individual Product page temp for moment">
+--       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
+--     </list>
+--     <option name="SHOW_DIALOG" value="false" />
+--     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+--@@ -131,7 +129,7 @@
+--       <workItem from="1706795905504" duration="5693000" />
+--       <workItem from="1707347320069" duration="114000" />
+--       <workItem from="1707401275967" duration="5483000" />
+---      <workItem from="1707987215333" duration="1667000" />
+--+      <workItem from="1707987215333" duration="2273000" />
+--     </task>
+--     <task id="LOCAL-00001" summary="Just for laptop work">
+--       <option name="closed" value="true" />
+--@@ -221,7 +219,15 @@
+--       <option name="project" value="LOCAL" />
+--       <updated>1707903251170</updated>
+--     </task>
+---    <option name="localTasksCounter" value="12" />
+--+    <task id="LOCAL-00012" summary="Individual Product page temp for moment">
+--+      <option name="closed" value="true" />
+--+      <created>1707988888259</created>
+--+      <option name="number" value="00012" />
+--+      <option name="presentableId" value="LOCAL-00012" />
+--+      <option name="project" value="LOCAL" />
+--+      <updated>1707988888259</updated>
+--+    </task>
+--+    <option name="localTasksCounter" value="13" />
+--     <servers />
+--   </component>
+--   <component name="TypeScriptGeneratedFilesManager">
+--@@ -261,6 +267,7 @@
+--     <MESSAGE value="Made branch for front end admin panel" />
+--     <MESSAGE value="Made Admin Accounts, Products and Product more developed" />
+--     <MESSAGE value="Update for laptop" />
+---    <option name="LAST_COMMIT_MESSAGE" value="Update for laptop" />
+--+    <MESSAGE value="Individual Product page temp for moment" />
+--+    <option name="LAST_COMMIT_MESSAGE" value="Individual Product page temp for moment" />
+--   </component>
+-- </project>
+--\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,65 +0,0 @@
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Update for laptop\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminCustomerAccountView.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminCustomerAccountView.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"contact-us\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"recentNewPullRequestHead\">\r\n      <RepoCoordinatesHolder>\r\n        <option name=\"owner\" value=\"mck-9061\" />\r\n        <option name=\"repository\" value=\"Group15TeamProject\" />\r\n      </RepoCoordinatesHolder>\r\n    </option>\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"a6ecaa97-2ea1-4256-b087-b74e5224e939\" />\r\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP 8.2\">\r\n    <include_path>\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;admin-panel&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n      <created>1700442146665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700442146665</updated>\r\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\r\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\r\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\r\n      <workItem from=\"1700564499566\" duration=\"118000\" />\r\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\r\n      <workItem from=\"1701032817830\" duration=\"797000\" />\r\n      <workItem from=\"1701033848862\" duration=\"298000\" />\r\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\r\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\r\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\r\n      <workItem from=\"1706217137968\" duration=\"801000\" />\r\n      <workItem from=\"1706292393330\" duration=\"818000\" />\r\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\r\n      <workItem from=\"1707347320069\" duration=\"114000\" />\r\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\r\n      <workItem from=\"1707987215333\" duration=\"1667000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700559226091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700559226092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701908471822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701908471822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701971673498</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701971673498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702073919744</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702073919744</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137477853</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137477853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137570028</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137570028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144568397</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144568397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144578292</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144578292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707347367082</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707347367082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Made Admin Accounts, Products and Product more developed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707889221965</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707889221965</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Update for laptop\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707903251170</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707903251170</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n    <MESSAGE value=\"Just for laptop work\" />\r\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\r\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\r\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\r\n    <MESSAGE value=\"FAVICON\" />\r\n    <MESSAGE value=\"Footer Added\" />\r\n    <MESSAGE value=\"Made branch for front end admin panel\" />\r\n    <MESSAGE value=\"Made Admin Accounts, Products and Product more developed\" />\r\n    <MESSAGE value=\"Update for laptop\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update for laptop\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision 87d14e151626406392951389b81cea3a52dc6840)
+--+++ b/.idea/workspace.xml	(date 1708077953941)
+--@@ -4,7 +4,26 @@
+--     <option name="autoReloadType" value="SELECTIVE" />
+--   </component>
+--   <component name="ChangeListManager">
+---    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Update for laptop">
+--+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Laptop Update">
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10_[Changes]/Grimes-Visions-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10_[Changes]/Lorde-Melodrama-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17_[Changes]1/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27_[Changes]/Grimes-Visions-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27_[Changes]/Lorde-Melodrama-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38_[Changes]/Grimes-Visions-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38_[Changes]/Lorde-Melodrama-Carousel-Image.png" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" afterDir="false" />
+--+      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/adminCustomerAccountView.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminCustomerAccountView.php" afterDir="false" />
+--@@ -221,7 +240,15 @@
+--       <option name="project" value="LOCAL" />
+--       <updated>1707903251170</updated>
+--     </task>
+---    <option name="localTasksCounter" value="12" />
+--+    <task id="LOCAL-00012" summary="Laptop Update">
+--+      <option name="closed" value="true" />
+--+      <created>1708077945821</created>
+--+      <option name="number" value="00012" />
+--+      <option name="presentableId" value="LOCAL-00012" />
+--+      <option name="project" value="LOCAL" />
+--+      <updated>1708077945821</updated>
+--+    </task>
+--+    <option name="localTasksCounter" value="13" />
+--     <servers />
+--   </component>
+--   <component name="TypeScriptGeneratedFilesManager">
+--@@ -261,6 +288,7 @@
+--     <MESSAGE value="Made branch for front end admin panel" />
+--     <MESSAGE value="Made Admin Accounts, Products and Product more developed" />
+--     <MESSAGE value="Update for laptop" />
+---    <option name="LAST_COMMIT_MESSAGE" value="Update for laptop" />
+--+    <MESSAGE value="Laptop Update" />
+--+    <option name="LAST_COMMIT_MESSAGE" value="Laptop Update" />
+--   </component>
+-- </project>
+--\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,99 +0,0 @@
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Made branch for front end admin panel\">\r\n      <change afterPath=\"$PROJECT_DIR$/admin.css\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/adminAccounts.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/adminProducts.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"recentNewPullRequestHead\">\r\n      <RepoCoordinatesHolder>\r\n        <option name=\"owner\" value=\"mck-9061\" />\r\n        <option name=\"repository\" value=\"Group15TeamProject\" />\r\n      </RepoCoordinatesHolder>\r\n    </option>\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"ee4e588c-9924-4e0c-81c6-4ac283480855\" />\r\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\">\r\n    <include_path>\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"admin-panel\",\r\n    \"last_opened_file_path\": \"C:/Users/Taugh/Documents/GitHub/Group15TeamProject\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"settings.editor.selected.configurable\": \"reference.webide.settings.project.settings.php\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n      <created>1700442146665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700442146665</updated>\r\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\r\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\r\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\r\n      <workItem from=\"1700564499566\" duration=\"118000\" />\r\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\r\n      <workItem from=\"1701032817830\" duration=\"797000\" />\r\n      <workItem from=\"1701033848862\" duration=\"298000\" />\r\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\r\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\r\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\r\n      <workItem from=\"1706217137968\" duration=\"801000\" />\r\n      <workItem from=\"1706292393330\" duration=\"818000\" />\r\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\r\n      <workItem from=\"1707347320069\" duration=\"114000\" />\r\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700559226091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700559226092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701908471822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701908471822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701971673498</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701971673498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702073919744</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702073919744</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137477853</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137477853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137570028</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137570028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144568397</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144568397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144578292</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144578292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707347367082</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707347367082</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"10\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n    <MESSAGE value=\"Just for laptop work\" />\r\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\r\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\r\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\r\n    <MESSAGE value=\"FAVICON\" />\r\n    <MESSAGE value=\"Footer Added\" />\r\n    <MESSAGE value=\"Made branch for front end admin panel\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Made branch for front end admin panel\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision 8820a419efa62814bb0b7edf75e2c0c1a01b82a0)
+--+++ b/.idea/workspace.xml	(date 1707754348665)
+--@@ -4,12 +4,8 @@
+--     <option name="autoReloadType" value="SELECTIVE" />
+--   </component>
+--   <component name="ChangeListManager">
+---    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Made branch for front end admin panel">
+---      <change afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/adminProducts.php" afterDir="false" />
+--+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="When i say attempt you say panel! &#10;Attempt &#10;Panel!">
+--       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin.php" afterDir="false" />
+--     </list>
+--     <option name="SHOW_DIALOG" value="false" />
+--     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+--@@ -76,23 +72,23 @@
+--     <option name="showMembers" value="true" />
+--     <option name="sortKey" value="BY_TIME_DESCENDING" />
+--   </component>
+---  <component name="PropertiesComponent"><![CDATA[{
+---  "keyToString": {
+---    "DefaultHtmlFileTemplate": "HTML File",
+---    "RunOnceActivity.OpenProjectViewOnStart": "true",
+---    "RunOnceActivity.ShowReadmeOnStart": "true",
+---    "WebServerToolWindowFactoryState": "false",
+---    "git-widget-placeholder": "admin-panel",
+---    "last_opened_file_path": "C:/Users/Taugh/Documents/GitHub/Group15TeamProject",
+---    "list.type.of.created.stylesheet": "CSS",
+---    "node.js.detected.package.eslint": "true",
+---    "node.js.detected.package.tslint": "true",
+---    "node.js.selected.package.eslint": "(autodetect)",
+---    "node.js.selected.package.tslint": "(autodetect)",
+---    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+---    "vue.rearranger.settings.migration": "true"
+--+  <component name="PropertiesComponent">{
+--+  &quot;keyToString&quot;: {
+--+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+--+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+--+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+--+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+--+    &quot;git-widget-placeholder&quot;: &quot;admin-panel&quot;,
+--+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject&quot;,
+--+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+--+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+--+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+--+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+--+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+--+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+--+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+--   }
+---}]]></component>
+--+}</component>
+--   <component name="RecentsManager">
+--     <key name="CopyFile.RECENT_KEYS">
+--       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject" />
+--@@ -125,6 +121,7 @@
+--       <workItem from="1706795905504" duration="5693000" />
+--       <workItem from="1707347320069" duration="114000" />
+--       <workItem from="1707401275967" duration="5483000" />
+--+      <workItem from="1707438934414" duration="2001000" />
+--     </task>
+--     <task id="LOCAL-00001" summary="Just for laptop work">
+--       <option name="closed" value="true" />
+--@@ -198,7 +195,15 @@
+--       <option name="project" value="LOCAL" />
+--       <updated>1707347367082</updated>
+--     </task>
+---    <option name="localTasksCounter" value="10" />
+--+    <task id="LOCAL-00010" summary="When i say attempt you say panel! &#10;Attempt &#10;Panel!">
+--+      <option name="closed" value="true" />
+--+      <created>1707439024870</created>
+--+      <option name="number" value="00010" />
+--+      <option name="presentableId" value="LOCAL-00010" />
+--+      <option name="project" value="LOCAL" />
+--+      <updated>1707439024870</updated>
+--+    </task>
+--+    <option name="localTasksCounter" value="11" />
+--     <servers />
+--   </component>
+--   <component name="TypeScriptGeneratedFilesManager">
+--@@ -236,6 +241,7 @@
+--     <MESSAGE value="FAVICON" />
+--     <MESSAGE value="Footer Added" />
+--     <MESSAGE value="Made branch for front end admin panel" />
+---    <option name="LAST_COMMIT_MESSAGE" value="Made branch for front end admin panel" />
+--+    <MESSAGE value="When i say attempt you say panel! &#10;Attempt &#10;Panel!" />
+--+    <option name="LAST_COMMIT_MESSAGE" value="When i say attempt you say panel! &#10;Attempt &#10;Panel!" />
+--   </component>
+-- </project>
+--\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]" date="1708283213404" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 18/02/2024 19:06 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]" date="1707993296262" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 15/02/2024 10:34 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]" date="1708081244747" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 16/02/2024 11:00 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,70 +0,0 @@
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Admin Products and Product temps done for moment\">\r\n      <change afterPath=\"$PROJECT_DIR$/addProduct.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/adminCustomerAccountView.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminAccounts.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminAccounts.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminHome.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminHome.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminProduct.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminProduct.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"recentNewPullRequestHead\">\r\n      <RepoCoordinatesHolder>\r\n        <option name=\"owner\" value=\"mck-9061\" />\r\n        <option name=\"repository\" value=\"Group15TeamProject\" />\r\n      </RepoCoordinatesHolder>\r\n    </option>\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"ee4e588c-9924-4e0c-81c6-4ac283480855\" />\r\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\">\r\n    <include_path>\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;admin-panel&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n      <created>1700442146665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700442146665</updated>\r\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\r\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\r\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\r\n      <workItem from=\"1700564499566\" duration=\"118000\" />\r\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\r\n      <workItem from=\"1701032817830\" duration=\"797000\" />\r\n      <workItem from=\"1701033848862\" duration=\"298000\" />\r\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\r\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\r\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\r\n      <workItem from=\"1706217137968\" duration=\"801000\" />\r\n      <workItem from=\"1706292393330\" duration=\"818000\" />\r\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\r\n      <workItem from=\"1707347320069\" duration=\"114000\" />\r\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\r\n      <workItem from=\"1708035649912\" duration=\"122000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700559226091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700559226092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701908471822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701908471822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701971673498</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701971673498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702073919744</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702073919744</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137477853</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137477853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137570028</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137570028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144568397</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144568397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144578292</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144578292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707347367082</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707347367082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Admin Products and Product temps done for moment\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707995701950</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707995701950</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n    <MESSAGE value=\"Just for laptop work\" />\r\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\r\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\r\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\r\n    <MESSAGE value=\"FAVICON\" />\r\n    <MESSAGE value=\"Footer Added\" />\r\n    <MESSAGE value=\"Made branch for front end admin panel\" />\r\n    <MESSAGE value=\"Admin Products and Product temps done for moment\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Admin Products and Product temps done for moment\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision 627c8b38bac11c1f00eddcf168ec1e2736913e20)
+--+++ b/.idea/workspace.xml	(date 1708081209537)
+--@@ -4,14 +4,8 @@
+--     <option name="autoReloadType" value="SELECTIVE" />
+--   </component>
+--   <component name="ChangeListManager">
+---    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Admin Products and Product temps done for moment">
+---      <change afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
+---      <change afterPath="$PROJECT_DIR$/adminCustomerAccountView.php" afterDir="false" />
+--+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Made some changes to elements of front end admin panel.">
+--       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminHome.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminHome.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
+--     </list>
+--     <option name="SHOW_DIALOG" value="false" />
+--     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+--@@ -127,7 +121,7 @@
+--       <workItem from="1706795905504" duration="5693000" />
+--       <workItem from="1707347320069" duration="114000" />
+--       <workItem from="1707401275967" duration="5483000" />
+---      <workItem from="1708035649912" duration="122000" />
+--+      <workItem from="1708035649912" duration="206000" />
+--     </task>
+--     <task id="LOCAL-00001" summary="Just for laptop work">
+--       <option name="closed" value="true" />
+--@@ -209,7 +203,23 @@
+--       <option name="project" value="LOCAL" />
+--       <updated>1707995701950</updated>
+--     </task>
+---    <option name="localTasksCounter" value="11" />
+--+    <task id="LOCAL-00011" summary="Made some changes to elements of front end admin panel.">
+--+      <option name="closed" value="true" />
+--+      <created>1708074598187</created>
+--+      <option name="number" value="00011" />
+--+      <option name="presentableId" value="LOCAL-00011" />
+--+      <option name="project" value="LOCAL" />
+--+      <updated>1708074598187</updated>
+--+    </task>
+--+    <task id="LOCAL-00012" summary="Made some changes to elements of front end admin panel.">
+--+      <option name="closed" value="true" />
+--+      <created>1708074616168</created>
+--+      <option name="number" value="00012" />
+--+      <option name="presentableId" value="LOCAL-00012" />
+--+      <option name="project" value="LOCAL" />
+--+      <updated>1708074616168</updated>
+--+    </task>
+--+    <option name="localTasksCounter" value="13" />
+--     <servers />
+--   </component>
+--   <component name="TypeScriptGeneratedFilesManager">
+--@@ -248,6 +258,7 @@
+--     <MESSAGE value="Footer Added" />
+--     <MESSAGE value="Made branch for front end admin panel" />
+--     <MESSAGE value="Admin Products and Product temps done for moment" />
+---    <option name="LAST_COMMIT_MESSAGE" value="Admin Products and Product temps done for moment" />
+--+    <MESSAGE value="Made some changes to elements of front end admin panel." />
+--+    <option name="LAST_COMMIT_MESSAGE" value="Made some changes to elements of front end admin panel." />
+--   </component>
+-- </project>
+--\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]" date="1708160556512" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 17/02/2024 09:02 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]" date="1708074650941" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Update at 16/02/2024 09:10 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,46 +0,0 @@
+--Index: .idea/workspace.xml
+--IDEA additional info:
+--Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+--<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Update for laptop\">\r\n      <change afterPath=\"$PROJECT_DIR$/adminsAccount.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/addProduct.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/addProduct.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/admin.css\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/admin.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminAccounts.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminAccounts.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminCustomerAccountView.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminCustomerAccountView.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminHome.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminHome.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminProduct.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminProduct.php\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/adminProducts.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/adminProducts.php\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"contact-us\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">\r\n    <option name=\"recentNewPullRequestHead\">\r\n      <RepoCoordinatesHolder>\r\n        <option name=\"owner\" value=\"mck-9061\" />\r\n        <option name=\"repository\" value=\"Group15TeamProject\" />\r\n      </RepoCoordinatesHolder>\r\n    </option>\r\n    <option name=\"selectedUrlAndAccountId\">\r\n      <UrlAndAccount>\r\n        <option name=\"accountId\" value=\"a6ecaa97-2ea1-4256-b087-b74e5224e939\" />\r\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\r\n      </UrlAndAccount>\r\n    </option>\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP 8.2\">\r\n    <include_path>\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n    <option name=\"showMembers\" value=\"true\" />\r\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,\r\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;admin-panel&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject&quot;,\r\n    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,\r\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,\r\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\r\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,\r\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n      <created>1700442146665</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1700442146665</updated>\r\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\r\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\r\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\r\n      <workItem from=\"1700564499566\" duration=\"118000\" />\r\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\r\n      <workItem from=\"1701032817830\" duration=\"797000\" />\r\n      <workItem from=\"1701033848862\" duration=\"298000\" />\r\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\r\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\r\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\r\n      <workItem from=\"1706217137968\" duration=\"801000\" />\r\n      <workItem from=\"1706292393330\" duration=\"818000\" />\r\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\r\n      <workItem from=\"1707347320069\" duration=\"114000\" />\r\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\r\n      <workItem from=\"1707987215333\" duration=\"1667000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1700559226091</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1700559226092</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701908471822</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701908471822</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1701971673498</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1701971673498</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702073919744</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702073919744</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137477853</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137477853</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702137570028</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702137570028</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144568397</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144568397</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1702144578292</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1702144578292</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707347367082</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707347367082</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Made Admin Accounts, Products and Product more developed\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707889221965</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707889221965</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"Update for laptop\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1707903251170</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1707903251170</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"12\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"FILTERS\">\r\n                <map>\r\n                  <entry key=\"branch\">\r\n                    <value>\r\n                      <list>\r\n                        <option value=\"main\" />\r\n                      </list>\r\n                    </value>\r\n                  </entry>\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\r\n    <MESSAGE value=\"Just for laptop work\" />\r\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\r\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\r\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\r\n    <MESSAGE value=\"FAVICON\" />\r\n    <MESSAGE value=\"Footer Added\" />\r\n    <MESSAGE value=\"Made branch for front end admin panel\" />\r\n    <MESSAGE value=\"Made Admin Accounts, Products and Product more developed\" />\r\n    <MESSAGE value=\"Update for laptop\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update for laptop\" />\r\n  </component>\r\n</project>
+--Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+--<+>UTF-8
+--===================================================================
+--diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+----- a/.idea/workspace.xml	(revision b2aa4ebf1a0ce22dd372e9aff5d00ca594bbfa96)
+--+++ b/.idea/workspace.xml	(date 1708283200315)
+--@@ -4,17 +4,17 @@
+--     <option name="autoReloadType" value="SELECTIVE" />
+--   </component>
+--   <component name="ChangeListManager">
+---    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Update for laptop">
+---      <change afterPath="$PROJECT_DIR$/adminsAccount.php" afterDir="false" />
+--+    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Fixes">
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" afterDir="false" />
+--+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" afterDir="false" />
+--       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/addProduct.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminAccounts.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminCustomerAccountView.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminCustomerAccountView.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminHome.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminHome.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProduct.php" afterDir="false" />
+---      <change beforePath="$PROJECT_DIR$/adminProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminProducts.php" afterDir="false" />
+--     </list>
+--     <option name="SHOW_DIALOG" value="false" />
+--     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+--@@ -139,6 +139,8 @@
+--       <workItem from="1707347320069" duration="114000" />
+--       <workItem from="1707401275967" duration="5483000" />
+--       <workItem from="1707987215333" duration="1667000" />
+--+      <workItem from="1708174465712" duration="622000" />
+--+      <workItem from="1708177070916" duration="4585000" />
+--     </task>
+--     <task id="LOCAL-00001" summary="Just for laptop work">
+--       <option name="closed" value="true" />
+-Index: .idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml
+-===================================================================
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml b/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml
+-deleted file mode 100644
+---- a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ /dev/null	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-@@ -1,4 +0,0 @@
+--<changelist name="Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]" date="1707826918844" recycled="true" deleted="true">
+--  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" />
+--  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 13/02/2024 12:21 [Changes]" />
+--</changelist>
+-\ No newline at end of file
+-Index: .idea/workspace.xml
+-IDEA additional info:
+-Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+-<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"Fixes\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"HTML File\" />\n        <option value=\"CSS File\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"contact-us\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;ByrneHub&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"recentNewPullRequestHead\">\n      <RepoCoordinatesHolder>\n        <option name=\"owner\" value=\"mck-9061\" />\n        <option name=\"repository\" value=\"Group15TeamProject\" />\n      </RepoCoordinatesHolder>\n    </option>\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"a6ecaa97-2ea1-4256-b087-b74e5224e939\" />\n        <option name=\"url\" value=\"https://github.com/mck-9061/Group15TeamProject.git\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/../../../../xampp/php\" />\n      <path value=\"\" />\n    </include_path>\n  </component>\n  <component name=\"ProblemsViewState\">\n    <option name=\"selectedTabId\" value=\"CurrentFile\" />\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2YFhSSzisPp1nOdBmjuUC9TZIsY\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n    <option name=\"showMembers\" value=\"true\" />\n    <option name=\"sortKey\" value=\"BY_TIME_DESCENDING\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"git-widget-placeholder\": \"cart-checkout\",\n    \"last_opened_file_path\": \"C:/xampp/php/php.exe\",\n    \"node.js.detected.package.eslint\": \"true\",\n    \"node.js.detected.package.tslint\": \"true\",\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"settings.editor.selected.configurable\": \"preferences.pluginManager\",\n    \"vue.rearranger.settings.migration\": \"true\"\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\" />\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\assets\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\User\\OneDrive\\Documents\\GitHub\\Group15TeamProject\\assets\" />\n    </key>\n  </component>\n  <component name=\"SharedIndexes\">\n    <attachedChunks>\n      <set>\n        <option value=\"bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96\" />\n      </set>\n    </attachedChunks>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"dfb7d929-8889-4323-8085-ae23957832cd\" name=\"Changes\" comment=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\n      <created>1700442146665</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1700442146665</updated>\n      <workItem from=\"1700442147979\" duration=\"2064000\" />\n      <workItem from=\"1700449691782\" duration=\"11627000\" />\n      <workItem from=\"1700519841898\" duration=\"4520000\" />\n      <workItem from=\"1700564499566\" duration=\"118000\" />\n      <workItem from=\"1700574651994\" duration=\"2119000\" />\n      <workItem from=\"1701032817830\" duration=\"797000\" />\n      <workItem from=\"1701033848862\" duration=\"298000\" />\n      <workItem from=\"1701894932214\" duration=\"11006000\" />\n      <workItem from=\"1701910603265\" duration=\"15923000\" />\n      <workItem from=\"1702084657626\" duration=\"5571000\" />\n      <workItem from=\"1706217137968\" duration=\"801000\" />\n      <workItem from=\"1706292393330\" duration=\"818000\" />\n      <workItem from=\"1706795905504\" duration=\"5693000\" />\n      <workItem from=\"1707347320069\" duration=\"114000\" />\n      <workItem from=\"1707401275967\" duration=\"5483000\" />\n      <workItem from=\"1707987215333\" duration=\"1667000\" />\n      <workItem from=\"1708174465712\" duration=\"622000\" />\n      <workItem from=\"1708177070916\" duration=\"4585000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Just for laptop work\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1700559226091</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1700559226092</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1701908471822</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1701908471822</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Added css changes,renamed some elements for testing, started the design stage for cart\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1701971673498</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1701971673498</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Gave about us page css, added border under navbar &amp; some carousel changes.\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702073919744</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702073919744</updated>\n    </task>\n    <task id=\"LOCAL-00005\" summary=\"FAVICON\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702137477853</created>\n      <option name=\"number\" value=\"00005\" />\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702137477853</updated>\n    </task>\n    <task id=\"LOCAL-00006\" summary=\"FAVICON\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702137570028</created>\n      <option name=\"number\" value=\"00006\" />\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702137570028</updated>\n    </task>\n    <task id=\"LOCAL-00007\" summary=\"Footer Added\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702144568397</created>\n      <option name=\"number\" value=\"00007\" />\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702144568397</updated>\n    </task>\n    <task id=\"LOCAL-00008\" summary=\"Footer Added\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1702144578292</created>\n      <option name=\"number\" value=\"00008\" />\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1702144578292</updated>\n    </task>\n    <task id=\"LOCAL-00009\" summary=\"Made branch for front end admin panel\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1707347367082</created>\n      <option name=\"number\" value=\"00009\" />\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1707347367082</updated>\n    </task>\n    <task id=\"LOCAL-00010\" summary=\"Made Admin Accounts, Products and Product more developed\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1707889221965</created>\n      <option name=\"number\" value=\"00010\" />\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1707889221965</updated>\n    </task>\n    <task id=\"LOCAL-00011\" summary=\"Update for laptop\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1707903251170</created>\n      <option name=\"number\" value=\"00011\" />\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1707903251170</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"12\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"cart-checkout\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"New navbar Fully Functional, Added a load of product pictures for database.\" />\n    <MESSAGE value=\"Just for laptop work\" />\n    <MESSAGE value=\"Added css changes,renamed some elements for testing, started the design stage for cart\" />\n    <MESSAGE value=\"Gave about us page css, added border under navbar &amp; some carousel changes.\" />\n    <MESSAGE value=\"Fixed more CSS - CSS is so fun!\" />\n    <MESSAGE value=\"FAVICON\" />\n    <MESSAGE value=\"Footer Added\" />\n    <MESSAGE value=\"Made branch for front end admin panel\" />\n    <MESSAGE value=\"Made Admin Accounts, Products and Product more developed\" />\n    <MESSAGE value=\"Update for laptop\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Update for laptop\" />\n  </component>\n</project>
+-Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+-<+>UTF-8
+-===================================================================
+-diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+---- a/.idea/workspace.xml	(revision 014bdcb8d803c51f9dc753a6947bcb4bbefac7b3)
+-+++ b/.idea/workspace.xml	(date 1709129196663)
+-@@ -4,16 +4,20 @@
+-     <option name="autoReloadType" value="SELECTIVE" />
+-   </component>
+-   <component name="ChangeListManager">
+--    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Fixes">
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" afterDir="false" />
+--      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" afterDir="false" />
+-+    <list default="true" id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="">
+-+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch" beforeDir="false" />
+-+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" />
+-       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-     </list>
+-     <option name="SHOW_DIALOG" value="false" />
+-@@ -23,42 +27,14 @@
+-   </component>
+-   <component name="ComposerSettings">
+-     <execution />
+--  </component>
+--  <component name="FileTemplateManagerImpl">
+--    <option name="RECENT_TEMPLATES">
+--      <list>
+--        <option value="HTML File" />
+--        <option value="CSS File" />
+--      </list>
+--    </option>
+-   </component>
+-   <component name="Git.Settings">
+-     <option name="RECENT_BRANCH_BY_REPOSITORY">
+-       <map>
+--        <entry key="$PROJECT_DIR$" value="contact-us" />
+-+        <entry key="$PROJECT_DIR$" value="main" />
+-       </map>
+-     </option>
+-     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+--  </component>
+--  <component name="GitHubPullRequestSearchHistory">{
+--  &quot;lastFilter&quot;: {
+--    &quot;state&quot;: &quot;OPEN&quot;,
+--    &quot;assignee&quot;: &quot;ByrneHub&quot;
+--  }
+--}</component>
+--  <component name="GithubPullRequestsUISettings">
+--    <option name="recentNewPullRequestHead">
+--      <RepoCoordinatesHolder>
+--        <option name="owner" value="mck-9061" />
+--        <option name="repository" value="Group15TeamProject" />
+--      </RepoCoordinatesHolder>
+--    </option>
+--    <option name="selectedUrlAndAccountId">
+--      <UrlAndAccount>
+--        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
+--        <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
+--      </UrlAndAccount>
+--    </option>
+-   </component>
+-   <component name="MarkdownSettingsMigration">
+-     <option name="stateVersion" value="1" />
+-@@ -69,207 +45,40 @@
+-       <path value="" />
+-     </include_path>
+-   </component>
+--  <component name="ProblemsViewState">
+--    <option name="selectedTabId" value="CurrentFile" />
+--  </component>
+--  <component name="ProjectColorInfo">{
+--  &quot;associatedIndex&quot;: 0
+--}</component>
+--  <component name="ProjectId" id="2YFhSSzisPp1nOdBmjuUC9TZIsY" />
+-+  <component name="ProjectColorInfo"><![CDATA[{
+-+  "customColor": "",
+-+  "associatedIndex": 0
+-+}]]></component>
+-+  <component name="ProjectId" id="2cj4t1ImRmkXsHzMp7Q1jwLzuyJ" />
+-   <component name="ProjectViewState">
+-     <option name="hideEmptyMiddlePackages" value="true" />
+-     <option name="showLibraryContents" value="true" />
+--    <option name="showMembers" value="true" />
+--    <option name="sortKey" value="BY_TIME_DESCENDING" />
+-   </component>
+-   <component name="PropertiesComponent"><![CDATA[{
+-   "keyToString": {
+--    "DefaultHtmlFileTemplate": "HTML File",
+-     "RunOnceActivity.OpenProjectViewOnStart": "true",
+-     "RunOnceActivity.ShowReadmeOnStart": "true",
+-     "WebServerToolWindowFactoryState": "false",
+--    "git-widget-placeholder": "cart-checkout",
+--    "last_opened_file_path": "C:/xampp/php/php.exe",
+-+    "git-widget-placeholder": "recommended-caro",
+-     "node.js.detected.package.eslint": "true",
+--    "node.js.detected.package.tslint": "true",
+-     "node.js.selected.package.eslint": "(autodetect)",
+-     "node.js.selected.package.tslint": "(autodetect)",
+--    "nodejs_package_manager_path": "npm",
+--    "settings.editor.selected.configurable": "preferences.pluginManager",
+-     "vue.rearranger.settings.migration": "true"
+-   }
+--}</component>
+--  <component name="RecentsManager">
+--    <key name="CopyFile.RECENT_KEYS">
+--      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject" />
+--      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
+--    </key>
+--    <key name="MoveFile.RECENT_KEYS">
+--      <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
+--    </key>
+--  </component>
+--  <component name="SharedIndexes">
+--    <attachedChunks>
+--      <set>
+--        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+--      </set>
+--    </attachedChunks>
+--  </component>
+-+}]]></component>
+-   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+-   <component name="TaskManager">
+-     <task active="true" id="Default" summary="Default task">
+--      <changelist id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="New navbar Fully Functional, Added a load of product pictures for database." />
+--      <created>1700442146665</created>
+-+      <changelist id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="" />
+-+      <created>1708611866916</created>
+-       <option name="number" value="Default" />
+-       <option name="presentableId" value="Default" />
+--      <updated>1700442146665</updated>
+--      <workItem from="1700442147979" duration="2064000" />
+--      <workItem from="1700449691782" duration="11627000" />
+--      <workItem from="1700519841898" duration="4520000" />
+--      <workItem from="1700564499566" duration="118000" />
+--      <workItem from="1700574651994" duration="2119000" />
+--      <workItem from="1701032817830" duration="797000" />
+--      <workItem from="1701033848862" duration="298000" />
+--      <workItem from="1701894932214" duration="11006000" />
+--      <workItem from="1701910603265" duration="15923000" />
+--      <workItem from="1702084657626" duration="5571000" />
+--      <workItem from="1706217137968" duration="801000" />
+--      <workItem from="1706292393330" duration="818000" />
+--      <workItem from="1706795905504" duration="5693000" />
+--      <workItem from="1707347320069" duration="114000" />
+--      <workItem from="1707401275967" duration="5483000" />
+--      <workItem from="1707987215333" duration="1667000" />
+--      <workItem from="1708174465712" duration="622000" />
+--      <workItem from="1708177070916" duration="4585000" />
+--    </task>
+--    <task id="LOCAL-00001" summary="Just for laptop work">
+--      <option name="closed" value="true" />
+--      <created>1700559226091</created>
+--      <option name="number" value="00001" />
+--      <option name="presentableId" value="LOCAL-00001" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1700559226092</updated>
+--    </task>
+--    <task id="LOCAL-00002" summary="Added css changes,renamed some elements for testing, started the design stage for cart">
+--      <option name="closed" value="true" />
+--      <created>1701908471822</created>
+--      <option name="number" value="00002" />
+--      <option name="presentableId" value="LOCAL-00002" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1701908471822</updated>
+-+      <updated>1708611866916</updated>
+-+      <workItem from="1708611870771" duration="4349000" />
+-     </task>
+--    <task id="LOCAL-00003" summary="Added css changes,renamed some elements for testing, started the design stage for cart">
+--      <option name="closed" value="true" />
+--      <created>1701971673498</created>
+--      <option name="number" value="00003" />
+--      <option name="presentableId" value="LOCAL-00003" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1701971673498</updated>
+--    </task>
+--    <task id="LOCAL-00004" summary="Gave about us page css, added border under navbar &amp; some carousel changes.">
+--      <option name="closed" value="true" />
+--      <created>1702073919744</created>
+--      <option name="number" value="00004" />
+--      <option name="presentableId" value="LOCAL-00004" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1702073919744</updated>
+--    </task>
+--    <task id="LOCAL-00005" summary="FAVICON">
+--      <option name="closed" value="true" />
+--      <created>1702137477853</created>
+--      <option name="number" value="00005" />
+--      <option name="presentableId" value="LOCAL-00005" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1702137477853</updated>
+--    </task>
+--    <task id="LOCAL-00006" summary="FAVICON">
+--      <option name="closed" value="true" />
+--      <created>1702137570028</created>
+--      <option name="number" value="00006" />
+--      <option name="presentableId" value="LOCAL-00006" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1702137570028</updated>
+--    </task>
+--    <task id="LOCAL-00007" summary="Footer Added">
+--      <option name="closed" value="true" />
+--      <created>1702144568397</created>
+--      <option name="number" value="00007" />
+--      <option name="presentableId" value="LOCAL-00007" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1702144568397</updated>
+--    </task>
+--    <task id="LOCAL-00008" summary="Footer Added">
+--      <option name="closed" value="true" />
+--      <created>1702144578292</created>
+--      <option name="number" value="00008" />
+--      <option name="presentableId" value="LOCAL-00008" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1702144578292</updated>
+--    </task>
+--    <task id="LOCAL-00009" summary="Made branch for front end admin panel">
+--      <option name="closed" value="true" />
+--      <created>1707347367082</created>
+--      <option name="number" value="00009" />
+--      <option name="presentableId" value="LOCAL-00009" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1707347367082</updated>
+--    </task>
+--    <task id="LOCAL-00010" summary="Made Admin Accounts, Products and Product more developed">
+--      <option name="closed" value="true" />
+--      <created>1707889221965</created>
+--      <option name="number" value="00010" />
+--      <option name="presentableId" value="LOCAL-00010" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1707889221965</updated>
+--    </task>
+--    <task id="LOCAL-00011" summary="Update for laptop">
+--      <option name="closed" value="true" />
+--      <created>1707903251170</created>
+--      <option name="number" value="00011" />
+--      <option name="presentableId" value="LOCAL-00011" />
+--      <option name="project" value="LOCAL" />
+--      <updated>1707903251170</updated>
+--    </task>
+--    <option name="localTasksCounter" value="12" />
+-     <servers />
+-   </component>
+-   <component name="TypeScriptGeneratedFilesManager">
+-     <option name="version" value="3" />
+-   </component>
+--  <component name="Vcs.Log.Tabs.Properties">
+--    <option name="TAB_STATES">
+--      <map>
+--        <entry key="MAIN">
+--          <value>
+--            <State>
+--              <option name="FILTERS">
+--                <map>
+--                  <entry key="branch">
+--                    <value>
+--                      <list>
+--                        <option value="cart-checkout" />
+--                      </list>
+--                    </value>
+--                  </entry>
+--                </map>
+--              </option>
+--            </State>
+--          </value>
+--        </entry>
+--      </map>
+--    </option>
+--  </component>
+--  <component name="VcsManagerConfiguration">
+--    <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
+--    <MESSAGE value="Just for laptop work" />
+--    <MESSAGE value="Added css changes,renamed some elements for testing, started the design stage for cart" />
+--    <MESSAGE value="Gave about us page css, added border under navbar &amp; some carousel changes." />
+--    <MESSAGE value="Fixed more CSS - CSS is so fun!" />
+--    <MESSAGE value="FAVICON" />
+--    <MESSAGE value="Footer Added" />
+--    <MESSAGE value="Made branch for front end admin panel" />
+--    <MESSAGE value="Made Admin Accounts, Products and Product more developed" />
+--    <MESSAGE value="Update for laptop" />
+--    <option name="LAST_COMMIT_MESSAGE" value="Update for laptop" />
+--  </component>
+- </project>
+-\ No newline at end of file
+-diff --git a/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch b/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch
+-deleted file mode 100644
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d4018b15-4624-40ac-96e8-83b5623da8ed\" name=\"Changes\" comment=\"\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/.name\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/index.php\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/index.php\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ComposerSettings\">\n    <execution />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"PHP\">\n    <include_path>\n      <path value=\"$PROJECT_DIR$/../../../../xampp/php\" />\n      <path value=\"\" />\n    </include_path>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;customColor&quot;: &quot;&quot;,\n  &quot;associatedIndex&quot;: 0\n}</component>\n  <component name=\"ProjectId\" id=\"2cj4t1ImRmkXsHzMp7Q1jwLzuyJ\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;recommended-caro&quot;,\n    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,\n    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,\n    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,\n    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d4018b15-4624-40ac-96e8-83b5623da8ed\" name=\"Changes\" comment=\"\" />\n      <created>1708611866916</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1708611866916</updated>\n      <workItem from=\"1708611870771\" duration=\"14480000\" />\n      <workItem from=\"1709215012527\" duration=\"970000\" />\n      <workItem from=\"1709216096912\" duration=\"9175000\" />\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State>\n              <option name=\"FILTERS\">\n                <map>\n                  <entry key=\"branch\">\n                    <value>\n                      <list>\n                        <option value=\"recommended-caro\" />\n                      </list>\n                    </value>\n                  </entry>\n                </map>\n              </option>\n            </State>\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 59fd94ca78916d759a4dbbe0f7a2fc923a3add80)
++++ b/.idea/workspace.xml	(date 1709733888374)
+@@ -4,22 +4,10 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="">
+-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" />
++    <list default="true" id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="recommended carousel added but commented out in index until more products added to database with corresponding caro images">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/php/recommended_caro.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/recommended_caro.php" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -107,4 +95,8 @@
+       </map>
+     </option>
+   </component>
++  <component name="VcsManagerConfiguration">
++    <MESSAGE value="recommended carousel added but commented out in index until more products added to database with corresponding caro images" />
++    <option name="LAST_COMMIT_MESSAGE" value="recommended carousel added but commented out in index until more products added to database with corresponding caro images" />
++  </component>
+ </project>
+\ No newline at end of file
