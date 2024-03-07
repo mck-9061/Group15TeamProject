@@ -17,6 +17,7 @@ if (!isset($_POST["ArtName"])
     $id = addProduct($name, $_POST["description-box"], $_POST["PrdPrice"], $_POST["genres"], $_POST["product-type"]);
     $imageUploaded = upload();
     addImage($id, $imageUploaded);
+    addLink($id, $_POST["PrdYTLink"]);
     $_SESSION["message"] = "Product added!";
     header("Location: ../../addProduct.php");
 }
