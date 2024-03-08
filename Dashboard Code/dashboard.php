@@ -55,7 +55,7 @@
                 <div class="card">
                     <h1 class="title">Your Info</h1>
                     <p class="subtitle">Check what we have and what you want us to have</p>
-                    <button class="btn" onclick="window.location='customer-info.php'">Read your credits</button>
+                    <button class="btn" onclick="window.location='dashboard-info.php'">Read your credits</button>
                 </div>
             </div>
             <div class="column customer-options text-center">

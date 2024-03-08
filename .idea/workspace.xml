@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
-      <change afterPath="$PROJECT_DIR$/Customer page code/dashboard-styles-overview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Customer page code/customer-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/customer-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Customer page code/dashboard-styles-overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-styles-overview.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +102,7 @@
       <workItem from="1709297699646" duration="1998000" />
       <workItem from="1709466905446" duration="669000" />
       <workItem from="1709526732601" duration="196000" />
+      <workItem from="1709888486457" duration="1598000" />
     </task>
     <servers />
   </component>
