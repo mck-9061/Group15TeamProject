@@ -20,7 +20,9 @@
 
 </head>
 
+
 <body id="customer-home">
+
 
 <div class="text-center">
     <p id="home-title">Welcome,  (Add user's name here + email) </p>
@@ -48,18 +50,18 @@
 -->
 </div>
 
-
-    <div  id="account-dashboard-home-left-side" class="col-lg-6">
+ <main>
+    <div>
         <div class="row">
             <div class="column customer-options text-center align-items-center">
-                <div class="card">
+                <div class="card" id="your-info">
                     <h1 class="title">Your Info</h1>
                     <p class="subtitle">Check what we have and what you want us to have</p>
                     <button class="btn" onclick="window.location='dashboard-info.php'">Read your credits</button>
                 </div>
             </div>
             <div class="column customer-options text-center">
-                <div class="card">
+                <div class="card" id="history">
                     <h1 class="title">Order History</h1>
                     <p class="subtitle">See prior Order History</p>
                     <button class="btn">Rewind to the past</button>
@@ -67,17 +69,17 @@
             </div>
         </div>
     </div>
-<div  id="account-dashboard-home-right-side" class="col-lg-6">
+<div>
     <div class="row">
         <div class="column customer-options text-center align-items-center">
-            <div class="card">
+            <div class="card" id="favGenres">
                 <h1 class="title">Your Favourite Genres</h1>
                 <p class="subtitle">Check out what your more likely to listen to & what you already have</p>
                 <button class="btn" onclick="window.location='dashboard-styles-overview.php'">Explore your style</button>
             </div>
         </div>
         <div class="column customer-options text-center">
-            <div class="card">
+            <div class="card" id="DeleteAcc">
                 <h1 class="title">Delete Account</h1>
                 <p class="subtitle"> Delete your Account (Dont though we love you to much to lose you!)</p>
                 <button class="btn">Button of Regret</button>
@@ -85,7 +87,7 @@
         </div>
     </div>
 </div>
-
+</main>
 
 
 

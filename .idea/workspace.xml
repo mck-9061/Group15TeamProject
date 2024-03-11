@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" afterDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Ignore this.">
+      <change afterPath="$PROJECT_DIR$/assets/DashboardBG.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/customer-page.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Customer page code/dashboard-styles-overview.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-styles-overview.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/customer-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,24 +51,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;customer-front-end&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject/Customer page code&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "customer-front-end",
+    "last_opened_file_path": "C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
     </key>
   </component>
@@ -102,8 +101,18 @@
       <workItem from="1709297699646" duration="1998000" />
       <workItem from="1709466905446" duration="669000" />
       <workItem from="1709526732601" duration="196000" />
-      <workItem from="1709888486457" duration="1598000" />
+      <workItem from="1709888486457" duration="1659000" />
+      <workItem from="1710142757398" duration="2853000" />
     </task>
+    <task id="LOCAL-00001" summary="Ignore this.">
+      <option name="closed" value="true" />
+      <created>1709890134614</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709890134614</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redoing elements, found issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="Redoing elements, found issues" />
+    <MESSAGE value="Ignore this." />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignore this." />
   </component>
 </project>

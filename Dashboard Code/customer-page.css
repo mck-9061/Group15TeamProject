@@ -23,6 +23,7 @@
 }
 
 #customer-home{
+
     background-color: var(--accentBlack) /* TEMP  */
 }
 #home-title{
@@ -44,42 +45,27 @@
     z-index: 10;
     color: whitesmoke;
 } */
-* {
-    box-sizing: border-box;
+
+main{
+    background: url("../assets/DashboardBG.png");
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+            "info history"
+            "favgenres delete"
+;
 }
-
-
-
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+#your-info{
+    grid-area: info;
 }
-
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+#history{
+    grid-area: history;
 }
-
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
-    text-align: center;
-    background-color: #f1f1f1;
+#favGenres{
+    grid-area: favgenres;
 }
-
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
-    }
+#deleteACC{
+    grid-area: delete;
 }
