@@ -9,10 +9,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="admin.css" />
+    <link rel="stylesheet" href="../admin.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://use.typekit.net/maf1fpm.css">
-    <link rel="icon" type="image" href="assets/favicon.ico">
+    <link rel="icon" type="image" href="../assets/favicon.ico">
 
 </head>
 
@@ -38,11 +38,11 @@
         </li>
         <li>
             <i class="fa fa"></i>
-            <a href="index.php" class="sidebar-item"> Website Home page</a>
+            <a href="../index.php" class="sidebar-item"> Website Home page</a>
         </li>
         <li>
             <i class="fa fa"></i>
-            <a href="addProduct.php.php" class="sidebar-item"> Add Product</a>
+            <a href="addProduct.php" class="sidebar-item"> Add Product</a>
         </li>
         <li>
             <i class="fa fa"></i>
@@ -71,7 +71,7 @@
 
 
     -->
-<form action="php/admin/add_product.php" method="POST" enctype="multipart/form-data">
+<form action="../php/admin/add_product.php" method="POST" enctype="multipart/form-data">
     <div class="grid-edit-container">
         <div class="grid-item">
             <label for="ArtName">Artist name:</label>
@@ -176,7 +176,7 @@
 
 
 
-<script src="main.js"> </script>
+<script src="../main.js"> </script>
 </body>
 
 
