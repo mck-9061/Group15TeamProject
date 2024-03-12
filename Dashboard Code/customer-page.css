@@ -24,7 +24,12 @@
 
 #customer-home{
 
-    background-color: var(--accentBlack) /* TEMP  */
+    background: url("../assets/DashboardV2BG.png");
+
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 #home-title{
     color: var(--navbarPurple);

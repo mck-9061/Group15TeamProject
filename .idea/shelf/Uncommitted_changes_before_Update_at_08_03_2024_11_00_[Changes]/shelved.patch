@@ -1,0 +1,77 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"95dd4bcc-ea0a-4e2a-926a-b4412a0817a8\" name=\"Changes\" comment=\"Redoing elements, found issues\">\r\n      <change afterPath=\"$PROJECT_DIR$/Customer page code/customer-index.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Customer page code/customer-info.php\" afterDir=\"false\" />\r\n      <change afterPath=\"$PROJECT_DIR$/Customer page code/customer-page.css\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"CSS File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"main\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"PhpWorkspaceProjectConfiguration\" interpreter_name=\"C:\\php-8.2.12\\php.exe\">\r\n    <include_path>\r\n      <path value=\"$PROJECT_DIR$/../../../../xampp/php\" />\r\n      <path value=\"\" />\r\n    </include_path>\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;customColor&quot;: &quot;&quot;,\r\n  &quot;associatedIndex&quot;: 0\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2caW0pAlDnKi58Ys1e8TFm4DKLP\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"git-widget-placeholder\": \"customer-front-end\",\r\n    \"last_opened_file_path\": \"C:/Users/Taugh/Documents/GitHub/Group15TeamProject/Customer page code\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Taugh\\Documents\\GitHub\\Group15TeamProject\\Customer page code\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"95dd4bcc-ea0a-4e2a-926a-b4412a0817a8\" name=\"Changes\" comment=\"Redoing elements, found issues\" />\r\n      <created>1708349953107</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1708349953107</updated>\r\n      <workItem from=\"1708349954740\" duration=\"1484000\" />\r\n      <workItem from=\"1708438099341\" duration=\"2148000\" />\r\n      <workItem from=\"1708626717890\" duration=\"9000\" />\r\n      <workItem from=\"1708626738802\" duration=\"2700000\" />\r\n      <workItem from=\"1708809055687\" duration=\"1199000\" />\r\n      <workItem from=\"1708979853035\" duration=\"626000\" />\r\n      <workItem from=\"1709044921516\" duration=\"1347000\" />\r\n      <workItem from=\"1709215638328\" duration=\"774000\" />\r\n      <workItem from=\"1709217010693\" duration=\"19000\" />\r\n      <workItem from=\"1709217038729\" duration=\"2724000\" />\r\n      <workItem from=\"1709297699646\" duration=\"1998000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnknownFeatures\">\r\n    <option featureType=\"dependencySupport\" implementationName=\"executable:docker\" />\r\n    <option featureType=\"dependencySupport\" implementationName=\"executable:kubectl\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Redoing elements, found issues\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Redoing elements, found issues\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d9ccee3c99f4aad53b23e213f27fc9d90702c8e6)
++++ b/.idea/workspace.xml	(date 1709895610651)
+@@ -4,28 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
+-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-index.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-info.php" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/Customer page code/customer-page.css" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_23_10__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_17__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_02_2024_12_21__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_11_57__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_17_02_2024_12_14__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18_02_2024_19_06__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_02_2024_21_27__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_02_2024_00_38__Changes_.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_02_2024_10_34__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_09_10__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_02_2024_11_00__Changes_.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02_[Changes]/shelved.patch" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_17_02_2024_09_02__Changes_.xml" beforeDir="false" />
++    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Making front end customer portal">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -107,8 +86,25 @@
+       <workItem from="1709215638328" duration="774000" />
+       <workItem from="1709217010693" duration="19000" />
+       <workItem from="1709217038729" duration="2724000" />
+-      <workItem from="1709297699646" duration="1998000" />
++      <workItem from="1709297699646" duration="3257000" />
++    </task>
++    <task id="LOCAL-00001" summary="Making front end customer portal">
++      <option name="closed" value="true" />
++      <created>1709330090858</created>
++      <option name="number" value="00001" />
++      <option name="presentableId" value="LOCAL-00001" />
++      <option name="project" value="LOCAL" />
++      <updated>1709330090858</updated>
+     </task>
++    <task id="LOCAL-00002" summary="Making front end customer portal">
++      <option name="closed" value="true" />
++      <created>1709330105625</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1709330105625</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -120,6 +116,7 @@
+   </component>
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Redoing elements, found issues" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Redoing elements, found issues" />
++    <MESSAGE value="Making front end customer portal" />
++    <option name="LAST_COMMIT_MESSAGE" value="Making front end customer portal" />
+   </component>
+ </project>
+\ No newline at end of file
