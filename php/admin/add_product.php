@@ -19,5 +19,5 @@ if (!isset($_POST["ArtName"])
     addImage($id, $imageUploaded);
     addLink($id, $_POST["PrdYTLink"]);
     $_SESSION["message"] = "Product added!";
-    header("Location: ../../addProduct.php");
+    header("Location: ../../admin/addProduct.php");
 }

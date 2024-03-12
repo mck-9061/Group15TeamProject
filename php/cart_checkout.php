@@ -11,7 +11,7 @@ $date = date('y-m-d');
 
     if(sizeof($items)==0){
         ?>
-            <div>Add items to cart to checkout.</div>
+            <div>Add items to cart to check out.</div>
         <?php
     }else {
         $statement = $db->prepare("INSERT INTO orders (date, user, productid) VALUES(:date, :user, :productid)");

@@ -26,7 +26,7 @@ if (isset($_GET['productid'])) {
     if ($selectedProduct) {
 
         $productName = $selectedProduct['name'];
-//        $productType = $selectedProduct['genre'];
+        $productType = $selectedProduct['type'];
         $productGenre = $selectedProduct['genre'];
         $productPrice = $selectedProduct['price'];
         $productDescription = $selectedProduct['description'];
@@ -40,10 +40,11 @@ if (isset($_GET['productid'])) {
     } else {
 
         $productName = 'Product Not Found';
-        $productGenre = "Inavlid genre";
+        $productGenre = "Invalid genre";
+        $productType = "Invalid type";
         $productPrice = "Invalid price";
-        $productDescription = "";
-        $productImage = "Inavlid Image";
+        $productDescription = "No description";
+        $productImage = "Invalid Image";
 
         $links = array();
         $comments = array();
@@ -79,7 +80,7 @@ if (isset($_GET['productid'])) {
         <img src="<?php echo $productImage; ?>" id="product-page-img" alt="<?php echo $productName; ?>" width="300" height="300" >
         <div class="card-body">
             <div class="product-page-info">
-                <p id="product-type"> CD</p>
+                <p id="product-type"><?php echo $productType; ?></p>
                 <p id="product-genre"><?php echo $productGenre; ?></p>
                 <p id="product-price"><?php echo $productPrice; ?></p>
                 <p id="product-description"><?php echo $productDescription; ?></p>

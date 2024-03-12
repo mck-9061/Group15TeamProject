@@ -57,3 +57,61 @@ function addLink($product_id, $link) {
 
     $statement->execute();
 }
+
+
+
+function editProduct($id, $name, $description, $price, $genre, $type) {
+    global $db;
+    try {
+        $statement = $db->prepare("UPDATE `products` SET `name` = :name, `price` = :price, `description` = :description, `genre` = :genre, `type` = :type WHERE `products`.`productid` = :id; ");
+        $statement->bindParam(':name', $name, PDO::PARAM_STR, 200);
+        $statement->bindParam(':price', $price, PDO::PARAM_STR, 100);
+        $statement->bindParam(':description', $description, PDO::PARAM_STR, 1000);
+        $statement->bindParam(':genre', $genre, PDO::PARAM_STR, 20);
+        $statement->bindParam(':type', $type, PDO::PARAM_STR, 100);
+        $statement->bindParam(':id', $id, PDO::PARAM_STR, 11);
+
+        $statement->execute();
+
+        return 1;
+
+
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
+
+function deleteCurrentImage($id) {
+    global $db;
+    try {
+        $statement = $db->prepare("DELETE FROM `product-pictures` WHERE `product-pictures`.`productid` = :id");
+        $statement->bindParam(':id', $id, PDO::PARAM_STR, 11);
+        $statement->execute();
+
+        return 1;
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
+
+function deleteCurrentLink($id) {
+    global $db;
+    try {
+        $statement = $db->prepare("DELETE FROM `external-links` WHERE `external-links`.`productid` = :id");
+        $statement->bindParam(':id', $id, PDO::PARAM_STR, 11);
+        $statement->execute();
+
+        return 1;
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
