@@ -3,6 +3,7 @@
 <?php
 include '../php/fetch_products.php';
 session_start();
+require "../php/message.php";
 ?>
 
 <head>
