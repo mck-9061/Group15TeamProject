@@ -1,6 +1,8 @@
 
+
 <?php
 session_start();
+
 
 include 'php/fetch_products.php';
 include 'php/fetchComments.php';
