@@ -1,11 +1,47 @@
 <!Doctype HTML>
 <html lang="en">
+<?php
+session_start();
+
+include '../php/fetch_accounts.php';
+
+if (isset($_GET['user'])) {
+    $selectedUser = $_GET['user'];
+
+    // Fetch all accounts
+    $accounts = fetchAccounts();
+
+    // Find the selected account by its name
+    $selectedAccount = null;
+    foreach ($accounts as $account) {
+        if ($account['username'] == $selectedUser) {
+            $selectedAccount = $account;
+            break;
+        }
+    }
+
+    if ($selectedAccount) {
+        $accountName = $selectedAccount['username'];
+        $accountEmail = $selectedAccount['email'];
+        $accountPhone = $selectedAccount['phone'];
+        $accountAddress = $selectedAccount['address'];
+
+        if ($accountAddress == 0) {
+            $accountAddress = "No address on file";
+        }
+    } else {
+        header("Location: adminAccounts.php");
+    }
+} else {
+    header("Location: adminAccounts.php");
+}
+?>
 
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Account Name</title> <!--Change to customer name via php -->
+    <title><?php echo $accountName; ?></title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -72,33 +108,24 @@
 
         <div class="grid-item">
             <form>  <!-- Add php "post" Here, its for the whole grid btw -->
-            <label for="ACCFName">Account holder name:</label>
+            <label for="ACCFName">Username:</label>
             <br>
-            <input type="text" id="ACCFName" name="ACCFName" placeholder="First Name">
-            <input type="text" id="ACCLName" name="ACCLName" placeholder="Last Name">
+            <input type="text" id="ACCFName" name="ACCFName" value="<?php echo $accountName; ?>">
         </div>
         <div class="grid-item">
             <label for="ACCEmail">Account Email:</label>
             <br>
-            <input type="text" id="ACCEmail" name="ACCEmail" placeholder="Account Email">
+            <input type="text" id="ACCEmail" name="ACCEmail" value="<?php echo $accountEmail; ?>">
         </div>
         <div class="grid-item">
             <label for="ACCADDS">Account Address:</label>
             <br>
-            <input type="text" id="ACCADDS" name="ACCADDS" placeholder="Address">
+            <input type="text" id="ACCADDS" name="ACCADDS"  value="<?php echo $accountAddress; ?>">
         </div>
         <div class="grid-item">
             <label for="telNum">Telephone Number:</label>
             <br>
-            <input type="tel" id="telNum" name="telNum" placeholder="number">
-        </div>
-        <div class="grid-item">
-            <label for="PrdDsc">Password:</label>
-            <br>
-            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="customer-password">
-            <br>
-            <br>
-            <input type="reset" id="password-reset" value="Reset password">
+            <input type="tel" id="telNum" name="telNum"  value="<?php echo $accountPhone; ?>">
         </div>
 
 
@@ -108,24 +135,32 @@
           </div>
   -->         <!-- Instead make it a hover effect on the image to change it -->
 
-        <div class="grid-item">
-            <label for="adminAccess"> Is Admin Account:</label>
-            <br>
-            <input type="checkbox" id="adminAccess" name="adminAccess">
-        </div>
         <div class="grid-item"><label for="saveACCChanges">Save changes:</label>
 <br>
-            <input type="button" id="saveACCChanges" value="Save">
-            <input type="reset" id="resetACCDef" value="Reset to default">
+            <button type="submit" id="saveACCChanges">Save</button>
         </div>
         <div class="grid-item"><label for="deleteACC">Delete Account:</label>
             <br>
-            <input type="button" id="deleteACC" value="Delete">
+            <form><button><input type="button" id="deleteACC" value="Delete"></button></form>
             <br>
-            <p id="delete-warning"> Warning, once account is deleted it can not be undone.</p>
+            <p id="delete-warning">Warning, once account is deleted it can not be undone.</p>
 
         </div>
         </form>
+        <div class="grid-item">
+            <br>
+        </div>
+        <div class="grid-item">
+            <label for="PrdDsc">Reset Password:</label>
+            <br>
+            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="New Password">
+            <br>
+            <br>
+            <form><button type="reset" id="password-reset">Reset Password</button></form>
+        </div>
+        <div class="grid-item">
+            <br>
+        </div>
     </div>
 
 
