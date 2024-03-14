@@ -24,7 +24,7 @@
 
 #customer-home{
 
-    background: url("../assets/DashboardV2BG.png");
+    background: url("../assets/DashboardBGV3.png");
 
     background-position: px;
     background-size: cover;
@@ -32,8 +32,11 @@
 
 }
 #home-title{
-    color: var(--navbarPurple);
+    color: var(--poppingPink);
     font-size: 60px;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 
 /*
@@ -52,24 +55,52 @@
 } */
 
 main{
-    background: url("../assets/DashboardBG.png");
+
     justify-content: center;
     align-items: center;
     display: grid;
-    gap: 10px;
+
+    grid-gap: 30px;
+    grid-row-gap: 100px;
+    margin: auto;
     grid-template-areas:
             "info history"
             "favgenres delete"
 ;
 }
+
+
+.card{
+    background-color: var(--poppingPink);
+    border-color: var(--tiktokBlue);
+    border-radius: 1px;
+}
+.title{
+    background-color: var(--accentBlack);
+    color: var(--warmPeach);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.subtitle{
+
+}
+.btn{
+    color: white;
+}
+
 #your-info{
     grid-area: info;
+    margin-bottom: 10px;
 }
 #history{
     grid-area: history;
 }
+
 #favGenres{
     grid-area: favgenres;
+    margin-bottom: 10px;
+
 }
 #deleteACC{
     grid-area: delete;
