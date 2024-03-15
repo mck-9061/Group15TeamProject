@@ -19,7 +19,7 @@
     <link rel="icon" type="image" href="../assets/favicon.ico">
 
 </head>
-
+<?php require "../navbar.php" ?>
 
 <body id="customer-home">
 

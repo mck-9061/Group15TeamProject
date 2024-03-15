@@ -20,34 +20,50 @@
 
 </head>
 
-<body id="customer-home">
+<body id="dashboard-info">
 
 
-<div class="card hero-card-home">
-    <p id="home-title">Welcome,  (Add user's name here + email) </p>
+<div class="signUpBox">
+    <div class="signUpBorderLine">
+        <form action="php/register.php" method="post">
+            <h2>Sign Up</h2>
+            <?php include '../php/message.php'; ?>
+            <div class="inputBox">
+                <input type="text" required="required" name="email" maxlength="30" />
+                <span>Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="username" maxlength="20" />
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="password" maxlength="30" />
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="confirmPassword" maxlength="30" />
+                <span>Confirm Password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="phoneNumber" maxlength="11" />
+                <span>Phone Number</span>
+                <i></i>
+            </div>
 
-    <p></p>
-    <div class="hero-card-links">
-        <a href="#customer-index.php" > Personal Info</a>
-        <a href="#" >Address Book </a>
+            <div class="extraSignUp">
+                <a href="index.php">Go back</a>
+            </div>
+            <div class="signupReg flex-row">
+                <input type="submit" value="Register" id="signUpRegisterBtn"/>
 
-        <br>
-        <a href="addProduct.php">Order History</a>
-        <button onclick="window.location='../login.php'"> Delete Account</button>
-
+            </div>
+        </form>
     </div>
-
-    <hr id="invisible-line">
-    <hr id="invisible-line">
-    <hr>
-
-    <button onclick="window.location='../index.php'"> Go Home</button>
-    <button onclick="window.location='../login.php'"> Sign Out</button>
-
-
 </div>
-
-
 
 
 

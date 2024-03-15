@@ -23,14 +23,13 @@
 }
 
 #customer-home{
-
     background: url("../assets/DashboardBGV3.png");
-
     background-position: px;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
+
 #home-title{
     color: var(--poppingPink);
     font-size: 60px;
@@ -38,7 +37,12 @@
     font-weight: 900;
     font-style: normal;
 }
-
+#dashboard-info{
+    background: url("../assets/Dashboard-InfoBG.png");
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*
 .card {
     width: 400px;
@@ -55,18 +59,15 @@
 } */
 
 main{
-
     justify-content: center;
     align-items: center;
     display: grid;
-
     grid-gap: 30px;
     grid-row-gap: 100px;
     margin: auto;
-    grid-template-areas:
-            "info history"
-            "favgenres delete"
-;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
 
 
@@ -74,6 +75,8 @@ main{
     background-color: var(--poppingPink);
     border-color: var(--tiktokBlue);
     border-radius: 1px;
+
+
 }
 .title{
     background-color: var(--accentBlack);
