@@ -1,0 +1,85 @@
+:root {
+    --purple: #8c38ff;
+    --darkwaterBlue: #0f292f;
+    --poppingPink: #cb2d6f;
+    --accentBlack: #2d283e;
+    --promisingPurple: #281941;
+    --tiktokBlue: #74f0ed;
+    --tiktokPink: #ea445a;
+    --tiktokPinkwarm: #ea445ad3;
+    --shiningYellow: #fdd935;
+    --grapeGreen: #a6aa35;
+    --peach: #faa88b;
+    --warmPeach: #eb716a;
+    --warmPeachcold: #eb706ab9;
+    --pinkypeach: #f9d4e6;
+    --mint: #99edc3;
+    --seafoam: #3ded97;
+    --navbarPurple: #54005d;
+    --GAorange: #ff9f59;
+    --GAcream: #e7d6d0;
+    --darkOrange: #d43f10;
+    --searchgreen: #76cebf;
+}
+
+#customer-home{
+    background-color: var(--accentBlack) /* TEMP  */
+}
+#home-title{
+    color: var(--navbarPurple);
+    font-size: 60px;
+}
+
+/*
+.card {
+    width: 400px;
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+} */
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
