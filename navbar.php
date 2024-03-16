@@ -89,7 +89,6 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="products.php?genre=jpop&type=ep">JPop</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=kpop&type=ep">KPop</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=global&type=ep">Global</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=indie&type=ep">Indie</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=dance&type=ep">Dance</a></li>
                             <li><hr class="dropdown-divider" /></li>
