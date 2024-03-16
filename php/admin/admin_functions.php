@@ -84,6 +84,68 @@ function editProduct($id, $name, $description, $price, $genre, $type) {
     }
 }
 
+function editAccount($name, $email, $address, $phone) {
+    global $db;
+    try {
+        $statement = $db->prepare("UPDATE `users` SET `username` = :name, `email` = :email, `phone` = :phone, `address` = :address WHERE `users`.`username` = :name; ");
+        $statement->bindParam(':name', $name, PDO::PARAM_STR, 20);
+        $statement->bindParam(':email', $email, PDO::PARAM_STR, 30);
+        $statement->bindParam(':phone', $address, PDO::PARAM_STR, 11);
+        $statement->bindParam(':address', $phone, PDO::PARAM_STR, 100);
+
+        $statement->execute();
+
+        return 1;
+
+
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
+
+function deleteAccount($name) {
+    global $db;
+    try {
+        $statement = $db->prepare("DELETE FROM users WHERE `users`.`username` = :name");
+        $statement->bindParam(':name', $name, PDO::PARAM_STR, 20);
+
+        $statement->execute();
+
+        return 1;
+
+
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
+
+function setNewPassword($user, $password) {
+    global $db;
+    try {
+        $statement = $db->prepare("UPDATE `users` SET `password` = :password WHERE `users`.`username` = :name; ");
+        $statement->bindParam(':name', $user, PDO::PARAM_STR, 20);
+        $hashed = password_hash($password, null);
+        $statement->bindParam(':password', $hashed, PDO::PARAM_STR, 1024);
+
+        $statement->execute();
+
+        return 1;
+
+
+    } catch (PDOException $ex) {
+        ?>
+        <p>(Error details: <?= $ex->getMessage() ?>)</p>
+        <?php
+        return -1;
+    }
+}
+
 function deleteCurrentImage($id) {
     global $db;
     try {

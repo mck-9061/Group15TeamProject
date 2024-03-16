@@ -1,7 +1,10 @@
 <!Doctype HTML>
 <html lang="en">
 <?php session_start() ?>
-<?php require "../php/message.php"; ?>
+<?php
+require "../php/message.php";
+require "../php/admin/auth_admin.php"
+?>
 
 <head>
 

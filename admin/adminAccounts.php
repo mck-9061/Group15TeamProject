@@ -1,5 +1,11 @@
 <!Doctype HTML>
 <html lang="en">
+<?php
+session_start();
+require '../php/fetch_accounts.php';
+require '../php/message.php';
+require "../php/admin/auth_admin.php"
+?>
 
 <head>
 
@@ -56,54 +62,34 @@
 </a>
 <div class="headers">
     <h1 id="product-type-statement" class="text-center text-uppercase"> Accounts </h1> <!--Specifiy what products are listed i.e. vinyl,cd etc. -->
-    <div class="dropdown text-center">
-        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Change How listed
-            <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-            <li><a href="#">A-Z</a></li> <!-- Rig this via Account Name tag -->
-            <li><a href="#">Z-A</a></li>
-            <li><a href="#">Oldest - Newest</a></li>  <!-- Rig this via the Account Age tag  -->
-            <li><a href="#">Newest - Oldest</a></li>
-        </ul>
-    </div>
 
 
 </div>
 
 <div class="container py-5">
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4 py-5">
-        <div class="col">
-            <div class="card" style="width: 18rem">
+        <?php
+        $accounts = fetchAccounts();
+        foreach ($accounts as $account) {
+            ?>
+                <div class="col">
+                    <div class="card" style="width: 18rem">
 
-                <div class="card-body text-center">
-                    <h5 class="card-title" id="account-name-card">Account Name</h5>  <!-- Account Name  -->
-                    <h6 class="card-subtitle" id="account-email-card">Account Email</h6> <!-- Account Email -->
-                    <h6 class="card-subtitle" id="account-age-card">Account age: <br> "Age"</h6> <!-- Date Account Made -->
-                    <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
+                        <div class="card-body text-center">
+                            <h5 class="card-title" id="account-name-card"><?php echo $account['username']; ?></h5>  <!-- Account Name  -->
+                            <h6 class="card-subtitle" id="account-email-card"><?php echo $account['email']; ?></h6>
+                            <h6 class="card-subtitle" id="account-email-card"><?php echo $account['phone']; ?></h6>
+                            <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
 
+                        </div>
+                        <div class="d-flex justify-content-around">
+                            <a class="btn btn-dark" type="button" href="adminCustomerAccountView.php?user=<?php echo $account['username']; ?>">View</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-around">
-                    <button class="btn btn-dark" onclick="window.location='adminCustomerAccountView.php'" type="button">View</button>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="card" style="width: 18rem">
-
-                <div class="card-body text-center">
-                    <h5 class="card-title" id="account-name-card">Account Name</h5>  <!-- Account Name  -->
-                    <h6 class="card-subtitle" id="account-email-card">Account Email</h6> <!-- Account Email -->
-                    <h6 class="card-subtitle" id="account-age-card">Account age: <br> "Age"</h6> <!-- Date Account Made -->
-                    <!-- Rest of Information is in the Account view, otherwise this would be too much info -->
-
-                </div>
-                <div class="d-flex justify-content-around">
-                    <button class="btn btn-dark" onclick="window.location='adminCustomerAccountView.php'" type="button">View</button>
-                </div>
-            </div>
-        </div>
-
-
+            <?php
+        }
+        ?>
 
     </div>
 </div>
