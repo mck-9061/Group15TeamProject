@@ -111,7 +111,7 @@ require "../php/admin/auth_admin.php"
                 <label for="GENRE-PICK-DANCE">Dance</label><br>
             </div>
             <div class="grid-item">
-                <label for="PrdType">Product Type / Types:</label>
+                <label for="PrdType">Product Type:</label>
                 <br>
 
                 <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD" required>
@@ -120,8 +120,6 @@ require "../php/admin/auth_admin.php"
                 <label for="PRD-TYPE-VINYL">Vinyl</label><br>
                 <input type="radio" id="PRD-TYPE-EP" name="product-type" value="EP">
                 <label for="PRD-TYPE-EP">EP</label><br>
-                <input type="radio" id="PRD-TYPE-MERCH" name="product-type" value="Merch">
-                <label for="PRD-TYPE-MERCH">Merch</label><br>
             </div>
             <div class="grid-item">
                 <label for="description-box">Product Description:</label>

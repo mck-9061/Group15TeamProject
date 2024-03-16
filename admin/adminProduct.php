@@ -165,7 +165,7 @@ if (isset($_GET['id'])) {
             <label for="GENRE-PICK-DANCE">Dance</label><br>
         </div>
         <div class="grid-item">
-            <label for="PrdType">Product Type / Types:</label>
+            <label for="PrdType">Product Type:</label>
             <br>
 
             <input type="radio" id="PRD-TYPE-CD" name="product-type" value="CD" required <?php if ($productType == "CD") { echo "checked"; } ?>>
@@ -174,8 +174,6 @@ if (isset($_GET['id'])) {
             <label for="PRD-TYPE-VINYL">Vinyl</label><br>
             <input type="radio" id="PRD-TYPE-EP" name="product-type" value="EP" <?php if ($productType == "EP") { echo "checked"; } ?>>
             <label for="PRD-TYPE-EP">EP</label><br>
-            <input type="radio" id="PRD-TYPE-MERCH" name="product-type" value="Merch" <?php if ($productType == "Merch") { echo "checked"; } ?>>
-            <label for="PRD-TYPE-MERCH">Merch</label><br>
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Product Description:</label>
