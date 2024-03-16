@@ -2,6 +2,7 @@
 <html lang="en">
 <?php
 session_start();
+require "../php/admin/auth_admin.php";
 
 include '../php/fetch_accounts.php';
 
@@ -103,29 +104,29 @@ if (isset($_GET['user'])) {
 
 
     -->
+    <form action="../php/admin/edit_account.php" method="POST" >
 
     <div class="grid-edit-container">
 
         <div class="grid-item">
-            <form>  <!-- Add php "post" Here, its for the whole grid btw -->
             <label for="ACCFName">Username:</label>
             <br>
-            <input type="text" id="ACCFName" name="ACCFName" value="<?php echo $accountName; ?>">
+            <input type="text" id="ACCFName" name="name" value="<?php echo $accountName; ?>" readonly>
         </div>
         <div class="grid-item">
             <label for="ACCEmail">Account Email:</label>
             <br>
-            <input type="text" id="ACCEmail" name="ACCEmail" value="<?php echo $accountEmail; ?>">
+            <input type="text" id="ACCEmail" name="email" value="<?php echo $accountEmail; ?>" required>
         </div>
         <div class="grid-item">
             <label for="ACCADDS">Account Address:</label>
             <br>
-            <input type="text" id="ACCADDS" name="ACCADDS"  value="<?php echo $accountAddress; ?>">
+            <input type="text" id="ACCADDS" name="address"  value="<?php echo $accountAddress; ?>" required>
         </div>
         <div class="grid-item">
             <label for="telNum">Telephone Number:</label>
             <br>
-            <input type="tel" id="telNum" name="telNum"  value="<?php echo $accountPhone; ?>">
+            <input type="tel" id="telNum" name="phone"  value="<?php echo $accountPhone; ?>" required>
         </div>
 
 
@@ -139,24 +140,30 @@ if (isset($_GET['user'])) {
 <br>
             <button type="submit" id="saveACCChanges">Save</button>
         </div>
+        </form>
         <div class="grid-item"><label for="deleteACC">Delete Account:</label>
             <br>
-            <form><button><input type="button" id="deleteACC" value="Delete"></button></form>
+            <form action="../php/admin/delete_account.php" method="POST" >
+                <input type="text" id="ACCFName" name="name" value="<?php echo $accountName; ?>" readonly hidden="hidden">
+                <button type="submit" id="deleteACC">Delete</button>
+            </form>
             <br>
             <p id="delete-warning">Warning, once account is deleted it can not be undone.</p>
 
         </div>
-        </form>
         <div class="grid-item">
             <br>
         </div>
         <div class="grid-item">
             <label for="PrdDsc">Reset Password:</label>
             <br>
-            <input type="password" id="PrdDsc" name="PrdDsc" placeholder="New Password">
-            <br>
-            <br>
-            <form><button type="reset" id="password-reset">Reset Password</button></form>
+            <form action="../php/admin/reset_password.php" method="POST">
+                <input type="text" id="ACCFName" name="name" value="<?php echo $accountName; ?>" readonly hidden="hidden">
+                <input type="password" id="PrdDsc" name="password" placeholder="New Password" required>
+                <br>
+                <br>
+                <button type="submit" id="password-reset">Reset Password</button>
+            </form>
         </div>
         <div class="grid-item">
             <br>

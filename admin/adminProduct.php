@@ -5,6 +5,7 @@
 session_start();
 
 include '../php/fetch_products.php';
+require "../php/admin/auth_admin.php";
 
 // Check if the product ID is set in the URL
 if (isset($_GET['id'])) {

@@ -1,5 +1,9 @@
 <!Doctype HTML>
 <html lang="en">
+<?php
+session_start();
+require "../php/admin/auth_admin.php"
+?>
 
 <head>
 
@@ -38,7 +42,7 @@
     <hr id="invisible-line">
     <hr>
 
-    <button onclick="window.location='login.php'">Sign Out</button>
+    <button onclick="window.location='../php/logout.php'">Sign Out</button>
 
 </div>
 

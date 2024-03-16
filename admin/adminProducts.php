@@ -4,6 +4,7 @@
 include '../php/fetch_products.php';
 session_start();
 require "../php/message.php";
+require "../php/admin/auth_admin.php";
 ?>
 
 <head>

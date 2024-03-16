@@ -3,6 +3,8 @@
 <?php
 session_start();
 require '../php/fetch_accounts.php';
+require '../php/message.php';
+require "../php/admin/auth_admin.php"
 ?>
 
 <head>
