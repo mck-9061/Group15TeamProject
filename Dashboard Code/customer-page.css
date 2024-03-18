@@ -37,12 +37,6 @@
     font-weight: 900;
     font-style: normal;
 }
-#dashboard-info{
-    background: url("../assets/Dashboard-InfoBG.png");
-    background-position: px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 /*
 .card {
     width: 400px;
@@ -65,8 +59,8 @@ main{
     grid-gap: 30px;
     grid-row-gap: 100px;
     margin: auto;
-    float: left;
-    width: 33.33%;
+
+
     padding: 5px;
 }
 
@@ -86,10 +80,14 @@ main{
     font-style: normal;
 }
 .subtitle{
-
+    color: var(--tiktokBlue);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 .btn{
     color: white;
+    padding: 5px;
 }
 
 #your-info{
@@ -108,3 +106,244 @@ main{
 #deleteACC{
     grid-area: delete;
 }
+
+
+            /***********************************************************************
+                ************************************************************************
+                    This is due to PHP Navbar Having issues i dont have the time to simply fix UwU
+                ************************************************************************
+            ***********************************************************************/
+
+
+/* Navbar Code */
+.navbar {
+    background-image: linear-gradient(
+            to right,
+            var(--navbarPurple),
+            var(--warmPeachcold)
+    );
+}
+
+.accountNavBar p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto 0;
+    font-size: 14px;
+}
+/* Navbar Code */
+#search-bar {
+    background-color: var(--GAcream);
+    border-width: medium;
+    border-color: var(--accentBlack);
+}
+
+#navbar-test {
+    background: url(assets/bg.png);
+}
+
+#navbar-search-btn {
+    background-color: var(--GAcream);
+    border-width: 10px;
+
+}
+#navbar-search-btn div{
+    transform: rotate(-45deg);
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+}
+
+.NavBarSearchDiv{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+#main-word {
+    color: antiquewhite;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: var(--darkOrange);
+}
+
+#login-pill {
+    background-color: var(--tiktokPinkwarm);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#logout-pill {
+    background-color: var(--bs-red);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#sign-pill {
+    background-color: var(--warmPeachcold);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#basketPill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accentBlack);
+    border-width: 3px;
+    border-color: var(--darkOrange);
+}
+#basket-icon{
+    color: var(--mint);
+}
+
+#about-nav{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#nav-words{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#nav-bottom-border{
+    border-bottom: 3px solid;
+    border-color: var(--accentBlack) ;
+}
+
+.account-username{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.account-username a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* Navbar Css end */
+
+            /***********************************************************************
+                ************************************************************************
+                                           Brain No want CSS
+                ************************************************************************
+            ***********************************************************************/
+
+
+
+
+/* Footer CSS start  */
+#index-footer{
+    margin-top: 60px;
+    background: url("../assets/footerBG.png");
+}
+
+
+#footer-useful{
+    color: var(--poppingPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 1px solid;
+    border-color: var(--tiktokBlue);
+}
+
+.footer-list{
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 30px;
+}
+
+.footer-items{
+
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#footer-contact-us{
+    color: var(--poppingPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 1px solid;
+    border-color: var(--tiktokBlue);
+}
+
+#footer-email-color{
+    color: var(--poppingPink);
+}
+
+#footer-copyright{
+    margin-top: 10px;
+    background-color: black;
+    height: 50px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "fields", sans-serif;
+    font-weight: 70;
+    font-style: normal;
+}
+                /***********************************************************************
+                ************************************************************************
+                                     Footer Footer Toil and Butter
+                ************************************************************************
+                ***********************************************************************/
+
+
+/***********************************************************************
+        ************************************************************************
+                               Dashboard - Info start
+        ************************************************************************
+    ***********************************************************************/
+
+
+/* #dashboard-info{
+    background: url("../assets/Dashboard-InfoBG.png");
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+

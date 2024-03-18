@@ -23,39 +23,44 @@
 <body id="dashboard-info">
 
 
-<div class="signUpBox">
+<div class="dashboard-info-form">
     <div class="signUpBorderLine">
-        <form action="php/register.php" method="post">
-            <h2>Sign Up</h2>
-            <?php include '../php/message.php'; ?>
+        <form action="" method="post">
+            <h2>Your Info</h2>
+
             <div class="inputBox">
                 <input type="text" required="required" name="email" maxlength="30" />
-                <span>Email</span>
+                <span>Your Email</span>
                 <i></i>
             </div>
             <div class="inputBox">
                 <input type="text" required="required" name="username" maxlength="20" />
-                <span>Username</span>
+                <span>Your Username</span>   <!-- Cant be edited  -->
                 <i></i>
             </div>
             <div class="inputBox">
                 <input type="password" required="required" name="password" maxlength="30" />
-                <span>Password</span>
+                <span>Your password</span>
                 <i></i>
             </div>
             <div class="inputBox">
                 <input type="password" required="required" name="confirmPassword" maxlength="30" />
-                <span>Confirm Password</span>
+                <span>Change password</span>
                 <i></i>
             </div>
             <div class="inputBox">
                 <input type="text" required="required" name="phoneNumber" maxlength="11" />
-                <span>Phone Number</span>
+                <span>Your number</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="phoneNumber" maxlength="11" />
+                <span>Your Address</span>
                 <i></i>
             </div>
 
             <div class="extraSignUp">
-                <a href="index.php">Go back</a>
+                <a href="dashboard.php">Go back</a>
             </div>
             <div class="signupReg flex-row">
                 <input type="submit" value="Register" id="signUpRegisterBtn"/>

@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Background and Grid changes">
-      <change afterPath="$PROJECT_DIR$/assets/Dashboard-InfoBG.png" afterDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2024_11_00_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_08_03_2024_11_00__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard Code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/customer-page.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +55,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2">
     <include_path>
-      <path value="$PROJECT_DIR$/../../../../xampp/php" />
-      <path value="" />
       <path value="$USER_HOME$/xampp/php" />
+      <path value="" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -73,7 +76,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;customer-front-end&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject/assets&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -86,8 +89,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
+      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
     </key>
   </component>
@@ -121,7 +124,6 @@
       <workItem from="1709526732601" duration="196000" />
       <workItem from="1709888486457" duration="1598000" />
       <workItem from="1710246231431" duration="14801000" />
-      <workItem from="1710428063689" duration="3702000" />
     </task>
     <servers />
   </component>
@@ -131,17 +133,6 @@
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="executable:docker" />
     <option featureType="dependencySupport" implementationName="executable:kubectl" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redoing elements, found issues" />
