@@ -23,13 +23,20 @@
 }
 
 #customer-home{
-    background-color: var(--accentBlack) /* TEMP  */
-}
-#home-title{
-    color: var(--navbarPurple);
-    font-size: 60px;
+    background: url("../assets/DashboardBGV3.png");
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
+#home-title{
+    color: var(--poppingPink);
+    font-size: 60px;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
 /*
 .card {
     width: 400px;
@@ -44,42 +51,532 @@
     z-index: 10;
     color: whitesmoke;
 } */
-* {
-    box-sizing: border-box;
+
+main{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-row-gap: 100px;
+    margin: auto;
+
+
+    padding: 5px;
 }
 
 
+.card{
+    background-color: var(--poppingPink);
+    border-color: var(--tiktokBlue);
+    border-radius: 1px;
 
-/* Float four columns side by side */
-.column {
-    float: left;
-    width: 25%;
-    padding: 0 10px;
+
+}
+.title{
+    background-color: var(--accentBlack);
+    color: var(--warmPeach);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.subtitle{
+    color: var(--tiktokBlue);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+.btn{
+    color: white;
+    padding: 5px;
 }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+#your-info{
+    grid-area: info;
+    margin-bottom: 10px;
+}
+#history{
+    grid-area: history;
 }
 
-/* Style the counter cards */
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-    padding: 16px;
+#favGenres{
+    grid-area: favgenres;
+    margin-bottom: 10px;
+
+}
+#deleteACC{
+    grid-area: delete;
+}
+
+
+            /***********************************************************************
+                ************************************************************************
+                    This is due to PHP Navbar Having issues i dont have the time to simply fix UwU
+                ************************************************************************
+            ***********************************************************************/
+
+
+/* Navbar Code */
+.navbar {
+    background-image: linear-gradient(
+            to right,
+            var(--navbarPurple),
+            var(--warmPeachcold)
+    );
+}
+
+.accountNavBar p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto 0;
+    font-size: 14px;
+}
+/* Navbar Code */
+#search-bar {
+    background-color: var(--GAcream);
+    border-width: medium;
+    border-color: var(--accentBlack);
+}
+
+#navbar-test {
+    background: url(assets/bg.png);
+}
+
+#navbar-search-btn {
+    background-color: var(--GAcream);
+    border-width: 10px;
+
+}
+#navbar-search-btn div{
+    transform: rotate(-45deg);
+    margin-top: 3px;
+    margin-right: 3px;
+    margin-left: 3px;
+
+}
+
+.NavBarSearchDiv{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+#main-word {
+    color: antiquewhite;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+::selection {
+    color: #ffffff;
+    background-color: var(--darkOrange);
+}
+
+#login-pill {
+    background-color: var(--tiktokPinkwarm);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#logout-pill {
+    background-color: var(--bs-red);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#sign-pill {
+    background-color: var(--warmPeachcold);
+    text-decoration: none;
+    color: white;
+    border: 2px solid;
+    border-color: var(--darkwaterBlue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+#basketPill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--accentBlack);
+    border-width: 3px;
+    border-color: var(--darkOrange);
+}
+#basket-icon{
+    color: var(--mint);
+}
+
+#about-nav{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#nav-words{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#nav-bottom-border{
+    border-bottom: 3px solid;
+    border-color: var(--accentBlack) ;
+}
+
+.account-username{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.account-username a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* Navbar Css end */
+
+            /***********************************************************************
+                ************************************************************************
+                                           Brain No want CSS
+                ************************************************************************
+            ***********************************************************************/
+
+
+
+
+/* Footer CSS start  */
+#index-footer{
+    margin-top: 60px;
+    background: url("../assets/footerBG.png");
+}
+
+
+#footer-useful{
+    color: var(--poppingPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 1px solid;
+    border-color: var(--tiktokBlue);
+}
+
+.footer-list{
+    list-style-type: none;
     text-align: center;
-    background-color: #f1f1f1;
+    margin-top: 10px;
+    margin-right: 30px;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
+.footer-items{
+
+    margin-top: 30px;
+    text-decoration: none;
+    color: whitesmoke;
+    align-items: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+#footer-contact-us{
+    color: var(--poppingPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    border-bottom: 1px solid;
+    border-color: var(--tiktokBlue);
+}
+
+#footer-email-color{
+    color: var(--poppingPink);
+}
+
+#footer-copyright{
+    margin-top: 10px;
+    background-color: black;
+    height: 50px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: "fields", sans-serif;
+    font-weight: 70;
+    font-style: normal;
+}
+                /***********************************************************************
+                ************************************************************************
+                                     Footer Footer Toil and Butter
+                ************************************************************************
+                ***********************************************************************/
+
+
+/***********************************************************************
+        ************************************************************************
+                               Dashboard - Info start
+        ************************************************************************
+    ***********************************************************************/
+
+
+ #dashboard-info{
+background: url("../assets/Dashboard-InfoBG.png");
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+}
+
+
+.profile-info {
+    position: relative;
+    width: 600px;
+    height: 720px;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+.profile-info form {
+    position: absolute;
+    inset: 6px;
+    background: var(--accentBlack);
+    padding: 50px 40px;
+    border-radius: 10px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+text-align: center;
+}
+
+
+
+.infoBorderLine{
+    position: absolute;
+    top: 0;
+    inset: 0;
+}
+
+.profile-info form h2 {
+    color: antiquewhite;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.1em;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.profile-info form .inputBox {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    margin-top: 30px;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+.profile-info form .inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: var(--accentBlack);
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    z-index: 10;
+    text-align: center;
+}
+
+
+.profile-info form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 20px 0px 10px;
+    pointer-events: none;
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+.profile-info form .inputBox input:valid ~ span,
+.profile-info form .inputBox input:focus ~ span {
+    color: white;
+    font-size: 0.75em;
+    transform: translateY(-32px);
+}
+
+.profile-info form .inputBox i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+
+}
+
+.profile-info form .inputBox input:valid ~ i,
+.profile-info form .inputBox input:focus ~ i {
+    height: 44px;
+}
+
+.profile-info form .extraInfo {
+    display: flex;
+    justify-content: space-between;
+
+}
+.profile-info form .extraInfo a {
+    margin: 10px 0;
+    font-size: 0.75em;
+    color: white;
+    text-decoration: none;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+.profile-info form .extraInfo a:hover,
+.profile-info form .extraInfo a:nth-child(2) {
+    color: white;
+
+}
+
+.profile-info form input[type="submit"] {
+    border: none;
+    outline: none;
+    padding: 9px 25px;
+    background: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    border-radius: 4px;
+    font-weight: 600;
+    width: 100px;
+    margin-top: 10px;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.profile-info form input[type="submit"]:active {
+    color: var(--tiktokPink);
+    border-color: #281941;
+    opacity: 0.8;
+}
+
+/***********************************************************************
+        ************************************************************************
+                               MEDIA STUFF DONT TOUCH
+        ************************************************************************
+    ***********************************************************************/
+
+
+@media screen and (max-width: 991px) {
+    .accountNavBar{
+        flex-direction: column;
+
+
+    }
+
+    .c-img{
+        object-fit: cover;
+        width: 1000px;
+    }
+
+    .accountNavBar p{
         width: 100%;
-        display: block;
-        margin-bottom: 20px;
+    }
+    .NavBarSearchDiv{
+        width: 100%;
+        justify-items: center;
+        padding-bottom: 10px;
+        gap: 3px;
+    }
+    #login-pill{
+        color: whitesmoke;
+        background-color: var(--tiktokPinkwarm);
+
+    }
+    #sign-pill{
+        color: whitesmoke;
+        background-color: var(--warmPeachcold);
+        border-width: 1px;
+        border-color: var(--accentBlack);
+        padding-bottom: 10px;
+    }
+
+    .basketBar{
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    #basketPill{
+        background-color: var(--promisingPurple);
+        justify-content: center;
+        border-color: var(--darkOrange);
+        border-width: 3px;
+    }
+    #basket-icon{
+        color: var(--tiktokBlue);
+    }
+
+    .navbar {
+
+    }
+    #shopping-card{
+        margin: 3vh auto;
+
+    }
+    .cart{
+        padding: 4vh;
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 1rem;
+    }
+    .summary{
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 1rem;
     }
 }
+

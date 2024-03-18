@@ -20,34 +20,56 @@
 
 </head>
 
-<body id="customer-home">
+<body id="dashboard-info">
 
 
-<div class="card hero-card-home">
-    <p id="home-title">Welcome,  (Add user's name here + email) </p>
 
-    <p></p>
-    <div class="hero-card-links">
-        <a href="#customer-index.php" > Personal Info</a>
-        <a href="#" >Address Book </a>
+<div class="profile-info">
+    <div class="infoBorderLine">
+        <form action="" method="post">
+            <h2>Your Info</h2>
 
-        <br>
-        <a href="addProduct.php">Order History</a>
-        <button onclick="window.location='../login.php'"> Delete Account</button>
+            <div class="inputBox">
+                <input type="text" required="required" name="email" maxlength="30" placeholder="email" />
+                <span>Your Email</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="username" maxlength="20" placeholder="username" />
+                <span>Your Username</span>   <!-- Cant be edited  -->
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="password" maxlength="30" placeholder="password"/>
+                <span>Your password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="password" required="required" name="confirmPassword" maxlength="30" placeholder="change password" />
+                <span>Change password</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="phoneNumber" maxlength="11" placeholder="customer number"/>
+                <span>Your number</span>
+                <i></i>
+            </div>
+            <div class="inputBox">
+                <input type="text" required="required" name="phoneNumber" maxlength="11" placeholder="customer address" />
+                <span>Your Address</span>
+                <i></i>
+            </div>
 
+            <div class="extraInfo">
+                <a href="dashboard.php">Go back</a>
+            </div>
+            <div class="signupReg flex-row">
+                <input type="submit" value="Update" id="signUpRegisterBtn"/>
+
+            </div>
+        </form>
     </div>
-
-    <hr id="invisible-line">
-    <hr id="invisible-line">
-    <hr>
-
-    <button onclick="window.location='../index.php'"> Go Home</button>
-    <button onclick="window.location='../login.php'"> Sign Out</button>
-
-
 </div>
-
-
 
 
 
