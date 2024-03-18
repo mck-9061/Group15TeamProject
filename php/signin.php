@@ -14,13 +14,20 @@ session_start();
                 //compare the password given to the password in the database
                 if (password_verify($_POST['password'], $row['password'])) {
                     $_SESSION['username'] = $_POST['username'];
-                    header("Location:../index.php");
-                    exit();
+                    if ($_POST['username'] == "admin") {
+                        header("Location:../admin/adminHome.php");
+                        exit();
+                    } else {
+                        header("Location:../index.php");
+                        exit();
+                    }
                 } else {
-                    echo "Incorrect password";
+                    $_SESSION['message'] = "Incorrect password";
+                    header("Location:../login.php");
                 }
             } else {
-                echo "Incorrect username";
+                $_SESSION['message'] =  "Incorrect username";
+                header("Location:../login.php");
             }
         } catch (PDOexception $ex) {
             echo "Failed to connect to database.<br>";

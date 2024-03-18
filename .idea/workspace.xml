@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="recommended carousel added but commented out in index until more products added to database with corresponding caro images">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_28_02_2024_14_13_[Changes]/shelved.patch" beforeDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2024_02_09_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_07_03_2024_02_09__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/recommended_caro.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/recommended_caro.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +20,14 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -33,13 +44,14 @@
     <include_path>
       <path value="$PROJECT_DIR$/../../../../xampp/php" />
       <path value="" />
+      <path value="$USER_HOME$/xampp/php" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2cj4t1ImRmkXsHzMp7Q1jwLzuyJ" />
+  <component name="ProjectId" id="2caW0pAlDnKi58Ys1e8TFm4DKLP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -50,55 +62,66 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;recommended-caro&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject/Customer page code&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\james\PhpstormProjects\Group15TeamProject\assets" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4018b15-4624-40ac-96e8-83b5623da8ed" name="Changes" comment="" />
-      <created>1708611866916</created>
+      <changelist id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues" />
+      <created>1708349953107</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1708611866916</updated>
-      <workItem from="1708611870771" duration="14480000" />
-      <workItem from="1709215012527" duration="970000" />
-      <workItem from="1709216096912" duration="9175000" />
-      <workItem from="1709777270474" duration="133000" />
+      <updated>1708349953107</updated>
+      <workItem from="1708349954740" duration="1484000" />
+      <workItem from="1708438099341" duration="2148000" />
+      <workItem from="1708626717890" duration="9000" />
+      <workItem from="1708626738802" duration="2700000" />
+      <workItem from="1708809055687" duration="1199000" />
+      <workItem from="1708979853035" duration="626000" />
+      <workItem from="1709044921516" duration="1347000" />
+      <workItem from="1709215638328" duration="774000" />
+      <workItem from="1709217010693" duration="19000" />
+      <workItem from="1709217038729" duration="2724000" />
+      <workItem from="1709297699646" duration="1998000" />
+      <workItem from="1709466905446" duration="669000" />
+      <workItem from="1709526732601" duration="196000" />
+      <workItem from="1709888486457" duration="1598000" />
+      <workItem from="1710721520934" duration="4255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="recommended-caro" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="recommended carousel added but commented out in index until more products added to database with corresponding caro images" />
-    <option name="LAST_COMMIT_MESSAGE" value="recommended carousel added but commented out in index until more products added to database with corresponding caro images" />
+    <MESSAGE value="Redoing elements, found issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redoing elements, found issues" />
   </component>
 </project>

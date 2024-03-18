@@ -1,6 +1,6 @@
 <?php
 include 'php/fetch_products.php';
-
+include 'php/fetchComments.php';
 ?>
 
 <!-- ... All of the HTML Below ... -->
@@ -63,7 +63,7 @@ include 'php/fetch_products.php';
 
                                 <!-- Ratings and Reviews -->
                                 <!-- Number of Reviews -->
-                                <div class=" mb-3" id="product-reviews">Reviews: <?php echo $product['reviews']; ?> </div>
+                                <div class=" mb-3" id="product-reviews">Comments: <?php echo count(fetchComments($product['productid'])) ?> </div>
 
                                 <!-- Add to Cart Button -->
                                 <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
