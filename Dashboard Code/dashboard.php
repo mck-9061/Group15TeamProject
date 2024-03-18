@@ -319,7 +319,7 @@
 
                     <li>
                         <i class="fa fa"></i>
-                        <a href="mailto:info@cadence.com" class="footer-items "> Email  <span id="footer-email-color">info@cadence.com </span></a>
+                        <a href="mailto:info@cadence.com" class="footer-items "> Email </a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
