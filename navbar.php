@@ -42,10 +42,10 @@
                             CD'S
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="products.php?genre=metal&type=cd">METAL</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=rap&type=cd">RAP</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=punk&type=cd">PUNK</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=dance&type=cd">DANCE</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=metal&type=cd">Metal</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=rap&type=cd">Rap</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=punk&type=cd">Punk</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=dance&type=cd">Dance</a></li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
                                 <a class="dropdown-item" href="products.php?type=cd">Our CD Catalogue</a>
@@ -66,7 +66,8 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="products.php?genre=rock&type=vinyl">Rock</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=indie&type=vinyl">Indie</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=pop&type=vinyl">Pop</a></li><li><a class="dropdown-item" href="#">Kpop</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=pop&type=vinyl">Pop</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=kpop&type=vinyl">KPop</a></li>
 
                             <li><hr class="dropdown-divider" /></li>
                             <li>
@@ -86,10 +87,10 @@
                             EPs
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="products.php?genre=pop&type=ep">JPop</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=jpop&type=ep">JPop</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=kpop&type=ep">KPop</a></li>
-                            <li><a class="dropdown-item" href="products.php?genre=global&type=ep">Global</a></li>
                             <li><a class="dropdown-item" href="products.php?genre=indie&type=ep">Indie</a></li>
+                            <li><a class="dropdown-item" href="products.php?genre=dance&type=ep">Dance</a></li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
                                 <a class="dropdown-item" href="products.php?type=ep">Our EP Catalogue</a>
@@ -97,32 +98,6 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown" id="nav-words">
-                        <a
-                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Merch
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Band Apparel</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Posters</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Books</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Funko's</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Figures</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
-                            </li>
-                        </ul>
-                    </li>
                 </ul>
 
                 <div class="NavBarSearchDiv">

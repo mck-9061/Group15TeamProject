@@ -25,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -55,8 +56,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2">
     <include_path>
-      <path value="$USER_HOME$/xampp/php" />
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
       <path value="" />
+      <path value="$USER_HOME$/xampp/php" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -90,6 +92,9 @@
       <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\james\PhpstormProjects\Group15TeamProject\assets" />
     </key>
   </component>
   <component name="SharedIndexes">
