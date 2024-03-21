@@ -1556,6 +1556,13 @@
   font-style: normal;
 }
 
+#no-stock{
+  color: gray;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
  
 
 

@@ -26,6 +26,7 @@ require 'php/cart_functions.php';
 </head>
 <body id="shopping-cart-body">
 <?php require "navbar.php" ?>
+<?php include 'php/message.php' ?>
 
 <div class="card" id="shopping-card">
     <div class="row">

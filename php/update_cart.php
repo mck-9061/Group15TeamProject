@@ -45,4 +45,24 @@ function remove_from_cart($productid) {
         return -1;
     }
 }
+
+function decreaseStock($productid) {
+    global $db;
+    try {
+        $query = "
+            UPDATE `products` SET `stock` = `stock` - 1 WHERE `products`.`productid` = :id; 
+        ";
+
+        $statement = $db->prepare($query);
+        $statement->bindParam(':id', $productid, PDO::PARAM_STR, 20);
+        $statement->execute();
+
+        return 1;
+
+
+    } catch (PDOException $ex) {
+        echo "Error: " . $ex->getMessage();
+        return -1;
+    }
+}
 ?>
