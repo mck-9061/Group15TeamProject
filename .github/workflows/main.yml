@@ -14,7 +14,7 @@ jobs:
         script: |
           cd /usr/share/nginx/html/Group15TeamProject/
           cp -r assets/ ../assets_backup
-          git reset --hard
-          git pull
+          sudo git reset --hard
+          sudo git pull
           cp -r ../assets_backup/. assets/
           rm -rf ../assets_backup/
