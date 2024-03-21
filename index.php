@@ -159,7 +159,7 @@ session_start();
 
 <br>
   <section class="index-products">
-      <h1 class="mini-caro-title">CD's</h1>
+      <h1 class="mini-caro-title text-center">CD's</h1>
       <button class="caro-prev"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
       <button class="caro-nxt"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
       <div class="mini-caro">
@@ -355,7 +355,7 @@ session_start();
 
 
   <section class="index-products">
-  <h1 class="mini-caro-title">EP's</h1>
+  <h1 class="mini-caro-title text-center">EP's</h1>
       <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
       <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
       <div class="mini-caro">
@@ -550,7 +550,7 @@ session_start();
   </section>
 
   <section class="index-products">
-      <h1 class="mini-caro-title">Vinyl's</h1>
+      <h1 class="mini-caro-title text-center">Vinyl's</h1>
       <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
       <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
       <div class="mini-caro">
@@ -573,7 +573,7 @@ session_start();
 
                               <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
 
-                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                              <button type="button" class="btn btn-dark card-vm ">View More</button>
                       </div>
                   </div>
               </div>
