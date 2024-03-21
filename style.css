@@ -374,7 +374,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
+
 
 }
 
@@ -383,12 +383,11 @@
   background-color: var(--tiktokPinkwarm);
   border: 3px solid;
   border-color: var(--accentBlack);
- min-width: 80vmin;
-
   color: white;
-
-}
-
+  max-width:580px;
+  margin-left: auto;
+  margin-right: auto;
+width:80%;}
 #product-page-product-name{
   border-bottom: var(--tiktokPinkwarm) 1px solid;
   color: var(--poppingPink);
@@ -425,13 +424,11 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
- min-width:30vmin;
-  min-height:30vmin;
+  max-width:100%;
   border: 5px solid;
   border-color: black;
+  height:auto;
 }
-
-
 
 
 .product-page-info{
