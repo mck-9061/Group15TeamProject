@@ -216,6 +216,8 @@
     font-family: "fields", sans-serif;
     font-weight: 600;
     font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 300px) {
