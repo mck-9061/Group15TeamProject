@@ -144,6 +144,14 @@ require "../php/admin/auth_admin.php"
             </div>
 
             <div class="grid-item">
+
+                <label for="stock"> Stock: </label>
+                <br>
+                <input type="text" id="stock" name="stock" value="0" required>
+
+            </div>
+
+            <div class="grid-item">
                 <label>Product Image (200x200px recommended)</label><br>
 
                 <label for="fileToUpload">

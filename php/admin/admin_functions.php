@@ -3,15 +3,16 @@ include("../connect.php");
 
 session_start();
 
-function addProduct($name, $description, $price, $genre, $type) {
+function addProduct($name, $description, $price, $genre, $type, $stock) {
     global $db;
     try {
-        $statement = $db->prepare("INSERT INTO `products` (`productid`, `name`, `price`, `description`, `reviews`, `genre`, `type`) VALUES (NULL, :name, :price, :description, '0', :genre, :type);");
+        $statement = $db->prepare("INSERT INTO `products` (`productid`, `name`, `price`, `description`, `reviews`, `genre`, `type`, `stock`) VALUES (NULL, :name, :price, :description, '0', :genre, :type, :stock);");
         $statement->bindParam(':name', $name, PDO::PARAM_STR, 200);
         $statement->bindParam(':price', $price, PDO::PARAM_STR, 100);
         $statement->bindParam(':description', $description, PDO::PARAM_STR, 1000);
         $statement->bindParam(':genre', $genre, PDO::PARAM_STR, 20);
         $statement->bindParam(':type', $type, PDO::PARAM_STR, 100);
+        $statement->bindParam(':stock', $stock, PDO::PARAM_STR, 100);
 
         $statement->execute();
 
@@ -60,15 +61,16 @@ function addLink($product_id, $link) {
 
 
 
-function editProduct($id, $name, $description, $price, $genre, $type) {
+function editProduct($id, $name, $description, $price, $genre, $type, $stock) {
     global $db;
     try {
-        $statement = $db->prepare("UPDATE `products` SET `name` = :name, `price` = :price, `description` = :description, `genre` = :genre, `type` = :type WHERE `products`.`productid` = :id; ");
+        $statement = $db->prepare("UPDATE `products` SET `name` = :name, `price` = :price, `description` = :description, `genre` = :genre, `type` = :type, `stock` = :stock WHERE `products`.`productid` = :id; ");
         $statement->bindParam(':name', $name, PDO::PARAM_STR, 200);
         $statement->bindParam(':price', $price, PDO::PARAM_STR, 100);
         $statement->bindParam(':description', $description, PDO::PARAM_STR, 1000);
         $statement->bindParam(':genre', $genre, PDO::PARAM_STR, 20);
         $statement->bindParam(':type', $type, PDO::PARAM_STR, 100);
+        $statement->bindParam(':stock', $stock, PDO::PARAM_STR, 100);
         $statement->bindParam(':id', $id, PDO::PARAM_STR, 11);
 
         $statement->execute();
