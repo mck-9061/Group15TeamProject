@@ -12,7 +12,7 @@ jobs:
         username: ${{ secrets.ARTIFACT_USERNAME }}
         key: ${{ secrets.ARTIFACT_SSH_KEY }}
         script: |
-          sudo cd /usr/share/nginx/html/Group15TeamProject/
+          cd /usr/share/nginx/html/Group15TeamProject/
           sudo cp -r assets/ ../assets_backup
           sudo git reset --hard
           sudo git pull
