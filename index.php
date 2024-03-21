@@ -1,6 +1,14 @@
+<?php
+include 'php/connect.php';
+ /*
+$ordered=true;
+include 'php/recommended_caro.php'
+*/
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
-<?php session_start() ?>
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +31,7 @@
   <body  id="index-page">
 
   <?php require "navbar.php" ?>
+
     <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button
@@ -67,6 +76,18 @@
       </div>
 
       <div class="carousel-inner">
+          <!--<?php
+           // if(isset($_SESSION["username"]) and $ordered === true){
+              // $img = getRandImg($_SESSION["username"]);
+               ?>
+                  <div class="carousel-item active">
+                      <img
+                              src="<?php // echo $img;?>"
+                              class="d-block w-100 c-item c-img"
+                              alt="Slide 1"
+                      />
+                  </div>
+          <?php // } else { ?> -->
         <div class="carousel-item active">
           <img
             src="assets/New-RadioHead-BundleArt.png"
@@ -74,6 +95,7 @@
             alt="Slide 1"
           />
         </div>
+          <?php // } ?>
         <div class="carousel-item">
           <img
             src="assets/Приворот-carousel.png"
@@ -132,6 +154,597 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+
+
+<br>
+  <section class="index-products">
+      <h1 class="mini-caro-title">CD's</h1>
+      <button class="caro-prev"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
+      <button class="caro-nxt"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
+      <div class="mini-caro">
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button type="button" class="btn btn-dark mc-vm view-more">View More</button>
+  </section>
+
+
+  <section class="index-products">
+  <h1 class="mini-caro-title">EP's</h1>
+      <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <div class="mini-caro">
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  <button type="button" class="btn btn-dark mc-vm">View More</button>
+  </section>
+
+  <section class="index-products">
+      <h1 class="mini-caro-title">Vinyl's</h1>
+      <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <div class="mini-caro">
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=1">
+                          <img src="assets/MfDOOM-Madvillianily-Product-CD-Rap.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=1" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">MfDOOM - Madvillianily</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="mini-caro-item">
+              <div class="card h-100" id="product-card">
+                  <!-- Centering the Image -->
+                  <div class="card-body d-flex flex-column align-items-center">
+                      <!-- Responsive Image Size -->
+                      <a href="product.php?productid=2">
+                          <img src="assets/RedVelvet-Queendom-Product-CD-Kpop.png" class="card-img-top" id="product-img" alt="Product Image">
+                      </a>
+
+                      <!-- Product Name -->
+                      <div class="mt-3 text-center">
+                          <h6 class="font-weight-semibold mb-2">
+                              <h6 class="font-weight-semibold mb-2">
+                                  <a href="product.php?productid=2" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true">RedVelvet - Queendom</a>
+                              </h6>
+
+                              <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
+
+                              <button type="button" class="btn btn-dark card-vm">View More</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <button type="button" class="btn btn-dark mc-vm">View More</button>
+  </section>
+
+  <script src="js/mini_caro.js"></script>
 
 <footer id="index-footer">
     <div class="footer-top">
@@ -222,7 +835,6 @@
                 <h5> 2023 @Copyright Cadence </h5>
 
     </div>
-
 </footer>
 
     <script

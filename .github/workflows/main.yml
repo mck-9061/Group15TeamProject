@@ -1,0 +1,20 @@
+name: Deploy to server
+on: [push]
+jobs:
+  build:
+    name: Pull
+    runs-on: ubuntu-latest
+    steps:
+    - name: Pull
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.ARTIFACT_HOST }}
+        username: ${{ secrets.ARTIFACT_USERNAME }}
+        key: ${{ secrets.ARTIFACT_SSH_KEY }}
+        script: |
+          cd /usr/share/nginx/html/Group15TeamProject/
+          cp -r assets/ ../assets_backup
+          git reset --hard
+          git pull
+          cp -r ../assets_backup/. assets/
+          rm -rf ../assets_backup/

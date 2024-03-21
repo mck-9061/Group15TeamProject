@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="en">
-<?php session_start() ?>
+<?php session_start();
+include 'php/connect.php';
+require 'php/cart_functions.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -91,23 +94,22 @@
 
                 <div class="col text-right" id="subtotal">&pound;   <?php echo get_total_price() ?></div>
             </div>
-            <form id="shopping-cart-form">
+            <form action="php/cart_checkout.php" id="shopping-cart-form" method="post">
                 <p>SHIPPING</p>
-                <select id="shipping_select" class="rounded-4" onchange="update_cart_price()">
-                    <option class="text-muted">Standard Delivery (3-5 working days) - <hr> &pound;5.00</option>
-                    <option class="text-muted">Next Day Delivery - &pound;10.00</option>
+                <select id="shipping_select" name="shipping_select" class="rounded-4" onchange="update_cart_price()">
+                    <option class="text-muted" value="Standard Delivery">Standard Delivery (3-5 working days) - <hr> &pound;5.00</option>
+                    <option class="text-muted" value="Next Day Delivery">Next Day Delivery - &pound;10.00</option>
                 </select>
 
                 <p>ENTER CODE</p>
-                <input  class="rounded-4" id="cart-discount-input" placeholder="Enter your code">
+                <input  class="rounded-4" id="cart-discount-input" name="discount_code" placeholder="Enter your code">
+                <!--    Link to payment page        -->
+                <input type="submit" value="CHECKOUT" class="checkoutBtn rounded-2"  />
             </form>
             <div class="row" style="border-top: 1px solid rgba(0,0,0,.1); padding: 2vh 0;">
                 <div class="col">TOTAL PRICE</div>
                 <div class="col text-right" id="total"></div>
             </div>
-
-            <!--    Link to payment page        -->
-            <button class="checkoutBtn rounded-2"  >CHECKOUT</button>
         </div>
     </div>
 

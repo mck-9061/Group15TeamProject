@@ -12,7 +12,9 @@
   </component>
   <component name="PhpIncludePathManager">
     <include_path>
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
       <path value="" />
+      <path value="$USER_HOME$/xampp/php" />
     </include_path>
   </component>
   <component name="PhpStanOptionsConfiguration">

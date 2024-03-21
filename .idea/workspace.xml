@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="Footer Added">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2023_23_46_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_08_12_2023_23_46__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2023_14_57_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2023_14_57__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2023_15_24_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_09_12_2023_15_24__Changes_.xml" beforeDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Ignore">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_19_02_2024_12_26__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_03_2024_15_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_03_2024_15_03__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/customer-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard-info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard-styles-overview.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dashboard Code/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/Dashboard Code/dashboard.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,14 +24,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Image-fix-products" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,15 +44,9 @@
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
-    <option name="recentNewPullRequestHead">
-      <RepoCoordinatesHolder>
-        <option name="owner" value="mck-9061" />
-        <option name="repository" value="Group15TeamProject" />
-      </RepoCoordinatesHolder>
-    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
+        <option name="accountId" value="ee4e588c-9924-4e0c-81c6-4ac283480855" />
         <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
       </UrlAndAccount>
     </option>
@@ -60,171 +54,92 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.2">
     <include_path>
+      <path value="$PROJECT_DIR$/../../../../xampp/php" />
       <path value="" />
+      <path value="$USER_HOME$/xampp/php" />
     </include_path>
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 0
 }</component>
-  <component name="ProjectId" id="2YFhSSzisPp1nOdBmjuUC9TZIsY" />
+  <component name="ProjectId" id="2caW0pAlDnKi58Ys1e8TFm4DKLP" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
-    <option name="sortKey" value="BY_TIME_DESCENDING" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Product-page-card-fix&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Taugh/Documents/GitHub/Group15TeamProject/assets&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;customer-front-end&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
       <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\assets" />
+      <recent name="C:\Users\Taugh\Documents\GitHub\Group15TeamProject\Customer page code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
+      <recent name="C:\Users\james\PhpstormProjects\Group15TeamProject\assets" />
     </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-php-predefined-ba97393d7c68-6f8e3395a2b4-com.jetbrains.php.sharedIndexes-PS-233.14015.96" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dfb7d929-8889-4323-8085-ae23957832cd" name="Changes" comment="New navbar Fully Functional, Added a load of product pictures for database." />
-      <created>1700442146665</created>
+      <changelist id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Redoing elements, found issues" />
+      <created>1708349953107</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1700442146665</updated>
-      <workItem from="1700442147979" duration="2064000" />
-      <workItem from="1700449691782" duration="11627000" />
-      <workItem from="1700519841898" duration="4520000" />
-      <workItem from="1700564499566" duration="118000" />
-      <workItem from="1700574651994" duration="2119000" />
-      <workItem from="1701032817830" duration="797000" />
-      <workItem from="1701033848862" duration="298000" />
-      <workItem from="1701894932214" duration="11006000" />
-      <workItem from="1701910603265" duration="15923000" />
-      <workItem from="1702084657626" duration="5571000" />
-      <workItem from="1709200186921" duration="8224000" />
-      <workItem from="1709819038375" duration="508000" />
-      <workItem from="1711019649006" duration="1169000" />
+      <updated>1708349953107</updated>
+      <workItem from="1708349954740" duration="1484000" />
+      <workItem from="1708438099341" duration="2148000" />
+      <workItem from="1708626717890" duration="9000" />
+      <workItem from="1708626738802" duration="2700000" />
+      <workItem from="1708809055687" duration="1199000" />
+      <workItem from="1708979853035" duration="626000" />
+      <workItem from="1709044921516" duration="1347000" />
+      <workItem from="1709215638328" duration="774000" />
+      <workItem from="1709217010693" duration="19000" />
+      <workItem from="1709217038729" duration="2724000" />
+      <workItem from="1709297699646" duration="1998000" />
+      <workItem from="1709466905446" duration="669000" />
+      <workItem from="1709526732601" duration="196000" />
+      <workItem from="1709888486457" duration="1598000" />
+      <workItem from="1710246231431" duration="14801000" />
     </task>
-    <task id="LOCAL-00001" summary="Just for laptop work">
-      <option name="closed" value="true" />
-      <created>1700559226091</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1700559226092</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Added css changes,renamed some elements for testing, started the design stage for cart">
-      <option name="closed" value="true" />
-      <created>1701908471822</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1701908471822</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added css changes,renamed some elements for testing, started the design stage for cart">
-      <option name="closed" value="true" />
-      <created>1701971673498</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1701971673498</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Gave about us page css, added border under navbar &amp; some carousel changes.">
-      <option name="closed" value="true" />
-      <created>1702073919744</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1702073919744</updated>
-    </task>
-    <task id="LOCAL-00005" summary="FAVICON">
-      <option name="closed" value="true" />
-      <created>1702137477853</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1702137477853</updated>
-    </task>
-    <task id="LOCAL-00006" summary="FAVICON">
-      <option name="closed" value="true" />
-      <created>1702137570028</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1702137570028</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Footer Added">
-      <option name="closed" value="true" />
-      <created>1702144568397</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1702144568397</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Footer Added">
-      <option name="closed" value="true" />
-      <created>1702144578292</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1702144578292</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New navbar Fully Functional, Added a load of product pictures for database." />
-    <MESSAGE value="Just for laptop work" />
-    <MESSAGE value="Added css changes,renamed some elements for testing, started the design stage for cart" />
-    <MESSAGE value="Gave about us page css, added border under navbar &amp; some carousel changes." />
-    <MESSAGE value="Fixed more CSS - CSS is so fun!" />
-    <MESSAGE value="FAVICON" />
-    <MESSAGE value="Footer Added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Footer Added" />
+    <MESSAGE value="Redoing elements, found issues" />
+    <MESSAGE value="Ignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignore" />
   </component>
 </project>

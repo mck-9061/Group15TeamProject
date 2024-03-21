@@ -1,0 +1,193 @@
+:root {
+    --purple: #8c38ff;
+    --darkwaterBlue: #0f292f;
+    --poppingPink: #cb2d6f;
+    --accentBlack: #2d283e;
+    --promisingPurple: #281941;
+    --tiktokBlue: #74f0ed;
+    --tiktokPink: #ea445a;
+    --tiktokPinkwarm: #ea445ad3;
+    --shiningYellow: #fdd935;
+    --grapeGreen: #a6aa35;
+    --peach: #faa88b;
+    --warmPeach: #eb716a;
+    --warmPeachcold: #eb706ab9;
+    --pinkypeach: #f9d4e6;
+    --mint: #99edc3;
+    --seafoam: #3ded97;
+    --navbarPurple: #54005d;
+    --GAorange: #ff9f59;
+    --GAcream: #e7d6d0;
+    --darkOrange: #d43f10;
+    --searchgreen: #76cebf;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap");
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: var(--darkwaterBlue);
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+.card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--darkOrange);
+}
+
+.card-title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.card-body-left {
+    flex: 2;
+    padding-right: 5%;
+    border-right: 1px solid #ccc;
+    text-align: left;
+}
+
+.card-body-right {
+    flex: 1;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center align the child elements vertically */
+    align-items: center; /* Center align the child elements horizontally */
+
+}
+
+
+.card-title, .card-text {
+    text-align: left;
+}
+
+.price-details {
+    display: flex;
+    justify-content: flex-end; /* Align the price details to the right */
+    width: 100%;
+    margin-bottom: 20px; /* Add a bottom margin to create space between the price details and the button */
+}
+
+.price-label {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.price-value {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.btn-details {
+    background-color: var(--darkOrange);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-right: 0;
+}
+
+.btn-details:hover {
+    background-color: darkred;
+}
+
+.item-details, .price-details {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.item-label, .price-label {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.item-value, .price-value {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.order-details, .date-details, .item-details, .price-details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--accentBlack);
+    padding-bottom: 10px;
+}
+
+.order-label, .date-label, .item-label, .price-label {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.order-value, .date-value, .item-value, .price-value {
+    text-align: right;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.product-image {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+}
+
+.item-count {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.item-label{
+    text-align: center;
+}
+
+.item-details {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
