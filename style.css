@@ -375,7 +375,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  width: 100%;
+
 }
 
 #product-page-card{
@@ -383,9 +383,8 @@
   background-color: var(--tiktokPinkwarm);
   border: 3px solid;
   border-color: var(--accentBlack);
+ min-width: 80vmin;
 
-  width: 580px;
-  height: 750px;
   color: white;
 
 }
@@ -426,7 +425,8 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+ min-width:30vmin;
+  min-height:30vmin;
   border: 5px solid;
   border-color: black;
 }
