@@ -59,6 +59,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/style.css" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -134,6 +137,15 @@
       <workItem from="1710246231431" duration="14801000" />
       <workItem from="1710428063689" duration="3702000" />
     </task>
+    <task id="LOCAL-00001" summary="Ignore">
+      <option name="closed" value="true" />
+      <created>1711035791036</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711035791036</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
