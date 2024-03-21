@@ -29,6 +29,7 @@ session_start();
   </head>
 
   <body  id="index-page">
+  <?php include 'php/message.php' ?>
 
   <?php require "navbar.php" ?>
 
