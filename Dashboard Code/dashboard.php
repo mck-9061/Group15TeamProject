@@ -120,30 +120,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown" id="nav-words">
-                        <a
-                                class="nav-link dropdown-toggle text-white text-decortation-none fs-5"
-                                href="#"
-                                role="button"
-                                data-bs-toggle="dropdown"
-                                aria-expanded="false"
-                        >
-                            Merch
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Band Apparel</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Posters</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Books</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Funko's</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li><a class="dropdown-item" href="#">Figures</a></li>
-                            <li><hr class="dropdown-divider" /></li>
-                            <li>
-                                <a class="dropdown-item" href="products.php">Our Merch Catalogue</a>
-                            </li>
+
                         </ul>
                     </li>
                 </ul>

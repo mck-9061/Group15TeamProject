@@ -34,10 +34,11 @@
         // Add more delivery methods and their fees as needed
     ];
 
-    $sql = "SELECT orders.orderid, orders.date, orders.delivery_method, products.price, products.currency, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count
+    $sql = "SELECT orders.orderid, orders.date, orders.delivery_method, products.price, products.currency, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address
 FROM orders
 INNER JOIN products ON orders.productid = products.productid
 INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
+INNER JOIN users ON orders.user = users.username
 WHERE orders.user = ? AND orders.orderid = ?
 ORDER BY orders.date DESC";
 
@@ -76,8 +77,7 @@ ORDER BY orders.date DESC";
                     <p>Phone Number: 0123456789</p> <!-- Placeholder -->
                     <p>Email: example@example.com</p> <!-- Placeholder -->
                     <p>Shipping Method: <?= $order['delivery_method'] ?></p>
-                    <p>Address: 123 Street, City, Country</p> <!-- Placeholder -->
-                </div>
+                    <p>Address: <?= $order['address'] ?></p>                </div>
 
                 <div class="card-billing">
                     <h2>Billing Info</h2>

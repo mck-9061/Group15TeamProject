@@ -66,9 +66,21 @@ include 'php/fetchComments.php';
                                 <div class=" mb-3" id="product-reviews">Comments: <?php echo count(fetchComments($product['productid'])) ?> </div>
 
                                 <!-- Add to Cart Button -->
-                                <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
-                                    <i class="fa fa-cart-plus mr-2"></i> Add To Basket
-                                </a>
+                                <?php
+                                if ($product['stock'] == 0) {
+                                    ?>
+                                        <a class="btn bg-cart" id="no-stock" disabled>
+                                            <i class="fa fa-cart-plus mr-2"></i> Out Of Stock
+                                        </a>
+                                    <?php
+                                } else {
+                                    ?>
+                                        <a href="php/cart/add.php?cb=products&productid=<?php echo $product['productid']; ?>" class="btn bg-cart" id="add-basket-btn" >
+                                            <i class="fa fa-cart-plus mr-2"></i> Add To Basket
+                                        </a>
+                                    <?php
+                                }
+                                ?>
                         </div>
                     </div>
                 </div>

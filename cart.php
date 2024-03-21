@@ -26,6 +26,7 @@ require 'php/cart_functions.php';
 </head>
 <body id="shopping-cart-body">
 <?php require "navbar.php" ?>
+<?php include 'php/message.php' ?>
 
 <div class="card" id="shopping-card">
     <div class="row">
@@ -94,7 +95,7 @@ require 'php/cart_functions.php';
 
                 <div class="col text-right" id="subtotal">&pound;   <?php echo get_total_price() ?></div>
             </div>
-            <form action="php/cart_checkout.php" id="shopping-cart-form" method="post">
+            <form action="payment.php" id="shopping-cart-form" method="post">
                 <p>SHIPPING</p>
                 <select id="shipping_select" name="shipping_select" class="rounded-4" onchange="update_cart_price()">
                     <option class="text-muted" value="Standard Delivery">Standard Delivery (3-5 working days) - <hr> &pound;5.00</option>

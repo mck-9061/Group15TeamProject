@@ -30,6 +30,7 @@ if (isset($_GET['id'])) {
         $productPrice = $selectedProduct['price'];
         $productDescription = $selectedProduct['description'];
         $productImage = $selectedProduct['image-link'];
+        $stock = $selectedProduct['stock'];
         $links = fetchLinks($selectedProductID);
         if (!$links) {
             $link = array("link" => "No link");
@@ -47,6 +48,7 @@ if (isset($_GET['id'])) {
         $productPrice = "Invalid price";
         $productDescription = "No description";
         $productImage = "Invalid Image";
+        $stock = 0;
         $link = array("link" => "No link");
 
         $links = array();
@@ -194,6 +196,14 @@ if (isset($_GET['id'])) {
             <label for="PrdYTLink"> Sample link: </label>
             <br>
             <input type="text" id="PrdYTLink" name="PrdYTLink" value="<?php echo $link['link']; ?>" required>
+
+        </div>
+
+        <div class="grid-item">
+
+            <label for="stock"> Stock: </label>
+            <br>
+            <input type="text" id="stock" name="stock" value="<?php echo $stock; ?>" required>
 
         </div>
 

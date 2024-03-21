@@ -216,6 +216,8 @@
     font-family: "fields", sans-serif;
     font-weight: 600;
     font-style: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 300px) {
@@ -1553,7 +1555,85 @@ width:80%;}
   font-style: normal;
 }
 
- 
+#no-stock{
+  color: gray;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Payment page  */
+
+#payment-page{
+  background: var(--accentBlack);
+}
+
+.payment_container {
+  max-width: 500px;
+  margin: 4rem auto;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.card-datails-input{
+  padding: 10px;
+  margin: 5px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid var(--poppingPink);
+  background-color: var(--accentBlack);
+  color: #fff;
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+
+}
+.card-details input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus, input[type="date"]:focus, textarea:focus, select:focus {
+  border-bottom: 2px solid var(--poppingPink);
+}
+.card-details-submit  {
+  width: 100%;
+  background-color: var(--poppingPink);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+input[type="submit"]:hover {
+  background-color: var(--poppingPink);
+}
+
+input[type="submit"]:hover {
+  background-color: var(--poppingPink);
+}
+.card-details label, .billing-address label, .card-type label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.card-details{
+  width: 100%;
+}
+
+.card-details, .billing-address, .card-type {
+  margin-bottom: 20px;
+}
+.payment_container-title{
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.grid{
+  display: flex;
+  gap: 4px;
+  justify-content:stretch;
+  width: 100%;
+}
 
 
 

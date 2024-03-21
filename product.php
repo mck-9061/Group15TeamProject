@@ -33,6 +33,7 @@ if (isset($_GET['productid'])) {
         $productPrice = $selectedProduct['price'];
         $productDescription = $selectedProduct['description'];
         $productImage = $selectedProduct['image-link'];
+        $productStock = $selectedProduct['stock'];
 
         $links = fetchLinks($selectedProductID);
         $comments = fetchComments($selectedProductID);
@@ -47,6 +48,7 @@ if (isset($_GET['productid'])) {
         $productPrice = "Invalid price";
         $productDescription = "No description";
         $productImage = "Invalid Image";
+        $productStock = 0;
 
         $links = array();
         $comments = array();
@@ -84,7 +86,8 @@ if (isset($_GET['productid'])) {
             <div class="product-page-info">
                 <p id="product-type"><?php echo $productType; ?></p>
                 <p id="product-genre"><?php echo $productGenre; ?></p>
-                <p id="product-price"><?php echo $productPrice; ?></p>
+                <p id="product-price">£<?php echo $productPrice; ?></p>
+                <p id="product-stock"><?php echo $productStock; ?> in stock</p>
                 <p id="product-description"><?php echo $productDescription; ?></p>
                 <?php
                     foreach ($links as $link) {
@@ -94,9 +97,21 @@ if (isset($_GET['productid'])) {
                     }
                 ?>
             </div>
-            <a href="php/cart/add.php?cb=products&productid=<?php echo $selectedProductID; ?>" class="btn bg-cart" id="add-basket-btn">
-                <button class="btn bg-cart" id="product-add-basket-btn"> Add to basket</button>
-            </a>
+            <?php
+            if ($productStock == 0) {
+                ?>
+                    <a class="btn bg-cart" id="add-basket-btn">
+                        <button class="btn bg-cart" id="product-add-basket-btn" disabled> Out of stock</button>
+                    </a>
+                <?php
+            } else {
+                ?>
+                    <a href="php/cart/add.php?cb=products&productid=<?php echo $selectedProductID; ?>" class="btn bg-cart" id="add-basket-btn">
+                        <button class="btn bg-cart" id="product-add-basket-btn"> Add to basket</button>
+                    </a>
+                <?php
+            }
+            ?>
         </div>
     </div>
 </div>
