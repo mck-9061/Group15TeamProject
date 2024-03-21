@@ -77,6 +77,7 @@ require "../php/admin/auth_admin.php";
                         <div class="card-body text-center">
                             <h5 class="card-title" id="artist-name-card"><?php echo $product['name']; ?></h5>
                             <h6 class="card-subtitle" id="genre-name-card"><?php echo $product['genre']; ?></h6>
+                            <h6 class="card-subtitle" id="genre-name-card"><?php echo $product['type']; ?></h6>
                         </div>
                     <div class="d-flex justify-content-around">
                      <h3>£<?php echo $product['price']; ?></h3>

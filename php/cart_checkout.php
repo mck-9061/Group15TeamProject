@@ -1,5 +1,6 @@
 <?php
 include("connect.php");
+require 'update_address.php';
 
 session_start();
 require 'cart_functions.php';
@@ -8,10 +9,15 @@ require 'fetch_cart.php';
 $items = fetchCart();
 $date = date('y-m-d');
 
+if (!isset($_POST["address"])) {
+    $_SESSION['message'] = "Please fill in all the fields.";
+    header("Location: ../cart.php");
+}
+
 if(sizeof($items)==0){
 
     $_SESSION['message'] = "Add items to cart to checkout.";
-    header("Location: ../products.php");
+    header("Location: ../cart.php");
 
 } else {
     $delivery_method = $_POST['shipping_select'];
@@ -57,8 +63,11 @@ if(sizeof($items)==0){
                 <?php
             }
         }
+
+        updateAddress($_SESSION['username'], $_POST['address']);
+
         $_SESSION['message'] = "Checkout complete. You will receive a confirmation email soon.";
-        header("Location: ../products.php");
+        header("Location: ../index.php");
     }
 }
 ?>
