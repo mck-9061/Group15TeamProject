@@ -27,20 +27,20 @@
     $username = $_SESSION['username'];
     $orderid = $_GET['orderid'];
 
-    // Define delivery fees based on delivery method
+
     $delivery_fees = [
         'Standard Delivery' => 5.00,
         'Next Day Delivery' => 10.00,
-        // Add more delivery methods and their fees as needed
+
     ];
 
-    $sql = "SELECT orders.orderid, orders.date, orders.delivery_method, products.price, products.currency, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address
-FROM orders
-INNER JOIN products ON orders.productid = products.productid
-INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
-INNER JOIN users ON orders.user = users.username
-WHERE orders.user = ? AND orders.orderid = ?
-ORDER BY orders.date DESC";
+    $sql = "SELECT orders.orderid, orders.date, orders.delivery_method, products.price, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address, users.email, users.phone
+            FROM orders
+            INNER JOIN products ON orders.productid = products.productid
+            INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
+            INNER JOIN users ON orders.user = users.username
+            WHERE orders.user = ? AND orders.orderid = ?
+            ORDER BY orders.date DESC";
 
     if ($stmt = $db->prepare($sql)) {
         $stmt->bindParam(1, $username);
@@ -64,9 +64,9 @@ ORDER BY orders.date DESC";
                     $delivery_fee = isset($delivery_fees[$order['delivery_method']]) ? $delivery_fees[$order['delivery_method']] : 0.00;
                     $total_price_with_delivery = $item_subtotal + $delivery_fee;
                     ?>
-                    <p>Item Subtotal: <?= $order['currency'] . number_format($item_subtotal, 2) ?></p>
-                    <p>Delivery Fee: <?= $order['currency'] . number_format($delivery_fee, 2) ?></p>
-                    <p>Total Price: <?= $order['currency'] . number_format($total_price_with_delivery, 2) ?></p>
+                    <p>Item Subtotal: £<?= number_format($item_subtotal, 2) ?></p>
+                    <p>Delivery Fee: £<?= number_format($delivery_fee, 2) ?></p>
+                    <p>Total Price: £<?= number_format($total_price_with_delivery, 2) ?></p>
                 </div>
             </div>
 
@@ -74,16 +74,17 @@ ORDER BY orders.date DESC";
                 <div class="card-shipping">
                     <h2>Shipping Info</h2>
                     <p>Shipping To: <?= $username ?></p>
-                    <p>Phone Number: 0123456789</p> <!-- Placeholder -->
-                    <p>Email: example@example.com</p> <!-- Placeholder -->
+                    <p>Email: <?= $order['email'] ?></p>
+                    <p>Phone Number: <?= $order['phone'] ?></p>
                     <p>Shipping Method: <?= $order['delivery_method'] ?></p>
-                    <p>Address: <?= $order['address'] ?></p>                </div>
+                    <p>Address: <?= $order['address'] ?></p>
+                </div>
 
                 <div class="card-billing">
                     <h2>Billing Info</h2>
                     <p>Billing To: <?= $username ?></p>
-                    <p>Address: 123 Street, City, Country</p> <!-- Placeholder -->
-                    <p>Payment Method: Credit Card</p> <!-- Placeholder -->
+                    <p>Address: <?= $order['address'] ?></p>
+                    <p>Payment Method: Credit Card</p>
                 </div>
             </div>
 

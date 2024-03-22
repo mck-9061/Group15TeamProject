@@ -1,3 +1,18 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['username'])) {
+    $_SESSION['redirect_to'] = basename(__FILE__);
+    header("Location: login.php");
+    exit;
+}
+
+$username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
+
+
+?>
+
+
 <!Doctype HTML>
 <html lang="en">
 
@@ -160,7 +175,7 @@
                         ?>
                         <p>
                             <a
-                                    href="login.php"
+                                    href="../login.php"
                                     class=" px-2 py-2 rounded-4"
                                     id="login-pill"
                             >Login</a>
@@ -195,7 +210,7 @@
 <!-- nav end   -->
 
 <div class="text-center">
-    <p id="home-title">Welcome,  (Add user's name here + email) </p>
+    <p id="home-title">Welcome, <?php echo isset($_SESSION['username']) ? $_SESSION['username'] : 'Guest'; ?></p>
 
     <p></p>
 
@@ -234,7 +249,7 @@
                 <div class="card" id="history">
                     <h1 class="title">Order History</h1>
                     <p class="subtitle">See prior Order History</p>
-                    <button class="btn">Rewind to the past</button>
+                    <a href="dashboard-order-history.php" class="btn">Rewind to the past</a>
                 </div>
             </div>
         </div>
