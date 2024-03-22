@@ -22,7 +22,7 @@ require "../php/admin/auth_admin.php";
 
 </head>
 
-<body id="admin-home">
+<body id="admin-products">
 <div class="offcanvas offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Cadence-Admin</h5>
@@ -80,7 +80,7 @@ require "../php/admin/auth_admin.php";
                             <h6 class="card-subtitle" id="genre-name-card"><?php echo $product['type']; ?></h6>
                         </div>
                     <div class="d-flex justify-content-around">
-                     <h3>£<?php echo $product['price']; ?></h3>
+                     <h3 id="card-prices">£<?php echo $product['price']; ?></h3>
                      <a class="btn btn-dark" type="button" href="adminProduct.php?id=<?php echo $product['productid']; ?>">Edit</a>
                     </div>
                 </div>
