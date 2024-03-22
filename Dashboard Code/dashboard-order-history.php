@@ -27,7 +27,7 @@
 
     $username = $_SESSION['username'];
 
-    $sql = "SELECT orders.orderid, orders.productid, orders.date, orders.delivery_method, GROUP_CONCAT(products.name SEPARATOR ', ') as product_names, GROUP_CONCAT(`product-pictures`.`image-link` SEPARATOR ', ') as product_images, GROUP_CONCAT(orders.item_count SEPARATOR ', ') as item_counts, SUM(orders.item_count) as total_items, SUM(orders.total_price) as total_price, products.currency
+    $sql = "SELECT orders.orderid, orders.productid, orders.date, orders.delivery_method, GROUP_CONCAT(products.name SEPARATOR ', ') as product_names, GROUP_CONCAT(`product-pictures`.`image-link` SEPARATOR ', ') as product_images, GROUP_CONCAT(orders.item_count SEPARATOR ', ') as item_counts, SUM(orders.item_count) as total_items, SUM(orders.total_price) as total_price
     FROM orders
     INNER JOIN products ON orders.productid = products.productid
     INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
@@ -79,7 +79,7 @@
                                 if ($order['total_price'] == 0) {
                                     echo "Total price is 0. Please check the price and item_count in the database.";
                                 } else {
-                                    echo $order['currency'] . $order['total_price'];
+                                    echo "£" . $order['total_price'];
                                 }
                                 ?>
                             </div>
