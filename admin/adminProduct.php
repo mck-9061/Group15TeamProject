@@ -147,6 +147,7 @@ if (isset($_GET['id'])) {
         <div class="grid-item" >
             <label for="Genre">Genre:</label>    <!--   All are id'd so you can change quicker        -->
             <br>
+            <div id="genreRadioINDProd">
             <input type="radio" id="GENRE-PICK-ROCK" name="genres" value="Rock" required <?php if ($productGenre == "Rock") { echo "checked"; } ?>>
             <label for="GENRE-PICK-ROCK">Rock</label><br>
             <input type="radio" id="GENRE-PICK-JPOP" name="genres" value="JPop" <?php if ($productGenre == "JPop") { echo "checked"; } ?>>
@@ -165,6 +166,7 @@ if (isset($_GET['id'])) {
             <label for="GENRE-PICK-PUNK">Punk</label><br>
             <input type="radio" id="GENRE-PICK-DANCE" name="genres" value="Dance" <?php if ($productGenre == "Dance") { echo "checked"; } ?>>
             <label for="GENRE-PICK-DANCE">Dance</label><br>
+        </div>
         </div>
         <div class="grid-item">
             <label for="PrdType">Product Type:</label>
@@ -223,7 +225,7 @@ if (isset($_GET['id'])) {
         <!-- Instead make it a hover effect on the image to change it -->
         <div class="grid-item"><label for="checkSave">Save</label>
             <br>
-            <button type="submit">Update Product</button>
+            <button type="submit" id="update-product">Update Product</button>
         </div>
     </div>
 </form>

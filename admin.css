@@ -23,10 +23,18 @@
 }
 /*    Following is for main Admin Panel Home page          */
 #admin-home{
-    background: var(--accentBlack);
+    background: url("assets/AdminBG.png");
+
 }
+#sidebar{
+    color: var(--tiktokPink);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .sidebar-content{
-    color: var(--accentBlack);
+    color: var(--tiktokPink);
 }
 .sidebar-item{
     color: green;
@@ -38,9 +46,12 @@
 }
 .is-active{
     color: var(--promisingPurpler);
+   text-decoration: underline;
 }
 .card{
-    box-shadow: 0 4px 8px 0 rbga(0,0,0,0.2);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: var(--accentBlack);
+    border-color: var(--peach);
     transition: 0.3s;
     width: 20%;
     border-radius: 5px;
@@ -63,6 +74,7 @@
     text-decoration: none;
     display: inline-block;
     padding: 8px 16px;
+    color: pink;
 }
 .hero-card-home button{
     color: var(--accentBlack);
@@ -76,7 +88,7 @@
     margin-top: 20px;
 }
 .hero-card-home hr{
-    border: 3px solid black;
+    border: 3px solid var(--warmPeachcold);
 }
 #invisible-line{
    border: var(--warmPeach);
@@ -90,9 +102,14 @@
     color: var(--tiktokPink);
 }
 .offcanvas{
-    background: var(--GAcream);
+    background: var(--darkwaterBlue);
 }
 /*  Following is for Admin Products page */
+#admin-products,#admin-product{
+    background: url("assets/cartBG.png");
+}
+
+
 #product-type-statement{
     color: var(--peach);
 }
@@ -101,8 +118,9 @@
     border: none;
 }
 .card-img-top{
-    border-radius: 50px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 25px;
+
 }
 .card{
     border-radius: 30px;
@@ -111,10 +129,12 @@
 .card-body{
     padding: 25px;
     margin-top: -15px;
+    color: var(--GAcream);
 }
 .card-subtitle{
     margin-top: 10px;
     margin-bottom: 10px;
+    color: var(--tiktokPink);
 }
 .btn-dark{
     border-radius: 40px;
@@ -125,21 +145,24 @@
 .row-cols-2{
     gap: 50px;
 }
+#card-prices{
+    color: var(--GAcream);
+}
 
-/*   Indivdual Product page */
-#admin-product{
-    background-color: var(--accentBlack);
+/*   Add Product page */
+#admin-add-product{
+    background: url("assets/cartBG.png");
     font-size: 14px;
 }
 
 .grid-edit-container{
     display: grid;
     grid-template-columns: auto auto auto;
-    background-color: var(--GAcream);
+    background-color: var(--darkwaterBlue);
     padding: 10px;
 }
 .grid-item{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--GAcream);
     border: 1px solid var(--accentBlack);
     padding: 20px;
     font-size: 15px;
@@ -175,4 +198,42 @@ margin-right: 10px;
 #product-img-to-be-changed{
     padding-left: 20px;
     padding-bottom: 20px;
+}
+#deleteACC,#resetChanges,#password-reset,#saveACCChanges,#update-product,#fileToUpload{
+    border-radius: 20px;
+    color: var(--tiktokPink);
+    background-color: var(--accentBlack);
+    border-color: var(--tiktokPink);
+
+}
+
+#ACCADDS,#ACCEmail,#ACCFName,#telNum,#PrdDsc,#AlbmName,#ArtName,#PrdPrice,#description-box,#stock,#PrdYTLink{
+    background-color: black;
+    color: var(--tiktokPink);
+    border-radius: 3px;
+    border-color: black;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+
+}
+#genreRadioINDProd{
+    text-align: center;
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+label{
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+/*    LOL ACCOUNTS BG          */
+#admin-accounts{
+    background: url("assets/AccountsBG.png");
+}
+#admin-customer-acc-view{
+    background: url("assets/AccountsBG.png");
 }

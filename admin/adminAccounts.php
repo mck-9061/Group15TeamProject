@@ -26,7 +26,7 @@ require "../php/admin/auth_admin.php"
 
 </head>
 
-<body id="admin-home">
+<body id="admin-accounts">
 <div class="offcanvas offcanvas-end " tabindex="-1" id="sidebar" aria-labelledby="offcanvasLabel">
     <div class="offcanvas-header">
         <h5 class="offcanvas-title" id="offcanvasLabel">Cadence-Admin</h5>
