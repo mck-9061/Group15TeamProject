@@ -7,6 +7,8 @@
 </head>
 <body>
 <div class="container">
+    <a href="dashboard.php" class="back-button">← Back to Dashboard</a>
+
     <?php
     session_start();
 
