@@ -65,6 +65,7 @@
 }
 
   /*  Mini-Carousel css        */
+
 .index-products{
   position: relative;
   overflow: hidden;
@@ -83,7 +84,7 @@
     margin-bottom: 1%;
     padding: 0 2vw;
     display: flex;
-    overflow-x: auto;
+    overflow: hidden;
     scroll-behavior: smooth;
     margin-right: 0%;
     margin-left: 10%;
@@ -376,10 +377,7 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
 }
-
 #product-page-card{
   margin-top: 70px;
   background-color: var(--tiktokPinkwarm);
@@ -407,7 +405,7 @@ width:80%;}
   border-color: var(--warmPeach);
 }
 #product-description{
-  color: var(--tiktokBlue);
+  color: var(--tiktokPink);
 }
 
 .product-container{
@@ -420,7 +418,6 @@ width:80%;}
   background-color: var(--accentBlack);
 
 }
-
 
 .product-container img{
   display: flex;
@@ -510,7 +507,7 @@ width:80%;}
 
 .comment p {
   margin-bottom: 10px;
-  color: black;
+  color: var(--poppingPink);
 
 }
 
@@ -570,23 +567,23 @@ width:80%;}
 .comment-form h3,
 .comments-section h3 {
   color: var(--poppingPink);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
   font-style: normal;
   text-transform: uppercase;
 }
 
 .comment-form label {
-  color: var(--tiktokBlue);
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  color: var(--warmPeachcold);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 
 .comments-section p {
-  color: black;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  color: var(--poppingPink);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -602,20 +599,41 @@ width:80%;}
   border: 2px solid var(--accentBlack);
   border-radius: 5px;
   resize: none;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  background: black;
+  color: var(--peach);
 }
 
 .comment-form button {
   margin-top: 10px;
   background-color: var(--tiktokPink);
   color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
   text-transform: uppercase;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
 }
 
+/* Stock code start  */
+
+#product-stock{
+  color: var(--GAcream);
+}
+
+#no-stock{
+  color: var(--GAcream);
+  border-color: var(--GAcream);
+  font-family: "fields", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Stock End  */
 
 
 /* Navbar Code */
@@ -1502,7 +1520,7 @@ width:80%;}
 }
 
 #rest-footer{
-
+  margin-top: 40px;
   background: url("assets/footerBG.png");
 }
 #footer-useful{
@@ -1552,13 +1570,6 @@ width:80%;}
   text-align: center;
   font-family: "fields", sans-serif;
   font-weight: 70;
-  font-style: normal;
-}
-
-#no-stock{
-  color: gray;
-  font-family: "fields", sans-serif;
-  font-weight: 900;
   font-style: normal;
 }
 
