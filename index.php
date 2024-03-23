@@ -1,10 +1,8 @@
 <?php
 include 'php/connect.php';
- /*
+
 $ordered=true;
-include 'php/recommended_caro.php'
-*/
-session_start();
+include 'php/recommended_caro.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -77,18 +75,18 @@ session_start();
       </div>
 
       <div class="carousel-inner">
-          <!--<?php
-           // if(isset($_SESSION["username"]) and $ordered === true){
-              // $img = getRandImg($_SESSION["username"]);
+          <?php
+           if(isset($_SESSION["username"]) and getRandImg($_SESSION["username"]) == true){
+              $img = getRandImg($_SESSION["username"]);
                ?>
                   <div class="carousel-item active">
                       <img
-                              src="<?php // echo $img;?>"
+                              src="<?php echo $img;?>"
                               class="d-block w-100 c-item c-img"
                               alt="Slide 1"
                       />
                   </div>
-          <?php // } else { ?> -->
+          <?php  } else { ?>
         <div class="carousel-item active">
           <img
             src="assets/New-RadioHead-BundleArt.png"
@@ -96,7 +94,7 @@ session_start();
             alt="Slide 1"
           />
         </div>
-          <?php // } ?>
+          <?php  } ?>
         <div class="carousel-item">
           <img
             src="assets/Приворот-carousel.png"
