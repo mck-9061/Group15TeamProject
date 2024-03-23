@@ -211,4 +211,47 @@ body {
     background-color: darkred;
 }
 
+.no-order-card {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    border: 2px solid var(--darkOrange);
+}
+
+.no-order-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 50px; /* Adjust margin as needed */
+    flex-grow: 1; /* Occupy remaining space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-order-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.no-order-message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: auto; /* Adjust margin-top to move text towards the center */
+    margin-bottom: auto; /* Adjust margin-bottom to move text towards the center */
+}
 
