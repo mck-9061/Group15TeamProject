@@ -87,7 +87,7 @@ if (isset($_GET['productid'])) {
                 <p id="product-type"><?php echo $productType; ?></p>
                 <p id="product-genre"><?php echo $productGenre; ?></p>
                 <p id="product-price">£<?php echo $productPrice; ?></p>
-                <p id="product-stock"><?php echo $productStock; ?> in stock</p>
+                <p id="product-stock"><?php echo $productStock; ?> In Stock</p>
                 <p id="product-description"><?php echo $productDescription; ?></p>
                 <?php
                     foreach ($links as $link) {
@@ -101,7 +101,7 @@ if (isset($_GET['productid'])) {
             if ($productStock == 0) {
                 ?>
                     <a class="btn bg-cart" id="add-basket-btn">
-                        <button class="btn bg-cart" id="product-add-basket-btn" disabled> Out of stock</button>
+                        <button class="btn bg-cart" id="product-add-basket-btn" disabled> Out of Stock</button>
                     </a>
                 <?php
             } else {
