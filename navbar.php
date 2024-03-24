@@ -131,6 +131,15 @@
                             >Log out</a>
                         </p>
                         <?php
+                        if ($_SESSION['username'] == "admin") {
+                            ?>
+                            <p class="account-username" >
+                                <a
+                                        href="admin/adminHome.php"
+                                >Admin Panel</a>
+                            </p>
+                            <?php
+                        }
                     } else {
                         ?>
                         <p>
