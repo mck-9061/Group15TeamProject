@@ -86,7 +86,7 @@
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-    margin-right: 0%;
+    margin-right: 10%;
     margin-left: 10%;
     margin-top: 1px;
     border: 1px solid;
@@ -136,7 +136,7 @@
 
   .caro-nxt {
     height: 100%;
-    right: 0%;
+    right: 10.13%;
   }
 
   .caro-prev img,
