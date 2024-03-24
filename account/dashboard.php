@@ -78,7 +78,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
             <div class="column customer-options text-center">
                 <div class="card" id="history">
                     <h1 class="title">Order History</h1>
-                    <p class="subtitle">See prior Order History</p>
+                    <p class="subtitle">See your order history</p>
                     <a href="dashboard-order-history.php" class="btn">Rewind to the past</a>
                 </div>
             </div>
@@ -89,8 +89,13 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
         <div class="column customer-options text-center">
             <div class="card" id="DeleteAcc">
                 <h1 class="title">Delete Account</h1>
-                <p class="subtitle"> Delete your Account (Dont though we love you to much to lose you!)</p>
-                <button class="btn">Button of Regret</button>
+                <p class="subtitle"> Delete your account (Don't though - we love you too much to lose you!)</p>
+
+                <form action="../php/admin/user_delete_account.php" method="post">
+                    <input name="name" hidden value="<?php echo $_SESSION['username']; ?>">
+                    <button class="btn" type="submit">Button of Regret</button>
+                </form>
+
             </div>
         </div>
     </div>
@@ -141,7 +146,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
 
                     <li>
                         <i class="fa fa"></i>
-                        <a href="mailto:info@cadence.com" class="footer-items "> Email </a>
+                        <a href="mailto:info@cadence.com" class="footer-items "> Email  <span id="footer-email-color">info@cadence.com </span></a>
                     </li>
                 </ul>
             </div>
