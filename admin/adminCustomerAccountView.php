@@ -168,6 +168,15 @@ if (isset($_GET['user'])) {
         <div class="grid-item">
             <br>
         </div>
+        <div class="grid-item">
+            <br>
+        </div>
+        <div class="grid-item">
+            <button type="button" id="saveACCChanges" onclick="window.location='adminOrderHistory.php?user=<?php echo $accountName; ?>';">View Order History</button>
+        </div>
+        <div class="grid-item">
+            <br>
+        </div>
     </div>
 
 
