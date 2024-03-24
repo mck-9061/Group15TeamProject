@@ -193,7 +193,7 @@ require 'php/fetch_products.php'
           ?>
 
       </div>
-      <button type="button" class="btn btn-dark mc-vm view-more">View More</button>
+      <button type="button" class="btn btn-dark mc-vm" onclick="window.location='products.php?type=cd';">View More</button>
   </section>
 
 
@@ -230,7 +230,7 @@ require 'php/fetch_products.php'
           }
           ?>
       </div>
-  <button type="button" class="btn btn-dark mc-vm">View More</button>
+      <button type="button" class="btn btn-dark mc-vm" onclick="window.location='products.php?type=ep';">View More</button>
   </section>
 
   <section class="index-products">
@@ -266,7 +266,7 @@ require 'php/fetch_products.php'
           }
           ?>
       </div>
-      <button type="button" class="btn btn-dark mc-vm">View More</button>
+      <button type="button" class="btn btn-dark mc-vm" onclick="window.location='products.php?type=vinyl';">View More</button>
   </section>
 
   <script src="js/mini_caro.js"></script>
@@ -297,7 +297,7 @@ require 'php/fetch_products.php'
                     </li>
                     <li>
                         <i class="fa fa"></i>
-                        <a href="products.php" class="footer-items"> Products page</a>
+                        <a href="products.php" class="footer-items"> All Products</a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
@@ -317,49 +317,23 @@ require 'php/fetch_products.php'
                         <i class="fa fa"></i>
                         <a href="mailto:info@cadence.com" class="footer-items "> Email  <span id="footer-email-color">info@cadence.com </span></a>
                     </li>
-                    <li>
-                        <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Privacy Policy</a>
-                    </li>
-                    <li>
-                        <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Cookie Policy</a>
-                    </li>
                 </ul>
             </div>
 
-            <div class="col-lg-2 col-md-2 footer-contact">
+            <div class="col-lg-2 col-md-6 footer-contact">
                 <br>
-
-                <h4 class="text-center" id="footer-contact-us"> Legal</h4>
 
                 <ul class="footer-list">
 
                     <li>
                         <i class="fa fa"></i>
-                        <a href="#" class="footer-items "> Modern Slavery Statement</a>
-                    </li>
-                    <li>
-                        <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Privacy Policy</a>
-                    </li>
-                    <li>
-                        <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Cookie Policy</a>
-                    </li>
-                    <li>
-                        <i class="fa fa"></i>
-                        <a href="#" class="footer-items"> Terms & Condition</a>
+                        <div class="footer-items"> 2023 @Copyright Cadence </div>
                     </li>
                 </ul>
-
             </div>
+
         </div>
 
-        <div id="footer-copyright" >
-                <h5> 2023 @Copyright Cadence </h5>
-
-    </div>
 </footer>
 
     <script

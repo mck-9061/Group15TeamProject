@@ -119,7 +119,7 @@ include 'php/fetchComments.php';
                     </li>
                     <li>
                         <i class="fa fa"></i>
-                        <a href="products.php" class="footer-items"> Products</a>
+                        <a href="products.php" class="footer-items"> All Products</a>
                     </li>
                     <li>
                         <i class="fa fa"></i>
