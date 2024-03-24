@@ -34,7 +34,7 @@
           <i></i>
         </div>
         <div class="extraLogInfo">
-          <a href="#">Forgot your password</a>
+          <a href="forgotps.php">Forgot your password</a>
           <a href="signup.php">Sign Up</a>
           <a href="index.php">Go back</a>
         </div>
