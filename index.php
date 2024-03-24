@@ -184,10 +184,6 @@ require 'php/fetch_products.php'
                                           <a href="product.php?productid=<?php echo $product["productid"] ?>" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product["name"] ?></a>
                                       </h6>
 
-
-                                      <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
-
-                                      <button type="button" class="btn btn-dark card-vm">Add to Cart</button>
                               </div>
                           </div>
                       </div>
@@ -226,10 +222,6 @@ require 'php/fetch_products.php'
                                       <a href="product.php?productid=<?php echo $product["productid"] ?>" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product["name"] ?></a>
                                   </h6>
 
-
-                                  <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
-
-                                  <button type="button" class="btn btn-dark card-vm">Add to Cart</button>
                           </div>
                       </div>
                   </div>
@@ -266,10 +258,6 @@ require 'php/fetch_products.php'
                                       <a href="product.php?productid=<?php echo $product["productid"] ?>" class="text-default mb-2 text-decoration-none" id="products-names" data-abc="true"><?php echo $product["name"] ?></a>
                                   </h6>
 
-
-                                  <h4 class="mb-0 font-weight-semibold" id="product-price"> £30</h4>
-
-                                  <button type="button" class="btn btn-dark card-vm">Add to Cart</button>
                           </div>
                       </div>
                   </div>
