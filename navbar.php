@@ -39,7 +39,7 @@
                                 data-bs-toggle="dropdown"
                                 aria-expanded="false"
                         >
-                            CD'S
+                            CDs
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="products.php?genre=metal&type=cd">Metal</a></li>
