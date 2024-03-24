@@ -120,7 +120,7 @@
                         ?>
                         <p class="account-username" >
                             <a
-                                    href="index.php"
+                                    href="account/dashboard.php"
                             ><?php echo $_SESSION['username'] ?></a>
                         </p>
                         <p>
