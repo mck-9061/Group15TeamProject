@@ -29,13 +29,29 @@
 
     $username = $_SESSION['username'];
 
-    $sql = "SELECT orders.delivery_method, GROUP_CONCAT(orders.orderid SEPARATOR ', ') as order_ids, MIN(orders.date) as min_date, MAX(orders.date) as max_date, GROUP_CONCAT(products.name SEPARATOR ', ') as product_names, GROUP_CONCAT(`product-pictures`.`image-link` SEPARATOR ', ') as product_images, GROUP_CONCAT(orders.item_count SEPARATOR ', ') as item_counts, SUM(orders.item_count) as total_items, SUM(orders.total_price) as total_price
-    FROM orders
-    INNER JOIN products ON orders.productid = products.productid
-    INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
-    WHERE orders.user = ?
-    GROUP BY orders.delivery_method
-    ORDER BY orders.total_price DESC, orders.date DESC";
+    $sql = "SELECT 
+            orders.orderid, 
+            orders.delivery_method, 
+            orders.date, 
+            GROUP_CONCAT(orders.orderid SEPARATOR ', ') as order_ids, 
+            MIN(orders.date) as min_date, 
+            MAX(orders.date) as max_date, 
+            GROUP_CONCAT(products.name SEPARATOR ', ') as product_names, 
+            GROUP_CONCAT(`product-pictures`.`image-link` SEPARATOR ', ') as product_images, 
+            GROUP_CONCAT(orders.item_count SEPARATOR ', ') as item_counts, 
+            SUM(products.price * orders.item_count) AS total_item_price,
+            (SUM(products.price * orders.item_count) + 
+                CASE
+                    WHEN orders.delivery_method = 'Standard Delivery' THEN 5
+                    WHEN orders.delivery_method = 'Next Day Delivery' THEN 10
+                    ELSE 0
+                END) AS total_price
+        FROM orders
+        INNER JOIN products ON orders.productid = products.productid
+        INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
+        WHERE orders.user = ?
+        GROUP BY orders.delivery_method, orders.date
+        ORDER BY orders.date DESC";
 
     if ($stmt = $db->prepare($sql)) {
         $stmt->bindParam(1, $username);
@@ -50,12 +66,12 @@
                     <div class="card-content">
                         <div class="card-body-left">
                             <div class="order-details">
-                                <div class="order-label">Delivery Method:</div>
-                                <div class="order-value"><?= $order['delivery_method'] ?></div>
-                            </div>
-                            <div class="order-details">
                                 <div class="order-label">Order Number:</div>
                                 <div class="order-value"><?= count(explode(',', $order['order_ids'])) ?></div>
+                            </div>
+                            <div class="order-details">
+                                <div class="order-label">Delivery Method:</div>
+                                <div class="order-value"><?= $order['delivery_method'] ?></div>
                             </div>
                             <div class="order-details">
                                 <div class="order-label">Order Date:</div>
@@ -90,7 +106,7 @@
                                     ?>
                                 </div>
                             </div>
-                            <a href="dashboard-order-item.php?delivery_method=<?= urlencode($order['delivery_method']) ?>" class="btn-details">View Order Details</a>
+                            <a href="dashboard-order-item.php?orderids=<?= $order['order_ids'] ?>&delivery_method=<?= $order['delivery_method'] ?>" class="btn-details">View Order Details</a>
                         </div>
                     </div>
                 </div>
