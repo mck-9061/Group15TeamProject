@@ -1,5 +1,41 @@
 <!Doctype HTML>
 <html lang="en">
+<?php
+session_start();
+include '../php/fetch_accounts.php';
+require '../php/message.php';
+
+if (isset($_SESSION['username'])) {
+    $selectedUser = $_SESSION['username'];
+
+    // Fetch all accounts
+    $accounts = fetchAccounts();
+
+    // Find the selected account by its name
+    $selectedAccount = null;
+    foreach ($accounts as $account) {
+        if ($account['username'] == $selectedUser) {
+            $selectedAccount = $account;
+            break;
+        }
+    }
+
+    if ($selectedAccount) {
+        $accountName = $selectedAccount['username'];
+        $accountEmail = $selectedAccount['email'];
+        $accountPhone = $selectedAccount['phone'];
+        $accountAddress = $selectedAccount['address'];
+
+        if ($accountAddress == 0) {
+            $accountAddress = "No address on file";
+        }
+    } else {
+        header("Location: ../index.php");
+    }
+} else {
+    header("Location: ../index.php");
+}
+?>
 
 <head>
 
@@ -26,36 +62,27 @@
 
 <div class="profile-info">
     <div class="infoBorderLine">
-        <form action="" method="post">
-            <h2>Your Info</h2>
+        <form action="../php/admin/update_account_details.php" method="post" autocomplete="off">
+            <h2>Your Info: <?php echo $accountName; ?></h2>
+            <input type="text" hidden="hidden" name="name" maxlength="30" value="<?php echo $accountName; ?>" />
 
             <div class="inputBox">
-                <input type="text" required="required" name="email" maxlength="30" placeholder="email" />
+                <input type="text" required="required" name="email" maxlength="30" value="<?php echo $accountEmail; ?>" />
                 <span>Your Email</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" required="required" name="username" maxlength="20" placeholder="username" />
-                <span>Your Username</span>   <!-- Cant be edited  -->
+                <input type="password" name="passReset" maxlength="30"/>
+                <span>Change Password</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required="required" name="password" maxlength="30" placeholder="password"/>
-                <span>Your password</span>
+                <input type="text" required="required" name="phone" maxlength="11" value="<?php echo $accountPhone; ?>"/>
+                <span>Your Number</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="password" required="required" name="confirmPassword" maxlength="30" placeholder="change password" />
-                <span>Change password</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required" name="phoneNumber" maxlength="11" placeholder="customer number"/>
-                <span>Your number</span>
-                <i></i>
-            </div>
-            <div class="inputBox">
-                <input type="text" required="required" name="phoneNumber" maxlength="11" placeholder="customer address" />
+                <input type="text" required="required" name="address" maxlength="50" value="<?php echo $accountAddress; ?>" />
                 <span>Your Address</span>
                 <i></i>
             </div>
