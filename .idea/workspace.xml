@@ -4,11 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Quick CSS stuff so i can write about it in report with appendix LOL">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2024_12_26_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2024_12_26__Changes_.xml" beforeDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Limited changes">
+      <change afterPath="$PROJECT_DIR$/assets/HistoryBG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Section1BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Section2BG.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/Section3BG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/customer-page.css" beforeDir="false" afterPath="$PROJECT_DIR$/account/customer-page.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/dashboard-info.php" beforeDir="false" afterPath="$PROJECT_DIR$/account/dashboard-info.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/dashboard-order-item.css" beforeDir="false" afterPath="$PROJECT_DIR$/account/dashboard-order-item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/dashboard-order-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/account/dashboard-order-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/account/order-history-stuff.css" beforeDir="false" afterPath="$PROJECT_DIR$/account/order-history-stuff.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/IndexBG.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/IndexBG.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -73,23 +84,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Front-end-fixes",
-    "last_opened_file_path": "C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;New-Dashboard-fixes&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
@@ -128,6 +139,7 @@
       <workItem from="1709888486457" duration="1598000" />
       <workItem from="1710246231431" duration="14801000" />
       <workItem from="1711074857859" duration="10175000" />
+      <workItem from="1711318520723" duration="3895000" />
     </task>
     <task id="LOCAL-00001" summary="Quick CSS stuff so i can write about it in report with appendix LOL">
       <option name="closed" value="true" />
@@ -137,7 +149,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711076209373</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Limited changes">
+      <option name="closed" value="true" />
+      <created>1711315171481</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711315171481</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,6 +171,7 @@
     <MESSAGE value="Redoing elements, found issues" />
     <MESSAGE value="Ignore" />
     <MESSAGE value="Quick CSS stuff so i can write about it in report with appendix LOL" />
-    <option name="LAST_COMMIT_MESSAGE" value="Quick CSS stuff so i can write about it in report with appendix LOL" />
+    <MESSAGE value="Limited changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Limited changes" />
   </component>
 </project>

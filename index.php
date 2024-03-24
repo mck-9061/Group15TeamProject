@@ -158,7 +158,7 @@ require 'php/fetch_products.php'
 
 
 <br>
-  <section class="index-products">
+  <section class="index-products section-1">
       <h1 class="mini-caro-title text-center">CDs</h1>
       <button class="caro-prev"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
       <button class="caro-nxt"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
@@ -197,10 +197,10 @@ require 'php/fetch_products.php'
   </section>
 
 
-  <section class="index-products">
+  <section class="index-products section-2">
   <h1 class="mini-caro-title text-center">EPs</h1>
-      <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
-      <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <button class="caro-prev"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
+      <button class="caro-nxt"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
       <div class="mini-caro">
           <?php
           $products = getCategoryProducts("ep");
@@ -233,10 +233,10 @@ require 'php/fetch_products.php'
       <button type="button" class="btn btn-dark mc-vm" onclick="window.location='products.php?type=ep';">View More</button>
   </section>
 
-  <section class="index-products">
+  <section class="index-products section-3">
       <h1 class="mini-caro-title text-center">Vinyls</h1>
-      <button class="caro-prev"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
-      <button class="caro-nxt"><img src="assets/arrow.png" width="60" height="60" alt=""></button>
+      <button class="caro-prev"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
+      <button class="caro-nxt"><img src="assets/arrow.png" width="80" height="80" alt=""></button>
       <div class="mini-caro">
           <?php
           $products = getCategoryProducts("vinyl");

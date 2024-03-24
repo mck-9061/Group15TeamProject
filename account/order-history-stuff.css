@@ -31,7 +31,11 @@ body {
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: var(--darkwaterBlue);
+    background: url("../assets/HistoryBG.png");
+    background-blend-mode: multiply;
+    background-position: px;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -54,7 +58,12 @@ body {
     background-color: #f1f1f1;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-    border: 2px solid var(--darkOrange);
+    border: 5px solid var(--accentBlack);
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.125);
 }
 
 .card-title {
@@ -62,6 +71,7 @@ body {
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
+    color: white;
 }
 
 .card-content {
@@ -113,7 +123,7 @@ body {
 }
 
 .btn-details {
-    background-color: var(--darkOrange);
+    background-color: var(--accentBlack);
     color: white;
     padding: 8px 16px;
     text-decoration: none;
@@ -141,12 +151,16 @@ body {
     text-align: center;
     font-size: 20px;
     margin-top: 40px;
+    font-family: "fields", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .item-value, .price-value {
     text-align: center;
     font-size: 20px;
     margin-top: 40px;
+    color: white;
 }
 
 .order-details, .date-details, .item-details, .price-details {
@@ -154,7 +168,7 @@ body {
     justify-content: space-between;
     width: 100%;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--accentBlack);
+    border-bottom: 1px solid white;
     padding-bottom: 10px;
 }
 
@@ -162,23 +176,37 @@ body {
     text-align: left;
     font-size: 20px;
     margin-top: 40px;
+    font-family: "fields", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
 }
 
 .order-value, .date-value, .item-value, .price-value {
     text-align: right;
     font-size: 20px;
     margin-top: 40px;
+    font-family: "fields", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
 }
 
 .product-image {
     width: 50%;
     height: auto;
     object-fit: contain;
+    border: 3px solid var(--accentBlack);
 }
 
 .item-count {
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: "fields", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 5px;
+    color: white;
 }
 
 .item-label{
@@ -205,6 +233,11 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     display: inline-block;
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.125);
 }
 
 .back-button:hover {
