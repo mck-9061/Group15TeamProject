@@ -165,7 +165,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                         </p>
                         <p>
                             <a
-                                    href="php/logout.php"
+                                    href="../php/logout.php"
                                     class=" px-2 py-2 rounded-4"
                                     id="logout-pill"
                             >Log out</a>
@@ -182,7 +182,7 @@ $username = isset($_SESSION['username']) ? $_SESSION['username'] : '';
                         </p>
                         <p>
                             <a
-                                    href="signup.php"
+                                    href="../signup.php"
                                     class="px-3 py-2 rounded-4"
                                     id="sign-pill"
                             >Sign Up</a>

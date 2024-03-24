@@ -4,25 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Ignore">
-      <change afterPath="$PROJECT_DIR$/assets/AccountsBG.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/AdminBG.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2024_14_47__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_01_02_2024_14_47__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_12_2023_14_32__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_05_12_2023_14_32__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_03_2024_13_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_06_03_2024_13_21__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_13_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2024_13_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2023_01_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_13_12_2023_01_43__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_02_2024_13_59__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_15_02_2024_13_59__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_02_2024_14_03__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_02_2024_14_03__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_16_03_2024_15_55__Changes_1.xml" afterDir="false" />
+    <list default="true" id="95dd4bcc-ea0a-4e2a-926a-b4412a0817a8" name="Changes" comment="Quick CSS stuff so i can write about it in report with appendix LOL">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2024_12_26_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_15_03_2024_12_26__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/addProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/addProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminAccounts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adminAccounts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminCustomerAccountView.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adminCustomerAccountView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adminProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/adminProducts.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/adminProducts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +41,15 @@
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
+    <option name="recentNewPullRequestHead">
+      <RepoCoordinatesHolder>
+        <option name="owner" value="mck-9061" />
+        <option name="repository" value="Group15TeamProject" />
+      </RepoCoordinatesHolder>
+    </option>
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="ee4e588c-9924-4e0c-81c6-4ac283480855" />
+        <option name="accountId" value="a6ecaa97-2ea1-4256-b087-b74e5224e939" />
         <option name="url" value="https://github.com/mck-9061/Group15TeamProject.git" />
       </UrlAndAccount>
     </option>
@@ -80,23 +73,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;css-changes-for-report&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Front-end-fixes",
+    "last_opened_file_path": "C:/Users/User/OneDrive/Documents/GitHub/Group15TeamProject/assets",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\User\OneDrive\Documents\GitHub\Group15TeamProject\assets" />
@@ -134,8 +127,17 @@
       <workItem from="1709526732601" duration="196000" />
       <workItem from="1709888486457" duration="1598000" />
       <workItem from="1710246231431" duration="14801000" />
-      <workItem from="1711074857859" duration="1263000" />
+      <workItem from="1711074857859" duration="10175000" />
     </task>
+    <task id="LOCAL-00001" summary="Quick CSS stuff so i can write about it in report with appendix LOL">
+      <option name="closed" value="true" />
+      <created>1711076209373</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711076209373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Redoing elements, found issues" />
     <MESSAGE value="Ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignore" />
+    <MESSAGE value="Quick CSS stuff so i can write about it in report with appendix LOL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick CSS stuff so i can write about it in report with appendix LOL" />
   </component>
 </project>
