@@ -3,6 +3,7 @@
 <?php
 session_start();
 include '../php/fetch_accounts.php';
+require '../php/message.php';
 
 if (isset($_SESSION['username'])) {
     $selectedUser = $_SESSION['username'];
@@ -61,8 +62,9 @@ if (isset($_SESSION['username'])) {
 
 <div class="profile-info">
     <div class="infoBorderLine">
-        <form action="" method="post" autocomplete="off">
+        <form action="../php/admin/update_account_details.php" method="post" autocomplete="off">
             <h2>Your Info: <?php echo $accountName; ?></h2>
+            <input type="text" hidden="hidden" name="name" maxlength="30" value="<?php echo $accountName; ?>" />
 
             <div class="inputBox">
                 <input type="text" required="required" name="email" maxlength="30" value="<?php echo $accountEmail; ?>" />
@@ -75,12 +77,12 @@ if (isset($_SESSION['username'])) {
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" required="required" name="phoneNumber" maxlength="11" value="<?php echo $accountPhone; ?>"/>
+                <input type="text" required="required" name="phone" maxlength="11" value="<?php echo $accountPhone; ?>"/>
                 <span>Your Number</span>
                 <i></i>
             </div>
             <div class="inputBox">
-                <input type="text" required="required" name="phoneNumber" maxlength="11" value="<?php echo $accountAddress; ?>" />
+                <input type="text" required="required" name="address" maxlength="50" value="<?php echo $accountAddress; ?>" />
                 <span>Your Address</span>
                 <i></i>
             </div>
