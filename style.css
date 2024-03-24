@@ -119,8 +119,6 @@
     border:none;
     background: transparent;
     width: 5%;
-    height: 74.2%;
-    margin-top: 4.52%;
     position: absolute;
     top: 0;
     display: flex;
@@ -131,15 +129,14 @@
   }
 
   .caro-prev {
-    height: 74%;
+    height: 100%;
     left: 10.13%;
     transform: rotate(180deg);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--darkwaterBlue) 100%);
   }
 
   .caro-nxt {
+    height: 100%;
     right: 0%;
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--darkwaterBlue) 100%);
   }
 
   .caro-prev img,
