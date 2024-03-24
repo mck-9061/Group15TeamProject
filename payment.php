@@ -43,7 +43,7 @@ if(sizeof($items) == 0) {
 
         <div class="card-details">
             <label for="card-number" style="color:white;">Card Number:</label>
-            <input class="card-datails-input" type="number" id="card-number" name="card-number" placeholder="Enter your card number" required>
+            <input class="card-datails-input" type="number" id="card-number" name="card-number" placeholder="Enter your card number" required maxlength="16">
         </div>
         <div class="card-details">
             <label for="cardholder-name" style="color:white;">Cardholder Name:</label>
@@ -61,7 +61,7 @@ if(sizeof($items) == 0) {
         <div class="grid">
             <div class="card-details">
                 <label for="cvv" style="color:white;">CVV:</label>
-                <input type="password" class="card-datails-input" id="cvv" name="cvv" placeholder="Enter CVV" required>
+                <input type="password" class="card-datails-input" id="cvv" name="cvv" placeholder="Enter CVV" required maxlength="3">
             </div>
             <div class="card-details">
                 <label for="expiry-date" style="color:white;">Expiry Date:</label>
