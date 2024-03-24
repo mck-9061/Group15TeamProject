@@ -112,6 +112,9 @@
 
 #product-type-statement{
     color: var(--peach);
+    font-family: "fields", sans-serif;
+    font-weight: 900;
+    font-style: normal;
 }
 #admin-options-panel{
     background: black;

@@ -66,14 +66,14 @@ if (!empty($orderids) && $delivery_method !== '') {
                     }
                 }
                 ?>
-                <p>Total Item Subtotal: £<?= number_format($total_item_subtotal, 2) ?></p>
+                <p id="item-subtotal">Total Item Subtotal: £<?= number_format($total_item_subtotal, 2) ?></p>
                 <?php
                 // Calculate delivery fee and total price with delivery
                 $delivery_fee = ($delivery_method === 'Next Day Delivery') ? 10.00 : 5.00;
                 $total_price_with_delivery = $total_item_subtotal + $delivery_fee;
                 ?>
-                <p>Delivery Fee: £<?= number_format($delivery_fee, 2) ?></p>
-                <p>Total Price (including delivery): £<?= number_format($total_price_with_delivery, 2) ?></p>
+                <p id="del-fee">Delivery Fee: £<?= number_format($delivery_fee, 2) ?></p>
+                <p id="tot-prce">Total Price (including delivery): £<?= number_format($total_price_with_delivery, 2) ?></p>
             </div>
             <div class="card-content">
                 <h3>Item Summary</h3> <!-- Add Item Summary title here -->
@@ -106,8 +106,8 @@ if (!empty($orderids) && $delivery_method !== '') {
                             <div class="order-details-block">
                                 <img src="<?= '../' . $result['image-link'] ?>" alt="Product Image" class="small-product-image">
                                 <div class="item-info">
-                                    <p>Product Name: <?= $result['name'] ?></p>
-                                    <p>Product Type: <?= $result['type'] ?></p>
+                                    <p><?= $result['name'] ?></p>
+                                    <p><?= $result['type'] ?></p>
                                     <p>Quantity: <?= $result['item_count'] ?></p>
                                     <p>Price: £<?= number_format($result['price'], 2) ?></p>
                                 </div>

@@ -29,9 +29,10 @@
 /*   Index / carousel     */
 
 #index-page {
-  background: url("assets/IndexBG.png") rgba(0, 0, 0, 0.2);
 
 
+  background: black;
+  background-repeat: repeat-x;
 }
 
 .c-img {
@@ -88,9 +89,13 @@
     margin-left: 10%;
     margin-top: 1px;
     border: 1px solid;
-    border-color: var(--warmPeach);
-    background-color: var(--darkwaterBlue);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    /*  Glass effect Dont change -Alex   */
+    backdrop-filter: blur(5px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.125);
   }
 
   .mini-caro::-webkit-scrollbar{
@@ -124,6 +129,7 @@
     align-items: center;
     cursor: pointer;
     z-index: 9;
+    color: pink;
   }
 
   .caro-prev {
@@ -293,6 +299,25 @@
 #contact-info-colors{
   color: var(--poppingPink);
 
+}
+.section-1{
+  margin-top: 30px;
+  background: url("assets/Section1BG.png");
+  background-position: center;
+  background-size: contain;
+}
+.section-2{
+  margin-top: 30px;
+  background: url("assets/Section2BG.png");
+  background-position: center;
+  background-size: contain;
+
+}
+.section-3{
+  margin-top: 30px;
+  background: url("assets/Section3BG.png");
+  background-position: center;
+  background-size: contain;
 }
 
 /*     Products page css           */

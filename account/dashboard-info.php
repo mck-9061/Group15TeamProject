@@ -91,6 +91,7 @@ if (isset($_SESSION['username'])) {
                 <a href="dashboard.php">Go back</a>
             </div>
             <div class="signupReg flex-row">
+
                 <input type="submit" value="Update" id="signUpRegisterBtn"/>
 
             </div>
