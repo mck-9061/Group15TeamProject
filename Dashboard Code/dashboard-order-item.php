@@ -1,109 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Order Details</title>
-    <link rel="stylesheet" href="dashboard-order-item.css">
-</head>
-<body>
-<div class="container">
-    <a href="dashboard-order-history.php" class="back-button">← Back to Order History</a>
-    <?php
-    session_start();
+<?php
+session_start();
 
-    if (!isset($_SESSION['username'])) {
-        header("Location: ../login.php");
-        exit;
-    }
+if (!isset($_SESSION['username'])) {
+    header("Location: ../login.php");
+    exit;
+}
 
-    require '../php/connect.php';
+require '../php/connect.php';
 
-    if (!isset($db)) {
-        die("Failed to connect to the database.");
-    }
+if (!isset($db)) {
+    die("Failed to connect to the database.");
+}
 
-    require '../php/message.php';
+require '../php/message.php';
 
-    $username = $_SESSION['username'];
-    $orderid = $_GET['orderid'];
+$username = $_SESSION['username'];
+$orderids = isset($_GET['orderids']) ? explode(',', $_GET['orderids']) : [];
+$delivery_method = isset($_GET['delivery_method']) ? $_GET['delivery_method'] : '';
 
-
-    $delivery_fees = [
-        'Standard Delivery' => 5.00,
-        'Next Day Delivery' => 10.00,
-
-    ];
-
-    $sql = "SELECT orders.orderid, orders.date, orders.delivery_method, products.price, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address, users.email, users.phone
-            FROM orders
-            INNER JOIN products ON orders.productid = products.productid
-            INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
-            INNER JOIN users ON orders.user = users.username
-            WHERE orders.user = ? AND orders.orderid = ?
-            ORDER BY orders.date DESC";
-
-    if ($stmt = $db->prepare($sql)) {
-        $stmt->bindParam(1, $username);
-        $stmt->bindParam(2, $orderid);
-        $stmt->execute();
-        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    }
+if (!empty($orderids) && $delivery_method !== '') {
     ?>
-    <?php foreach ($result as $order): ?>
-        <!-- Merged Card for Order Number, Order Date and Price Process -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Order Details</title>
+        <link rel="stylesheet" href="dashboard-order-item.css">
+    </head>
+    <body>
+    <div class="container">
+        <a href="dashboard-order-history.php" class="back-button">← Back to Order History</a>
         <div class="card">
             <h2>Order Details</h2>
+            <div class="price-process-block">
+                <?php
+                // Initialize total item subtotal
+                $total_item_subtotal = 0;
+
+                // Calculate total item subtotal
+                foreach ($orderids as $orderid) {
+                    $sql = "SELECT orders.orderid, orders.date, products.price, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address, users.email, users.phone
+                            FROM orders
+                            INNER JOIN products ON orders.productid = products.productid
+                            INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
+                            INNER JOIN users ON orders.user = users.username
+                            WHERE orders.orderid = ?
+                            AND orders.user = ?
+                            ORDER BY orders.date DESC";
+
+                    if ($stmt = $db->prepare($sql)) {
+                        $stmt->bindParam(1, $orderid);
+                        $stmt->bindParam(2, $username);
+                        $stmt->execute();
+                        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+                        if ($result) {
+                            // Calculating total item subtotal
+                            $item_subtotal = $result['price'] * $result['item_count'];
+                            $total_item_subtotal += $item_subtotal;
+                        } else {
+                            echo "No orders found.";
+                        }
+                    } else {
+                        echo "Failed to prepare the SQL statement.";
+                    }
+                }
+                ?>
+                <p>Total Item Subtotal: £<?= number_format($total_item_subtotal, 2) ?></p>
+                <?php
+                // Calculate delivery fee and total price with delivery
+                $delivery_fee = ($delivery_method === 'Next Day Delivery') ? 10.00 : 5.00;
+                $total_price_with_delivery = $total_item_subtotal + $delivery_fee;
+                ?>
+                <p>Delivery Fee: £<?= number_format($delivery_fee, 2) ?></p>
+                <p>Total Price (including delivery): £<?= number_format($total_price_with_delivery, 2) ?></p>
+            </div>
             <div class="card-content">
-                <div class="order-details-block">
-                    <p>Order Number: <?= $order['orderid'] ?></p>
-                    <p>Order Date: <?= $order['date'] ?></p>
-                </div>
-                <div class="price-process-block">
-                    <?php
-                    $item_subtotal = $order['price'] * $order['item_count'];
-                    $delivery_fee = isset($delivery_fees[$order['delivery_method']]) ? $delivery_fees[$order['delivery_method']] : 0.00;
-                    $total_price_with_delivery = $item_subtotal + $delivery_fee;
-                    ?>
-                    <p>Item Subtotal: £<?= number_format($item_subtotal, 2) ?></p>
-                    <p>Delivery Fee: £<?= number_format($delivery_fee, 2) ?></p>
-                    <p>Total Price: £<?= number_format($total_price_with_delivery, 2) ?></p>
-                </div>
-            </div>
+                <h3>Item Summary</h3> <!-- Add Item Summary title here -->
+                <?php
+                $first_item = true; // To prevent adding a horizontal line before the first item
+                foreach ($orderids as $orderid) {
+                    $sql = "SELECT orders.orderid, orders.date, products.price, products.name, products.description, products.type, `product-pictures`.`image-link`, orders.item_count, users.address, users.email, users.phone
+                            FROM orders
+                            INNER JOIN products ON orders.productid = products.productid
+                            INNER JOIN `product-pictures` ON products.productid = `product-pictures`.productid
+                            INNER JOIN users ON orders.user = users.username
+                            WHERE orders.orderid = ?
+                            AND orders.user = ?
+                            ORDER BY orders.date DESC";
 
-            <div class="card-middle">
-                <div class="card-shipping">
-                    <h2>Shipping Info</h2>
-                    <p>Shipping To: <?= $username ?></p>
-                    <p>Email: <?= $order['email'] ?></p>
-                    <p>Phone Number: <?= $order['phone'] ?></p>
-                    <p>Shipping Method: <?= $order['delivery_method'] ?></p>
-                    <p>Address: <?= $order['address'] ?></p>
-                </div>
+                    if ($stmt = $db->prepare($sql)) {
+                        $stmt->bindParam(1, $orderid);
+                        $stmt->bindParam(2, $username);
+                        $stmt->execute();
+                        $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
-                <div class="card-billing">
-                    <h2>Billing Info</h2>
-                    <p>Billing To: <?= $username ?></p>
-                    <p>Address: <?= $order['address'] ?></p>
-                    <p>Payment Method: Credit Card</p>
-                </div>
-            </div>
-
-            <div class="card-bottom">
-                <h2>Item Summary</h2>
-                <div class="item-details">
-                    <?php
-                    $image = '../' . $order['image-link']; // Modify the image path
-                    ?>
-                    <img src="<?= $image ?>" alt="Product Image" class="small-product-image">
-                    <div class="item-info">
-                        <p> <?= $order['name'] ?></p>
-                        <p> <?= $order['type'] ?></p>
-                        <p>Quantity: <?= $order['item_count'] ?></p>
-                    </div>
-                </div>
+                        if ($result) {
+                            // Displaying item summary here
+                            if (!$first_item) {
+                                echo '<hr>'; // Add horizontal line between items
+                            } else {
+                                $first_item = false;
+                            }
+                            ?>
+                            <div class="order-details-block">
+                                <img src="<?= '../' . $result['image-link'] ?>" alt="Product Image" class="small-product-image">
+                                <div class="item-info">
+                                    <p>Product Name: <?= $result['name'] ?></p>
+                                    <p>Product Type: <?= $result['type'] ?></p>
+                                    <p>Quantity: <?= $result['item_count'] ?></p>
+                                    <p>Price: £<?= number_format($result['price'], 2) ?></p>
+                                </div>
+                            </div>
+                            <?php
+                        } else {
+                            echo "No orders found.";
+                        }
+                    } else {
+                        echo "Failed to prepare the SQL statement.";
+                    }
+                }
+                ?>
             </div>
         </div>
-    <?php endforeach; ?>
-</div>
-</body>
-</html>
+
+        <div class="card card-shipping">
+            <h2>Shipping Information</h2>
+            <div class="card-content">
+                <p>Shipping Address: <?= $result['address'] ?></p>
+            </div>
+        </div>
+
+        <div class="card card-billing">
+            <h2>Billing Information</h2>
+            <div class="card-content">
+                <p>Email: <?= $result['email'] ?></p>
+                <p>Phone: <?= $result['phone'] ?></p>
+            </div>
+        </div>
+    </div>
+    </body>
+    </html>
+    <?php
+} else {
+    echo "No order IDs provided or delivery method not specified.";
+}
+?>
