@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php session_start() ?>
 
 <head>
     <meta charset="UTF-8" />
@@ -20,7 +21,7 @@
 <body id="login-page">
 <div class="log-box">
     <span class="LoginBorderLine"></span>
-    <form method="post" action="php/signin.php">
+    <form method="post" action="php/reset_password.php">
         <h2>Reset Password</h2>
 
         <div class="inputBox">
